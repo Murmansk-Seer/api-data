@@ -15,6 +15,9 @@ on:
     repository_dispatch:
         types: [config-source-update, patch-source-update]
 
+    schedule:
+        - cron: "17 */6 * * *"
+
 jobs:
     main:
         runs-on: ubuntu-latest
@@ -24,6 +27,7 @@ jobs:
             SOLARIS_DATA_SOURCE: https://github.com/SeerAPI/config-sources.git
             SOLARIS_PATCH_SOURCE: https://github.com/SeerAPI/patch-sources.git
             BASE_OUTPUT_DIR: data
+            HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
 
         steps:
             - name: Checkout repository
@@ -83,33 +87,6 @@ jobs:
                   git push
                   echo "timestamp=$timestamp" >> $GITHUB_OUTPUT
 
-            # - name: Push to cnb.cool Git Repository
-            #   run: |
-            #     # 配置 cnb.cool 远程仓库
-            #     git remote add cnb https://cnb:${{ secrets.CNB_TOKEN }}@cnb.cool/${{ secrets.CNB_REPO_PATH }}.git || true
-            #     git remote set-url cnb https://cnb:${{ secrets.CNB_TOKEN }}@cnb.cool/${{ secrets.CNB_REPO_PATH }}.git
-
-            #     # 推送到 cnb.cool 仓库
-            #     git push cnb main --force
-
-            - name: Set up Node.js
-              uses: actions/setup-node@v4
-              with:
-                  node-version: "22"
-                  cache: npm
-
-            - name: Install Node dependencies
-              run: npm ci
-
-            - name: Upload data to blob
-              env:
-                  BLOB_TOKEN: ${{ secrets.BLOB_TOKEN }}
-                  BLOB_PROJECT_ID: ${{ secrets.BLOB_PROJECT_ID }}
-                  BLOB_STORE_NAME: ${{ secrets.BLOB_STORE_NAME }}
-              run: |
-                  npx tsx upload_data_to_blob.ts data/v1/schemas/ --store seerapi-v1 --prefix schemas/
-                  npx tsx upload_data_to_blob.ts data/v1/sharded_data/ --store seerapi-v1 --prefix sharded_data/
-
             - name: Generate database checksum
               id: db_checksum
               run: |
@@ -140,4 +117,40 @@ jobs:
                   prerelease: false
                   draft: false
                   make_latest: true
+                  overwrite_files: true
                   fail_on_unmatched_files: true
+
+            # - name: Push to cnb.cool Git Repository
+            #   run: |
+            #     # 配置 cnb.cool 远程仓库
+            #     git remote add cnb https://cnb:${{ secrets.CNB_TOKEN }}@cnb.cool/${{ secrets.CNB_REPO_PATH }}.git || true
+            #     git remote set-url cnb https://cnb:${{ secrets.CNB_TOKEN }}@cnb.cool/${{ secrets.CNB_REPO_PATH }}.git
+
+            #     # 推送到 cnb.cool 仓库
+            #     git push cnb main --force
+
+            - name: Set up Node.js
+              if: env.HAS_BLOB_CONFIG == 'true'
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22"
+                  cache: npm
+
+            - name: Install Node dependencies
+              if: env.HAS_BLOB_CONFIG == 'true'
+              run: npm ci
+
+            - name: Upload data to blob
+              if: env.HAS_BLOB_CONFIG == 'true'
+              continue-on-error: true
+              env:
+                  BLOB_TOKEN: ${{ secrets.BLOB_TOKEN }}
+                  BLOB_PROJECT_ID: ${{ secrets.BLOB_PROJECT_ID }}
+                  BLOB_STORE_NAME: ${{ secrets.BLOB_STORE_NAME }}
+              run: |
+                  npx tsx upload_data_to_blob.ts data/v1/schemas/ --store seerapi-v1 --prefix schemas/
+                  npx tsx upload_data_to_blob.ts data/v1/sharded_data/ --store seerapi-v1 --prefix sharded_data/
+
+            - name: Skip blob upload
+              if: env.HAS_BLOB_CONFIG != 'true'
+              run: echo "Blob secrets are not configured; GitHub Release assets have already been published."
