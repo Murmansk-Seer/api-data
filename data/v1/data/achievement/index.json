@@ -1,5 +1,5 @@
 {
-  "count": 1203,
+  "count": 1207,
   "next": null,
   "previous": null,
   "first": null,
@@ -5898,7 +5898,7 @@
     {
       "id": 6166029,
       "url": "https://api.seerapi.com/v1/achievement/6166029",
-      "name": "岁业拔除"
+      "name": "岁业祓除"
     },
     {
       "id": 6166030,
@@ -6041,5 +6041,5 @@
       "name": "蝶舞朝暮"
     }
   ],
-  "hash": "d113be1b"
+  "hash": "b99e45e1"
 }
