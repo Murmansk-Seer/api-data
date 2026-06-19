@@ -19047,10 +19047,6 @@
           "url": "https://api.seerapi.com/v1/pet/4914"
         },
         {
-          "id": 4915,
-          "url": "https://api.seerapi.com/v1/pet/4915"
-        },
-        {
           "id": 5000,
           "url": "https://api.seerapi.com/v1/pet/5000"
         }
@@ -19060,5 +19056,5 @@
       "description": "无VIP加成"
     }
   },
-  "hash": "3258278f"
+  "hash": "cb043ce"
 }

@@ -1,5 +1,5 @@
 {
-  "count": 582,
+  "count": 581,
   "next": null,
   "previous": null,
   "first": null,
@@ -2848,7 +2848,7 @@
     {
       "id": 572,
       "url": "https://api.seerapi.com/v1/title/572",
-      "name": "岁业祓除"
+      "name": "岁业拔除"
     },
     {
       "id": 573,
@@ -2916,5 +2916,5 @@
       "name": "蝶舞朝暮"
     }
   ],
-  "hash": "83426bc2"
+  "hash": "15caa8e"
 }
