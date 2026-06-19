@@ -58,6 +58,33 @@ jobs:
                   mkdir -p source/patch
                   mv patch-sources/patches/* source/patch
 
+            - name: Patch missing source item category files
+              run: |
+                  python - <<'PY'
+                  import json
+                  from pathlib import Path
+
+                  unity_dir = Path("source/unity")
+                  category_file = unity_dir / "itemsOptimizeCat.json"
+                  categories = json.loads(category_file.read_text(encoding="utf-8"))["root"]["cats"]
+
+                  missing = []
+                  for category in categories:
+                      category_id = category["id"]
+                      item_file = unity_dir / f"itemsOptimizeCatItems{category_id}.json"
+                      if not item_file.exists():
+                          item_file.write_text(
+                              json.dumps({"root": {"items": []}}, ensure_ascii=False, indent=2) + "\n",
+                              encoding="utf-8",
+                          )
+                          missing.append(str(category_id))
+
+                  if missing:
+                      print(f"Created empty item category files for missing categories: {', '.join(missing)}")
+                  else:
+                      print("No missing item category files.")
+                  PY
+
             - name: Analyze config
               run: |
                   solaris analyze data --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o data --json-format split \
