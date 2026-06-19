@@ -347,8 +347,8 @@
         "url": "https://api.seerapi.com/v1/pet_encyclopedia_entry/5000"
       },
       "archive_story_entry": {
-        "id": 703,
-        "url": "https://api.seerapi.com/v1/pet_archive_story_entry/703"
+        "id": 704,
+        "url": "https://api.seerapi.com/v1/pet_archive_story_entry/704"
       },
       "peak_pool": {
         "id": 2,
@@ -361,5 +361,5 @@
       "advance": null
     }
   },
-  "hash": "4ff75a68"
+  "hash": "a44753e8"
 }
