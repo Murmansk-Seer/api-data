@@ -26,6 +26,7 @@ jobs:
             SOLARIS_API_URL: https://api.seerapi.com
             SOLARIS_DATA_SOURCE: https://github.com/SeerAPI/config-sources.git
             SOLARIS_PATCH_SOURCE: https://github.com/SeerAPI/patch-sources.git
+            SOLARIS_VERSION: 106.4.0
             BASE_OUTPUT_DIR: data
             HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
 
@@ -44,7 +45,7 @@ jobs:
               uses: astral-sh/setup-uv@v7
 
             - name: Install solaris
-              run: uv tool install seerapi-solaris
+              run: uv tool install "seerapi-solaris==${{ env.SOLARIS_VERSION }}"
 
             - name: Setup tmate session
               uses: mxschmitt/action-tmate@v3
