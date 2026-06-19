@@ -5761,10 +5761,6 @@
         {
           "id": 4913,
           "url": "https://api.seerapi.com/v1/pet/4913"
-        },
-        {
-          "id": 4915,
-          "url": "https://api.seerapi.com/v1/pet/4915"
         }
       ],
       "id": 2,
@@ -5772,5 +5768,5 @@
       "description": "雌性"
     }
   },
-  "hash": "9cff2014"
+  "hash": "bbaaf374"
 }
