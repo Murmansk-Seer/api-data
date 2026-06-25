@@ -24,7 +24,26 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote add upstream https://github.com/SeerAPI/api-data.git || git remote set-url upstream https://github.com/SeerAPI/api-data.git
           git fetch upstream main
+          base_head="$(git rev-parse HEAD)"
+
+          restore_workflows() {
+            if git diff --quiet "$base_head" -- .github/workflows; then
+              return 0
+            fi
+            echo "Keeping fork workflow files; upstream workflow updates require workflow-scoped tokens."
+            git checkout "$base_head" -- .github/workflows
+            git add .github/workflows
+          }
+
           if git merge -X theirs -m "Sync upstream api-data 同步上游数据源" upstream/main; then
+            restore_workflows
+            if [ "$(git rev-parse HEAD)" = "$base_head" ] && git diff --cached --quiet && git diff --quiet; then
+              echo "Already up to date."
+              exit 0
+            fi
+            if ! git diff --cached --quiet || ! git diff --quiet; then
+              git commit --amend --no-edit
+            fi
             git push origin main
             exit 0
           fi
@@ -52,5 +71,6 @@ jobs:
             exit 1
           fi
 
+          restore_workflows
           git commit --no-edit
           git push origin main
