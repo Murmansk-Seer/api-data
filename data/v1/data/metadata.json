@@ -2,11 +2,11 @@
   "api_url": "https://api.seerapi.com",
   "api_version": "v1",
   "generator_name": "solaris",
-  "generator_version": "106.4.0",
-  "generate_time": "2026-07-06T20:14:08.589483",
-  "data_source": "https://github.com/Murmansk5000/config-sources.git",
+  "generator_version": "106.4.4",
+  "generate_time": "2026-07-06T09:12:44.711065",
+  "data_source": "https://github.com/SeerAPI/config-sources.git",
   "data_version": "",
   "patch_source": "https://github.com/SeerAPI/patch-sources.git",
   "patch_version": "",
-  "hash": "df5fdd0d"
+  "hash": "f86ab6ab"
 }
