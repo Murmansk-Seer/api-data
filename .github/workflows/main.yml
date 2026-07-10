@@ -6,6 +6,11 @@ permissions:
 on:
     workflow_dispatch:
         inputs:
+            force:
+                type: boolean
+                description: "Force rebuild even when config-sources is unchanged"
+                required: false
+                default: false
             debug_enabled:
                 type: boolean
                 description: "Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)"
@@ -36,22 +41,53 @@ jobs:
               with:
                   fetch-depth: 0
 
+            - name: Check config source changes
+              id: source_check
+              env:
+                  FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force == true }}
+              run: |
+                  set -e
+                  source_head="$(git ls-remote "${SOLARIS_DATA_SOURCE}" HEAD | awk '{print $1}')"
+                  previous_head=""
+                  if [ -f .build-state/config-sources-revision ]; then
+                      previous_head="$(cat .build-state/config-sources-revision)"
+                  fi
+
+                  echo "source_head=${source_head}" >> "$GITHUB_OUTPUT"
+                  echo "previous_head=${previous_head}" >> "$GITHUB_OUTPUT"
+
+                  if [ "${FORCE}" != "true" ] && [ -n "${previous_head}" ] && [ "${source_head}" = "${previous_head}" ]; then
+                      echo "skip=true" >> "$GITHUB_OUTPUT"
+                      echo "config-sources is unchanged (${source_head}); skipping seer-data build."
+                  else
+                      echo "skip=false" >> "$GITHUB_OUTPUT"
+                      echo "Build required: force=${FORCE}, source=${source_head}, previous=${previous_head:-none}"
+                  fi
+
+            - name: Skip unchanged build
+              if: steps.source_check.outputs.skip == 'true'
+              run: echo "No config-sources changes; workflow succeeded without rebuilding."
+
             - name: Set up Python
+              if: steps.source_check.outputs.skip != 'true'
               uses: actions/setup-python@v5
               with:
                   python-version: "3.10"
 
             - name: Set up uv
+              if: steps.source_check.outputs.skip != 'true'
               uses: astral-sh/setup-uv@v7
 
             - name: Install solaris
+              if: steps.source_check.outputs.skip != 'true'
               run: uv tool install "seerapi-solaris==${{ env.SOLARIS_VERSION }}"
 
             - name: Setup tmate session
+              if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
               uses: mxschmitt/action-tmate@v3
-              if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
             - name: Clone config sources
+              if: steps.source_check.outputs.skip != 'true'
               run: |
                   git clone ${{ env.SOLARIS_DATA_SOURCE }} source
                   git clone ${{ env.SOLARIS_PATCH_SOURCE }} patch-sources
@@ -59,6 +95,7 @@ jobs:
                   mv patch-sources/patches/* source/patch
 
             - name: Patch unsupported empty item categories
+              if: steps.source_check.outputs.skip != 'true'
               run: |
                   python - <<'PY'
                   import json
@@ -98,6 +135,7 @@ jobs:
                   PY
 
             - name: Analyze config
+              if: steps.source_check.outputs.skip != 'true'
               run: |
                   solaris analyze data --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o data --json-format split \
                   --base-json-url https://api.seerapi.com/v1 \
@@ -117,17 +155,21 @@ jobs:
                   --description "$openapi_desc" --detail-version "$detail_version" --output-named-data
 
             - name: Commit and push changes
+              if: steps.source_check.outputs.skip != 'true'
               id: commit
               run: |
                   git config --local user.email "github-actions[bot]@users.noreply.github.com"
                   git config --local user.name "github-actions[bot]"
-                  git add data
+                  mkdir -p .build-state
+                  printf '%s\n' "${{ steps.source_check.outputs.source_head }}" > .build-state/config-sources-revision
+                  git add data .build-state/config-sources-revision
                   timestamp=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S CST')
                   git diff --staged --quiet || git commit -m "Auto update config $timestamp"
                   git push
                   echo "timestamp=$timestamp" >> $GITHUB_OUTPUT
 
             - name: Generate database checksum
+              if: steps.source_check.outputs.skip != 'true'
               id: db_checksum
               run: |
                   # 生成 SHA256 校验和文件
@@ -141,6 +183,7 @@ jobs:
                   echo "sha256=$(cat seerapi-data.sqlite.sha256)" >> $GITHUB_OUTPUT
 
             - name: Upload database to release
+              if: steps.source_check.outputs.skip != 'true'
               uses: softprops/action-gh-release@v2
               with:
                   tag_name: latest
@@ -170,18 +213,18 @@ jobs:
             #     git push cnb main --force
 
             - name: Set up Node.js
-              if: env.HAS_BLOB_CONFIG == 'true'
+              if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG == 'true'
               uses: actions/setup-node@v4
               with:
                   node-version: "22"
                   cache: npm
 
             - name: Install Node dependencies
-              if: env.HAS_BLOB_CONFIG == 'true'
+              if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG == 'true'
               run: npm ci
 
             - name: Upload data to blob
-              if: env.HAS_BLOB_CONFIG == 'true'
+              if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG == 'true'
               continue-on-error: true
               env:
                   BLOB_TOKEN: ${{ secrets.BLOB_TOKEN }}
@@ -192,5 +235,5 @@ jobs:
                   npx tsx upload_data_to_blob.ts data/v1/sharded_data/ --store seerapi-v1 --prefix sharded_data/
 
             - name: Skip blob upload
-              if: env.HAS_BLOB_CONFIG != 'true'
+              if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG != 'true'
               run: echo "Blob secrets are not configured; GitHub Release assets have already been published."
