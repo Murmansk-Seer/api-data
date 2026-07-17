@@ -149,6 +149,10 @@ jobs:
 
                   PY
 
+            - name: Patch Unity-only skills missing Flash rows
+              if: steps.source_check.outputs.skip != 'true'
+              run: python scripts/patch_unity_only_skills.py source
+
             - name: Analyze config
               if: steps.source_check.outputs.skip != 'true'
               run: |
