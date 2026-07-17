@@ -8,7 +8,7 @@ on:
         inputs:
             force:
                 type: boolean
-                description: "Force rebuild even when config-sources is unchanged"
+                description: "Force rebuild even when config-sources and patch-sources are unchanged"
                 required: false
                 default: false
             debug_enabled:
@@ -23,14 +23,18 @@ on:
     schedule:
         - cron: "17 */6 * * *"
 
+concurrency:
+    group: api-data-build
+    cancel-in-progress: false
+
 jobs:
     main:
         runs-on: ubuntu-latest
         env:
             SOLARIS_API_VERSION: v1
             SOLARIS_API_URL: https://api.seerapi.com
-            SOLARIS_DATA_SOURCE: https://github.com/Murmansk5000/config-sources.git
-            SOLARIS_PATCH_SOURCE: https://github.com/SeerAPI/patch-sources.git
+            SOLARIS_DATA_SOURCE: https://github.com/Murmansk-Seer/config-sources.git
+            SOLARIS_PATCH_SOURCE: https://github.com/Murmansk-Seer/patch-sources.git
             SOLARIS_VERSION: 106.4.0
             BASE_OUTPUT_DIR: data
             HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
@@ -41,32 +45,43 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: Check config source changes
+            - name: Check data source changes
               id: source_check
               env:
                   FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force == true }}
               run: |
                   set -e
-                  source_head="$(git ls-remote "${SOLARIS_DATA_SOURCE}" HEAD | awk '{print $1}')"
-                  previous_head=""
+                  config_head="$(git ls-remote "${SOLARIS_DATA_SOURCE}" HEAD | awk '{print $1}')"
+                  patch_head="$(git ls-remote "${SOLARIS_PATCH_SOURCE}" HEAD | awk '{print $1}')"
+                  previous_config_head=""
+                  previous_patch_head=""
                   if [ -f .build-state/config-sources-revision ]; then
-                      previous_head="$(cat .build-state/config-sources-revision)"
+                      previous_config_head="$(cat .build-state/config-sources-revision)"
+                  fi
+                  if [ -f .build-state/patch-sources-revision ]; then
+                      previous_patch_head="$(cat .build-state/patch-sources-revision)"
                   fi
 
-                  echo "source_head=${source_head}" >> "$GITHUB_OUTPUT"
-                  echo "previous_head=${previous_head}" >> "$GITHUB_OUTPUT"
+                  echo "config_head=${config_head}" >> "$GITHUB_OUTPUT"
+                  echo "patch_head=${patch_head}" >> "$GITHUB_OUTPUT"
+                  echo "previous_config_head=${previous_config_head}" >> "$GITHUB_OUTPUT"
+                  echo "previous_patch_head=${previous_patch_head}" >> "$GITHUB_OUTPUT"
 
-                  if [ "${FORCE}" != "true" ] && [ -n "${previous_head}" ] && [ "${source_head}" = "${previous_head}" ]; then
+                  if [ "${FORCE}" != "true" ] \
+                      && [ -n "${previous_config_head}" ] \
+                      && [ -n "${previous_patch_head}" ] \
+                      && [ "${config_head}" = "${previous_config_head}" ] \
+                      && [ "${patch_head}" = "${previous_patch_head}" ]; then
                       echo "skip=true" >> "$GITHUB_OUTPUT"
-                      echo "config-sources is unchanged (${source_head}); skipping seer-data build."
+                      echo "config-sources and patch-sources are unchanged; skipping api-data build."
                   else
                       echo "skip=false" >> "$GITHUB_OUTPUT"
-                      echo "Build required: force=${FORCE}, source=${source_head}, previous=${previous_head:-none}"
+                      echo "Build required: force=${FORCE}, config=${config_head}/${previous_config_head:-none}, patch=${patch_head}/${previous_patch_head:-none}"
                   fi
 
             - name: Skip unchanged build
               if: steps.source_check.outputs.skip == 'true'
-              run: echo "No config-sources changes; workflow succeeded without rebuilding."
+              run: echo "No config-sources or patch-sources changes; workflow succeeded without rebuilding."
 
             - name: Set up Python
               if: steps.source_check.outputs.skip != 'true'
@@ -161,8 +176,9 @@ jobs:
                   git config --local user.email "github-actions[bot]@users.noreply.github.com"
                   git config --local user.name "github-actions[bot]"
                   mkdir -p .build-state
-                  printf '%s\n' "${{ steps.source_check.outputs.source_head }}" > .build-state/config-sources-revision
-                  git add data .build-state/config-sources-revision
+                  printf '%s\n' "${{ steps.source_check.outputs.config_head }}" > .build-state/config-sources-revision
+                  printf '%s\n' "${{ steps.source_check.outputs.patch_head }}" > .build-state/patch-sources-revision
+                  git add data .build-state/config-sources-revision .build-state/patch-sources-revision
                   timestamp=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S CST')
                   git diff --staged --quiet || git commit -m "Auto update config $timestamp"
                   git push
