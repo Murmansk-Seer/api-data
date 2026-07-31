@@ -18,9 +18,12 @@
         "id": 11,
         "url": "https://api.seerapi.com/v1/pet_skin_category/11"
       },
-      "series": null,
+      "series": {
+        "id": 24,
+        "url": "https://api.seerapi.com/v1/pet_skin_series/24"
+      },
       "sub_type": null
     }
   },
-  "hash": "603f6e2e"
+  "hash": "bdcde488"
 }
