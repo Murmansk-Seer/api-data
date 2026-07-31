@@ -26359,6 +26359,7 @@
             "resource_id": 1400774,
             "enemy_resource_id": null,
             "card_price": null,
+            "diamond_price": null,
             "pet": {
               "id": 5000,
               "url": "https://api.seerapi.com/v1/pet/5000"
@@ -26371,6 +26372,9 @@
               "id": 13,
               "url": "https://api.seerapi.com/v1/pet_skin_series/13"
             },
+            "skinhouse_price": null,
+            "discounted_skinhouse_price": null,
+            "ticket_num": null,
             "sub_type": null,
             "hash": "1dca20ae"
           }
@@ -26407,6 +26411,7 @@
             "resource_id": 1400774,
             "enemy_resource_id": null,
             "card_price": null,
+            "diamond_price": null,
             "pet": {
               "id": 5000,
               "url": "https://api.seerapi.com/v1/pet/5000"
@@ -26419,6 +26424,9 @@
               "id": 13,
               "url": "https://api.seerapi.com/v1/pet_skin_series/13"
             },
+            "skinhouse_price": null,
+            "discounted_skinhouse_price": null,
+            "ticket_num": null,
             "sub_type": null,
             "hash": "1dca20ae"
           }
@@ -26439,6 +26447,7 @@
             "resource_id": 1400774,
             "enemy_resource_id": null,
             "card_price": null,
+            "diamond_price": null,
             "pet": {
               "id": 5000,
               "url": "https://api.seerapi.com/v1/pet/5000"
@@ -26451,6 +26460,9 @@
               "id": 13,
               "url": "https://api.seerapi.com/v1/pet_skin_series/13"
             },
+            "skinhouse_price": null,
+            "discounted_skinhouse_price": null,
+            "ticket_num": null,
             "sub_type": null,
             "hash": "1dca20ae"
           }
