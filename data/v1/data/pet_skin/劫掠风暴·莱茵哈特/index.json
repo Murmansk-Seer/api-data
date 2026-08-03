@@ -7,9 +7,9 @@
       "enemy_resource_id": null,
       "card_price": null,
       "diamond_price": null,
-      "skinhouse_price": 398,
+      "skinhouse_price": null,
       "discounted_skinhouse_price": null,
-      "ticket_num": 20,
+      "ticket_num": null,
       "pet": {
         "id": 3516,
         "url": "https://api.seerapi.com/v1/pet/3516"
@@ -22,5 +22,5 @@
       "sub_type": null
     }
   },
-  "hash": "d766f7bb"
+  "hash": "fc2892e"
 }
