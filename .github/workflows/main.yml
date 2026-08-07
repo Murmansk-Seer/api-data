@@ -192,15 +192,12 @@ jobs:
               if: steps.source_check.outputs.skip != 'true'
               id: db_checksum
               run: |
-                  # 生成 SHA256 校验和文件
-                  sha256sum seerapi-data.sqlite > seerapi-data.sqlite.sha256
-
-                  # 显示校验和信息
+                  checksum="$(sha256sum seerapi-data.sqlite)"
+                  printf '%s\n' "${checksum}" > seerapi-data.sqlite.sha256
+                  sha256="${checksum%% *}"
                   echo "=== 数据库文件 SHA256 校验和 ==="
                   cat seerapi-data.sqlite.sha256
-
-                  # 将校验和传递到下一个step
-                  echo "sha256=$(cat seerapi-data.sqlite.sha256)" >> $GITHUB_OUTPUT
+                  echo "sha256=${sha256}" >> "$GITHUB_OUTPUT"
 
             - name: Upload database to release
               if: steps.source_check.outputs.skip != 'true'
@@ -222,6 +219,26 @@ jobs:
                   make_latest: true
                   overwrite_files: true
                   fail_on_unmatched_files: true
+
+            - name: Trigger SeerAPI build
+              if: success() && steps.source_check.outputs.skip != 'true'
+              env:
+                  GH_TOKEN: ${{ secrets.SEERAPI_DISPATCH_TOKEN }}
+                  DB_SHA: ${{ steps.db_checksum.outputs.sha256 }}
+              run: |
+                  set -euo pipefail
+                  if [ -z "${GH_TOKEN:-}" ]; then
+                      echo "::error::SEERAPI_DISPATCH_TOKEN is required to notify Murmansk-Seer/seerapi after publishing api-data."
+                      exit 1
+                  fi
+                  if ! [[ "${DB_SHA}" =~ ^[0-9a-f]{64}$ ]]; then
+                      echo "::error::Generated api-data SHA256 is invalid: ${DB_SHA}"
+                      exit 1
+                  fi
+                  gh api --method POST repos/Murmansk-Seer/seerapi/dispatches \
+                      -f event_type=api-data-published \
+                      -f "client_payload[sha256]=${DB_SHA}" \
+                      -f "client_payload[source_commit]=${GITHUB_SHA}"
 
             # - name: Push to cnb.cool Git Repository
             #   run: |
