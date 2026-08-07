@@ -11,12 +11,12 @@
     "eid_effect": null,
     "desc": "己方精灵体力+10%(所有对战有效)",
     "attribute": {
-      "atk": 10,
+      "atk": 0,
       "def": 0,
       "sp_atk": 0,
       "sp_def": 0,
       "spd": 0,
-      "hp": 0,
+      "hp": 10,
       "percent": true,
       "total": 10
     },
@@ -32,5 +32,5 @@
     "url": "https://api.seerapi.com/v1/equip_type/2"
   },
   "pk_attribute": null,
-  "hash": "b424ebde"
+  "hash": "f00363f8"
 }
