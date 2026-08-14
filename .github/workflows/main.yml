@@ -35,7 +35,6 @@ jobs:
             SOLARIS_API_URL: https://api.seerapi.com
             SOLARIS_DATA_SOURCE: https://github.com/Murmansk-Seer/config-sources.git
             SOLARIS_PATCH_SOURCE: https://github.com/Murmansk-Seer/patch-sources.git
-            SOLARIS_VERSION: 106.4.0
             BASE_OUTPUT_DIR: data
             HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
 
@@ -95,7 +94,7 @@ jobs:
 
             - name: Install solaris
               if: steps.source_check.outputs.skip != 'true'
-              run: uv tool install "seerapi-solaris==${{ env.SOLARIS_VERSION }}"
+              run: uv tool install --force --upgrade seerapi-solaris
 
             - name: Setup tmate session
               if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
@@ -143,7 +142,6 @@ jobs:
                           "Removed unsupported empty item categories without item files: "
                           + ", ".join(missing)
                       )
-                      print("solaris 106.4.0 only imports categories that have itemsOptimizeCatItems*.json files.")
                   else:
                       print("No unsupported empty item categories.")
 
