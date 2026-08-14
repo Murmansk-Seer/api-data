@@ -30,6 +30,34 @@
           "title": "activity_type Path",
           "type": "string"
         },
+        "autocard": {
+          "title": "autocard Path",
+          "type": "string"
+        },
+        "autocard_petcard": {
+          "title": "autocard_petcard Path",
+          "type": "string"
+        },
+        "autocard_spellcard": {
+          "title": "autocard_spellcard Path",
+          "type": "string"
+        },
+        "autocard_cardtype": {
+          "title": "autocard_cardtype Path",
+          "type": "string"
+        },
+        "autocard_element_type": {
+          "title": "autocard_element_type Path",
+          "type": "string"
+        },
+        "autocard_role": {
+          "title": "autocard_role Path",
+          "type": "string"
+        },
+        "autocard_field": {
+          "title": "autocard_field Path",
+          "type": "string"
+        },
         "battle_effect": {
           "title": "battle_effect Path",
           "type": "string"
@@ -40,6 +68,14 @@
         },
         "resistance_category": {
           "title": "resistance_category Path",
+          "type": "string"
+        },
+        "buff": {
+          "title": "buff Path",
+          "type": "string"
+        },
+        "buff_type": {
+          "title": "buff_type Path",
           "type": "string"
         },
         "avatar_head": {
@@ -118,8 +154,24 @@
           "title": "error_code Path",
           "type": "string"
         },
+        "field_effect": {
+          "title": "field_effect Path",
+          "type": "string"
+        },
+        "field_effect_type": {
+          "title": "field_effect_type Path",
+          "type": "string"
+        },
         "glossary_entry": {
           "title": "glossary_entry Path",
+          "type": "string"
+        },
+        "item": {
+          "title": "item Path",
+          "type": "string"
+        },
+        "item_category": {
+          "title": "item_category Path",
           "type": "string"
         },
         "gem": {
@@ -242,12 +294,20 @@
           "title": "pet_skin_series_sub_type Path",
           "type": "string"
         },
-        "pet_encyclopedia_entry": {
-          "title": "pet_encyclopedia_entry Path",
+        "pet_archive_story_entry": {
+          "title": "pet_archive_story_entry Path",
           "type": "string"
         },
         "pet_archive_story_book": {
           "title": "pet_archive_story_book Path",
+          "type": "string"
+        },
+        "pet_encyclopedia_entry": {
+          "title": "pet_encyclopedia_entry Path",
+          "type": "string"
+        },
+        "sign": {
+          "title": "sign Path",
           "type": "string"
         },
         "skill": {
@@ -283,9 +343,18 @@
         "title",
         "activity",
         "activity_type",
+        "autocard",
+        "autocard_petcard",
+        "autocard_spellcard",
+        "autocard_cardtype",
+        "autocard_element_type",
+        "autocard_role",
+        "autocard_field",
         "battle_effect",
         "battle_effect_type",
         "resistance_category",
+        "buff",
+        "buff_type",
         "avatar_head",
         "avatar_frame",
         "namecard_background",
@@ -305,7 +374,11 @@
         "element_type",
         "element_type_combination",
         "error_code",
+        "field_effect",
+        "field_effect_type",
         "glossary_entry",
+        "item",
+        "item_category",
         "gem",
         "gem_category",
         "gem_generation_category",
@@ -336,8 +409,10 @@
         "pet_skin_category",
         "pet_skin_series",
         "pet_skin_series_sub_type",
-        "pet_encyclopedia_entry",
+        "pet_archive_story_entry",
         "pet_archive_story_book",
+        "pet_encyclopedia_entry",
+        "sign",
         "skill",
         "skill_effect_type",
         "skill_effect_param",
