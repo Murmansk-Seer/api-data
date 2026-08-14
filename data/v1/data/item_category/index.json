@@ -1,5 +1,5 @@
 {
-  "count": 21,
+  "count": 20,
   "next": null,
   "previous": null,
   "first": null,
@@ -104,12 +104,7 @@
       "id": 26,
       "url": "https://api.seerapi.com/v1/item_category/26",
       "name": "礼盒类道具"
-    },
-    {
-      "id": 27,
-      "url": "https://api.seerapi.com/v1/item_category/27",
-      "name": "群星牌卡册"
     }
   ],
-  "hash": "790f30a3"
+  "hash": "9e3079b5"
 }
