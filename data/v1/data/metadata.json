@@ -3,10 +3,10 @@
   "api_version": "v1",
   "generator_name": "solaris",
   "generator_version": "106.8.0",
-  "generate_time": "2026-08-30T06:41:41.942224",
-  "data_source": "https://github.com/SeerAPI/config-sources.git",
+  "generate_time": "2026-08-30T21:56:10.927008",
+  "data_source": "https://github.com/Murmansk-Seer/config-sources.git",
   "data_version": "",
   "patch_source": "https://github.com/Murmansk-Seer/patch-sources.git",
   "patch_version": "",
-  "hash": "c47714ed"
+  "hash": "a874c421"
 }
