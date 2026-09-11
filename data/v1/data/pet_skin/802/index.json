@@ -1,0 +1,25 @@
+{
+  "id": 802,
+  "name": "彩凤玄袍·大轮明王",
+  "resource_id": 1400802,
+  "enemy_resource_id": null,
+  "card_price": null,
+  "diamond_price": null,
+  "skinhouse_price": null,
+  "discounted_skinhouse_price": null,
+  "ticket_num": null,
+  "pet": {
+    "id": 3576,
+    "url": "https://api.seerapi.com/v1/pet/3576"
+  },
+  "category": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/7"
+  },
+  "series": {
+    "id": 17,
+    "url": "https://api.seerapi.com/v1/pet_skin_series/17"
+  },
+  "sub_type": null,
+  "hash": "cb238a38"
+}

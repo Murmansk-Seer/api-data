@@ -1,0 +1,39 @@
+{
+  "id": 21953,
+  "name": "龙炎吐息",
+  "power": 0,
+  "max_pp": 10,
+  "accuracy": 90,
+  "crit_rate": null,
+  "priority": 0,
+  "must_hit": false,
+  "atk_num": 1,
+  "info": "进入了嗜火状态",
+  "category": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/skill_category/4"
+  },
+  "type": {
+    "id": 8,
+    "url": "https://api.seerapi.com/v1/element_type_combination/8"
+  },
+  "learned_by_pet": [],
+  "skill_effect": [
+    {
+      "info": "100%另对手烧伤，每次造成的伤害值都将恢复自身体力",
+      "analyze_info": "[sprite name=iconHit]100%另对手[color=#57c975]烧伤[/color]，每次造成的伤害值都将恢复自身体力（boss有效）",
+      "args": [
+        100,
+        2
+      ],
+      "effect": {
+        "id": 442,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/442"
+      }
+    }
+  ],
+  "friend_skill_effect": [],
+  "hide_effect": null,
+  "advance": null,
+  "hash": "e7d53712"
+}

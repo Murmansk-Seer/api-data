@@ -1,0 +1,25 @@
+{
+  "id": 87,
+  "name": "开学魅力大比拼",
+  "point_total": 35,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 1087001,
+      "url": "https://api.seerapi.com/v1/achievement/1087001"
+    },
+    {
+      "id": 1087002,
+      "url": "https://api.seerapi.com/v1/achievement/1087002"
+    },
+    {
+      "id": 1087003,
+      "url": "https://api.seerapi.com/v1/achievement/1087003"
+    }
+  ],
+  "type": {
+    "id": 0,
+    "url": "https://api.seerapi.com/v1/achievement_type/0"
+  },
+  "hash": "b8a67bec"
+}

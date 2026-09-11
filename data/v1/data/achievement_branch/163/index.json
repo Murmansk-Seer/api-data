@@ -1,0 +1,29 @@
+{
+  "id": 163,
+  "name": "对战次数成就",
+  "point_total": 45,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 5163001,
+      "url": "https://api.seerapi.com/v1/achievement/5163001"
+    },
+    {
+      "id": 5163002,
+      "url": "https://api.seerapi.com/v1/achievement/5163002"
+    },
+    {
+      "id": 5163003,
+      "url": "https://api.seerapi.com/v1/achievement/5163003"
+    },
+    {
+      "id": 5163004,
+      "url": "https://api.seerapi.com/v1/achievement/5163004"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "cd9423e3"
+}

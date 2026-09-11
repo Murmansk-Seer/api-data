@@ -1,0 +1,29 @@
+{
+  "id": 68,
+  "name": "镜像挑战(普通)",
+  "point_total": 45,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 5068001,
+      "url": "https://api.seerapi.com/v1/achievement/5068001"
+    },
+    {
+      "id": 5068002,
+      "url": "https://api.seerapi.com/v1/achievement/5068002"
+    },
+    {
+      "id": 5068003,
+      "url": "https://api.seerapi.com/v1/achievement/5068003"
+    },
+    {
+      "id": 5068004,
+      "url": "https://api.seerapi.com/v1/achievement/5068004"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "7585792c"
+}

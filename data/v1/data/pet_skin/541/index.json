@@ -1,0 +1,25 @@
+{
+  "id": 541,
+  "name": "水中花·卫岳",
+  "resource_id": 1400541,
+  "enemy_resource_id": null,
+  "card_price": null,
+  "diamond_price": null,
+  "skinhouse_price": null,
+  "discounted_skinhouse_price": null,
+  "ticket_num": null,
+  "pet": {
+    "id": 4510,
+    "url": "https://api.seerapi.com/v1/pet/4510"
+  },
+  "category": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/3"
+  },
+  "series": {
+    "id": 20,
+    "url": "https://api.seerapi.com/v1/pet_skin_series/20"
+  },
+  "sub_type": null,
+  "hash": "880f2159"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 2036,
+  "args_num": 1,
+  "info": "若对手不处于能力下降状态则令对手全属性-{0}",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]若对手不处于能力下降状态则令对手[color=#52a5f2]全属性[/color]-{0}",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 37062,
+      "url": "https://api.seerapi.com/v1/skill/37062"
+    }
+  ],
+  "tag": [
+    {
+      "id": 35733,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/35733"
+    }
+  ],
+  "hash": "e70ea44f"
+}

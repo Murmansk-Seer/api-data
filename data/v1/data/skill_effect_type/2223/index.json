@@ -1,0 +1,22 @@
+{
+  "id": 2223,
+  "args_num": 1,
+  "info": "若对手当回合切换精灵则造成伤害提升{0}%",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]若对手[color=#52a5f2]当回合[/color]切换精灵则造成伤害提升{0}%",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 37566,
+      "url": "https://api.seerapi.com/v1/skill/37566"
+    }
+  ],
+  "tag": [
+    {
+      "id": 18673,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/18673"
+    }
+  ],
+  "hash": "97fbe98c"
+}

@@ -1,0 +1,34 @@
+{
+  "id": 268,
+  "desc": "贝尼米专属特性 特攻+10 体力 +10",
+  "desc_formatting_adjustment": null,
+  "analyze_desc": "",
+  "pve_effective": false,
+  "intensified": false,
+  "is_adv": false,
+  "pet": [
+    {
+      "id": 2359,
+      "url": "https://api.seerapi.com/v1/pet/2359"
+    },
+    {
+      "id": 2364,
+      "url": "https://api.seerapi.com/v1/pet/2364"
+    }
+  ],
+  "effect": null,
+  "effect_alias": null,
+  "tag": [
+    {
+      "id": 12,
+      "url": "https://api.seerapi.com/v1/soulmark_tag/12"
+    }
+  ],
+  "intensified_to": {
+    "id": 269,
+    "url": "https://api.seerapi.com/v1/soulmark/269"
+  },
+  "from": null,
+  "advance": null,
+  "hash": "2d76d234"
+}

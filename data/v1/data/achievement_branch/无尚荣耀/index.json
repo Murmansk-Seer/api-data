@@ -1,0 +1,37 @@
+{
+  "data": {
+    "46": {
+      "id": 46,
+      "name": "无尚荣耀",
+      "point_total": 55,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 5046001,
+          "url": "https://api.seerapi.com/v1/achievement/5046001"
+        },
+        {
+          "id": 5046002,
+          "url": "https://api.seerapi.com/v1/achievement/5046002"
+        },
+        {
+          "id": 5046003,
+          "url": "https://api.seerapi.com/v1/achievement/5046003"
+        },
+        {
+          "id": 5046004,
+          "url": "https://api.seerapi.com/v1/achievement/5046004"
+        },
+        {
+          "id": 5046005,
+          "url": "https://api.seerapi.com/v1/achievement/5046005"
+        }
+      ],
+      "type": {
+        "id": 4,
+        "url": "https://api.seerapi.com/v1/achievement_type/4"
+      }
+    }
+  },
+  "hash": "5b71f0e"
+}

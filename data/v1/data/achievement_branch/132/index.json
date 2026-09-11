@@ -1,0 +1,29 @@
+{
+  "id": 132,
+  "name": "巅峰大乱斗",
+  "point_total": 75,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 5132001,
+      "url": "https://api.seerapi.com/v1/achievement/5132001"
+    },
+    {
+      "id": 5132002,
+      "url": "https://api.seerapi.com/v1/achievement/5132002"
+    },
+    {
+      "id": 5132003,
+      "url": "https://api.seerapi.com/v1/achievement/5132003"
+    },
+    {
+      "id": 5132004,
+      "url": "https://api.seerapi.com/v1/achievement/5132004"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "b526637b"
+}

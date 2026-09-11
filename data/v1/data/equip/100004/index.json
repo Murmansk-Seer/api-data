@@ -1,0 +1,20 @@
+{
+  "id": 100004,
+  "name": "睫毛",
+  "speed": 0.0,
+  "x_position": -13,
+  "y_position": 17,
+  "item": {
+    "id": 100004,
+    "url": "https://api.seerapi.com/v1/item/100004"
+  },
+  "bonus": null,
+  "occasion": null,
+  "suit": null,
+  "part_type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/equip_type/1"
+  },
+  "pk_attribute": null,
+  "hash": "eed0620a"
+}

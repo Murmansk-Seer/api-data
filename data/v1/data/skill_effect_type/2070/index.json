@@ -1,0 +1,12 @@
+{
+  "id": 2070,
+  "args_num": 1,
+  "info": "下{0}次自身能力提升状态被反转时令该效果无效",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]下{0}次自身能力提升状态被反转时令该效果无效",
+  "pve_effective": false,
+  "param": null,
+  "skill": [],
+  "tag": [],
+  "hash": "6185bedb"
+}

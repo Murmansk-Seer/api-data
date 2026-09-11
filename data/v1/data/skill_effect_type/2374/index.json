@@ -1,0 +1,17 @@
+{
+  "id": 2374,
+  "args_num": 0,
+  "info": "拉的叙事诗:自身受到攻击伤害后，若对手处于能力提升状态，则下回合令对手的技能先制-1",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]拉的叙事诗:自身受到攻击伤害后，若对手处于能力提升状态，则下回合令对手的[color=#52a5f2]技能先制[/color]-1",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 29216,
+      "url": "https://api.seerapi.com/v1/skill/29216"
+    }
+  ],
+  "tag": [],
+  "hash": "de18f714"
+}

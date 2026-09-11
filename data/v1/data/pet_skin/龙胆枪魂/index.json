@@ -1,0 +1,26 @@
+{
+  "data": {
+    "33": {
+      "id": 33,
+      "name": "龙胆枪魂",
+      "resource_id": 1400033,
+      "enemy_resource_id": null,
+      "card_price": 10,
+      "diamond_price": null,
+      "skinhouse_price": null,
+      "discounted_skinhouse_price": null,
+      "ticket_num": null,
+      "pet": {
+        "id": 3078,
+        "url": "https://api.seerapi.com/v1/pet/3078"
+      },
+      "category": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/0"
+      },
+      "series": null,
+      "sub_type": null
+    }
+  },
+  "hash": "f3ea10bc"
+}

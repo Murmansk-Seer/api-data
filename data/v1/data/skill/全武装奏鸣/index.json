@@ -1,0 +1,76 @@
+{
+  "data": {
+    "36949": {
+      "id": 36949,
+      "name": "全武装奏鸣",
+      "power": 160,
+      "max_pp": 3,
+      "accuracy": 95,
+      "crit_rate": 6.25,
+      "priority": 0,
+      "must_hit": true,
+      "atk_num": 1,
+      "info": null,
+      "category": {
+        "id": 2,
+        "url": "https://api.seerapi.com/v1/skill_category/2"
+      },
+      "type": {
+        "id": 103,
+        "url": "https://api.seerapi.com/v1/element_type_combination/103"
+      },
+      "learned_by_pet": [],
+      "skill_effect": [
+        {
+          "info": "消除对手回合类效果，消除成功则自身全属性+1",
+          "analyze_info": "[sprite name=iconHit]消除对手[color=#52a5f2]回合类效果[/color]（boss有效），消除成功则自身[color=#52a5f2]全属性[/color]+1",
+          "args": [
+            1
+          ],
+          "effect": {
+            "id": 959,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/959"
+          }
+        },
+        {
+          "info": "对手不处于能力下降状态则必定打出致命一击",
+          "analyze_info": "[sprite name=iconInherent]对手不处于能力下降状态则必定打出[color=#57c975]致命一击[/color]（boss有效）",
+          "args": [],
+          "effect": {
+            "id": 1325,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1325"
+          }
+        },
+        {
+          "info": "对手处于能力下降状态则威力提升50%",
+          "analyze_info": "[sprite name=iconHit]对手处于能力下降状态则[color=#52a5f2]威力[/color]提升50%",
+          "args": [
+            50
+          ],
+          "effect": {
+            "id": 1953,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1953"
+          }
+        },
+        {
+          "info": "令双方所有技能PP值等于此技能剩余PP值，若对手变化值达到20则令对手烧伤，若自身变化值达到20则令对手烧伤",
+          "analyze_info": "[sprite name=iconHit]令双方所有技能PP值等于此技能剩余PP值，若对手变化值[color=#52a5f2]达到[/color]20则令对手[color=#57c975]烧伤[/color]，若自身变化值[color=#52a5f2]达到[/color]20则令对手[color=#57c975]烧伤[/color]",
+          "args": [
+            20,
+            2,
+            20,
+            2
+          ],
+          "effect": {
+            "id": 2031,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/2031"
+          }
+        }
+      ],
+      "friend_skill_effect": [],
+      "hide_effect": null,
+      "advance": null
+    }
+  },
+  "hash": "f17bf202"
+}

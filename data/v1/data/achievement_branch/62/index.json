@@ -1,0 +1,53 @@
+{
+  "id": 62,
+  "name": "特殊精灵收集",
+  "point_total": 200,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 2062001,
+      "url": "https://api.seerapi.com/v1/achievement/2062001"
+    },
+    {
+      "id": 2062002,
+      "url": "https://api.seerapi.com/v1/achievement/2062002"
+    },
+    {
+      "id": 2062003,
+      "url": "https://api.seerapi.com/v1/achievement/2062003"
+    },
+    {
+      "id": 2062004,
+      "url": "https://api.seerapi.com/v1/achievement/2062004"
+    },
+    {
+      "id": 2062005,
+      "url": "https://api.seerapi.com/v1/achievement/2062005"
+    },
+    {
+      "id": 2062006,
+      "url": "https://api.seerapi.com/v1/achievement/2062006"
+    },
+    {
+      "id": 2062007,
+      "url": "https://api.seerapi.com/v1/achievement/2062007"
+    },
+    {
+      "id": 2062008,
+      "url": "https://api.seerapi.com/v1/achievement/2062008"
+    },
+    {
+      "id": 2062009,
+      "url": "https://api.seerapi.com/v1/achievement/2062009"
+    },
+    {
+      "id": 2062010,
+      "url": "https://api.seerapi.com/v1/achievement/2062010"
+    }
+  ],
+  "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/achievement_type/1"
+  },
+  "hash": "82c26263"
+}

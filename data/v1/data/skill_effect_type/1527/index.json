@@ -1,0 +1,66 @@
+{
+  "id": 1527,
+  "args_num": 0,
+  "info": "后出手则必定打出致命一击",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]后出手则必定打出[color=#57c975]致命一击[/color]（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 33864,
+      "url": "https://api.seerapi.com/v1/skill/33864"
+    },
+    {
+      "id": 34133,
+      "url": "https://api.seerapi.com/v1/skill/34133"
+    },
+    {
+      "id": 35149,
+      "url": "https://api.seerapi.com/v1/skill/35149"
+    },
+    {
+      "id": 35223,
+      "url": "https://api.seerapi.com/v1/skill/35223"
+    },
+    {
+      "id": 35462,
+      "url": "https://api.seerapi.com/v1/skill/35462"
+    },
+    {
+      "id": 35757,
+      "url": "https://api.seerapi.com/v1/skill/35757"
+    },
+    {
+      "id": 36282,
+      "url": "https://api.seerapi.com/v1/skill/36282"
+    },
+    {
+      "id": 36756,
+      "url": "https://api.seerapi.com/v1/skill/36756"
+    },
+    {
+      "id": 37045,
+      "url": "https://api.seerapi.com/v1/skill/37045"
+    },
+    {
+      "id": 38165,
+      "url": "https://api.seerapi.com/v1/skill/38165"
+    },
+    {
+      "id": 38167,
+      "url": "https://api.seerapi.com/v1/skill/38167"
+    },
+    {
+      "id": 38413,
+      "url": "https://api.seerapi.com/v1/skill/38413"
+    }
+  ],
+  "tag": [
+    {
+      "id": 8553,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/8553"
+    }
+  ],
+  "hash": "630365e3"
+}

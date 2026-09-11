@@ -1,0 +1,22 @@
+{
+  "id": 345,
+  "name": "金属纪元·神迹",
+  "resource_id": 1400345,
+  "enemy_resource_id": null,
+  "card_price": 30,
+  "diamond_price": null,
+  "skinhouse_price": 398,
+  "discounted_skinhouse_price": 298,
+  "ticket_num": 20,
+  "pet": {
+    "id": 3672,
+    "url": "https://api.seerapi.com/v1/pet/3672"
+  },
+  "category": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/3"
+  },
+  "series": null,
+  "sub_type": null,
+  "hash": "e1a3b90a"
+}

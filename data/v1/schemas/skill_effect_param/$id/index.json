@@ -1,0 +1,39 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "infos": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "参数类型描述列表",
+          "title": "Infos"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "title": "SkillEffectParam",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

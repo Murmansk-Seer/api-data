@@ -1,0 +1,30 @@
+{
+  "id": 2032,
+  "args_num": 2,
+  "info": "全属性+{0}，对方场下每死亡一只精灵则{1}%的概率强化效果翻倍",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit][color=#52a5f2]全属性[/color]+{0}，对方场下每死亡一只精灵则{1}%的概率强化效果翻倍",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28351,
+      "url": "https://api.seerapi.com/v1/skill/28351"
+    },
+    {
+      "id": 29202,
+      "url": "https://api.seerapi.com/v1/skill/29202"
+    },
+    {
+      "id": 29222,
+      "url": "https://api.seerapi.com/v1/skill/29222"
+    }
+  ],
+  "tag": [
+    {
+      "id": 44951,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/44951"
+    }
+  ],
+  "hash": "ca66c9c1"
+}

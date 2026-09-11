@@ -1,0 +1,21 @@
+{
+  "data": {
+    "1095": {
+      "id": 1095,
+      "name": "强化",
+      "desc": "伤害提升20%（PVP无效）",
+      "effect": {
+        "effect_args": [
+          20,
+          0
+        ],
+        "effect": {
+          "id": 410,
+          "url": "https://api.seerapi.com/v1/eid_effect/410"
+        }
+      },
+      "effect_alias": "410_20_0"
+    }
+  },
+  "hash": "d225ab16"
+}

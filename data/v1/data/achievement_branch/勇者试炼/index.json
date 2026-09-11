@@ -1,0 +1,37 @@
+{
+  "data": {
+    "32": {
+      "id": 32,
+      "name": "勇者试炼",
+      "point_total": 80,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 4032001,
+          "url": "https://api.seerapi.com/v1/achievement/4032001"
+        },
+        {
+          "id": 4032002,
+          "url": "https://api.seerapi.com/v1/achievement/4032002"
+        },
+        {
+          "id": 4032003,
+          "url": "https://api.seerapi.com/v1/achievement/4032003"
+        },
+        {
+          "id": 4032004,
+          "url": "https://api.seerapi.com/v1/achievement/4032004"
+        },
+        {
+          "id": 4032005,
+          "url": "https://api.seerapi.com/v1/achievement/4032005"
+        }
+      ],
+      "type": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/achievement_type/3"
+      }
+    }
+  },
+  "hash": "b7aa4dbd"
+}

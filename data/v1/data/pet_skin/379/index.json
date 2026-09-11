@@ -1,0 +1,25 @@
+{
+  "id": 379,
+  "name": "华年锦鲤·沧岚",
+  "resource_id": 1400379,
+  "enemy_resource_id": null,
+  "card_price": 35,
+  "diamond_price": null,
+  "skinhouse_price": null,
+  "discounted_skinhouse_price": null,
+  "ticket_num": null,
+  "pet": {
+    "id": 3740,
+    "url": "https://api.seerapi.com/v1/pet/3740"
+  },
+  "category": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/7"
+  },
+  "series": {
+    "id": 14,
+    "url": "https://api.seerapi.com/v1/pet_skin_series/14"
+  },
+  "sub_type": null,
+  "hash": "98bbb47d"
+}

@@ -1,0 +1,274 @@
+name: Auto Update Config
+
+permissions:
+    contents: write
+
+on:
+    workflow_dispatch:
+        inputs:
+            force:
+                type: boolean
+                description: "Force rebuild even when config-sources and patch-sources are unchanged"
+                required: false
+                default: false
+            debug_enabled:
+                type: boolean
+                description: "Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)"
+                required: false
+                default: false
+
+    repository_dispatch:
+        types: [config-source-update, patch-source-update]
+
+    schedule:
+        - cron: "17 */6 * * *"
+
+concurrency:
+    group: api-data-build
+    cancel-in-progress: false
+
+jobs:
+    main:
+        runs-on: ubuntu-latest
+        env:
+            SOLARIS_API_VERSION: v1
+            SOLARIS_API_URL: https://api.seerapi.com
+            SOLARIS_DATA_SOURCE: https://github.com/Murmansk-Seer/config-sources.git
+            SOLARIS_PATCH_SOURCE: https://github.com/Murmansk-Seer/patch-sources.git
+            BASE_OUTPUT_DIR: data
+            HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Check data source changes
+              id: source_check
+              env:
+                  FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force == true }}
+              run: |
+                  set -e
+                  config_head="$(git ls-remote "${SOLARIS_DATA_SOURCE}" HEAD | awk '{print $1}')"
+                  patch_head="$(git ls-remote "${SOLARIS_PATCH_SOURCE}" HEAD | awk '{print $1}')"
+                  previous_config_head=""
+                  previous_patch_head=""
+                  if [ -f .build-state/config-sources-revision ]; then
+                      previous_config_head="$(cat .build-state/config-sources-revision)"
+                  fi
+                  if [ -f .build-state/patch-sources-revision ]; then
+                      previous_patch_head="$(cat .build-state/patch-sources-revision)"
+                  fi
+
+                  echo "config_head=${config_head}" >> "$GITHUB_OUTPUT"
+                  echo "patch_head=${patch_head}" >> "$GITHUB_OUTPUT"
+                  echo "previous_config_head=${previous_config_head}" >> "$GITHUB_OUTPUT"
+                  echo "previous_patch_head=${previous_patch_head}" >> "$GITHUB_OUTPUT"
+
+                  if [ "${FORCE}" != "true" ] \
+                      && [ -n "${previous_config_head}" ] \
+                      && [ -n "${previous_patch_head}" ] \
+                      && [ "${config_head}" = "${previous_config_head}" ] \
+                      && [ "${patch_head}" = "${previous_patch_head}" ]; then
+                      echo "skip=true" >> "$GITHUB_OUTPUT"
+                      echo "config-sources and patch-sources are unchanged; skipping api-data build."
+                  else
+                      echo "skip=false" >> "$GITHUB_OUTPUT"
+                      echo "Build required: force=${FORCE}, config=${config_head}/${previous_config_head:-none}, patch=${patch_head}/${previous_patch_head:-none}"
+                  fi
+
+            - name: Skip unchanged build
+              if: steps.source_check.outputs.skip == 'true'
+              run: echo "No config-sources or patch-sources changes; workflow succeeded without rebuilding."
+
+            - name: Set up Python
+              if: steps.source_check.outputs.skip != 'true'
+              uses: actions/setup-python@v5
+              with:
+                  python-version: "3.10"
+
+            - name: Set up uv
+              if: steps.source_check.outputs.skip != 'true'
+              uses: astral-sh/setup-uv@v7
+
+            - name: Install solaris
+              if: steps.source_check.outputs.skip != 'true'
+              run: uv tool install --force --upgrade seerapi-solaris
+
+            - name: Setup tmate session
+              if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+              uses: mxschmitt/action-tmate@v3
+
+            - name: Clone config sources
+              if: steps.source_check.outputs.skip != 'true'
+              run: |
+                  git clone ${{ env.SOLARIS_DATA_SOURCE }} source
+                  git clone ${{ env.SOLARIS_PATCH_SOURCE }} patch-sources
+                  mkdir -p source/patch
+                  mv patch-sources/patches/* source/patch
+
+            - name: Patch unsupported empty item categories
+              if: steps.source_check.outputs.skip != 'true'
+              run: |
+                  python - <<'PY'
+                  import json
+                  from pathlib import Path
+
+                  unity_dir = Path("source/unity")
+                  category_file = unity_dir / "itemsOptimizeCat.json"
+                  category_data = json.loads(category_file.read_text(encoding="utf-8"))
+                  categories = category_data["root"]["cats"]
+
+                  missing = []
+                  supported = []
+                  unsupported_empty = []
+                  for category in categories:
+                      category_id = category["id"]
+                      item_file = unity_dir / f"itemsOptimizeCatItems{category_id}.json"
+                      if item_file.exists():
+                          supported.append(category)
+                      else:
+                          missing.append(str(category_id))
+                          unsupported_empty.append(category)
+
+                  if unsupported_empty:
+                      category_data["root"]["cats"] = supported
+                      category_file.write_text(
+                          json.dumps(category_data, ensure_ascii=False, indent=2) + "\n",
+                          encoding="utf-8",
+                      )
+                      print(
+                          "Removed unsupported empty item categories without item files: "
+                          + ", ".join(missing)
+                      )
+                  else:
+                      print("No unsupported empty item categories.")
+
+                  PY
+
+            - name: Patch Unity-only skills missing Flash rows
+              if: steps.source_check.outputs.skip != 'true'
+              run: python scripts/patch_unity_only_skills.py source
+
+            - name: Analyze config
+              if: steps.source_check.outputs.skip != 'true'
+              run: |
+                  solaris analyze data --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o data --json-format split \
+                  --base-json-url https://api.seerapi.com/v1 \
+                  --db-url sqlite:///seerapi-data.sqlite \
+                  -m all --output-named-data
+
+                  solaris analyze data --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o sharded_data --json-format sharded \
+                  --base-json-url https://api.seerapi.com/v1 \
+                  -m json --output-named-data
+
+                  solaris analyze schemas --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o schemas \
+                  --base-url https://api.seerapi.com/v1/schemas --output-named-data
+
+                  openapi_desc=$(cat .github/workflows/openapi-desc.md)
+                  detail_version="1.0.0"
+                  solaris analyze openapi --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o openapi.json \
+                  --description "$openapi_desc" --detail-version "$detail_version" --output-named-data
+
+            - name: Commit and push changes
+              if: steps.source_check.outputs.skip != 'true'
+              id: commit
+              run: |
+                  git config --local user.email "github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+                  mkdir -p .build-state
+                  printf '%s\n' "${{ steps.source_check.outputs.config_head }}" > .build-state/config-sources-revision
+                  printf '%s\n' "${{ steps.source_check.outputs.patch_head }}" > .build-state/patch-sources-revision
+                  git add data .build-state/config-sources-revision .build-state/patch-sources-revision
+                  timestamp=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S CST')
+                  git diff --staged --quiet || git commit -m "Auto update config $timestamp"
+                  git push
+                  echo "timestamp=$timestamp" >> $GITHUB_OUTPUT
+
+            - name: Generate database checksum
+              if: steps.source_check.outputs.skip != 'true'
+              id: db_checksum
+              run: |
+                  checksum="$(sha256sum seerapi-data.sqlite)"
+                  printf '%s\n' "${checksum}" > seerapi-data.sqlite.sha256
+                  sha256="${checksum%% *}"
+                  echo "=== 数据库文件 SHA256 校验和 ==="
+                  cat seerapi-data.sqlite.sha256
+                  echo "sha256=${sha256}" >> "$GITHUB_OUTPUT"
+
+            - name: Upload database to release
+              if: steps.source_check.outputs.skip != 'true'
+              uses: softprops/action-gh-release@v2
+              with:
+                  tag_name: latest
+                  name: Data Update - ${{ steps.commit.outputs.timestamp }}
+                  body: |
+                      最新的 SeerAPI 数据库
+                      更新时间: ${{ steps.commit.outputs.timestamp }}
+                      SHA256 校验和: ${{ steps.db_checksum.outputs.sha256 }}
+                      **注意，该效验和仅用于验证数据库文件的完整性，不能用于验证数据库内容是否有更新**
+                  files: |
+                      seerapi-data.sqlite
+                      seerapi-data.sqlite.sha256
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  prerelease: false
+                  draft: false
+                  make_latest: true
+                  overwrite_files: true
+                  fail_on_unmatched_files: true
+
+            - name: Trigger SeerAPI build
+              if: success() && steps.source_check.outputs.skip != 'true'
+              env:
+                  GH_TOKEN: ${{ secrets.SEERAPI_DISPATCH_TOKEN }}
+                  DB_SHA: ${{ steps.db_checksum.outputs.sha256 }}
+              run: |
+                  set -euo pipefail
+                  if [ -z "${GH_TOKEN:-}" ]; then
+                      echo "::error::SEERAPI_DISPATCH_TOKEN is required to notify Murmansk-Seer/seerapi after publishing api-data."
+                      exit 1
+                  fi
+                  if ! [[ "${DB_SHA}" =~ ^[0-9a-f]{64}$ ]]; then
+                      echo "::error::Generated api-data SHA256 is invalid: ${DB_SHA}"
+                      exit 1
+                  fi
+                  gh api --method POST repos/Murmansk-Seer/seerapi/dispatches \
+                      -f event_type=api-data-published \
+                      -f "client_payload[sha256]=${DB_SHA}" \
+                      -f "client_payload[source_commit]=${GITHUB_SHA}"
+
+            # - name: Push to cnb.cool Git Repository
+            #   run: |
+            #     # 配置 cnb.cool 远程仓库
+            #     git remote add cnb https://cnb:${{ secrets.CNB_TOKEN }}@cnb.cool/${{ secrets.CNB_REPO_PATH }}.git || true
+            #     git remote set-url cnb https://cnb:${{ secrets.CNB_TOKEN }}@cnb.cool/${{ secrets.CNB_REPO_PATH }}.git
+
+            #     # 推送到 cnb.cool 仓库
+            #     git push cnb main --force
+
+            - name: Set up Node.js
+              if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG == 'true'
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22"
+                  cache: npm
+
+            - name: Install Node dependencies
+              if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG == 'true'
+              run: npm ci
+
+            - name: Upload data to blob
+              if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG == 'true'
+              continue-on-error: true
+              env:
+                  BLOB_TOKEN: ${{ secrets.BLOB_TOKEN }}
+                  BLOB_PROJECT_ID: ${{ secrets.BLOB_PROJECT_ID }}
+                  BLOB_STORE_NAME: ${{ secrets.BLOB_STORE_NAME }}
+              run: |
+                  npx tsx upload_data_to_blob.ts data/v1/schemas/ --store seerapi-v1 --prefix schemas/
+                  npx tsx upload_data_to_blob.ts data/v1/sharded_data/ --store seerapi-v1 --prefix sharded_data/
+
+            - name: Skip blob upload
+              if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG != 'true'
+              run: echo "Blob secrets are not configured; GitHub Release assets have already been published."

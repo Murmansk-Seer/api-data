@@ -1,0 +1,25 @@
+{
+  "id": 69,
+  "name": "镜像挑战(精英)",
+  "point_total": 35,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 5069001,
+      "url": "https://api.seerapi.com/v1/achievement/5069001"
+    },
+    {
+      "id": 5069002,
+      "url": "https://api.seerapi.com/v1/achievement/5069002"
+    },
+    {
+      "id": 5069003,
+      "url": "https://api.seerapi.com/v1/achievement/5069003"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "1b44574f"
+}

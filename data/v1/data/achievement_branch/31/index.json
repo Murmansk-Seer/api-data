@@ -1,0 +1,17 @@
+{
+  "id": 31,
+  "name": "传说中的谱尼",
+  "point_total": 50,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 3031001,
+      "url": "https://api.seerapi.com/v1/achievement/3031001"
+    }
+  ],
+  "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/achievement_type/2"
+  },
+  "hash": "cb8e66ce"
+}

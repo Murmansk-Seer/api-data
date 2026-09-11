@@ -1,0 +1,25 @@
+{
+  "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/autocard_cardtype/1"
+  },
+  "element_type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/2"
+  },
+  "id": 32,
+  "name": "纳卡洛哈",
+  "description": "出售时使己方场上的水系精灵永久获得+1/+1，每次生效时下次出售获得的属性值提升（提升次数：{0}）",
+  "level": 4,
+  "cost": 3,
+  "is_token": false,
+  "attack": 3,
+  "health": 4,
+  "is_awakened": false,
+  "awaken_card": {
+    "id": 10032,
+    "url": "https://api.seerapi.com/v1/autocard/10032"
+  },
+  "non_awaken_card": null,
+  "hash": "118ba50a"
+}

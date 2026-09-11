@@ -1,0 +1,20 @@
+{
+  "id": 100163,
+  "name": "火焰盾",
+  "speed": 0.0,
+  "x_position": 67,
+  "y_position": 8,
+  "item": {
+    "id": 100163,
+    "url": "https://api.seerapi.com/v1/item/100163"
+  },
+  "bonus": null,
+  "occasion": null,
+  "suit": null,
+  "part_type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/equip_type/3"
+  },
+  "pk_attribute": null,
+  "hash": "98d0a9f9"
+}

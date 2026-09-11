@@ -1,0 +1,17 @@
+{
+  "id": 1997,
+  "args_num": 0,
+  "info": "为自身附加黄色龙鳞",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]为自身附加[color=#f35555]黄色龙鳞[/color]",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28322,
+      "url": "https://api.seerapi.com/v1/skill/28322"
+    }
+  ],
+  "tag": [],
+  "hash": "8b24fc76"
+}

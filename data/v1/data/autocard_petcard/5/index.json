@@ -1,0 +1,25 @@
+{
+  "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/autocard_cardtype/1"
+  },
+  "element_type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/1"
+  },
+  "id": 5,
+  "name": "卡其沙",
+  "description": "生长：获得+2生命值",
+  "level": 2,
+  "cost": 3,
+  "is_token": false,
+  "attack": 3,
+  "health": 1,
+  "is_awakened": false,
+  "awaken_card": {
+    "id": 10005,
+    "url": "https://api.seerapi.com/v1/autocard/10005"
+  },
+  "non_awaken_card": null,
+  "hash": "829027cb"
+}

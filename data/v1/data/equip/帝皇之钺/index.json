@@ -1,0 +1,28 @@
+{
+  "data": {
+    "1300755": {
+      "id": 1300755,
+      "name": "帝皇之钺",
+      "speed": 0.0,
+      "x_position": 223,
+      "y_position": 103,
+      "item": {
+        "id": 1300755,
+        "url": "https://api.seerapi.com/v1/item/1300755"
+      },
+      "bonus": null,
+      "occasion": null,
+      "suit": null,
+      "part_type": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/equip_type/3"
+      },
+      "pk_attribute": {
+        "pk_hp": 60,
+        "pk_atk": 25,
+        "pk_fire_range": 0
+      }
+    }
+  },
+  "hash": "2d61487d"
+}

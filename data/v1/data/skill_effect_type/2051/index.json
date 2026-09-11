@@ -1,0 +1,17 @@
+{
+  "id": 2051,
+  "args_num": 0,
+  "info": "若未命中则为自身附加刻，为对手附加痕",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]若未命中则为自身附加[color=#f35555]刻[/color]，为对手附加[color=#f35555]痕[/color]",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28384,
+      "url": "https://api.seerapi.com/v1/skill/28384"
+    }
+  ],
+  "tag": [],
+  "hash": "33fb971d"
+}

@@ -1,0 +1,25 @@
+{
+  "id": 441,
+  "name": "千秋绘卷·努恩",
+  "resource_id": 1400441,
+  "enemy_resource_id": null,
+  "card_price": 40,
+  "diamond_price": null,
+  "skinhouse_price": null,
+  "discounted_skinhouse_price": null,
+  "ticket_num": null,
+  "pet": {
+    "id": 4239,
+    "url": "https://api.seerapi.com/v1/pet/4239"
+  },
+  "category": {
+    "id": 7,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/7"
+  },
+  "series": {
+    "id": 14,
+    "url": "https://api.seerapi.com/v1/pet_skin_series/14"
+  },
+  "sub_type": null,
+  "hash": "c0882755"
+}

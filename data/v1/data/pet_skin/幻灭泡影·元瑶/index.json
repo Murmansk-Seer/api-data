@@ -1,0 +1,32 @@
+{
+  "data": {
+    "389": {
+      "id": 389,
+      "name": "幻灭泡影·元瑶",
+      "resource_id": 1400389,
+      "enemy_resource_id": null,
+      "card_price": null,
+      "diamond_price": null,
+      "skinhouse_price": 298,
+      "discounted_skinhouse_price": null,
+      "ticket_num": 20,
+      "pet": {
+        "id": 4221,
+        "url": "https://api.seerapi.com/v1/pet/4221"
+      },
+      "category": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/3"
+      },
+      "series": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/pet_skin_series/1"
+      },
+      "sub_type": {
+        "id": 1006,
+        "url": "https://api.seerapi.com/v1/pet_skin_series_sub_type/1006"
+      }
+    }
+  },
+  "hash": "c6457672"
+}

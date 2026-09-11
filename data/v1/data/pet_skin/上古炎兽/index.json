@@ -1,0 +1,26 @@
+{
+  "data": {
+    "807": {
+      "id": 807,
+      "name": "上古炎兽",
+      "resource_id": 1400807,
+      "enemy_resource_id": null,
+      "card_price": null,
+      "diamond_price": null,
+      "skinhouse_price": null,
+      "discounted_skinhouse_price": null,
+      "ticket_num": null,
+      "pet": {
+        "id": 4875,
+        "url": "https://api.seerapi.com/v1/pet/4875"
+      },
+      "category": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/0"
+      },
+      "series": null,
+      "sub_type": null
+    }
+  },
+  "hash": "9752dbe2"
+}

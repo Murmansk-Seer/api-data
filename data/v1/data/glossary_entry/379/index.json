@@ -1,0 +1,27 @@
+{
+  "id": 379,
+  "name": "圣剑",
+  "desc": "圣剑重铸期间序数最高的1柄附着于在场精灵的所有技能，并在技能被使用后消耗",
+  "kind": 1,
+  "link": [
+    {
+      "id": 381,
+      "url": "https://api.seerapi.com/v1/glossary_entry/381"
+    },
+    {
+      "id": 382,
+      "url": "https://api.seerapi.com/v1/glossary_entry/382"
+    },
+    {
+      "id": 383,
+      "url": "https://api.seerapi.com/v1/glossary_entry/383"
+    }
+  ],
+  "pet": [
+    {
+      "id": 4321,
+      "url": "https://api.seerapi.com/v1/pet/4321"
+    }
+  ],
+  "hash": "3c5ce4a9"
+}

@@ -1,0 +1,41 @@
+{
+  "data": {
+    "19": {
+      "id": 19,
+      "name": "组队精灵王之战",
+      "point_total": 70,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 5019001,
+          "url": "https://api.seerapi.com/v1/achievement/5019001"
+        },
+        {
+          "id": 5019002,
+          "url": "https://api.seerapi.com/v1/achievement/5019002"
+        },
+        {
+          "id": 5019003,
+          "url": "https://api.seerapi.com/v1/achievement/5019003"
+        },
+        {
+          "id": 5019004,
+          "url": "https://api.seerapi.com/v1/achievement/5019004"
+        },
+        {
+          "id": 5019005,
+          "url": "https://api.seerapi.com/v1/achievement/5019005"
+        },
+        {
+          "id": 5019006,
+          "url": "https://api.seerapi.com/v1/achievement/5019006"
+        }
+      ],
+      "type": {
+        "id": 4,
+        "url": "https://api.seerapi.com/v1/achievement_type/4"
+      }
+    }
+  },
+  "hash": "71334c45"
+}

@@ -1,0 +1,49 @@
+{
+  "id": 170,
+  "name": "量子回廊",
+  "point_total": 75,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 3170001,
+      "url": "https://api.seerapi.com/v1/achievement/3170001"
+    },
+    {
+      "id": 3170002,
+      "url": "https://api.seerapi.com/v1/achievement/3170002"
+    },
+    {
+      "id": 3170003,
+      "url": "https://api.seerapi.com/v1/achievement/3170003"
+    },
+    {
+      "id": 3170004,
+      "url": "https://api.seerapi.com/v1/achievement/3170004"
+    },
+    {
+      "id": 3170005,
+      "url": "https://api.seerapi.com/v1/achievement/3170005"
+    },
+    {
+      "id": 3170006,
+      "url": "https://api.seerapi.com/v1/achievement/3170006"
+    },
+    {
+      "id": 3170007,
+      "url": "https://api.seerapi.com/v1/achievement/3170007"
+    },
+    {
+      "id": 3170008,
+      "url": "https://api.seerapi.com/v1/achievement/3170008"
+    },
+    {
+      "id": 3170009,
+      "url": "https://api.seerapi.com/v1/achievement/3170009"
+    }
+  ],
+  "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/achievement_type/2"
+  },
+  "hash": "a9d5a11f"
+}

@@ -1,0 +1,141 @@
+{
+  "id": 145,
+  "name": "精灵碎片成就-地狱",
+  "point_total": 370,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 3145001,
+      "url": "https://api.seerapi.com/v1/achievement/3145001"
+    },
+    {
+      "id": 3145002,
+      "url": "https://api.seerapi.com/v1/achievement/3145002"
+    },
+    {
+      "id": 3145003,
+      "url": "https://api.seerapi.com/v1/achievement/3145003"
+    },
+    {
+      "id": 3145004,
+      "url": "https://api.seerapi.com/v1/achievement/3145004"
+    },
+    {
+      "id": 3145005,
+      "url": "https://api.seerapi.com/v1/achievement/3145005"
+    },
+    {
+      "id": 3145006,
+      "url": "https://api.seerapi.com/v1/achievement/3145006"
+    },
+    {
+      "id": 3145007,
+      "url": "https://api.seerapi.com/v1/achievement/3145007"
+    },
+    {
+      "id": 3145008,
+      "url": "https://api.seerapi.com/v1/achievement/3145008"
+    },
+    {
+      "id": 3145009,
+      "url": "https://api.seerapi.com/v1/achievement/3145009"
+    },
+    {
+      "id": 3145010,
+      "url": "https://api.seerapi.com/v1/achievement/3145010"
+    },
+    {
+      "id": 3145011,
+      "url": "https://api.seerapi.com/v1/achievement/3145011"
+    },
+    {
+      "id": 3145012,
+      "url": "https://api.seerapi.com/v1/achievement/3145012"
+    },
+    {
+      "id": 3145013,
+      "url": "https://api.seerapi.com/v1/achievement/3145013"
+    },
+    {
+      "id": 3145014,
+      "url": "https://api.seerapi.com/v1/achievement/3145014"
+    },
+    {
+      "id": 3145015,
+      "url": "https://api.seerapi.com/v1/achievement/3145015"
+    },
+    {
+      "id": 3145016,
+      "url": "https://api.seerapi.com/v1/achievement/3145016"
+    },
+    {
+      "id": 3145017,
+      "url": "https://api.seerapi.com/v1/achievement/3145017"
+    },
+    {
+      "id": 3145018,
+      "url": "https://api.seerapi.com/v1/achievement/3145018"
+    },
+    {
+      "id": 3145019,
+      "url": "https://api.seerapi.com/v1/achievement/3145019"
+    },
+    {
+      "id": 3145020,
+      "url": "https://api.seerapi.com/v1/achievement/3145020"
+    },
+    {
+      "id": 3145021,
+      "url": "https://api.seerapi.com/v1/achievement/3145021"
+    },
+    {
+      "id": 3145022,
+      "url": "https://api.seerapi.com/v1/achievement/3145022"
+    },
+    {
+      "id": 3145023,
+      "url": "https://api.seerapi.com/v1/achievement/3145023"
+    },
+    {
+      "id": 3145024,
+      "url": "https://api.seerapi.com/v1/achievement/3145024"
+    },
+    {
+      "id": 3145025,
+      "url": "https://api.seerapi.com/v1/achievement/3145025"
+    },
+    {
+      "id": 3145026,
+      "url": "https://api.seerapi.com/v1/achievement/3145026"
+    },
+    {
+      "id": 3145027,
+      "url": "https://api.seerapi.com/v1/achievement/3145027"
+    },
+    {
+      "id": 3145028,
+      "url": "https://api.seerapi.com/v1/achievement/3145028"
+    },
+    {
+      "id": 3145029,
+      "url": "https://api.seerapi.com/v1/achievement/3145029"
+    },
+    {
+      "id": 3145030,
+      "url": "https://api.seerapi.com/v1/achievement/3145030"
+    },
+    {
+      "id": 3145031,
+      "url": "https://api.seerapi.com/v1/achievement/3145031"
+    },
+    {
+      "id": 3145032,
+      "url": "https://api.seerapi.com/v1/achievement/3145032"
+    }
+  ],
+  "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/achievement_type/2"
+  },
+  "hash": "2887a6c"
+}

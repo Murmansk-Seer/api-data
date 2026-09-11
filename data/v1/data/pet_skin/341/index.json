@@ -1,0 +1,22 @@
+{
+  "id": 341,
+  "name": "朝晖·启灵元神",
+  "resource_id": 1400341,
+  "enemy_resource_id": null,
+  "card_price": null,
+  "diamond_price": null,
+  "skinhouse_price": null,
+  "discounted_skinhouse_price": null,
+  "ticket_num": null,
+  "pet": {
+    "id": 3986,
+    "url": "https://api.seerapi.com/v1/pet/3986"
+  },
+  "category": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/2"
+  },
+  "series": null,
+  "sub_type": null,
+  "hash": "cd98b8ca"
+}

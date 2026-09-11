@@ -1,0 +1,22 @@
+{
+  "id": 2244,
+  "args_num": 1,
+  "info": "{0}回合内免疫受到的非限制类异常状态",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]{0}回合内免疫受到的非限制类异常状态",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28915,
+      "url": "https://api.seerapi.com/v1/skill/28915"
+    }
+  ],
+  "tag": [
+    {
+      "id": 34256,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/34256"
+    }
+  ],
+  "hash": "4b97fbc8"
+}

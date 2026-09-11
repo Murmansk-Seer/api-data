@@ -1,0 +1,41 @@
+{
+  "data": {
+    "370": {
+      "id": 370,
+      "name": "赛尔号群星牌",
+      "start_time": null,
+      "end_time": null,
+      "is_show": false,
+      "sort_order": 6,
+      "type": {
+        "id": 5,
+        "url": "https://api.seerapi.com/v1/activity_type/5"
+      }
+    },
+    "457": {
+      "id": 457,
+      "name": "赛尔号群星牌",
+      "start_time": "2026-06-05T10:00:00",
+      "end_time": "2026-06-18T10:00:00",
+      "is_show": false,
+      "sort_order": 10,
+      "type": {
+        "id": 5,
+        "url": "https://api.seerapi.com/v1/activity_type/5"
+      }
+    },
+    "486": {
+      "id": 486,
+      "name": "赛尔号群星牌",
+      "start_time": "2026-06-18T10:00:00",
+      "end_time": "2026-07-03T10:00:00",
+      "is_show": true,
+      "sort_order": 10,
+      "type": {
+        "id": 5,
+        "url": "https://api.seerapi.com/v1/activity_type/5"
+      }
+    }
+  },
+  "hash": "46e90b54"
+}

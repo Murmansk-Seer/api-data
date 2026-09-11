@@ -1,0 +1,33 @@
+{
+  "id": 155,
+  "name": "PVP十回合平均伤害",
+  "point_total": 65,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 1155001,
+      "url": "https://api.seerapi.com/v1/achievement/1155001"
+    },
+    {
+      "id": 1155002,
+      "url": "https://api.seerapi.com/v1/achievement/1155002"
+    },
+    {
+      "id": 1155003,
+      "url": "https://api.seerapi.com/v1/achievement/1155003"
+    },
+    {
+      "id": 1155004,
+      "url": "https://api.seerapi.com/v1/achievement/1155004"
+    },
+    {
+      "id": 1155005,
+      "url": "https://api.seerapi.com/v1/achievement/1155005"
+    }
+  ],
+  "type": {
+    "id": 0,
+    "url": "https://api.seerapi.com/v1/achievement_type/0"
+  },
+  "hash": "7edfcfaa"
+}

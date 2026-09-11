@@ -1,0 +1,53 @@
+{
+  "data": {
+    "58": {
+      "id": 58,
+      "name": "军衔成就",
+      "point_total": 150,
+      "is_series": false,
+      "achievement": [
+        {
+          "id": 1058001,
+          "url": "https://api.seerapi.com/v1/achievement/1058001"
+        },
+        {
+          "id": 1058002,
+          "url": "https://api.seerapi.com/v1/achievement/1058002"
+        },
+        {
+          "id": 1058003,
+          "url": "https://api.seerapi.com/v1/achievement/1058003"
+        },
+        {
+          "id": 1058004,
+          "url": "https://api.seerapi.com/v1/achievement/1058004"
+        },
+        {
+          "id": 1058005,
+          "url": "https://api.seerapi.com/v1/achievement/1058005"
+        },
+        {
+          "id": 1058006,
+          "url": "https://api.seerapi.com/v1/achievement/1058006"
+        },
+        {
+          "id": 1058007,
+          "url": "https://api.seerapi.com/v1/achievement/1058007"
+        },
+        {
+          "id": 1058008,
+          "url": "https://api.seerapi.com/v1/achievement/1058008"
+        },
+        {
+          "id": 1058009,
+          "url": "https://api.seerapi.com/v1/achievement/1058009"
+        }
+      ],
+      "type": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/achievement_type/0"
+      }
+    }
+  },
+  "hash": "85b2b5e1"
+}

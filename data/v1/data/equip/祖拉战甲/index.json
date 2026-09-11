@@ -1,0 +1,28 @@
+{
+  "data": {
+    "100411": {
+      "id": 100411,
+      "name": "祖拉战甲",
+      "speed": 0.0,
+      "x_position": 27,
+      "y_position": -54,
+      "item": {
+        "id": 100411,
+        "url": "https://api.seerapi.com/v1/item/100411"
+      },
+      "bonus": null,
+      "occasion": null,
+      "suit": null,
+      "part_type": {
+        "id": 2,
+        "url": "https://api.seerapi.com/v1/equip_type/2"
+      },
+      "pk_attribute": {
+        "pk_hp": 50,
+        "pk_atk": 10,
+        "pk_fire_range": 0
+      }
+    }
+  },
+  "hash": "dc4ba2be"
+}

@@ -1,0 +1,75 @@
+{
+  "data": {
+    "67": {
+      "id": 67,
+      "name": "K13系列",
+      "mintmark": [
+        {
+          "id": 42240,
+          "url": "https://api.seerapi.com/v1/mintmark/42240"
+        },
+        {
+          "id": 42241,
+          "url": "https://api.seerapi.com/v1/mintmark/42241"
+        },
+        {
+          "id": 42242,
+          "url": "https://api.seerapi.com/v1/mintmark/42242"
+        },
+        {
+          "id": 42243,
+          "url": "https://api.seerapi.com/v1/mintmark/42243"
+        },
+        {
+          "id": 42244,
+          "url": "https://api.seerapi.com/v1/mintmark/42244"
+        },
+        {
+          "id": 42245,
+          "url": "https://api.seerapi.com/v1/mintmark/42245"
+        },
+        {
+          "id": 42246,
+          "url": "https://api.seerapi.com/v1/mintmark/42246"
+        },
+        {
+          "id": 42247,
+          "url": "https://api.seerapi.com/v1/mintmark/42247"
+        },
+        {
+          "id": 45029,
+          "url": "https://api.seerapi.com/v1/mintmark/45029"
+        },
+        {
+          "id": 45030,
+          "url": "https://api.seerapi.com/v1/mintmark/45030"
+        },
+        {
+          "id": 45031,
+          "url": "https://api.seerapi.com/v1/mintmark/45031"
+        },
+        {
+          "id": 45032,
+          "url": "https://api.seerapi.com/v1/mintmark/45032"
+        },
+        {
+          "id": 45033,
+          "url": "https://api.seerapi.com/v1/mintmark/45033"
+        },
+        {
+          "id": 45034,
+          "url": "https://api.seerapi.com/v1/mintmark/45034"
+        },
+        {
+          "id": 45035,
+          "url": "https://api.seerapi.com/v1/mintmark/45035"
+        },
+        {
+          "id": 45036,
+          "url": "https://api.seerapi.com/v1/mintmark/45036"
+        }
+      ]
+    }
+  },
+  "hash": "1570d84"
+}

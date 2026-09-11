@@ -1,0 +1,54 @@
+{
+  "id": 1674,
+  "args_num": 3,
+  "info": "{0}回合内每回合使用技能吸取对手最大体力的1/{1}，若对手未受到百分比伤害则额外附加{2}点真实伤害",
+  "info_formatting_adjustment": "{0}回合内每回合使用技能吸取对手最大体力的1/{1}\r\n--><condition>若对手未受到百分比伤害</condition>则额外附加{2}点真实伤害",
+  "analyze_info": "[sprite name=iconHit]{0}回合内每回合使用技能[color=#52a5f2]吸取[/color]对手最大体力的1/{1}，若对手未受到[color=#52a5f2]百分比伤害[/color]则额外附加{2}点[color=#52a5f2]真实伤害[/color]",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 27503,
+      "url": "https://api.seerapi.com/v1/skill/27503"
+    },
+    {
+      "id": 28211,
+      "url": "https://api.seerapi.com/v1/skill/28211"
+    },
+    {
+      "id": 28759,
+      "url": "https://api.seerapi.com/v1/skill/28759"
+    },
+    {
+      "id": 28976,
+      "url": "https://api.seerapi.com/v1/skill/28976"
+    },
+    {
+      "id": 29276,
+      "url": "https://api.seerapi.com/v1/skill/29276"
+    },
+    {
+      "id": 29399,
+      "url": "https://api.seerapi.com/v1/skill/29399"
+    },
+    {
+      "id": 37513,
+      "url": "https://api.seerapi.com/v1/skill/37513"
+    },
+    {
+      "id": 38514,
+      "url": "https://api.seerapi.com/v1/skill/38514"
+    }
+  ],
+  "tag": [
+    {
+      "id": 35850,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/35850"
+    },
+    {
+      "id": 60828,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/60828"
+    }
+  ],
+  "hash": "765effc"
+}

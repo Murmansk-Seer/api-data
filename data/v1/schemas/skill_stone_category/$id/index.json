@@ -1,0 +1,52 @@
+{
+  "allOf": [
+    {
+      "$defs": {
+        "ResourceRef_SkillStone_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "skill_stone"
+        },
+        "ResourceRef_TypeCombination_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "element_type_combination"
+        }
+      },
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "name": {
+          "description": "技能石分类名称",
+          "title": "Name",
+          "type": "string"
+        },
+        "skill_stone": {
+          "description": "技能石列表",
+          "items": {
+            "$ref": "#/$defs/ResourceRef_SkillStone_"
+          },
+          "title": "Skill Stone",
+          "type": "array"
+        },
+        "type": {
+          "$ref": "#/$defs/ResourceRef_TypeCombination_",
+          "description": "技能石类型"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type"
+      ],
+      "title": "SkillStoneCategory",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

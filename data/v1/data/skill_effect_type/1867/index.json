@@ -1,0 +1,62 @@
+{
+  "id": 1867,
+  "args_num": 1,
+  "info": "先出手时吸取对手最大体力的1/{0}且当回合对手无法造成攻击伤害",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]先出手时[color=#52a5f2]吸取[/color]对手最大体力的1/{0}且[color=#52a5f2]当回合[/color]对手无法造成攻击伤害",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 29300,
+      "url": "https://api.seerapi.com/v1/skill/29300"
+    },
+    {
+      "id": 36132,
+      "url": "https://api.seerapi.com/v1/skill/36132"
+    },
+    {
+      "id": 36509,
+      "url": "https://api.seerapi.com/v1/skill/36509"
+    },
+    {
+      "id": 36689,
+      "url": "https://api.seerapi.com/v1/skill/36689"
+    },
+    {
+      "id": 36712,
+      "url": "https://api.seerapi.com/v1/skill/36712"
+    },
+    {
+      "id": 36963,
+      "url": "https://api.seerapi.com/v1/skill/36963"
+    },
+    {
+      "id": 37194,
+      "url": "https://api.seerapi.com/v1/skill/37194"
+    },
+    {
+      "id": 37463,
+      "url": "https://api.seerapi.com/v1/skill/37463"
+    },
+    {
+      "id": 38277,
+      "url": "https://api.seerapi.com/v1/skill/38277"
+    },
+    {
+      "id": 38487,
+      "url": "https://api.seerapi.com/v1/skill/38487"
+    }
+  ],
+  "tag": [
+    {
+      "id": 35850,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/35850"
+    },
+    {
+      "id": 52161,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/52161"
+    }
+  ],
+  "hash": "9ee51060"
+}

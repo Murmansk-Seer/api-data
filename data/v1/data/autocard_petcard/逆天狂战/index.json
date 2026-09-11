@@ -1,0 +1,53 @@
+{
+  "data": {
+    "18": {
+      "type": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/autocard_cardtype/1"
+      },
+      "element_type": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/1"
+      },
+      "id": 18,
+      "name": "逆天狂战",
+      "description": "连击；生长：使己方随机2只草系精灵获得+3/+1",
+      "level": 4,
+      "cost": 3,
+      "is_token": false,
+      "attack": 3,
+      "health": 5,
+      "is_awakened": false,
+      "awaken_card": {
+        "id": 10018,
+        "url": "https://api.seerapi.com/v1/autocard/10018"
+      },
+      "non_awaken_card": null
+    },
+    "10018": {
+      "type": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/autocard_cardtype/1"
+      },
+      "element_type": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/1"
+      },
+      "id": 10018,
+      "name": "逆天狂战",
+      "description": "连击；生长：使己方随机2只草系精灵获得+6/+2",
+      "level": 4,
+      "cost": 3,
+      "is_token": false,
+      "attack": 6,
+      "health": 10,
+      "is_awakened": true,
+      "awaken_card": null,
+      "non_awaken_card": {
+        "id": 18,
+        "url": "https://api.seerapi.com/v1/autocard/18"
+      }
+    }
+  },
+  "hash": "6c1c3a3e"
+}

@@ -1,0 +1,49 @@
+{
+  "allOf": [
+    {
+      "$defs": {
+        "ResourceRef_PetArchiveStoryBook_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "pet_archive_story_book"
+        },
+        "ResourceRef_Pet_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "pet"
+        }
+      },
+      "properties": {
+        "id": {
+          "description": "故事条目ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "content": {
+          "description": "故事条目内容",
+          "title": "Content",
+          "type": "string"
+        },
+        "pet": {
+          "$ref": "#/$defs/ResourceRef_Pet_",
+          "description": "精灵"
+        },
+        "book": {
+          "$ref": "#/$defs/ResourceRef_PetArchiveStoryBook_",
+          "description": "故事系列"
+        }
+      },
+      "required": [
+        "id",
+        "content",
+        "pet",
+        "book"
+      ],
+      "title": "PetArchiveStoryEntry",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

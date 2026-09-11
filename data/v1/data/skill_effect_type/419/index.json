@@ -1,0 +1,34 @@
+{
+  "id": 419,
+  "args_num": 2,
+  "info": "{0}回合内若对手处于能力提升状态，则每回合都会受到{1}点固定伤害",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]{0}回合内若对手处于能力提升状态，则每回合都会受到{1}点[color=#52a5f2]固定伤害[/color]（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 16562,
+      "url": "https://api.seerapi.com/v1/skill/16562"
+    },
+    {
+      "id": 17824,
+      "url": "https://api.seerapi.com/v1/skill/17824"
+    },
+    {
+      "id": 21819,
+      "url": "https://api.seerapi.com/v1/skill/21819"
+    },
+    {
+      "id": 29282,
+      "url": "https://api.seerapi.com/v1/skill/29282"
+    }
+  ],
+  "tag": [
+    {
+      "id": 60828,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/60828"
+    }
+  ],
+  "hash": "455ba829"
+}

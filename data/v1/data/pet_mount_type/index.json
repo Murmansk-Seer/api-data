@@ -1,0 +1,25 @@
+{
+  "count": 3,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 0,
+      "url": "https://api.seerapi.com/v1/pet_mount_type/0",
+      "name": "none"
+    },
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/pet_mount_type/1",
+      "name": "ride"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/pet_mount_type/2",
+      "name": "fly"
+    }
+  ],
+  "hash": "f7d28d7c"
+}

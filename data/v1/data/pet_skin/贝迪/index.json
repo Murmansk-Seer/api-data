@@ -1,0 +1,26 @@
+{
+  "data": {
+    "109": {
+      "id": 109,
+      "name": "贝迪",
+      "resource_id": 1400109,
+      "enemy_resource_id": null,
+      "card_price": 10,
+      "diamond_price": null,
+      "skinhouse_price": null,
+      "discounted_skinhouse_price": null,
+      "ticket_num": null,
+      "pet": {
+        "id": 2609,
+        "url": "https://api.seerapi.com/v1/pet/2609"
+      },
+      "category": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/0"
+      },
+      "series": null,
+      "sub_type": null
+    }
+  },
+  "hash": "e3ecaee2"
+}

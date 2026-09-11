@@ -1,0 +1,34 @@
+{
+  "id": 543,
+  "args_num": 1,
+  "info": "增加致命一击的概率",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]增加[color=#57c975]致命一击[/color]的概率（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 32934,
+      "url": "https://api.seerapi.com/v1/skill/32934"
+    },
+    {
+      "id": 33676,
+      "url": "https://api.seerapi.com/v1/skill/33676"
+    },
+    {
+      "id": 34231,
+      "url": "https://api.seerapi.com/v1/skill/34231"
+    },
+    {
+      "id": 34446,
+      "url": "https://api.seerapi.com/v1/skill/34446"
+    }
+  ],
+  "tag": [
+    {
+      "id": 8553,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/8553"
+    }
+  ],
+  "hash": "f2e3c74b"
+}

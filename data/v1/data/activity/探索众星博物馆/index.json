@@ -1,0 +1,17 @@
+{
+  "data": {
+    "468": {
+      "id": 468,
+      "name": "探索众星博物馆",
+      "start_time": null,
+      "end_time": null,
+      "is_show": false,
+      "sort_order": 228,
+      "type": {
+        "id": 8,
+        "url": "https://api.seerapi.com/v1/activity_type/8"
+      }
+    }
+  },
+  "hash": "e0c23a5a"
+}

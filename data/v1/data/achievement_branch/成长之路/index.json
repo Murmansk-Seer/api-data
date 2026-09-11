@@ -1,0 +1,53 @@
+{
+  "data": {
+    "113": {
+      "id": 113,
+      "name": "成长之路",
+      "point_total": 40,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 1113001,
+          "url": "https://api.seerapi.com/v1/achievement/1113001"
+        }
+      ],
+      "type": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/achievement_type/0"
+      }
+    },
+    "114": {
+      "id": 114,
+      "name": "成长之路",
+      "point_total": 40,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 1114001,
+          "url": "https://api.seerapi.com/v1/achievement/1114001"
+        }
+      ],
+      "type": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/achievement_type/0"
+      }
+    },
+    "115": {
+      "id": 115,
+      "name": "成长之路",
+      "point_total": 20,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 1115001,
+          "url": "https://api.seerapi.com/v1/achievement/1115001"
+        }
+      ],
+      "type": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/achievement_type/0"
+      }
+    }
+  },
+  "hash": "b73ac549"
+}

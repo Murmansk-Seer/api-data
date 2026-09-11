@@ -1,0 +1,34 @@
+{
+  "id": 1745,
+  "args_num": 3,
+  "info": "下{0}回合自身造成物理攻击伤害后{1}%使对手{2}",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]下{0}回合自身造成物理攻击伤害后{1}%使对手[color=#57c975]{2}[/color]",
+  "pve_effective": false,
+  "param": [
+    {
+      "position": 2,
+      "param": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/skill_effect_param/1"
+      }
+    }
+  ],
+  "skill": [
+    {
+      "id": 35505,
+      "url": "https://api.seerapi.com/v1/skill/35505"
+    },
+    {
+      "id": 37477,
+      "url": "https://api.seerapi.com/v1/skill/37477"
+    }
+  ],
+  "tag": [
+    {
+      "id": 813,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/813"
+    }
+  ],
+  "hash": "17713dad"
+}

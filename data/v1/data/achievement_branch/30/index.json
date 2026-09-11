@@ -1,0 +1,25 @@
+{
+  "id": 30,
+  "name": "巅峰连胜",
+  "point_total": 40,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 5030001,
+      "url": "https://api.seerapi.com/v1/achievement/5030001"
+    },
+    {
+      "id": 5030002,
+      "url": "https://api.seerapi.com/v1/achievement/5030002"
+    },
+    {
+      "id": 5030003,
+      "url": "https://api.seerapi.com/v1/achievement/5030003"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "7529ee46"
+}

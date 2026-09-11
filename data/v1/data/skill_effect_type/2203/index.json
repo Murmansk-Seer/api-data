@@ -1,0 +1,34 @@
+{
+  "id": 2203,
+  "args_num": 0,
+  "info": "技能无效时，免疫下次对手的攻击",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]技能无效时，免疫下次对手的攻击",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 37641,
+      "url": "https://api.seerapi.com/v1/skill/37641"
+    },
+    {
+      "id": 38240,
+      "url": "https://api.seerapi.com/v1/skill/38240"
+    },
+    {
+      "id": 38378,
+      "url": "https://api.seerapi.com/v1/skill/38378"
+    },
+    {
+      "id": 40011,
+      "url": "https://api.seerapi.com/v1/skill/40011"
+    }
+  ],
+  "tag": [
+    {
+      "id": 44313,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/44313"
+    }
+  ],
+  "hash": "2107dd56"
+}

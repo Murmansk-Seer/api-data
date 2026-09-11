@@ -1,0 +1,12 @@
+{
+  "id": 1790,
+  "args_num": 1,
+  "info": "预留，{0}",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]预留，{0}（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [],
+  "tag": [],
+  "hash": "3689628a"
+}

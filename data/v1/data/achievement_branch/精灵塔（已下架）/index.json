@@ -1,0 +1,21 @@
+{
+  "data": {
+    "49": {
+      "id": 49,
+      "name": "精灵塔（已下架）",
+      "point_total": 10,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 2049001,
+          "url": "https://api.seerapi.com/v1/achievement/2049001"
+        }
+      ],
+      "type": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/achievement_type/1"
+      }
+    }
+  },
+  "hash": "312e11"
+}

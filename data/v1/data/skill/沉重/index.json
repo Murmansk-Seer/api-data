@@ -1,0 +1,64 @@
+{
+  "data": {
+    "37495": {
+      "id": 37495,
+      "name": "沉重",
+      "power": 85,
+      "max_pp": 20,
+      "accuracy": 97,
+      "crit_rate": 6.25,
+      "priority": 1,
+      "must_hit": false,
+      "atk_num": 1,
+      "info": null,
+      "category": {
+        "id": 2,
+        "url": "https://api.seerapi.com/v1/skill_category/2"
+      },
+      "type": {
+        "id": 113,
+        "url": "https://api.seerapi.com/v1/element_type_combination/113"
+      },
+      "learned_by_pet": [],
+      "skill_effect": [
+        {
+          "info": "无视对手正先制等级",
+          "analyze_info": "[sprite name=iconInherent]无视对手正[color=#52a5f2]先制[/color]等级",
+          "args": [],
+          "effect": {
+            "id": 2142,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/2142"
+          }
+        },
+        {
+          "info": "吸取对手能力提升状态，吸取成功则下2回合造成的伤害翻倍",
+          "analyze_info": "[sprite name=iconHit][color=#52a5f2]吸取[/color]对手能力提升状态，[color=#52a5f2]吸取[/color]成功则下2回合造成的伤害翻倍（boss有效）",
+          "args": [
+            2
+          ],
+          "effect": {
+            "id": 1044,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1044"
+          }
+        },
+        {
+          "info": "当回合若未击败对手则60%令对手束缚，未触发则令自身全属性+1",
+          "analyze_info": "[sprite name=iconHit][color=#52a5f2]当回合[/color]若未[color=#57c975]击败[/color]对手则60%令对手[color=#57c975]束缚[/color]，[color=#52a5f2]未触发[/color]则令自身[color=#52a5f2]全属性[/color]+1",
+          "args": [
+            60,
+            28,
+            1
+          ],
+          "effect": {
+            "id": 1040,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1040"
+          }
+        }
+      ],
+      "friend_skill_effect": [],
+      "hide_effect": null,
+      "advance": null
+    }
+  },
+  "hash": "918a51e0"
+}

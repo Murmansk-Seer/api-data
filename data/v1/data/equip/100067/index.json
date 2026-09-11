@@ -1,0 +1,20 @@
+{
+  "id": 100067,
+  "name": "电焊枪",
+  "speed": 0.0,
+  "x_position": 45,
+  "y_position": -9,
+  "item": {
+    "id": 100067,
+    "url": "https://api.seerapi.com/v1/item/100067"
+  },
+  "bonus": null,
+  "occasion": null,
+  "suit": null,
+  "part_type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/equip_type/3"
+  },
+  "pk_attribute": null,
+  "hash": "d7d98928"
+}

@@ -1,0 +1,21 @@
+{
+  "data": {
+    "141": {
+      "id": 141,
+      "name": "十一周年庆典",
+      "point_total": 20,
+      "is_series": false,
+      "achievement": [
+        {
+          "id": 6141001,
+          "url": "https://api.seerapi.com/v1/achievement/6141001"
+        }
+      ],
+      "type": {
+        "id": 5,
+        "url": "https://api.seerapi.com/v1/achievement_type/5"
+      }
+    }
+  },
+  "hash": "c90ccee5"
+}

@@ -1,0 +1,38 @@
+{
+  "id": 2302,
+  "args_num": 0,
+  "info": "对手每有1个技能PP值小于3先制+1",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]对手每有1个技能PP值小于3[color=#52a5f2]先制[/color]+1",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 29255,
+      "url": "https://api.seerapi.com/v1/skill/29255"
+    },
+    {
+      "id": 37929,
+      "url": "https://api.seerapi.com/v1/skill/37929"
+    },
+    {
+      "id": 38161,
+      "url": "https://api.seerapi.com/v1/skill/38161"
+    },
+    {
+      "id": 38388,
+      "url": "https://api.seerapi.com/v1/skill/38388"
+    },
+    {
+      "id": 38492,
+      "url": "https://api.seerapi.com/v1/skill/38492"
+    }
+  ],
+  "tag": [
+    {
+      "id": 2566,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/2566"
+    }
+  ],
+  "hash": "31de87ba"
+}

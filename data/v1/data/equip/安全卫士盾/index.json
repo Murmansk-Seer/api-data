@@ -1,0 +1,28 @@
+{
+  "data": {
+    "100407": {
+      "id": 100407,
+      "name": "安全卫士盾",
+      "speed": 0.0,
+      "x_position": 53,
+      "y_position": 13,
+      "item": {
+        "id": 100407,
+        "url": "https://api.seerapi.com/v1/item/100407"
+      },
+      "bonus": null,
+      "occasion": null,
+      "suit": null,
+      "part_type": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/equip_type/3"
+      },
+      "pk_attribute": {
+        "pk_hp": 100,
+        "pk_atk": 5,
+        "pk_fire_range": 0
+      }
+    }
+  },
+  "hash": "3bfe4b6b"
+}

@@ -1,0 +1,52 @@
+{
+  "allOf": [
+    {
+      "$defs": {
+        "EidEffectInUse": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/eid_effect_in_use"
+        }
+      },
+      "description": "特质效果",
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "name": {
+          "description": "名称",
+          "title": "Name",
+          "type": "string"
+        },
+        "desc": {
+          "description": "描述",
+          "title": "Desc",
+          "type": "string"
+        },
+        "effect": {
+          "$ref": "#/$defs/EidEffectInUse",
+          "description": "效果"
+        },
+        "effect_alias": {
+          "description": "效果别名，命名规则为：[效果名称]_[参数1]_[参数2]_…",
+          "title": "Effect Alias",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "desc",
+        "effect",
+        "effect_alias"
+      ],
+      "title": "VariationEffect",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "data": {
+    "24848": {
+      "id": 24848,
+      "name": "忠魂之身",
+      "power": 0,
+      "max_pp": 5,
+      "accuracy": 100,
+      "crit_rate": null,
+      "priority": 0,
+      "must_hit": true,
+      "atk_num": 1,
+      "info": "抵抗能力下降；对手无法使用属性技能了；出手变得更快了",
+      "category": {
+        "id": 4,
+        "url": "https://api.seerapi.com/v1/skill_category/4"
+      },
+      "type": {
+        "id": 8,
+        "url": "https://api.seerapi.com/v1/element_type_combination/8"
+      },
+      "learned_by_pet": [],
+      "skill_effect": [
+        {
+          "info": "4回合内免疫能力下降状态",
+          "analyze_info": "[sprite name=iconHit]4回合内免疫能力下降状态（boss有效）",
+          "args": [
+            4
+          ],
+          "effect": {
+            "id": 47,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/47"
+          }
+        },
+        {
+          "info": "2回合内100%令对手使用的属性技能无效",
+          "analyze_info": "[sprite name=iconHit]2回合内100%令对手使用的属性技能无效（boss有效）",
+          "args": [
+            2,
+            100
+          ],
+          "effect": {
+            "id": 695,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/695"
+          }
+        },
+        {
+          "info": "下2回合自身攻击先制+2",
+          "analyze_info": "[sprite name=iconHit]下2回合自身攻击[color=#52a5f2]先制[/color]+2（boss有效）",
+          "args": [
+            2,
+            2
+          ],
+          "effect": {
+            "id": 481,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/481"
+          }
+        }
+      ],
+      "friend_skill_effect": [],
+      "hide_effect": null,
+      "advance": null
+    }
+  },
+  "hash": "312a279b"
+}

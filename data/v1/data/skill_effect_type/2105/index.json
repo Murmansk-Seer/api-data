@@ -1,0 +1,45 @@
+{
+  "id": 2105,
+  "args_num": 0,
+  "info": "未击败对手则令对方场下阵亡的首位精灵消逝",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]未[color=#57c975]击败[/color]对手则令对方场下阵亡的首位精灵[color=#57c975]消逝[/color]",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 37063,
+      "url": "https://api.seerapi.com/v1/skill/37063"
+    },
+    {
+      "id": 37347,
+      "url": "https://api.seerapi.com/v1/skill/37347"
+    },
+    {
+      "id": 37656,
+      "url": "https://api.seerapi.com/v1/skill/37656"
+    },
+    {
+      "id": 37913,
+      "url": "https://api.seerapi.com/v1/skill/37913"
+    },
+    {
+      "id": 38009,
+      "url": "https://api.seerapi.com/v1/skill/38009"
+    },
+    {
+      "id": 38147,
+      "url": "https://api.seerapi.com/v1/skill/38147"
+    },
+    {
+      "id": 38283,
+      "url": "https://api.seerapi.com/v1/skill/38283"
+    },
+    {
+      "id": 38524,
+      "url": "https://api.seerapi.com/v1/skill/38524"
+    }
+  ],
+  "tag": [],
+  "hash": "ffc8e2db"
+}

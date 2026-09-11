@@ -1,0 +1,17 @@
+{
+  "id": 114,
+  "name": "成长之路",
+  "point_total": 40,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 1114001,
+      "url": "https://api.seerapi.com/v1/achievement/1114001"
+    }
+  ],
+  "type": {
+    "id": 0,
+    "url": "https://api.seerapi.com/v1/achievement_type/0"
+  },
+  "hash": "b82d8b22"
+}

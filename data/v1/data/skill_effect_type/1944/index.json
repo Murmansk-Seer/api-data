@@ -1,0 +1,17 @@
+{
+  "id": 1944,
+  "args_num": 2,
+  "info": "若自身未持有回能Ⅰ则为自身附加持续{0}回合的回能Ⅰ，若自身已持有回能Ⅰ则将回合数刷新至{1}回合",
+  "info_formatting_adjustment": "<condition>若自身未持有回能Ⅰ</condition>则为自身附加持续{0}回合的回能Ⅰ\r\n<condition>若自身已持有回能Ⅰ</condition>则将回合数刷新至{1}回合",
+  "analyze_info": "[sprite name=iconHit]若自身未持有[color=#f35555]回能[/color]Ⅰ则为自身附加持续{0}回合的[color=#f35555]回能[/color]Ⅰ，若自身已持有[color=#f35555]回能[/color]Ⅰ则将回合数刷新至{1}回合",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 36507,
+      "url": "https://api.seerapi.com/v1/skill/36507"
+    }
+  ],
+  "tag": [],
+  "hash": "84049ea6"
+}

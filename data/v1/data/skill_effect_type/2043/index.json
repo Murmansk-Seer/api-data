@@ -1,0 +1,22 @@
+{
+  "id": 2043,
+  "args_num": 0,
+  "info": "若对手被施加的诡符数量≥2道则先制+1",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]若对手被施加的[color=#f35555]诡符[/color]数量≥2道则[color=#52a5f2]先制[/color]+1（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 28390,
+      "url": "https://api.seerapi.com/v1/skill/28390"
+    }
+  ],
+  "tag": [
+    {
+      "id": 2566,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/2566"
+    }
+  ],
+  "hash": "add93fb0"
+}

@@ -1,0 +1,25 @@
+{
+  "count": 3,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 0,
+      "url": "https://api.seerapi.com/v1/pet_gender/0",
+      "name": "genderless"
+    },
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/pet_gender/1",
+      "name": "male"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/pet_gender/2",
+      "name": "female"
+    }
+  ],
+  "hash": "1c2d1ae3"
+}

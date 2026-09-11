@@ -1,0 +1,17 @@
+{
+  "id": 1705,
+  "args_num": 1,
+  "info": "{0}%恢复自身所有PP值1点",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]{0}%恢复自身所有PP值1点（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [],
+  "tag": [
+    {
+      "id": 62114,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/62114"
+    }
+  ],
+  "hash": "e73315d8"
+}

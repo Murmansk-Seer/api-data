@@ -1,0 +1,33 @@
+{
+  "data": {
+    "164": {
+      "id": 164,
+      "name": "新巅峰非赛季非系列成就",
+      "point_total": 50,
+      "is_series": false,
+      "achievement": [
+        {
+          "id": 5164001,
+          "url": "https://api.seerapi.com/v1/achievement/5164001"
+        },
+        {
+          "id": 5164002,
+          "url": "https://api.seerapi.com/v1/achievement/5164002"
+        },
+        {
+          "id": 5164003,
+          "url": "https://api.seerapi.com/v1/achievement/5164003"
+        },
+        {
+          "id": 5164004,
+          "url": "https://api.seerapi.com/v1/achievement/5164004"
+        }
+      ],
+      "type": {
+        "id": 4,
+        "url": "https://api.seerapi.com/v1/achievement_type/4"
+      }
+    }
+  },
+  "hash": "ad613da4"
+}

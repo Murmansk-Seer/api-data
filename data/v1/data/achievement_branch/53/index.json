@@ -1,0 +1,37 @@
+{
+  "id": 53,
+  "name": "基地比试能手",
+  "point_total": 65,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 6053001,
+      "url": "https://api.seerapi.com/v1/achievement/6053001"
+    },
+    {
+      "id": 6053002,
+      "url": "https://api.seerapi.com/v1/achievement/6053002"
+    },
+    {
+      "id": 6053003,
+      "url": "https://api.seerapi.com/v1/achievement/6053003"
+    },
+    {
+      "id": 6053004,
+      "url": "https://api.seerapi.com/v1/achievement/6053004"
+    },
+    {
+      "id": 6053005,
+      "url": "https://api.seerapi.com/v1/achievement/6053005"
+    },
+    {
+      "id": 6053006,
+      "url": "https://api.seerapi.com/v1/achievement/6053006"
+    }
+  ],
+  "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/achievement_type/5"
+  },
+  "hash": "380b8345"
+}

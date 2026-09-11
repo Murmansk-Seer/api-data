@@ -1,0 +1,41 @@
+{
+  "data": {
+    "59": {
+      "id": 59,
+      "name": "幸运大作战",
+      "point_total": 70,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 5059001,
+          "url": "https://api.seerapi.com/v1/achievement/5059001"
+        },
+        {
+          "id": 5059002,
+          "url": "https://api.seerapi.com/v1/achievement/5059002"
+        },
+        {
+          "id": 5059003,
+          "url": "https://api.seerapi.com/v1/achievement/5059003"
+        },
+        {
+          "id": 5059004,
+          "url": "https://api.seerapi.com/v1/achievement/5059004"
+        },
+        {
+          "id": 5059005,
+          "url": "https://api.seerapi.com/v1/achievement/5059005"
+        },
+        {
+          "id": 5059006,
+          "url": "https://api.seerapi.com/v1/achievement/5059006"
+        }
+      ],
+      "type": {
+        "id": 4,
+        "url": "https://api.seerapi.com/v1/achievement_type/4"
+      }
+    }
+  },
+  "hash": "c7a43660"
+}

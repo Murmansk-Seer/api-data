@@ -1,0 +1,16 @@
+{
+  "id": 7,
+  "name": "疲惫",
+  "desc": "控制类异常状态，该状态下精灵无法行动",
+  "type": [
+    {
+      "id": 0,
+      "url": "https://api.seerapi.com/v1/battle_effect_type/0"
+    }
+  ],
+  "resistance": {
+    "id": 0,
+    "url": "https://api.seerapi.com/v1/resistance_category/0"
+  },
+  "hash": "bdfc7d5e"
+}

@@ -1,0 +1,21 @@
+{
+  "id": 94,
+  "name": "赛博坦通缉令",
+  "point_total": 30,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 3094001,
+      "url": "https://api.seerapi.com/v1/achievement/3094001"
+    },
+    {
+      "id": 3094002,
+      "url": "https://api.seerapi.com/v1/achievement/3094002"
+    }
+  ],
+  "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/achievement_type/2"
+  },
+  "hash": "39602fbd"
+}

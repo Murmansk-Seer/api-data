@@ -1,0 +1,22 @@
+{
+  "id": 1502,
+  "args_num": 0,
+  "info": "对手身上存在黑暗之种时先制+1",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]对手身上存在[color=#f35555]黑暗之种[/color]时[color=#52a5f2]先制[/color]+1（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 26921,
+      "url": "https://api.seerapi.com/v1/skill/26921"
+    }
+  ],
+  "tag": [
+    {
+      "id": 2566,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/2566"
+    }
+  ],
+  "hash": "9ccbbe"
+}

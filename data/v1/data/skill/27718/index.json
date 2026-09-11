@@ -1,0 +1,50 @@
+{
+  "id": 27718,
+  "name": "浅滩日落",
+  "power": 0,
+  "max_pp": 10,
+  "accuracy": 95,
+  "crit_rate": null,
+  "priority": 0,
+  "must_hit": false,
+  "atk_num": 1,
+  "info": "恢复自身一定体力；开始免疫能力下降状态了",
+  "category": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/skill_category/4"
+  },
+  "type": {
+    "id": 8,
+    "url": "https://api.seerapi.com/v1/element_type_combination/8"
+  },
+  "learned_by_pet": [],
+  "skill_effect": [
+    {
+      "info": "恢复300点体力，若当前体力低于300则直接回满",
+      "analyze_info": "[sprite name=iconHit]恢复300点体力，若当前体力低于300则直接回满（boss有效）",
+      "args": [
+        300,
+        300
+      ],
+      "effect": {
+        "id": 704,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/704"
+      }
+    },
+    {
+      "info": "3回合内免疫能力下降状态",
+      "analyze_info": "[sprite name=iconHit]3回合内免疫能力下降状态（boss有效）",
+      "args": [
+        3
+      ],
+      "effect": {
+        "id": 47,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/47"
+      }
+    }
+  ],
+  "friend_skill_effect": [],
+  "hide_effect": null,
+  "advance": null,
+  "hash": "51ff7cd2"
+}

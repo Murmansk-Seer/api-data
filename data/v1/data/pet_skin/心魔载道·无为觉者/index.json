@@ -1,0 +1,29 @@
+{
+  "data": {
+    "792": {
+      "id": 792,
+      "name": "心魔载道·无为觉者",
+      "resource_id": 1400792,
+      "enemy_resource_id": null,
+      "card_price": null,
+      "diamond_price": null,
+      "skinhouse_price": null,
+      "discounted_skinhouse_price": null,
+      "ticket_num": null,
+      "pet": {
+        "id": 4661,
+        "url": "https://api.seerapi.com/v1/pet/4661"
+      },
+      "category": {
+        "id": 18,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/18"
+      },
+      "series": {
+        "id": 5,
+        "url": "https://api.seerapi.com/v1/pet_skin_series/5"
+      },
+      "sub_type": null
+    }
+  },
+  "hash": "2fa806be"
+}
