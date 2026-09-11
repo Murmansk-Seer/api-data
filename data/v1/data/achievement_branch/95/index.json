@@ -1,0 +1,33 @@
+{
+  "id": 95,
+  "name": "失落的神殿卡牌成就",
+  "point_total": 70,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 6095001,
+      "url": "https://api.seerapi.com/v1/achievement/6095001"
+    },
+    {
+      "id": 6095002,
+      "url": "https://api.seerapi.com/v1/achievement/6095002"
+    },
+    {
+      "id": 6095003,
+      "url": "https://api.seerapi.com/v1/achievement/6095003"
+    },
+    {
+      "id": 6095004,
+      "url": "https://api.seerapi.com/v1/achievement/6095004"
+    },
+    {
+      "id": 6095005,
+      "url": "https://api.seerapi.com/v1/achievement/6095005"
+    }
+  ],
+  "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/achievement_type/5"
+  },
+  "hash": "8a6934ee"
+}

@@ -1,0 +1,42 @@
+{
+  "id": 2228,
+  "args_num": 2,
+  "info": "{0}回合内对手造成的固定伤害和百分比伤害减少{1}%",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]{0}回合内对手造成的[color=#52a5f2]固定伤害[/color]和[color=#52a5f2]百分比伤害[/color]减少{1}%",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28865,
+      "url": "https://api.seerapi.com/v1/skill/28865"
+    },
+    {
+      "id": 28930,
+      "url": "https://api.seerapi.com/v1/skill/28930"
+    },
+    {
+      "id": 37996,
+      "url": "https://api.seerapi.com/v1/skill/37996"
+    },
+    {
+      "id": 38083,
+      "url": "https://api.seerapi.com/v1/skill/38083"
+    },
+    {
+      "id": 38233,
+      "url": "https://api.seerapi.com/v1/skill/38233"
+    },
+    {
+      "id": 38420,
+      "url": "https://api.seerapi.com/v1/skill/38420"
+    }
+  ],
+  "tag": [
+    {
+      "id": 46009,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/46009"
+    }
+  ],
+  "hash": "c3d002a7"
+}

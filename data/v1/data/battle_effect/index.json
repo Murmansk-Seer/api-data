@@ -1,0 +1,220 @@
+{
+  "count": 42,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 0,
+      "url": "https://api.seerapi.com/v1/battle_effect/0",
+      "name": "麻痹"
+    },
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/battle_effect/1",
+      "name": "中毒"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/battle_effect/2",
+      "name": "烧伤"
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/battle_effect/3",
+      "name": "寄生对手"
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/battle_effect/4",
+      "name": "寄生"
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/battle_effect/5",
+      "name": "冻伤"
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/battle_effect/6",
+      "name": "害怕"
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/battle_effect/7",
+      "name": "疲惫"
+    },
+    {
+      "id": 8,
+      "url": "https://api.seerapi.com/v1/battle_effect/8",
+      "name": "睡眠"
+    },
+    {
+      "id": 9,
+      "url": "https://api.seerapi.com/v1/battle_effect/9",
+      "name": "石化"
+    },
+    {
+      "id": 10,
+      "url": "https://api.seerapi.com/v1/battle_effect/10",
+      "name": "混乱"
+    },
+    {
+      "id": 11,
+      "url": "https://api.seerapi.com/v1/battle_effect/11",
+      "name": "衰弱"
+    },
+    {
+      "id": 12,
+      "url": "https://api.seerapi.com/v1/battle_effect/12",
+      "name": "山神守护"
+    },
+    {
+      "id": 13,
+      "url": "https://api.seerapi.com/v1/battle_effect/13",
+      "name": "易燃"
+    },
+    {
+      "id": 14,
+      "url": "https://api.seerapi.com/v1/battle_effect/14",
+      "name": "狂暴"
+    },
+    {
+      "id": 15,
+      "url": "https://api.seerapi.com/v1/battle_effect/15",
+      "name": "冰封"
+    },
+    {
+      "id": 16,
+      "url": "https://api.seerapi.com/v1/battle_effect/16",
+      "name": "流血"
+    },
+    {
+      "id": 19,
+      "url": "https://api.seerapi.com/v1/battle_effect/19",
+      "name": "瘫痪"
+    },
+    {
+      "id": 20,
+      "url": "https://api.seerapi.com/v1/battle_effect/20",
+      "name": "失明"
+    },
+    {
+      "id": 21,
+      "url": "https://api.seerapi.com/v1/battle_effect/21",
+      "name": "异常免疫"
+    },
+    {
+      "id": 22,
+      "url": "https://api.seerapi.com/v1/battle_effect/22",
+      "name": "焚烬"
+    },
+    {
+      "id": 23,
+      "url": "https://api.seerapi.com/v1/battle_effect/23",
+      "name": "诅咒"
+    },
+    {
+      "id": 24,
+      "url": "https://api.seerapi.com/v1/battle_effect/24",
+      "name": "烈焰诅咒"
+    },
+    {
+      "id": 25,
+      "url": "https://api.seerapi.com/v1/battle_effect/25",
+      "name": "致命诅咒"
+    },
+    {
+      "id": 26,
+      "url": "https://api.seerapi.com/v1/battle_effect/26",
+      "name": "虚弱诅咒"
+    },
+    {
+      "id": 27,
+      "url": "https://api.seerapi.com/v1/battle_effect/27",
+      "name": "感染"
+    },
+    {
+      "id": 28,
+      "url": "https://api.seerapi.com/v1/battle_effect/28",
+      "name": "束缚"
+    },
+    {
+      "id": 29,
+      "url": "https://api.seerapi.com/v1/battle_effect/29",
+      "name": "失神"
+    },
+    {
+      "id": 30,
+      "url": "https://api.seerapi.com/v1/battle_effect/30",
+      "name": "沉默"
+    },
+    {
+      "id": 31,
+      "url": "https://api.seerapi.com/v1/battle_effect/31",
+      "name": "臣服"
+    },
+    {
+      "id": 32,
+      "url": "https://api.seerapi.com/v1/battle_effect/32",
+      "name": "凝滞"
+    },
+    {
+      "id": 33,
+      "url": "https://api.seerapi.com/v1/battle_effect/33",
+      "name": "星赐"
+    },
+    {
+      "id": 34,
+      "url": "https://api.seerapi.com/v1/battle_effect/34",
+      "name": "星哲"
+    },
+    {
+      "id": 35,
+      "url": "https://api.seerapi.com/v1/battle_effect/35",
+      "name": "超频"
+    },
+    {
+      "id": 36,
+      "url": "https://api.seerapi.com/v1/battle_effect/36",
+      "name": "沸涌"
+    },
+    {
+      "id": 37,
+      "url": "https://api.seerapi.com/v1/battle_effect/37",
+      "name": "砥砺"
+    },
+    {
+      "id": 38,
+      "url": "https://api.seerapi.com/v1/battle_effect/38",
+      "name": "星赎"
+    },
+    {
+      "id": 39,
+      "url": "https://api.seerapi.com/v1/battle_effect/39",
+      "name": "神游"
+    },
+    {
+      "id": 40,
+      "url": "https://api.seerapi.com/v1/battle_effect/40",
+      "name": "空定"
+    },
+    {
+      "id": 41,
+      "url": "https://api.seerapi.com/v1/battle_effect/41",
+      "name": "狂信"
+    },
+    {
+      "id": 42,
+      "url": "https://api.seerapi.com/v1/battle_effect/42",
+      "name": "雷解"
+    },
+    {
+      "id": 43,
+      "url": "https://api.seerapi.com/v1/battle_effect/43",
+      "name": "渐冻"
+    }
+  ],
+  "hash": "9bd97116"
+}

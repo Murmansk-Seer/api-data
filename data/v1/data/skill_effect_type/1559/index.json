@@ -1,0 +1,37 @@
+{
+  "id": 1559,
+  "args_num": 2,
+  "info": "{0}回合内自身释放技能{1}%不消耗PP值",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]{0}回合内自身释放技能{1}%不消耗PP值",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 27112,
+      "url": "https://api.seerapi.com/v1/skill/27112"
+    },
+    {
+      "id": 27174,
+      "url": "https://api.seerapi.com/v1/skill/27174"
+    },
+    {
+      "id": 28203,
+      "url": "https://api.seerapi.com/v1/skill/28203"
+    },
+    {
+      "id": 28365,
+      "url": "https://api.seerapi.com/v1/skill/28365"
+    },
+    {
+      "id": 37210,
+      "url": "https://api.seerapi.com/v1/skill/37210"
+    },
+    {
+      "id": 38201,
+      "url": "https://api.seerapi.com/v1/skill/38201"
+    }
+  ],
+  "tag": [],
+  "hash": "85a1e65a"
+}

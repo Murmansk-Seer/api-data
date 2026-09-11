@@ -1,0 +1,25 @@
+{
+  "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/autocard_cardtype/1"
+  },
+  "element_type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/5"
+  },
+  "id": 64,
+  "name": "罗奇",
+  "description": "攻击前使随机1只己方电系精灵获得+1/+2，若自身处于电力充能状态则属性值提升变为+2/+4并永久保留",
+  "level": 2,
+  "cost": 3,
+  "is_token": false,
+  "attack": 2,
+  "health": 3,
+  "is_awakened": false,
+  "awaken_card": {
+    "id": 10064,
+    "url": "https://api.seerapi.com/v1/autocard/10064"
+  },
+  "non_awaken_card": null,
+  "hash": "b91d5556"
+}

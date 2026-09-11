@@ -1,0 +1,29 @@
+{
+  "id": 34,
+  "name": "竞技战获胜",
+  "point_total": 50,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 1034001,
+      "url": "https://api.seerapi.com/v1/achievement/1034001"
+    },
+    {
+      "id": 1034002,
+      "url": "https://api.seerapi.com/v1/achievement/1034002"
+    },
+    {
+      "id": 1034003,
+      "url": "https://api.seerapi.com/v1/achievement/1034003"
+    },
+    {
+      "id": 1034004,
+      "url": "https://api.seerapi.com/v1/achievement/1034004"
+    }
+  ],
+  "type": {
+    "id": 0,
+    "url": "https://api.seerapi.com/v1/achievement_type/0"
+  },
+  "hash": "d5bca444"
+}

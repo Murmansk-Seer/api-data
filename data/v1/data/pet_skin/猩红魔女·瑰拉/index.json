@@ -1,0 +1,32 @@
+{
+  "data": {
+    "300": {
+      "id": 300,
+      "name": "猩红魔女·瑰拉",
+      "resource_id": 1400300,
+      "enemy_resource_id": null,
+      "card_price": null,
+      "diamond_price": null,
+      "skinhouse_price": 298,
+      "discounted_skinhouse_price": null,
+      "ticket_num": 20,
+      "pet": {
+        "id": 3897,
+        "url": "https://api.seerapi.com/v1/pet/3897"
+      },
+      "category": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/3"
+      },
+      "series": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/pet_skin_series/1"
+      },
+      "sub_type": {
+        "id": 1004,
+        "url": "https://api.seerapi.com/v1/pet_skin_series_sub_type/1004"
+      }
+    }
+  },
+  "hash": "9a65e57e"
+}

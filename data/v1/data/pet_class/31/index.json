@@ -1,0 +1,24 @@
+{
+  "id": 31,
+  "is_variant_pet": false,
+  "is_dark_pet": false,
+  "is_shine_pet": false,
+  "is_rare_pet": true,
+  "is_breeding_pet": false,
+  "is_fusion_pet": false,
+  "evolution_chain": [
+    {
+      "id": 83,
+      "url": "https://api.seerapi.com/v1/pet/83"
+    },
+    {
+      "id": 84,
+      "url": "https://api.seerapi.com/v1/pet/84"
+    },
+    {
+      "id": 85,
+      "url": "https://api.seerapi.com/v1/pet/85"
+    }
+  ],
+  "hash": "7965e84c"
+}

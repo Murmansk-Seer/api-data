@@ -1,0 +1,70 @@
+{
+  "id": 1978,
+  "args_num": 3,
+  "info": "消除对手能力提升状态，消除成功则{0}%令对手{1}，未触发则附加自身最大体力1/{2}的百分比伤害",
+  "info_formatting_adjustment": "消除对手能力提升状态\r\n--><condition>消除成功</condition>则{0}%令对手{1}\r\n---><condition>未触发</condition>则附加自身最大体力1/{2}的百分比伤害",
+  "analyze_info": "[sprite name=iconHit]消除对手能力提升状态，消除成功则{0}%令对手[color=#57c975]{1}[/color]，[color=#52a5f2]未触发[/color]则附加自身最大体力1/{2}的[color=#52a5f2]百分比伤害[/color]",
+  "pve_effective": false,
+  "param": [
+    {
+      "position": 1,
+      "param": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/skill_effect_param/1"
+      }
+    }
+  ],
+  "skill": [
+    {
+      "id": 29246,
+      "url": "https://api.seerapi.com/v1/skill/29246"
+    },
+    {
+      "id": 36614,
+      "url": "https://api.seerapi.com/v1/skill/36614"
+    },
+    {
+      "id": 37842,
+      "url": "https://api.seerapi.com/v1/skill/37842"
+    },
+    {
+      "id": 38170,
+      "url": "https://api.seerapi.com/v1/skill/38170"
+    },
+    {
+      "id": 38238,
+      "url": "https://api.seerapi.com/v1/skill/38238"
+    },
+    {
+      "id": 38295,
+      "url": "https://api.seerapi.com/v1/skill/38295"
+    },
+    {
+      "id": 38314,
+      "url": "https://api.seerapi.com/v1/skill/38314"
+    },
+    {
+      "id": 38424,
+      "url": "https://api.seerapi.com/v1/skill/38424"
+    },
+    {
+      "id": 38431,
+      "url": "https://api.seerapi.com/v1/skill/38431"
+    }
+  ],
+  "tag": [
+    {
+      "id": 63508,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/63508"
+    },
+    {
+      "id": 813,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/813"
+    },
+    {
+      "id": 60828,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/60828"
+    }
+  ],
+  "hash": "447d6089"
+}

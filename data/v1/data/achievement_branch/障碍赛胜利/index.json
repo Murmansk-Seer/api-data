@@ -1,0 +1,33 @@
+{
+  "data": {
+    "35": {
+      "id": 35,
+      "name": "障碍赛胜利",
+      "point_total": 45,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 1035001,
+          "url": "https://api.seerapi.com/v1/achievement/1035001"
+        },
+        {
+          "id": 1035002,
+          "url": "https://api.seerapi.com/v1/achievement/1035002"
+        },
+        {
+          "id": 1035003,
+          "url": "https://api.seerapi.com/v1/achievement/1035003"
+        },
+        {
+          "id": 1035004,
+          "url": "https://api.seerapi.com/v1/achievement/1035004"
+        }
+      ],
+      "type": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/achievement_type/0"
+      }
+    }
+  },
+  "hash": "c0cd7c1"
+}

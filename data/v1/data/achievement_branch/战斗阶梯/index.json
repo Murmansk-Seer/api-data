@@ -1,0 +1,29 @@
+{
+  "data": {
+    "24": {
+      "id": 24,
+      "name": "战斗阶梯",
+      "point_total": 55,
+      "is_series": false,
+      "achievement": [
+        {
+          "id": 4024001,
+          "url": "https://api.seerapi.com/v1/achievement/4024001"
+        },
+        {
+          "id": 4024002,
+          "url": "https://api.seerapi.com/v1/achievement/4024002"
+        },
+        {
+          "id": 4024003,
+          "url": "https://api.seerapi.com/v1/achievement/4024003"
+        }
+      ],
+      "type": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/achievement_type/3"
+      }
+    }
+  },
+  "hash": "a0b97e4d"
+}

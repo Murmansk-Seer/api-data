@@ -1,0 +1,47 @@
+{
+  "id": 15060,
+  "name": "霜刃利爪",
+  "power": 130,
+  "max_pp": 10,
+  "accuracy": 95,
+  "crit_rate": 6.25,
+  "priority": 0,
+  "must_hit": false,
+  "atk_num": 1,
+  "info": null,
+  "category": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/skill_category/1"
+  },
+  "type": {
+    "id": 44,
+    "url": "https://api.seerapi.com/v1/element_type_combination/44"
+  },
+  "learned_by_pet": [],
+  "skill_effect": [
+    {
+      "info": "消除对手能力提升状态",
+      "analyze_info": "[sprite name=iconHit]消除对手能力提升状态（boss有效）",
+      "args": [],
+      "effect": {
+        "id": 33,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/33"
+      }
+    },
+    {
+      "info": "对方处于冻伤状态时，附加100点伤害",
+      "analyze_info": "[sprite name=iconHit]对方处于[color=#57c975]冻伤[/color]状态时，附加100点伤害（boss有效）",
+      "args": [
+        100
+      ],
+      "effect": {
+        "id": 141,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/141"
+      }
+    }
+  ],
+  "friend_skill_effect": [],
+  "hide_effect": null,
+  "advance": null,
+  "hash": "e8d1b67d"
+}

@@ -1,0 +1,25 @@
+{
+  "id": 11,
+  "name": "要塞保卫战",
+  "point_total": 30,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 1011001,
+      "url": "https://api.seerapi.com/v1/achievement/1011001"
+    },
+    {
+      "id": 1011002,
+      "url": "https://api.seerapi.com/v1/achievement/1011002"
+    },
+    {
+      "id": 1011003,
+      "url": "https://api.seerapi.com/v1/achievement/1011003"
+    }
+  ],
+  "type": {
+    "id": 0,
+    "url": "https://api.seerapi.com/v1/achievement_type/0"
+  },
+  "hash": "49db6e2"
+}

@@ -1,0 +1,26 @@
+{
+  "data": {
+    "181": {
+      "id": 181,
+      "name": "神龙斗士",
+      "resource_id": 1400181,
+      "enemy_resource_id": null,
+      "card_price": 10,
+      "diamond_price": null,
+      "skinhouse_price": null,
+      "discounted_skinhouse_price": null,
+      "ticket_num": null,
+      "pet": {
+        "id": 3104,
+        "url": "https://api.seerapi.com/v1/pet/3104"
+      },
+      "category": {
+        "id": 2,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/2"
+      },
+      "series": null,
+      "sub_type": null
+    }
+  },
+  "hash": "c7507744"
+}

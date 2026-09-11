@@ -1,0 +1,30 @@
+{
+  "id": 2175,
+  "args_num": 0,
+  "info": "技能无效时，随机附加2种非限制类异常状态",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]技能无效时，随机附加2种非限制类异常状态",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28707,
+      "url": "https://api.seerapi.com/v1/skill/28707"
+    },
+    {
+      "id": 29242,
+      "url": "https://api.seerapi.com/v1/skill/29242"
+    },
+    {
+      "id": 38378,
+      "url": "https://api.seerapi.com/v1/skill/38378"
+    }
+  ],
+  "tag": [
+    {
+      "id": 813,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/813"
+    }
+  ],
+  "hash": "db31d57e"
+}

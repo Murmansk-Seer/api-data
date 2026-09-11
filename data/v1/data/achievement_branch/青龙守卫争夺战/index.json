@@ -1,0 +1,49 @@
+{
+  "data": {
+    "73": {
+      "id": 73,
+      "name": "青龙守卫争夺战",
+      "point_total": 55,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 5073001,
+          "url": "https://api.seerapi.com/v1/achievement/5073001"
+        },
+        {
+          "id": 5073002,
+          "url": "https://api.seerapi.com/v1/achievement/5073002"
+        },
+        {
+          "id": 5073003,
+          "url": "https://api.seerapi.com/v1/achievement/5073003"
+        },
+        {
+          "id": 5073004,
+          "url": "https://api.seerapi.com/v1/achievement/5073004"
+        }
+      ],
+      "type": {
+        "id": 4,
+        "url": "https://api.seerapi.com/v1/achievement_type/4"
+      }
+    },
+    "75": {
+      "id": 75,
+      "name": "青龙守卫争夺战",
+      "point_total": 15,
+      "is_series": false,
+      "achievement": [
+        {
+          "id": 6075001,
+          "url": "https://api.seerapi.com/v1/achievement/6075001"
+        }
+      ],
+      "type": {
+        "id": 5,
+        "url": "https://api.seerapi.com/v1/achievement_type/5"
+      }
+    }
+  },
+  "hash": "add5486"
+}

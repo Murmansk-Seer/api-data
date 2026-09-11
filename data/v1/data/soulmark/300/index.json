@@ -1,0 +1,37 @@
+{
+  "id": 300,
+  "desc": "体力+11 防御+5 特防+5",
+  "desc_formatting_adjustment": null,
+  "analyze_desc": "",
+  "pve_effective": false,
+  "intensified": false,
+  "is_adv": false,
+  "pet": [
+    {
+      "id": 2332,
+      "url": "https://api.seerapi.com/v1/pet/2332"
+    },
+    {
+      "id": 2333,
+      "url": "https://api.seerapi.com/v1/pet/2333"
+    }
+  ],
+  "effect": {
+    "effect_args": null,
+    "effect": {
+      "id": 247,
+      "url": "https://api.seerapi.com/v1/eid_effect/247"
+    }
+  },
+  "effect_alias": "alias_247",
+  "tag": [
+    {
+      "id": 12,
+      "url": "https://api.seerapi.com/v1/soulmark_tag/12"
+    }
+  ],
+  "intensified_to": null,
+  "from": null,
+  "advance": null,
+  "hash": "7a7c4620"
+}

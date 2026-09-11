@@ -1,0 +1,41 @@
+{
+  "id": 23,
+  "name": "精灵王争霸赛",
+  "point_total": 90,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 5023001,
+      "url": "https://api.seerapi.com/v1/achievement/5023001"
+    },
+    {
+      "id": 5023002,
+      "url": "https://api.seerapi.com/v1/achievement/5023002"
+    },
+    {
+      "id": 5023003,
+      "url": "https://api.seerapi.com/v1/achievement/5023003"
+    },
+    {
+      "id": 5023004,
+      "url": "https://api.seerapi.com/v1/achievement/5023004"
+    },
+    {
+      "id": 5023005,
+      "url": "https://api.seerapi.com/v1/achievement/5023005"
+    },
+    {
+      "id": 5023006,
+      "url": "https://api.seerapi.com/v1/achievement/5023006"
+    },
+    {
+      "id": 5023007,
+      "url": "https://api.seerapi.com/v1/achievement/5023007"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "b40a2f8d"
+}

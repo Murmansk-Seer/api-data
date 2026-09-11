@@ -1,0 +1,42 @@
+{
+  "id": 218,
+  "desc": "圣化战意",
+  "desc_formatting_adjustment": null,
+  "analyze_desc": "",
+  "pve_effective": null,
+  "intensified": true,
+  "is_adv": false,
+  "pet": [
+    {
+      "id": 2420,
+      "url": "https://api.seerapi.com/v1/pet/2420"
+    },
+    {
+      "id": 2400,
+      "url": "https://api.seerapi.com/v1/pet/2400"
+    },
+    {
+      "id": 2393,
+      "url": "https://api.seerapi.com/v1/pet/2393"
+    },
+    {
+      "id": 2388,
+      "url": "https://api.seerapi.com/v1/pet/2388"
+    },
+    {
+      "id": 2415,
+      "url": "https://api.seerapi.com/v1/pet/2415"
+    },
+    {
+      "id": 2356,
+      "url": "https://api.seerapi.com/v1/pet/2356"
+    }
+  ],
+  "effect": null,
+  "effect_alias": null,
+  "tag": [],
+  "intensified_to": null,
+  "from": null,
+  "advance": null,
+  "hash": "2a36dc77"
+}

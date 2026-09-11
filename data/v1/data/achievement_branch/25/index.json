@@ -1,0 +1,37 @@
+{
+  "id": 25,
+  "name": "命运之轮",
+  "point_total": 80,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 4025001,
+      "url": "https://api.seerapi.com/v1/achievement/4025001"
+    },
+    {
+      "id": 4025002,
+      "url": "https://api.seerapi.com/v1/achievement/4025002"
+    },
+    {
+      "id": 4025003,
+      "url": "https://api.seerapi.com/v1/achievement/4025003"
+    },
+    {
+      "id": 4025004,
+      "url": "https://api.seerapi.com/v1/achievement/4025004"
+    },
+    {
+      "id": 4025005,
+      "url": "https://api.seerapi.com/v1/achievement/4025005"
+    },
+    {
+      "id": 4025006,
+      "url": "https://api.seerapi.com/v1/achievement/4025006"
+    }
+  ],
+  "type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/achievement_type/3"
+  },
+  "hash": "6dabf5c3"
+}

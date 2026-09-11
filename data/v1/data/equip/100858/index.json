@@ -1,0 +1,27 @@
+{
+  "id": 100858,
+  "name": "无双机甲",
+  "speed": 0.0,
+  "x_position": 65,
+  "y_position": 54,
+  "item": {
+    "id": 100858,
+    "url": "https://api.seerapi.com/v1/item/100858"
+  },
+  "bonus": null,
+  "occasion": null,
+  "suit": {
+    "id": 181,
+    "url": "https://api.seerapi.com/v1/suit/181"
+  },
+  "part_type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/equip_type/3"
+  },
+  "pk_attribute": {
+    "pk_hp": 70,
+    "pk_atk": 20,
+    "pk_fire_range": 0
+  },
+  "hash": "e0c3b9c4"
+}

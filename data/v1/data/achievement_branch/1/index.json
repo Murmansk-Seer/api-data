@@ -1,0 +1,57 @@
+{
+  "id": 1,
+  "name": "收集精灵",
+  "point_total": 115,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 2001001,
+      "url": "https://api.seerapi.com/v1/achievement/2001001"
+    },
+    {
+      "id": 2001002,
+      "url": "https://api.seerapi.com/v1/achievement/2001002"
+    },
+    {
+      "id": 2001003,
+      "url": "https://api.seerapi.com/v1/achievement/2001003"
+    },
+    {
+      "id": 2001004,
+      "url": "https://api.seerapi.com/v1/achievement/2001004"
+    },
+    {
+      "id": 2001005,
+      "url": "https://api.seerapi.com/v1/achievement/2001005"
+    },
+    {
+      "id": 2001006,
+      "url": "https://api.seerapi.com/v1/achievement/2001006"
+    },
+    {
+      "id": 2001007,
+      "url": "https://api.seerapi.com/v1/achievement/2001007"
+    },
+    {
+      "id": 2001008,
+      "url": "https://api.seerapi.com/v1/achievement/2001008"
+    },
+    {
+      "id": 2001009,
+      "url": "https://api.seerapi.com/v1/achievement/2001009"
+    },
+    {
+      "id": 2001010,
+      "url": "https://api.seerapi.com/v1/achievement/2001010"
+    },
+    {
+      "id": 2001011,
+      "url": "https://api.seerapi.com/v1/achievement/2001011"
+    }
+  ],
+  "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/achievement_type/1"
+  },
+  "hash": "575ced36"
+}

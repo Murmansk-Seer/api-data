@@ -1,0 +1,25 @@
+{
+  "type": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/autocard_cardtype/1"
+  },
+  "element_type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/4"
+  },
+  "id": 113,
+  "name": "贝迪恩斯",
+  "description": "入场：使己方所有飞行系精灵获得+1/+1，己方每有一种等级不同的精灵重复1次",
+  "level": 4,
+  "cost": 3,
+  "is_token": false,
+  "attack": 3,
+  "health": 4,
+  "is_awakened": false,
+  "awaken_card": {
+    "id": 10113,
+    "url": "https://api.seerapi.com/v1/autocard/10113"
+  },
+  "non_awaken_card": null,
+  "hash": "e0926f45"
+}

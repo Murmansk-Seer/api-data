@@ -1,0 +1,75 @@
+{
+  "$defs": {
+    "ResourceRef_SkillEffectType_": {
+      "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+      "x-model-name": "skill_effect_type"
+    }
+  },
+  "properties": {
+    "id": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Id"
+    },
+    "info": {
+      "description": "技能效果描述",
+      "title": "Info",
+      "type": "string"
+    },
+    "analyze_info": {
+      "description": "新版 Unity 端采用的格式化技能效果描述文本",
+      "title": "Analyze Info",
+      "type": "string"
+    },
+    "args": {
+      "anyOf": [
+        {
+          "items": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        }
+      ],
+      "description": "技能效果参数列表",
+      "title": "Args"
+    },
+    "effect": {
+      "$ref": "#/$defs/ResourceRef_SkillEffectType_"
+    }
+  },
+  "required": [
+    "info",
+    "analyze_info",
+    "args",
+    "effect"
+  ],
+  "title": "SkillEffectInUse",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

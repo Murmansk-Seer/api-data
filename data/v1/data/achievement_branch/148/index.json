@@ -1,0 +1,33 @@
+{
+  "id": 148,
+  "name": "PVP总伤害",
+  "point_total": 65,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 1148001,
+      "url": "https://api.seerapi.com/v1/achievement/1148001"
+    },
+    {
+      "id": 1148002,
+      "url": "https://api.seerapi.com/v1/achievement/1148002"
+    },
+    {
+      "id": 1148003,
+      "url": "https://api.seerapi.com/v1/achievement/1148003"
+    },
+    {
+      "id": 1148004,
+      "url": "https://api.seerapi.com/v1/achievement/1148004"
+    },
+    {
+      "id": 1148005,
+      "url": "https://api.seerapi.com/v1/achievement/1148005"
+    }
+  ],
+  "type": {
+    "id": 0,
+    "url": "https://api.seerapi.com/v1/achievement_type/0"
+  },
+  "hash": "53e86809"
+}

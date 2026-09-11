@@ -1,0 +1,45 @@
+{
+  "id": 28,
+  "name": "巅峰胜利",
+  "point_total": 95,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 5028001,
+      "url": "https://api.seerapi.com/v1/achievement/5028001"
+    },
+    {
+      "id": 5028002,
+      "url": "https://api.seerapi.com/v1/achievement/5028002"
+    },
+    {
+      "id": 5028003,
+      "url": "https://api.seerapi.com/v1/achievement/5028003"
+    },
+    {
+      "id": 5028004,
+      "url": "https://api.seerapi.com/v1/achievement/5028004"
+    },
+    {
+      "id": 5028005,
+      "url": "https://api.seerapi.com/v1/achievement/5028005"
+    },
+    {
+      "id": 5028006,
+      "url": "https://api.seerapi.com/v1/achievement/5028006"
+    },
+    {
+      "id": 5028007,
+      "url": "https://api.seerapi.com/v1/achievement/5028007"
+    },
+    {
+      "id": 5028008,
+      "url": "https://api.seerapi.com/v1/achievement/5028008"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "f6b53da4"
+}

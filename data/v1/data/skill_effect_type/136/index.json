@@ -1,0 +1,42 @@
+{
+  "id": 136,
+  "args_num": 1,
+  "info": "若Miss则自己恢复1/{0}体力",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]若Miss则自己恢复1/{0}体力（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 12548,
+      "url": "https://api.seerapi.com/v1/skill/12548"
+    },
+    {
+      "id": 22410,
+      "url": "https://api.seerapi.com/v1/skill/22410"
+    },
+    {
+      "id": 32088,
+      "url": "https://api.seerapi.com/v1/skill/32088"
+    },
+    {
+      "id": 32122,
+      "url": "https://api.seerapi.com/v1/skill/32122"
+    },
+    {
+      "id": 32213,
+      "url": "https://api.seerapi.com/v1/skill/32213"
+    },
+    {
+      "id": 34201,
+      "url": "https://api.seerapi.com/v1/skill/34201"
+    }
+  ],
+  "tag": [
+    {
+      "id": 62114,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/62114"
+    }
+  ],
+  "hash": "99a660a4"
+}

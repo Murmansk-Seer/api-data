@@ -1,0 +1,34 @@
+{
+  "id": 2340,
+  "args_num": 0,
+  "info": "附加并解除自身所处的异常状态",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]附加并解除自身所处的异常状态",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 38078,
+      "url": "https://api.seerapi.com/v1/skill/38078"
+    },
+    {
+      "id": 38085,
+      "url": "https://api.seerapi.com/v1/skill/38085"
+    },
+    {
+      "id": 38210,
+      "url": "https://api.seerapi.com/v1/skill/38210"
+    }
+  ],
+  "tag": [
+    {
+      "id": 37134,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/37134"
+    },
+    {
+      "id": 813,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/813"
+    }
+  ],
+  "hash": "5f5fdafa"
+}

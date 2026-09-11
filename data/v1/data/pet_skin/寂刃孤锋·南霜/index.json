@@ -1,0 +1,29 @@
+{
+  "data": {
+    "620": {
+      "id": 620,
+      "name": "寂刃孤锋·南霜",
+      "resource_id": 1400620,
+      "enemy_resource_id": null,
+      "card_price": null,
+      "diamond_price": null,
+      "skinhouse_price": null,
+      "discounted_skinhouse_price": null,
+      "ticket_num": null,
+      "pet": {
+        "id": 4511,
+        "url": "https://api.seerapi.com/v1/pet/4511"
+      },
+      "category": {
+        "id": 4,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/4"
+      },
+      "series": {
+        "id": 6,
+        "url": "https://api.seerapi.com/v1/pet_skin_series/6"
+      },
+      "sub_type": null
+    }
+  },
+  "hash": "55fc4c09"
+}

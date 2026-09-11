@@ -1,0 +1,22 @@
+{
+  "id": 2207,
+  "args_num": 1,
+  "info": "使自身所处的异常状态剩余回合数-{0}",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]使自身所处的异常状态剩余回合数-{0}",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 37513,
+      "url": "https://api.seerapi.com/v1/skill/37513"
+    }
+  ],
+  "tag": [
+    {
+      "id": 37134,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/37134"
+    }
+  ],
+  "hash": "1865daf1"
+}

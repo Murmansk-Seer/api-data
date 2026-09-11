@@ -1,0 +1,21 @@
+{
+  "data": {
+    "57": {
+      "id": 57,
+      "name": "太空迷宫",
+      "point_total": 10,
+      "is_series": false,
+      "achievement": [
+        {
+          "id": 4057001,
+          "url": "https://api.seerapi.com/v1/achievement/4057001"
+        }
+      ],
+      "type": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/achievement_type/3"
+      }
+    }
+  },
+  "hash": "322c652e"
+}

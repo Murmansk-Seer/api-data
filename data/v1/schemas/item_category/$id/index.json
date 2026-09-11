@@ -1,0 +1,49 @@
+{
+  "allOf": [
+    {
+      "$defs": {
+        "ResourceRef_Item_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "item"
+        }
+      },
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "name": {
+          "description": "物品分类名称",
+          "title": "Name",
+          "type": "string"
+        },
+        "max": {
+          "description": "物品最大数量",
+          "title": "Max",
+          "type": "integer"
+        },
+        "item": {
+          "description": "该分类下的所有物品",
+          "items": {
+            "$ref": "#/$defs/ResourceRef_Item_"
+          },
+          "title": "Item",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "max"
+      ],
+      "title": "ItemCategory",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

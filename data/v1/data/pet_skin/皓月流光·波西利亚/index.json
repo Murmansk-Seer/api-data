@@ -1,0 +1,29 @@
+{
+  "data": {
+    "641": {
+      "id": 641,
+      "name": "皓月流光·波西利亚",
+      "resource_id": 1400641,
+      "enemy_resource_id": null,
+      "card_price": null,
+      "diamond_price": null,
+      "skinhouse_price": null,
+      "discounted_skinhouse_price": null,
+      "ticket_num": null,
+      "pet": {
+        "id": 3783,
+        "url": "https://api.seerapi.com/v1/pet/3783"
+      },
+      "category": {
+        "id": 17,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/17"
+      },
+      "series": {
+        "id": 5,
+        "url": "https://api.seerapi.com/v1/pet_skin_series/5"
+      },
+      "sub_type": null
+    }
+  },
+  "hash": "96a5cde6"
+}

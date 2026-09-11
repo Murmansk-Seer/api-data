@@ -1,0 +1,26 @@
+{
+  "id": 2349,
+  "args_num": 0,
+  "info": "对手处于能力下降状态时先制+3",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]对手处于能力下降状态时[color=#52a5f2]先制[/color]+3",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 38117,
+      "url": "https://api.seerapi.com/v1/skill/38117"
+    },
+    {
+      "id": 38358,
+      "url": "https://api.seerapi.com/v1/skill/38358"
+    }
+  ],
+  "tag": [
+    {
+      "id": 2566,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/2566"
+    }
+  ],
+  "hash": "b42325eb"
+}

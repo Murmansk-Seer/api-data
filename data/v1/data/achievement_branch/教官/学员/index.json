@@ -1,0 +1,29 @@
+{
+  "data": {
+    "88": {
+      "id": 88,
+      "name": "教官/学员",
+      "point_total": 30,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 1088001,
+          "url": "https://api.seerapi.com/v1/achievement/1088001"
+        },
+        {
+          "id": 1088002,
+          "url": "https://api.seerapi.com/v1/achievement/1088002"
+        },
+        {
+          "id": 1088003,
+          "url": "https://api.seerapi.com/v1/achievement/1088003"
+        }
+      ],
+      "type": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/achievement_type/0"
+      }
+    }
+  },
+  "hash": "34f0437d"
+}

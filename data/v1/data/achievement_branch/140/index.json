@@ -1,0 +1,17 @@
+{
+  "id": 140,
+  "name": "六界神王殿困难",
+  "point_total": 30,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 4140001,
+      "url": "https://api.seerapi.com/v1/achievement/4140001"
+    }
+  ],
+  "type": {
+    "id": 3,
+    "url": "https://api.seerapi.com/v1/achievement_type/3"
+  },
+  "hash": "44d4110e"
+}

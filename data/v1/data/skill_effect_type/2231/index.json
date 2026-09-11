@@ -1,0 +1,38 @@
+{
+  "id": 2231,
+  "args_num": 2,
+  "info": "下{0}回合攻击命中时消耗自身体力的1/{1}并造成等量百分比伤害",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]下{0}回合攻击命中时消耗自身体力的1/{1}并造成等量[color=#52a5f2]百分比伤害[/color]",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28867,
+      "url": "https://api.seerapi.com/v1/skill/28867"
+    },
+    {
+      "id": 28971,
+      "url": "https://api.seerapi.com/v1/skill/28971"
+    },
+    {
+      "id": 29424,
+      "url": "https://api.seerapi.com/v1/skill/29424"
+    },
+    {
+      "id": 38392,
+      "url": "https://api.seerapi.com/v1/skill/38392"
+    },
+    {
+      "id": 38456,
+      "url": "https://api.seerapi.com/v1/skill/38456"
+    }
+  ],
+  "tag": [
+    {
+      "id": 60828,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/60828"
+    }
+  ],
+  "hash": "e8b67a30"
+}

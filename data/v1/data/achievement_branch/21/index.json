@@ -1,0 +1,49 @@
+{
+  "id": 21,
+  "name": "星系守护神",
+  "point_total": 350,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 3021001,
+      "url": "https://api.seerapi.com/v1/achievement/3021001"
+    },
+    {
+      "id": 3021002,
+      "url": "https://api.seerapi.com/v1/achievement/3021002"
+    },
+    {
+      "id": 3021003,
+      "url": "https://api.seerapi.com/v1/achievement/3021003"
+    },
+    {
+      "id": 3021004,
+      "url": "https://api.seerapi.com/v1/achievement/3021004"
+    },
+    {
+      "id": 3021005,
+      "url": "https://api.seerapi.com/v1/achievement/3021005"
+    },
+    {
+      "id": 3021006,
+      "url": "https://api.seerapi.com/v1/achievement/3021006"
+    },
+    {
+      "id": 3021007,
+      "url": "https://api.seerapi.com/v1/achievement/3021007"
+    },
+    {
+      "id": 3021008,
+      "url": "https://api.seerapi.com/v1/achievement/3021008"
+    },
+    {
+      "id": 3021009,
+      "url": "https://api.seerapi.com/v1/achievement/3021009"
+    }
+  ],
+  "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/achievement_type/2"
+  },
+  "hash": "915d5839"
+}

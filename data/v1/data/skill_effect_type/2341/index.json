@@ -1,0 +1,17 @@
+{
+  "id": 2341,
+  "args_num": 0,
+  "info": "未击败对手则开启赛博共振器",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]未[color=#57c975]击败[/color]对手则开启[color=#f35555]赛博共振器[/color]",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 38084,
+      "url": "https://api.seerapi.com/v1/skill/38084"
+    }
+  ],
+  "tag": [],
+  "hash": "11e0ff31"
+}

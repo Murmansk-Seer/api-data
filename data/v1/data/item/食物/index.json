@@ -1,0 +1,35 @@
+{
+  "data": {
+    "1728449": {
+      "id": 1728449,
+      "name": "食物",
+      "desc": null,
+      "max": 999999,
+      "category": {
+        "id": 17,
+        "url": "https://api.seerapi.com/v1/item_category/17"
+      }
+    },
+    "1721017": {
+      "id": 1721017,
+      "name": "食物",
+      "desc": null,
+      "max": 99,
+      "category": {
+        "id": 17,
+        "url": "https://api.seerapi.com/v1/item_category/17"
+      }
+    },
+    "1718755": {
+      "id": 1718755,
+      "name": "食物",
+      "desc": null,
+      "max": 99,
+      "category": {
+        "id": 17,
+        "url": "https://api.seerapi.com/v1/item_category/17"
+      }
+    }
+  },
+  "hash": "f66e6fad"
+}

@@ -1,0 +1,37 @@
+{
+  "data": {
+    "117": {
+      "id": 117,
+      "name": "神魔之战胜利",
+      "point_total": 100,
+      "is_series": false,
+      "achievement": [
+        {
+          "id": 3117001,
+          "url": "https://api.seerapi.com/v1/achievement/3117001"
+        },
+        {
+          "id": 3117002,
+          "url": "https://api.seerapi.com/v1/achievement/3117002"
+        },
+        {
+          "id": 3117003,
+          "url": "https://api.seerapi.com/v1/achievement/3117003"
+        },
+        {
+          "id": 3117004,
+          "url": "https://api.seerapi.com/v1/achievement/3117004"
+        },
+        {
+          "id": 3117005,
+          "url": "https://api.seerapi.com/v1/achievement/3117005"
+        }
+      ],
+      "type": {
+        "id": 2,
+        "url": "https://api.seerapi.com/v1/achievement_type/2"
+      }
+    }
+  },
+  "hash": "d2abfa64"
+}

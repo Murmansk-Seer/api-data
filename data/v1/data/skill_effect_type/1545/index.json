@@ -1,0 +1,54 @@
+{
+  "id": 1545,
+  "args_num": 0,
+  "info": "消除对手所有护盾效果，消除成功则为自身附加等量的护盾值",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]消除对手所有[color=#57c975]护盾[/color]效果，消除成功则为自身附加等量的[color=#57c975]护盾[/color]值（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 27061,
+      "url": "https://api.seerapi.com/v1/skill/27061"
+    },
+    {
+      "id": 28954,
+      "url": "https://api.seerapi.com/v1/skill/28954"
+    },
+    {
+      "id": 29393,
+      "url": "https://api.seerapi.com/v1/skill/29393"
+    },
+    {
+      "id": 29417,
+      "url": "https://api.seerapi.com/v1/skill/29417"
+    },
+    {
+      "id": 36003,
+      "url": "https://api.seerapi.com/v1/skill/36003"
+    },
+    {
+      "id": 37172,
+      "url": "https://api.seerapi.com/v1/skill/37172"
+    },
+    {
+      "id": 37861,
+      "url": "https://api.seerapi.com/v1/skill/37861"
+    },
+    {
+      "id": 38345,
+      "url": "https://api.seerapi.com/v1/skill/38345"
+    }
+  ],
+  "tag": [
+    {
+      "id": 30780,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/30780"
+    },
+    {
+      "id": 40695,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/40695"
+    }
+  ],
+  "hash": "38302d84"
+}

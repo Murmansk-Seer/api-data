@@ -1,0 +1,17 @@
+{
+  "id": 52,
+  "name": "严惩捣乱者",
+  "point_total": 15,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 5052001,
+      "url": "https://api.seerapi.com/v1/achievement/5052001"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "896999a5"
+}

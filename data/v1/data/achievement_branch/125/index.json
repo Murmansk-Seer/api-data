@@ -1,0 +1,33 @@
+{
+  "id": 125,
+  "name": "封神之路",
+  "point_total": 50,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 6125001,
+      "url": "https://api.seerapi.com/v1/achievement/6125001"
+    },
+    {
+      "id": 6125002,
+      "url": "https://api.seerapi.com/v1/achievement/6125002"
+    },
+    {
+      "id": 6125003,
+      "url": "https://api.seerapi.com/v1/achievement/6125003"
+    },
+    {
+      "id": 6125004,
+      "url": "https://api.seerapi.com/v1/achievement/6125004"
+    },
+    {
+      "id": 6125005,
+      "url": "https://api.seerapi.com/v1/achievement/6125005"
+    }
+  ],
+  "type": {
+    "id": 5,
+    "url": "https://api.seerapi.com/v1/achievement_type/5"
+  },
+  "hash": "4a6b3691"
+}

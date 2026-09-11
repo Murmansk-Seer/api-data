@@ -1,0 +1,32 @@
+{
+  "data": {
+    "414": {
+      "id": 414,
+      "name": "深海彩翼·沁心",
+      "resource_id": 1400414,
+      "enemy_resource_id": null,
+      "card_price": null,
+      "diamond_price": null,
+      "skinhouse_price": 298,
+      "discounted_skinhouse_price": null,
+      "ticket_num": 20,
+      "pet": {
+        "id": 4273,
+        "url": "https://api.seerapi.com/v1/pet/4273"
+      },
+      "category": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/3"
+      },
+      "series": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/pet_skin_series/1"
+      },
+      "sub_type": {
+        "id": 1006,
+        "url": "https://api.seerapi.com/v1/pet_skin_series_sub_type/1006"
+      }
+    }
+  },
+  "hash": "fc8aa124"
+}

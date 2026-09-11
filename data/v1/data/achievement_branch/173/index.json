@@ -1,0 +1,29 @@
+{
+  "id": 173,
+  "name": "循星之旅",
+  "point_total": 65,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 1173001,
+      "url": "https://api.seerapi.com/v1/achievement/1173001"
+    },
+    {
+      "id": 1173002,
+      "url": "https://api.seerapi.com/v1/achievement/1173002"
+    },
+    {
+      "id": 1173003,
+      "url": "https://api.seerapi.com/v1/achievement/1173003"
+    },
+    {
+      "id": 1173004,
+      "url": "https://api.seerapi.com/v1/achievement/1173004"
+    }
+  ],
+  "type": {
+    "id": 0,
+    "url": "https://api.seerapi.com/v1/achievement_type/0"
+  },
+  "hash": "119b93a9"
+}

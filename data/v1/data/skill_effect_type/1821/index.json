@@ -1,0 +1,90 @@
+{
+  "id": 1821,
+  "args_num": 1,
+  "info": "未击败对手则恢复自身所有技能{0}点PP值",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]未[color=#57c975]击败[/color]对手则恢复自身所有技能{0}点PP值",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 35945,
+      "url": "https://api.seerapi.com/v1/skill/35945"
+    },
+    {
+      "id": 36131,
+      "url": "https://api.seerapi.com/v1/skill/36131"
+    },
+    {
+      "id": 36733,
+      "url": "https://api.seerapi.com/v1/skill/36733"
+    },
+    {
+      "id": 36830,
+      "url": "https://api.seerapi.com/v1/skill/36830"
+    },
+    {
+      "id": 36835,
+      "url": "https://api.seerapi.com/v1/skill/36835"
+    },
+    {
+      "id": 36974,
+      "url": "https://api.seerapi.com/v1/skill/36974"
+    },
+    {
+      "id": 37023,
+      "url": "https://api.seerapi.com/v1/skill/37023"
+    },
+    {
+      "id": 37094,
+      "url": "https://api.seerapi.com/v1/skill/37094"
+    },
+    {
+      "id": 37340,
+      "url": "https://api.seerapi.com/v1/skill/37340"
+    },
+    {
+      "id": 37789,
+      "url": "https://api.seerapi.com/v1/skill/37789"
+    },
+    {
+      "id": 37875,
+      "url": "https://api.seerapi.com/v1/skill/37875"
+    },
+    {
+      "id": 38042,
+      "url": "https://api.seerapi.com/v1/skill/38042"
+    },
+    {
+      "id": 38114,
+      "url": "https://api.seerapi.com/v1/skill/38114"
+    },
+    {
+      "id": 38150,
+      "url": "https://api.seerapi.com/v1/skill/38150"
+    },
+    {
+      "id": 38372,
+      "url": "https://api.seerapi.com/v1/skill/38372"
+    },
+    {
+      "id": 38432,
+      "url": "https://api.seerapi.com/v1/skill/38432"
+    },
+    {
+      "id": 38455,
+      "url": "https://api.seerapi.com/v1/skill/38455"
+    },
+    {
+      "id": 38493,
+      "url": "https://api.seerapi.com/v1/skill/38493"
+    }
+  ],
+  "tag": [
+    {
+      "id": 62114,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/62114"
+    }
+  ],
+  "hash": "27a88fca"
+}

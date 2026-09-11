@@ -1,0 +1,22 @@
+{
+  "id": 288,
+  "name": "元宵共舞·跳跳狮",
+  "resource_id": 1400288,
+  "enemy_resource_id": null,
+  "card_price": 10,
+  "diamond_price": null,
+  "skinhouse_price": null,
+  "discounted_skinhouse_price": null,
+  "ticket_num": null,
+  "pet": {
+    "id": 3819,
+    "url": "https://api.seerapi.com/v1/pet/3819"
+  },
+  "category": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/2"
+  },
+  "series": null,
+  "sub_type": null,
+  "hash": "5b83493f"
+}

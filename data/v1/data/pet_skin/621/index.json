@@ -1,0 +1,25 @@
+{
+  "id": 621,
+  "name": "星空呓语·尤莉米特",
+  "resource_id": 1400621,
+  "enemy_resource_id": null,
+  "card_price": null,
+  "diamond_price": null,
+  "skinhouse_price": null,
+  "discounted_skinhouse_price": null,
+  "ticket_num": null,
+  "pet": {
+    "id": 4364,
+    "url": "https://api.seerapi.com/v1/pet/4364"
+  },
+  "category": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/4"
+  },
+  "series": {
+    "id": 6,
+    "url": "https://api.seerapi.com/v1/pet_skin_series/6"
+  },
+  "sub_type": null,
+  "hash": "1b7041f9"
+}

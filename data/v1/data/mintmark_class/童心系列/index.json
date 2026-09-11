@@ -1,0 +1,19 @@
+{
+  "data": {
+    "32": {
+      "id": 32,
+      "name": "童心系列",
+      "mintmark": [
+        {
+          "id": 41278,
+          "url": "https://api.seerapi.com/v1/mintmark/41278"
+        },
+        {
+          "id": 42614,
+          "url": "https://api.seerapi.com/v1/mintmark/42614"
+        }
+      ]
+    }
+  },
+  "hash": "6262f304"
+}

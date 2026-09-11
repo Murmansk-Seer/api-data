@@ -1,0 +1,21 @@
+{
+  "data": {
+    "22": {
+      "id": 22,
+      "name": "坦率",
+      "des": "平衡发展",
+      "des2": "平衡发展",
+      "attributes": {
+        "atk": 0,
+        "def": 0,
+        "sp_atk": 0,
+        "sp_def": 0,
+        "spd": 0,
+        "hp": 0,
+        "percent": true,
+        "total": 0
+      }
+    }
+  },
+  "hash": "5619d77d"
+}

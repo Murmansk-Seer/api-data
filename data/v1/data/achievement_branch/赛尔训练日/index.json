@@ -1,0 +1,37 @@
+{
+  "data": {
+    "60": {
+      "id": 60,
+      "name": "赛尔训练日",
+      "point_total": 55,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 1060001,
+          "url": "https://api.seerapi.com/v1/achievement/1060001"
+        },
+        {
+          "id": 1060002,
+          "url": "https://api.seerapi.com/v1/achievement/1060002"
+        },
+        {
+          "id": 1060003,
+          "url": "https://api.seerapi.com/v1/achievement/1060003"
+        },
+        {
+          "id": 1060004,
+          "url": "https://api.seerapi.com/v1/achievement/1060004"
+        },
+        {
+          "id": 1060005,
+          "url": "https://api.seerapi.com/v1/achievement/1060005"
+        }
+      ],
+      "type": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/achievement_type/0"
+      }
+    }
+  },
+  "hash": "cdc7076"
+}

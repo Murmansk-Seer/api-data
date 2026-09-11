@@ -1,0 +1,38 @@
+{
+  "id": 1640,
+  "args_num": 0,
+  "info": "出手时若自身满体力则100%打出致命一击",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]出手时若自身满体力则100%打出[color=#57c975]致命一击[/color]（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 34773,
+      "url": "https://api.seerapi.com/v1/skill/34773"
+    },
+    {
+      "id": 34899,
+      "url": "https://api.seerapi.com/v1/skill/34899"
+    },
+    {
+      "id": 34946,
+      "url": "https://api.seerapi.com/v1/skill/34946"
+    },
+    {
+      "id": 37096,
+      "url": "https://api.seerapi.com/v1/skill/37096"
+    },
+    {
+      "id": 38148,
+      "url": "https://api.seerapi.com/v1/skill/38148"
+    }
+  ],
+  "tag": [
+    {
+      "id": 8553,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/8553"
+    }
+  ],
+  "hash": "7bbc5997"
+}

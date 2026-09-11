@@ -1,0 +1,54 @@
+{
+  "id": 1566,
+  "args_num": 1,
+  "info": "{0}回合内每回合结束后反转对手能力提升状态",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]{0}回合内每[color=#57c975]回合结束后[/color][color=#52a5f2]反转[/color]对手能力提升状态",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 27124,
+      "url": "https://api.seerapi.com/v1/skill/27124"
+    },
+    {
+      "id": 28303,
+      "url": "https://api.seerapi.com/v1/skill/28303"
+    },
+    {
+      "id": 28365,
+      "url": "https://api.seerapi.com/v1/skill/28365"
+    },
+    {
+      "id": 28545,
+      "url": "https://api.seerapi.com/v1/skill/28545"
+    },
+    {
+      "id": 28551,
+      "url": "https://api.seerapi.com/v1/skill/28551"
+    },
+    {
+      "id": 28996,
+      "url": "https://api.seerapi.com/v1/skill/28996"
+    },
+    {
+      "id": 29337,
+      "url": "https://api.seerapi.com/v1/skill/29337"
+    },
+    {
+      "id": 36490,
+      "url": "https://api.seerapi.com/v1/skill/36490"
+    },
+    {
+      "id": 37261,
+      "url": "https://api.seerapi.com/v1/skill/37261"
+    }
+  ],
+  "tag": [
+    {
+      "id": 24657,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/24657"
+    }
+  ],
+  "hash": "b22f0ab"
+}

@@ -1,0 +1,26 @@
+{
+  "id": 2301,
+  "args_num": 1,
+  "info": "{0}回合内自身免疫对手的攻击",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]{0}回合内自身[color=#52a5f2]免疫对手的攻击[/color]",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 29045,
+      "url": "https://api.seerapi.com/v1/skill/29045"
+    },
+    {
+      "id": 29122,
+      "url": "https://api.seerapi.com/v1/skill/29122"
+    }
+  ],
+  "tag": [
+    {
+      "id": 44313,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/44313"
+    }
+  ],
+  "hash": "d9b59ee1"
+}

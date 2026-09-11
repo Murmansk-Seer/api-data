@@ -1,0 +1,137 @@
+{
+  "id": 2,
+  "name": "SPT个人挑战",
+  "point_total": 430,
+  "is_series": false,
+  "achievement": [
+    {
+      "id": 3002001,
+      "url": "https://api.seerapi.com/v1/achievement/3002001"
+    },
+    {
+      "id": 3002002,
+      "url": "https://api.seerapi.com/v1/achievement/3002002"
+    },
+    {
+      "id": 3002003,
+      "url": "https://api.seerapi.com/v1/achievement/3002003"
+    },
+    {
+      "id": 3002004,
+      "url": "https://api.seerapi.com/v1/achievement/3002004"
+    },
+    {
+      "id": 3002005,
+      "url": "https://api.seerapi.com/v1/achievement/3002005"
+    },
+    {
+      "id": 3002006,
+      "url": "https://api.seerapi.com/v1/achievement/3002006"
+    },
+    {
+      "id": 3002007,
+      "url": "https://api.seerapi.com/v1/achievement/3002007"
+    },
+    {
+      "id": 3002008,
+      "url": "https://api.seerapi.com/v1/achievement/3002008"
+    },
+    {
+      "id": 3002009,
+      "url": "https://api.seerapi.com/v1/achievement/3002009"
+    },
+    {
+      "id": 3002010,
+      "url": "https://api.seerapi.com/v1/achievement/3002010"
+    },
+    {
+      "id": 3002011,
+      "url": "https://api.seerapi.com/v1/achievement/3002011"
+    },
+    {
+      "id": 3002012,
+      "url": "https://api.seerapi.com/v1/achievement/3002012"
+    },
+    {
+      "id": 3002013,
+      "url": "https://api.seerapi.com/v1/achievement/3002013"
+    },
+    {
+      "id": 3002014,
+      "url": "https://api.seerapi.com/v1/achievement/3002014"
+    },
+    {
+      "id": 3002015,
+      "url": "https://api.seerapi.com/v1/achievement/3002015"
+    },
+    {
+      "id": 3002016,
+      "url": "https://api.seerapi.com/v1/achievement/3002016"
+    },
+    {
+      "id": 3002017,
+      "url": "https://api.seerapi.com/v1/achievement/3002017"
+    },
+    {
+      "id": 3002018,
+      "url": "https://api.seerapi.com/v1/achievement/3002018"
+    },
+    {
+      "id": 3002019,
+      "url": "https://api.seerapi.com/v1/achievement/3002019"
+    },
+    {
+      "id": 3002020,
+      "url": "https://api.seerapi.com/v1/achievement/3002020"
+    },
+    {
+      "id": 3002021,
+      "url": "https://api.seerapi.com/v1/achievement/3002021"
+    },
+    {
+      "id": 3002022,
+      "url": "https://api.seerapi.com/v1/achievement/3002022"
+    },
+    {
+      "id": 3002023,
+      "url": "https://api.seerapi.com/v1/achievement/3002023"
+    },
+    {
+      "id": 3002024,
+      "url": "https://api.seerapi.com/v1/achievement/3002024"
+    },
+    {
+      "id": 3002025,
+      "url": "https://api.seerapi.com/v1/achievement/3002025"
+    },
+    {
+      "id": 3002026,
+      "url": "https://api.seerapi.com/v1/achievement/3002026"
+    },
+    {
+      "id": 3002027,
+      "url": "https://api.seerapi.com/v1/achievement/3002027"
+    },
+    {
+      "id": 3002028,
+      "url": "https://api.seerapi.com/v1/achievement/3002028"
+    },
+    {
+      "id": 3002029,
+      "url": "https://api.seerapi.com/v1/achievement/3002029"
+    },
+    {
+      "id": 3002030,
+      "url": "https://api.seerapi.com/v1/achievement/3002030"
+    },
+    {
+      "id": 3002031,
+      "url": "https://api.seerapi.com/v1/achievement/3002031"
+    }
+  ],
+  "type": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/achievement_type/2"
+  },
+  "hash": "32a8878"
+}

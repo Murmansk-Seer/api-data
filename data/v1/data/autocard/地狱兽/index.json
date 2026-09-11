@@ -1,0 +1,53 @@
+{
+  "data": {
+    "52": {
+      "type": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/autocard_cardtype/1"
+      },
+      "element_type": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/3"
+      },
+      "id": 52,
+      "name": "地狱兽",
+      "description": "己方火系精灵阵亡时，使随机1只己方精灵永久获得+2/+2",
+      "level": 4,
+      "cost": 3,
+      "is_token": false,
+      "attack": 3,
+      "health": 4,
+      "is_awakened": false,
+      "awaken_card": {
+        "id": 10052,
+        "url": "https://api.seerapi.com/v1/autocard/10052"
+      },
+      "non_awaken_card": null
+    },
+    "10052": {
+      "type": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/autocard_cardtype/1"
+      },
+      "element_type": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/3"
+      },
+      "id": 10052,
+      "name": "地狱兽",
+      "description": "己方火系精灵阵亡时，使随机1只己方精灵永久获得+4/+4",
+      "level": 4,
+      "cost": 3,
+      "is_token": false,
+      "attack": 6,
+      "health": 8,
+      "is_awakened": true,
+      "awaken_card": null,
+      "non_awaken_card": {
+        "id": 52,
+        "url": "https://api.seerapi.com/v1/autocard/52"
+      }
+    }
+  },
+  "hash": "693233f8"
+}

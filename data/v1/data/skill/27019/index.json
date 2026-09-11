@@ -1,0 +1,52 @@
+{
+  "id": 27019,
+  "name": "神之佑",
+  "power": 0,
+  "max_pp": 10,
+  "accuracy": 96,
+  "crit_rate": null,
+  "priority": 0,
+  "must_hit": false,
+  "atk_num": 1,
+  "info": "为自身创造一个护盾；每回合开始有几率提升自身全属性了",
+  "category": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/skill_category/4"
+  },
+  "type": {
+    "id": 8,
+    "url": "https://api.seerapi.com/v1/element_type_combination/8"
+  },
+  "learned_by_pet": [],
+  "skill_effect": [
+    {
+      "info": "为自身附加300点护盾",
+      "analyze_info": "[sprite name=iconHit]为自身附加300点[color=#57c975]护盾[/color]（boss有效）",
+      "args": [
+        300
+      ],
+      "effect": {
+        "id": 847,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/847"
+      }
+    },
+    {
+      "info": "3回合内每回合50%令自身全属性+1，未触发则令对手全属性-1",
+      "analyze_info": "[sprite name=iconHit]3回合内每回合50%令自身[color=#52a5f2]全属性[/color]+1，[color=#52a5f2]未触发[/color]则令对手[color=#52a5f2]全属性[/color]-1",
+      "args": [
+        3,
+        50,
+        1,
+        1
+      ],
+      "effect": {
+        "id": 1346,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/1346"
+      }
+    }
+  ],
+  "friend_skill_effect": [],
+  "hide_effect": null,
+  "advance": null,
+  "hash": "bf7a4708"
+}

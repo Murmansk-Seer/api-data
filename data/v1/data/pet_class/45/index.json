@@ -1,0 +1,32 @@
+{
+  "id": 45,
+  "is_variant_pet": false,
+  "is_dark_pet": false,
+  "is_shine_pet": false,
+  "is_rare_pet": false,
+  "is_breeding_pet": false,
+  "is_fusion_pet": false,
+  "evolution_chain": [
+    {
+      "id": 122,
+      "url": "https://api.seerapi.com/v1/pet/122"
+    },
+    {
+      "id": 123,
+      "url": "https://api.seerapi.com/v1/pet/123"
+    },
+    {
+      "id": 124,
+      "url": "https://api.seerapi.com/v1/pet/124"
+    },
+    {
+      "id": 125,
+      "url": "https://api.seerapi.com/v1/pet/125"
+    },
+    {
+      "id": 2470,
+      "url": "https://api.seerapi.com/v1/pet/2470"
+    }
+  ],
+  "hash": "f4367687"
+}

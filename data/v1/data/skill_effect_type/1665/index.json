@@ -1,0 +1,30 @@
+{
+  "id": 1665,
+  "args_num": 2,
+  "info": "全属性+{0}，自身背包内每阵亡1只精灵则{1}%的概率强化效果翻倍",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit][color=#52a5f2]全属性[/color]+{0}，自身背包内每阵亡1只精灵则{1}%的概率强化效果翻倍（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 27490,
+      "url": "https://api.seerapi.com/v1/skill/27490"
+    },
+    {
+      "id": 28815,
+      "url": "https://api.seerapi.com/v1/skill/28815"
+    },
+    {
+      "id": 29188,
+      "url": "https://api.seerapi.com/v1/skill/29188"
+    }
+  ],
+  "tag": [
+    {
+      "id": 44951,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/44951"
+    }
+  ],
+  "hash": "b3f1de3d"
+}

@@ -1,0 +1,25 @@
+{
+  "id": 678,
+  "name": "暖阳礼遇·拉伯克",
+  "resource_id": 1400678,
+  "enemy_resource_id": null,
+  "card_price": null,
+  "diamond_price": null,
+  "skinhouse_price": null,
+  "discounted_skinhouse_price": null,
+  "ticket_num": null,
+  "pet": {
+    "id": 4333,
+    "url": "https://api.seerapi.com/v1/pet/4333"
+  },
+  "category": {
+    "id": 8,
+    "url": "https://api.seerapi.com/v1/pet_skin_category/8"
+  },
+  "series": {
+    "id": 11,
+    "url": "https://api.seerapi.com/v1/pet_skin_series/11"
+  },
+  "sub_type": null,
+  "hash": "58e512a8"
+}

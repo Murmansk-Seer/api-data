@@ -1,0 +1,26 @@
+{
+  "id": 2298,
+  "args_num": 0,
+  "info": "自身不处于能力提升状态时先制+2",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]自身不处于能力提升状态时[color=#52a5f2]先制[/color]+2",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 29153,
+      "url": "https://api.seerapi.com/v1/skill/29153"
+    },
+    {
+      "id": 37911,
+      "url": "https://api.seerapi.com/v1/skill/37911"
+    }
+  ],
+  "tag": [
+    {
+      "id": 2566,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/2566"
+    }
+  ],
+  "hash": "42cb690a"
+}

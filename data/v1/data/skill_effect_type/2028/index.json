@@ -1,0 +1,41 @@
+{
+  "id": 2028,
+  "args_num": 0,
+  "info": "若自身为对手天敌则必定命中",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconInherent]若自身为对手天敌则[color=#52a5f2]必定命中[/color]（boss有效）",
+  "pve_effective": true,
+  "param": null,
+  "skill": [
+    {
+      "id": 36676,
+      "url": "https://api.seerapi.com/v1/skill/36676"
+    },
+    {
+      "id": 36744,
+      "url": "https://api.seerapi.com/v1/skill/36744"
+    },
+    {
+      "id": 37209,
+      "url": "https://api.seerapi.com/v1/skill/37209"
+    },
+    {
+      "id": 37963,
+      "url": "https://api.seerapi.com/v1/skill/37963"
+    },
+    {
+      "id": 38044,
+      "url": "https://api.seerapi.com/v1/skill/38044"
+    },
+    {
+      "id": 38349,
+      "url": "https://api.seerapi.com/v1/skill/38349"
+    },
+    {
+      "id": 38492,
+      "url": "https://api.seerapi.com/v1/skill/38492"
+    }
+  ],
+  "tag": [],
+  "hash": "dce62a18"
+}

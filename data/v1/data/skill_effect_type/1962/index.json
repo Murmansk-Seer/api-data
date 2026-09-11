@@ -1,0 +1,46 @@
+{
+  "id": 1962,
+  "args_num": 0,
+  "info": "未击败对手则消除对手回合类效果",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]未[color=#57c975]击败[/color]对手则消除对手[color=#52a5f2]回合类效果[/color]",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 29153,
+      "url": "https://api.seerapi.com/v1/skill/29153"
+    },
+    {
+      "id": 36547,
+      "url": "https://api.seerapi.com/v1/skill/36547"
+    },
+    {
+      "id": 36611,
+      "url": "https://api.seerapi.com/v1/skill/36611"
+    },
+    {
+      "id": 36945,
+      "url": "https://api.seerapi.com/v1/skill/36945"
+    },
+    {
+      "id": 38275,
+      "url": "https://api.seerapi.com/v1/skill/38275"
+    },
+    {
+      "id": 38312,
+      "url": "https://api.seerapi.com/v1/skill/38312"
+    },
+    {
+      "id": 38467,
+      "url": "https://api.seerapi.com/v1/skill/38467"
+    }
+  ],
+  "tag": [
+    {
+      "id": 30442,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/30442"
+    }
+  ],
+  "hash": "d28e3c91"
+}

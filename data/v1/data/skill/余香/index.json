@@ -1,0 +1,66 @@
+{
+  "data": {
+    "36459": {
+      "id": 36459,
+      "name": "余香",
+      "power": 80,
+      "max_pp": 20,
+      "accuracy": 96,
+      "crit_rate": 6.25,
+      "priority": 3,
+      "must_hit": false,
+      "atk_num": 1,
+      "info": null,
+      "category": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/skill_category/1"
+      },
+      "type": {
+        "id": 21,
+        "url": "https://api.seerapi.com/v1/element_type_combination/21"
+      },
+      "learned_by_pet": [],
+      "skill_effect": [
+        {
+          "info": "吸取对手能力提升状态，吸取成功则下1次受到的攻击伤害减少200点",
+          "analyze_info": "[sprite name=iconHit][color=#52a5f2]吸取[/color]对手能力提升状态，[color=#52a5f2]吸取[/color]成功则下1次受到的攻击伤害减少200点（boss有效）",
+          "args": [
+            1,
+            200
+          ],
+          "effect": {
+            "id": 1681,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1681"
+          }
+        },
+        {
+          "info": "自身主动切换下场后令己方下只精灵出战时恢复200点体力",
+          "analyze_info": "[sprite name=iconHit]自身[color=#52a5f2]主动切换[/color][color=#57c975]下场后[/color]令[color=#52a5f2]己方[/color]下只精灵[color=#57c975]出战时[/color]恢复200点体力",
+          "args": [
+            200
+          ],
+          "effect": {
+            "id": 1702,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1702"
+          }
+        },
+        {
+          "info": "对手下1次主动切换或死亡切换精灵时，在场精灵吸取对手下只出场精灵最大体力的1/4",
+          "analyze_info": "[sprite name=iconHit]对手下1次[color=#52a5f2]主动切换[/color]或死亡切换精灵时，在场精灵[color=#52a5f2]吸取[/color]对手下只出场精灵最大体力的1/4",
+          "args": [
+            1,
+            4
+          ],
+          "effect": {
+            "id": 1779,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1779"
+          }
+        }
+      ],
+      "friend_skill_effect": [],
+      "hide_effect": null,
+      "advance": null
+    }
+  },
+  "hash": "5a2bb50e"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 2455,
+  "args_num": 2,
+  "info": "对手处于能力提升状态时{0}回合内令对手体力恢复效果减少{1}%",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]对手处于能力提升状态时{0}回合内令对手体力恢复效果减少{1}%",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 38371,
+      "url": "https://api.seerapi.com/v1/skill/38371"
+    }
+  ],
+  "tag": [
+    {
+      "id": 45247,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/45247"
+    }
+  ],
+  "hash": "d1fea3a7"
+}

@@ -1,0 +1,37 @@
+{
+  "id": 4,
+  "name": "星际擂台",
+  "point_total": 105,
+  "is_series": true,
+  "achievement": [
+    {
+      "id": 5004001,
+      "url": "https://api.seerapi.com/v1/achievement/5004001"
+    },
+    {
+      "id": 5004002,
+      "url": "https://api.seerapi.com/v1/achievement/5004002"
+    },
+    {
+      "id": 5004003,
+      "url": "https://api.seerapi.com/v1/achievement/5004003"
+    },
+    {
+      "id": 5004004,
+      "url": "https://api.seerapi.com/v1/achievement/5004004"
+    },
+    {
+      "id": 5004005,
+      "url": "https://api.seerapi.com/v1/achievement/5004005"
+    },
+    {
+      "id": 5004006,
+      "url": "https://api.seerapi.com/v1/achievement/5004006"
+    }
+  ],
+  "type": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/achievement_type/4"
+  },
+  "hash": "21bc657d"
+}

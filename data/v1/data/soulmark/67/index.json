@@ -1,0 +1,22 @@
+{
+  "id": 67,
+  "desc": "每次攻击6%使对手流血",
+  "desc_formatting_adjustment": null,
+  "analyze_desc": "",
+  "pve_effective": null,
+  "intensified": false,
+  "is_adv": false,
+  "pet": [
+    {
+      "id": 2571,
+      "url": "https://api.seerapi.com/v1/pet/2571"
+    }
+  ],
+  "effect": null,
+  "effect_alias": null,
+  "tag": [],
+  "intensified_to": null,
+  "from": null,
+  "advance": null,
+  "hash": "1604e77"
+}

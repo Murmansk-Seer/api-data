@@ -1,0 +1,54 @@
+{
+  "id": 1953,
+  "args_num": 1,
+  "info": "对手处于能力下降状态则威力提升{0}%",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]对手处于能力下降状态则[color=#52a5f2]威力[/color]提升{0}%",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 36522,
+      "url": "https://api.seerapi.com/v1/skill/36522"
+    },
+    {
+      "id": 36594,
+      "url": "https://api.seerapi.com/v1/skill/36594"
+    },
+    {
+      "id": 36700,
+      "url": "https://api.seerapi.com/v1/skill/36700"
+    },
+    {
+      "id": 36866,
+      "url": "https://api.seerapi.com/v1/skill/36866"
+    },
+    {
+      "id": 36949,
+      "url": "https://api.seerapi.com/v1/skill/36949"
+    },
+    {
+      "id": 37436,
+      "url": "https://api.seerapi.com/v1/skill/37436"
+    },
+    {
+      "id": 37709,
+      "url": "https://api.seerapi.com/v1/skill/37709"
+    },
+    {
+      "id": 38211,
+      "url": "https://api.seerapi.com/v1/skill/38211"
+    },
+    {
+      "id": 38358,
+      "url": "https://api.seerapi.com/v1/skill/38358"
+    }
+  ],
+  "tag": [
+    {
+      "id": 18673,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/18673"
+    }
+  ],
+  "hash": "ef5061f8"
+}

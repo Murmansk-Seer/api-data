@@ -1,0 +1,29 @@
+{
+  "data": {
+    "54": {
+      "id": 54,
+      "name": "作战实验室",
+      "point_total": 35,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 4054001,
+          "url": "https://api.seerapi.com/v1/achievement/4054001"
+        },
+        {
+          "id": 4054002,
+          "url": "https://api.seerapi.com/v1/achievement/4054002"
+        },
+        {
+          "id": 4054003,
+          "url": "https://api.seerapi.com/v1/achievement/4054003"
+        }
+      ],
+      "type": {
+        "id": 3,
+        "url": "https://api.seerapi.com/v1/achievement_type/3"
+      }
+    }
+  },
+  "hash": "ad71f43a"
+}

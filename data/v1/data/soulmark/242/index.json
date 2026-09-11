@@ -1,0 +1,22 @@
+{
+  "id": 242,
+  "desc": "所有特殊攻击必定命中",
+  "desc_formatting_adjustment": null,
+  "analyze_desc": "",
+  "pve_effective": null,
+  "intensified": false,
+  "is_adv": false,
+  "pet": [
+    {
+      "id": 2322,
+      "url": "https://api.seerapi.com/v1/pet/2322"
+    }
+  ],
+  "effect": null,
+  "effect_alias": null,
+  "tag": [],
+  "intensified_to": null,
+  "from": null,
+  "advance": null,
+  "hash": "99a1caee"
+}

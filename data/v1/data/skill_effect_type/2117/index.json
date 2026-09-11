@@ -1,0 +1,64 @@
+{
+  "id": 2117,
+  "args_num": 2,
+  "info": "将对手所处的{0}转化为{1}",
+  "info_formatting_adjustment": null,
+  "analyze_info": "[sprite name=iconHit]将对手所处的[color=#57c975]{0}[/color][color=#52a5f2]转化[/color]为[color=#57c975]{1}[/color]",
+  "pve_effective": false,
+  "param": [
+    {
+      "position": 0,
+      "param": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/skill_effect_param/1"
+      }
+    },
+    {
+      "position": 1,
+      "param": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/skill_effect_param/1"
+      }
+    }
+  ],
+  "skill": [
+    {
+      "id": 37184,
+      "url": "https://api.seerapi.com/v1/skill/37184"
+    },
+    {
+      "id": 37527,
+      "url": "https://api.seerapi.com/v1/skill/37527"
+    },
+    {
+      "id": 37808,
+      "url": "https://api.seerapi.com/v1/skill/37808"
+    },
+    {
+      "id": 37868,
+      "url": "https://api.seerapi.com/v1/skill/37868"
+    },
+    {
+      "id": 38018,
+      "url": "https://api.seerapi.com/v1/skill/38018"
+    },
+    {
+      "id": 38026,
+      "url": "https://api.seerapi.com/v1/skill/38026"
+    },
+    {
+      "id": 38257,
+      "url": "https://api.seerapi.com/v1/skill/38257"
+    },
+    {
+      "id": 38323,
+      "url": "https://api.seerapi.com/v1/skill/38323"
+    },
+    {
+      "id": 38368,
+      "url": "https://api.seerapi.com/v1/skill/38368"
+    }
+  ],
+  "tag": [],
+  "hash": "e557fcdb"
+}

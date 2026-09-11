@@ -1,0 +1,26 @@
+{
+  "data": {
+    "162": {
+      "id": 162,
+      "name": "赤焰名士",
+      "resource_id": 1400162,
+      "enemy_resource_id": null,
+      "card_price": 16,
+      "diamond_price": null,
+      "skinhouse_price": null,
+      "discounted_skinhouse_price": null,
+      "ticket_num": null,
+      "pet": {
+        "id": 3071,
+        "url": "https://api.seerapi.com/v1/pet/3071"
+      },
+      "category": {
+        "id": 2,
+        "url": "https://api.seerapi.com/v1/pet_skin_category/2"
+      },
+      "series": null,
+      "sub_type": null
+    }
+  },
+  "hash": "6fe9bc5a"
+}

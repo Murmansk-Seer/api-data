@@ -1,0 +1,28 @@
+{
+  "data": {
+    "5163004": {
+      "is_ability_bonus": false,
+      "ability_desc": null,
+      "type": {
+        "id": 4,
+        "url": "https://api.seerapi.com/v1/achievement_type/4"
+      },
+      "branch": {
+        "id": 163,
+        "url": "https://api.seerapi.com/v1/achievement_branch/163"
+      },
+      "next_level_achievement": null,
+      "prev_level_achievement": null,
+      "attr_bonus": null,
+      "id": 5163004,
+      "name": "巅峰对战（三）",
+      "point": 15,
+      "desc": "玩家在任意赛季非自由模式中进行5000次对战",
+      "is_hide": false,
+      "title_id": null,
+      "title": null,
+      "original_title": null
+    }
+  },
+  "hash": "ad886e7"
+}

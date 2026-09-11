@@ -1,0 +1,180 @@
+{
+  "allOf": [
+    {
+      "$defs": {
+        "EidEffectInUse": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/eid_effect_in_use"
+        },
+        "ResourceRef_PetAdvance_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "pet_advance"
+        },
+        "ResourceRef_Pet_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "pet"
+        },
+        "ResourceRef_SoulmarkTagCategory_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "soulmark_tag"
+        },
+        "ResourceRef_Soulmark_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "soulmark"
+        }
+      },
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "desc": {
+          "description": "魂印描述",
+          "title": "Desc",
+          "type": "string"
+        },
+        "desc_formatting_adjustment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Unity 客户端历史格式的魂印描述文本（部分旧魂印专用，应优先使用 analyze_desc 字段）",
+          "title": "Desc Formatting Adjustment"
+        },
+        "analyze_desc": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "当前 Unity 端采用的格式化魂印描述文本",
+          "title": "Analyze Desc"
+        },
+        "pve_effective": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "该魂印是否PVE生效，如果为null则表示无法通过数据层面推断其是否生效",
+          "title": "Pve Effective"
+        },
+        "intensified": {
+          "description": "是否是强化的魂印",
+          "title": "Intensified",
+          "type": "boolean"
+        },
+        "is_adv": {
+          "description": "是否是神谕觉醒魂印",
+          "title": "Is Adv",
+          "type": "boolean"
+        },
+        "pet": {
+          "description": "可持有该魂印的精灵ID",
+          "items": {
+            "$ref": "#/$defs/ResourceRef_Pet_"
+          },
+          "title": "Pet",
+          "type": "array"
+        },
+        "effect": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EidEffectInUse"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "魂印效果"
+        },
+        "effect_alias": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "效果别名，命名规则为：alias_[效果ID]_[参数1]_[参数2]_…",
+          "title": "Effect Alias"
+        },
+        "tag": {
+          "description": "魂印标签，例如强攻，断回合等",
+          "items": {
+            "$ref": "#/$defs/ResourceRef_SoulmarkTagCategory_"
+          },
+          "title": "Tag",
+          "type": "array"
+        },
+        "intensified_to": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResourceRef_Soulmark_"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "强化后的魂印资源，该字段仅在该魂印有强化版时有效，否则为null"
+        },
+        "from": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResourceRef_Soulmark_"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "强化前的魂印资源，该字段仅在该魂印是强化/觉醒魂印时有效"
+        },
+        "advance": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResourceRef_PetAdvance_"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "觉醒后的魂印资源，该字段仅在该魂印是神谕觉醒魂印时有效"
+        }
+      },
+      "required": [
+        "id",
+        "desc",
+        "intensified",
+        "is_adv",
+        "pet",
+        "effect",
+        "tag",
+        "intensified_to",
+        "from"
+      ],
+      "title": "Soulmark",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

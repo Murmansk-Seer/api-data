@@ -1,0 +1,45 @@
+{
+  "data": {
+    "175": {
+      "id": 175,
+      "name": "群星牌",
+      "point_total": 10,
+      "is_series": false,
+      "achievement": [
+        {
+          "id": 3175001,
+          "url": "https://api.seerapi.com/v1/achievement/3175001"
+        },
+        {
+          "id": 3175002,
+          "url": "https://api.seerapi.com/v1/achievement/3175002"
+        },
+        {
+          "id": 3175003,
+          "url": "https://api.seerapi.com/v1/achievement/3175003"
+        },
+        {
+          "id": 3175004,
+          "url": "https://api.seerapi.com/v1/achievement/3175004"
+        },
+        {
+          "id": 3175005,
+          "url": "https://api.seerapi.com/v1/achievement/3175005"
+        },
+        {
+          "id": 3175006,
+          "url": "https://api.seerapi.com/v1/achievement/3175006"
+        },
+        {
+          "id": 3175007,
+          "url": "https://api.seerapi.com/v1/achievement/3175007"
+        }
+      ],
+      "type": {
+        "id": 2,
+        "url": "https://api.seerapi.com/v1/achievement_type/2"
+      }
+    }
+  },
+  "hash": "1b5aa879"
+}

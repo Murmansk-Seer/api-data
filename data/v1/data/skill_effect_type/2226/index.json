@@ -1,0 +1,46 @@
+{
+  "id": 2226,
+  "args_num": 1,
+  "info": "解除双方所处的异常状态，解除成功则免疫下{0}次对手的攻击",
+  "info_formatting_adjustment": "解除双方所处的异常状态\r\n--><condition>解除成功</condition>则免疫下{0}次对手的攻击",
+  "analyze_info": "[sprite name=iconHit]解除双方所处的异常状态，解除成功则免疫下{0}次对手的攻击",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28866,
+      "url": "https://api.seerapi.com/v1/skill/28866"
+    },
+    {
+      "id": 28911,
+      "url": "https://api.seerapi.com/v1/skill/28911"
+    },
+    {
+      "id": 29421,
+      "url": "https://api.seerapi.com/v1/skill/29421"
+    },
+    {
+      "id": 38093,
+      "url": "https://api.seerapi.com/v1/skill/38093"
+    },
+    {
+      "id": 38406,
+      "url": "https://api.seerapi.com/v1/skill/38406"
+    },
+    {
+      "id": 38450,
+      "url": "https://api.seerapi.com/v1/skill/38450"
+    }
+  ],
+  "tag": [
+    {
+      "id": 37134,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/37134"
+    },
+    {
+      "id": 44313,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/44313"
+    }
+  ],
+  "hash": "5543488b"
+}

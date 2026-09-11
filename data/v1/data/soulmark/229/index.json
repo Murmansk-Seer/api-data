@@ -1,0 +1,27 @@
+{
+  "id": 229,
+  "desc": "5%概率令对手属性技能失效",
+  "desc_formatting_adjustment": null,
+  "analyze_desc": "",
+  "pve_effective": false,
+  "intensified": false,
+  "is_adv": false,
+  "pet": [
+    {
+      "id": 1279,
+      "url": "https://api.seerapi.com/v1/pet/1279"
+    }
+  ],
+  "effect": null,
+  "effect_alias": null,
+  "tag": [
+    {
+      "id": 14,
+      "url": "https://api.seerapi.com/v1/soulmark_tag/14"
+    }
+  ],
+  "intensified_to": null,
+  "from": null,
+  "advance": null,
+  "hash": "763a673"
+}

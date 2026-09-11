@@ -1,0 +1,137 @@
+{
+  "allOf": [
+    {
+      "$defs": {
+        "ResourceRef_SkillEffectParam_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "skill_effect_param"
+        },
+        "ResourceRef_SkillEffectTypeTag_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "skill_effect_type_tag"
+        },
+        "ResourceRef_Skill_": {
+          "$ref": "https://api.seerapi.com/v1/schemas/common/resource_ref",
+          "x-model-name": "skill"
+        },
+        "SkillEffectParamInType": {
+          "properties": {
+            "id": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Id"
+            },
+            "position": {
+              "description": "参数位置",
+              "title": "Position",
+              "type": "integer"
+            },
+            "param": {
+              "$ref": "#/$defs/ResourceRef_SkillEffectParam_",
+              "description": "参数类型引用"
+            }
+          },
+          "required": [
+            "position",
+            "param"
+          ],
+          "title": "SkillEffectParamInType",
+          "type": "object"
+        }
+      },
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "args_num": {
+          "description": "参数数量",
+          "title": "Args Num",
+          "type": "integer"
+        },
+        "info": {
+          "description": "效果描述",
+          "title": "Info",
+          "type": "string"
+        },
+        "info_formatting_adjustment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "效果描述的\"可格式化版本\"，用于呈现Unity端中的多行描述形式",
+          "title": "Info Formatting Adjustment"
+        },
+        "analyze_info": {
+          "description": "新版 Unity 端采用的格式化技能效果描述文本",
+          "title": "Analyze Info",
+          "type": "string"
+        },
+        "pve_effective": {
+          "description": "该效果是否PVE生效",
+          "title": "Pve Effective",
+          "type": "boolean"
+        },
+        "param": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/SkillEffectParamInType"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "参数类型列表，描述参数类型和参数位置",
+          "title": "Param"
+        },
+        "skill": {
+          "description": "使用该效果的技能列表",
+          "items": {
+            "$ref": "#/$defs/ResourceRef_Skill_"
+          },
+          "title": "Skill",
+          "type": "array"
+        },
+        "tag": {
+          "description": "标签列表",
+          "items": {
+            "$ref": "#/$defs/ResourceRef_SkillEffectTypeTag_"
+          },
+          "title": "Tag",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "args_num",
+        "info",
+        "analyze_info",
+        "pve_effective"
+      ],
+      "title": "SkillEffectType",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

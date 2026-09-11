@@ -1,0 +1,29 @@
+{
+  "data": {
+    "157": {
+      "id": 157,
+      "name": "PVP精灵战斗力",
+      "point_total": 45,
+      "is_series": true,
+      "achievement": [
+        {
+          "id": 1157001,
+          "url": "https://api.seerapi.com/v1/achievement/1157001"
+        },
+        {
+          "id": 1157002,
+          "url": "https://api.seerapi.com/v1/achievement/1157002"
+        },
+        {
+          "id": 1157003,
+          "url": "https://api.seerapi.com/v1/achievement/1157003"
+        }
+      ],
+      "type": {
+        "id": 0,
+        "url": "https://api.seerapi.com/v1/achievement_type/0"
+      }
+    }
+  },
+  "hash": "d85313ad"
+}

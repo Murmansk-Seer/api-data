@@ -1,0 +1,30 @@
+{
+  "id": 1910,
+  "args_num": 1,
+  "info": "全属性+{0}，自身拥有护罩时强化效果翻倍",
+  "info_formatting_adjustment": "全属性+{0}\r\n--><condition>自身拥有护罩时</condition>强化效果翻倍",
+  "analyze_info": "[sprite name=iconHit][color=#52a5f2]全属性[/color]+{0}，自身拥有[color=#57c975]护罩[/color]时强化效果翻倍",
+  "pve_effective": false,
+  "param": null,
+  "skill": [
+    {
+      "id": 28175,
+      "url": "https://api.seerapi.com/v1/skill/28175"
+    },
+    {
+      "id": 28407,
+      "url": "https://api.seerapi.com/v1/skill/28407"
+    },
+    {
+      "id": 28766,
+      "url": "https://api.seerapi.com/v1/skill/28766"
+    }
+  ],
+  "tag": [
+    {
+      "id": 44951,
+      "url": "https://api.seerapi.com/v1/skill_effect_type_tag/44951"
+    }
+  ],
+  "hash": "4d1a0b88"
+}
