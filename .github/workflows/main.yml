@@ -113,45 +113,6 @@ jobs:
                   mkdir -p source/patch
                   mv patch-sources/patches/* source/patch
 
-            - name: Patch unsupported empty item categories
-              if: steps.source_check.outputs.skip != 'true'
-              run: |
-                  python - <<'PY'
-                  import json
-                  from pathlib import Path
-
-                  unity_dir = Path("source/unity")
-                  category_file = unity_dir / "itemsOptimizeCat.json"
-                  category_data = json.loads(category_file.read_text(encoding="utf-8"))
-                  categories = category_data["root"]["cats"]
-
-                  missing = []
-                  supported = []
-                  unsupported_empty = []
-                  for category in categories:
-                      category_id = category["id"]
-                      item_file = unity_dir / f"itemsOptimizeCatItems{category_id}.json"
-                      if item_file.exists():
-                          supported.append(category)
-                      else:
-                          missing.append(str(category_id))
-                          unsupported_empty.append(category)
-
-                  if unsupported_empty:
-                      category_data["root"]["cats"] = supported
-                      category_file.write_text(
-                          json.dumps(category_data, ensure_ascii=False, indent=2) + "\n",
-                          encoding="utf-8",
-                      )
-                      print(
-                          "Removed unsupported empty item categories without item files: "
-                          + ", ".join(missing)
-                      )
-                  else:
-                      print("No unsupported empty item categories.")
-
-                  PY
-
             - name: Patch Unity-only skills missing Flash rows
               if: steps.source_check.outputs.skip != 'true'
               run: python scripts/patch_unity_only_skills.py source
