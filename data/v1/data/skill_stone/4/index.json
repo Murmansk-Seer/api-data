@@ -1,6 +1,7 @@
 {
   "id": 4,
   "name": "A级草系技能石",
+  "move_name": "草石之力-A",
   "rank": 4,
   "power": 120,
   "max_pp": 5,
@@ -146,5 +147,5 @@
       ]
     }
   ],
-  "hash": "a997d3a6"
+  "hash": "e1fd26af"
 }

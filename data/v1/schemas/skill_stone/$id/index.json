@@ -33,9 +33,17 @@
               "type": "integer"
             },
             "prob": {
-              "description": "技能石效果激活概率，0到1之间",
-              "title": "Prob",
-              "type": "number"
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "技能石效果激活概率，0到1之间；官方旧版配置缺失时为null",
+              "title": "Prob"
             },
             "effect": {
               "description": "技能石效果列表",
@@ -48,7 +56,6 @@
           },
           "required": [
             "inner_id",
-            "prob",
             "effect"
           ],
           "title": "SkillStoneEffect",
@@ -65,6 +72,19 @@
           "description": "技能石名称",
           "title": "Name",
           "type": "string"
+        },
+        "move_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "当前Unity技能配置中的招式名称，例如“电石之力-S”",
+          "title": "Move Name"
         },
         "rank": {
           "description": "技能石等级，1到5分别对应D, C, B, A, S",

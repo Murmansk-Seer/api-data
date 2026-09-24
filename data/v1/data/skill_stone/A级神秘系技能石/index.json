@@ -3,6 +3,7 @@
     "69": {
       "id": 69,
       "name": "A级神秘系技能石",
+      "move_name": "神秘石之力-A",
       "rank": 4,
       "power": 120,
       "max_pp": 5,
@@ -151,5 +152,5 @@
       ]
     }
   },
-  "hash": "f3f2cbbc"
+  "hash": "33aeece9"
 }

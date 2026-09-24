@@ -3,6 +3,7 @@
     "60": {
       "id": 60,
       "name": "S级光系技能石",
+      "move_name": "光石之力-S",
       "rank": 5,
       "power": 160,
       "max_pp": 2,
@@ -150,5 +151,5 @@
       ]
     }
   },
-  "hash": "12fec1bf"
+  "hash": "5da30b7a"
 }

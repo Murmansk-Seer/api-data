@@ -5,24 +5,24 @@
       "name": "冰系技能石",
       "skill_stone": [
         {
-          "id": 45,
-          "url": "https://api.seerapi.com/v1/skill_stone/45"
-        },
-        {
-          "id": 44,
-          "url": "https://api.seerapi.com/v1/skill_stone/44"
-        },
-        {
-          "id": 43,
-          "url": "https://api.seerapi.com/v1/skill_stone/43"
+          "id": 41,
+          "url": "https://api.seerapi.com/v1/skill_stone/41"
         },
         {
           "id": 42,
           "url": "https://api.seerapi.com/v1/skill_stone/42"
         },
         {
-          "id": 41,
-          "url": "https://api.seerapi.com/v1/skill_stone/41"
+          "id": 43,
+          "url": "https://api.seerapi.com/v1/skill_stone/43"
+        },
+        {
+          "id": 44,
+          "url": "https://api.seerapi.com/v1/skill_stone/44"
+        },
+        {
+          "id": 45,
+          "url": "https://api.seerapi.com/v1/skill_stone/45"
         }
       ],
       "type": {
@@ -31,5 +31,5 @@
       }
     }
   },
-  "hash": "90d36fe4"
+  "hash": "74c2e24a"
 }

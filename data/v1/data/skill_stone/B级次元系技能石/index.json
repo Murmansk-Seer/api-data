@@ -3,6 +3,7 @@
     "83": {
       "id": 83,
       "name": "B级次元系技能石",
+      "move_name": "次元石之力-B",
       "rank": 3,
       "power": 90,
       "max_pp": 15,
@@ -151,5 +152,5 @@
       ]
     }
   },
-  "hash": "fefd5eb1"
+  "hash": "49eaeebb"
 }

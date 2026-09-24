@@ -5,24 +5,24 @@
       "name": "战斗系技能石",
       "skill_stone": [
         {
-          "id": 55,
-          "url": "https://api.seerapi.com/v1/skill_stone/55"
-        },
-        {
-          "id": 54,
-          "url": "https://api.seerapi.com/v1/skill_stone/54"
-        },
-        {
-          "id": 53,
-          "url": "https://api.seerapi.com/v1/skill_stone/53"
+          "id": 51,
+          "url": "https://api.seerapi.com/v1/skill_stone/51"
         },
         {
           "id": 52,
           "url": "https://api.seerapi.com/v1/skill_stone/52"
         },
         {
-          "id": 51,
-          "url": "https://api.seerapi.com/v1/skill_stone/51"
+          "id": 53,
+          "url": "https://api.seerapi.com/v1/skill_stone/53"
+        },
+        {
+          "id": 54,
+          "url": "https://api.seerapi.com/v1/skill_stone/54"
+        },
+        {
+          "id": 55,
+          "url": "https://api.seerapi.com/v1/skill_stone/55"
         }
       ],
       "type": {
@@ -31,5 +31,5 @@
       }
     }
   },
-  "hash": "506d067f"
+  "hash": "f3e08c94"
 }

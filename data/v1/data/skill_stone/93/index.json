@@ -1,6 +1,7 @@
 {
   "id": 93,
   "name": "B级邪灵系技能石",
+  "move_name": "邪灵石之力-B",
   "rank": 3,
   "power": 90,
   "max_pp": 15,
@@ -147,5 +148,5 @@
       ]
     }
   ],
-  "hash": "c5c084cc"
+  "hash": "dd35ea25"
 }

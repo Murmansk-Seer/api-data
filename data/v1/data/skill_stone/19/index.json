@@ -1,6 +1,7 @@
 {
   "id": 19,
   "name": "A级飞行系技能石",
+  "move_name": "飞行石之力-A",
   "rank": 4,
   "power": 120,
   "max_pp": 5,
@@ -148,5 +149,5 @@
       ]
     }
   ],
-  "hash": "ed9e241d"
+  "hash": "5cb567bc"
 }

@@ -1,6 +1,7 @@
 {
   "id": 76,
   "name": "D级圣灵系技能石",
+  "move_name": "圣灵石之力-D",
   "rank": 1,
   "power": 40,
   "max_pp": 30,
@@ -147,5 +148,5 @@
       ]
     }
   ],
-  "hash": "bd4f8a25"
+  "hash": "425aee2f"
 }

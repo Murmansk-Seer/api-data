@@ -1,6 +1,7 @@
 {
   "id": 33,
   "name": "B级地面系技能石",
+  "move_name": "地面石之力-B",
   "rank": 3,
   "power": 90,
   "max_pp": 15,
@@ -148,5 +149,5 @@
       ]
     }
   ],
-  "hash": "bf7227fd"
+  "hash": "3dfe4dbd"
 }

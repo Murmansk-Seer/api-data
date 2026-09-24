@@ -1,6 +1,7 @@
 {
   "id": 9,
   "name": "A级水系技能石",
+  "move_name": "水石之力-A",
   "rank": 4,
   "power": 120,
   "max_pp": 5,
@@ -146,5 +147,5 @@
       ]
     }
   ],
-  "hash": "69e1b1ae"
+  "hash": "bfd73cdb"
 }

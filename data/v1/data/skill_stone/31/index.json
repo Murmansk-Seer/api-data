@@ -1,6 +1,7 @@
 {
   "id": 31,
   "name": "D级地面系技能石",
+  "move_name": "地面石之力-D",
   "rank": 1,
   "power": 40,
   "max_pp": 30,
@@ -148,5 +149,5 @@
       ]
     }
   ],
-  "hash": "6fa9cbac"
+  "hash": "9de99580"
 }

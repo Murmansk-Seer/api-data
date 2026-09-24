@@ -1,6 +1,7 @@
 {
   "id": 38,
   "name": "B级普通系技能石",
+  "move_name": "普通石之力-B",
   "rank": 3,
   "power": 90,
   "max_pp": 15,
@@ -147,5 +148,5 @@
       ]
     }
   ],
-  "hash": "abb67a8a"
+  "hash": "7ec42c28"
 }

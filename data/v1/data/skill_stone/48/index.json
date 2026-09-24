@@ -1,6 +1,7 @@
 {
   "id": 48,
   "name": "B级超能系技能石",
+  "move_name": "超能石之力-B",
   "rank": 3,
   "power": 90,
   "max_pp": 15,
@@ -146,5 +147,5 @@
       ]
     }
   ],
-  "hash": "b0e3cc77"
+  "hash": "ee7d29ca"
 }

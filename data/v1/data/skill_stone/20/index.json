@@ -1,6 +1,7 @@
 {
   "id": 20,
   "name": "S级飞行系技能石",
+  "move_name": "飞行石之力-S",
   "rank": 5,
   "power": 160,
   "max_pp": 2,
@@ -148,5 +149,5 @@
       ]
     }
   ],
-  "hash": "ba76a062"
+  "hash": "d8b5a2ec"
 }
