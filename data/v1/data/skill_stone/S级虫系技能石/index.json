@@ -3,6 +3,7 @@
     "105": {
       "id": 105,
       "name": "S级虫系技能石",
+      "move_name": "虫石之力-S",
       "rank": 5,
       "power": 160,
       "max_pp": 2,
@@ -151,5 +152,5 @@
       ]
     }
   },
-  "hash": "ae31ebe4"
+  "hash": "be6a1c8e"
 }

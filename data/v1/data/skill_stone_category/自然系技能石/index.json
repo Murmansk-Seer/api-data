@@ -5,24 +5,24 @@
       "name": "自然系技能石",
       "skill_stone": [
         {
-          "id": 100,
-          "url": "https://api.seerapi.com/v1/skill_stone/100"
-        },
-        {
-          "id": 99,
-          "url": "https://api.seerapi.com/v1/skill_stone/99"
-        },
-        {
-          "id": 98,
-          "url": "https://api.seerapi.com/v1/skill_stone/98"
+          "id": 96,
+          "url": "https://api.seerapi.com/v1/skill_stone/96"
         },
         {
           "id": 97,
           "url": "https://api.seerapi.com/v1/skill_stone/97"
         },
         {
-          "id": 96,
-          "url": "https://api.seerapi.com/v1/skill_stone/96"
+          "id": 98,
+          "url": "https://api.seerapi.com/v1/skill_stone/98"
+        },
+        {
+          "id": 99,
+          "url": "https://api.seerapi.com/v1/skill_stone/99"
+        },
+        {
+          "id": 100,
+          "url": "https://api.seerapi.com/v1/skill_stone/100"
         }
       ],
       "type": {
@@ -31,5 +31,5 @@
       }
     }
   },
-  "hash": "6a69ab6c"
+  "hash": "1c99672e"
 }

@@ -3,29 +3,29 @@
   "name": "普通系技能石",
   "skill_stone": [
     {
-      "id": 40,
-      "url": "https://api.seerapi.com/v1/skill_stone/40"
-    },
-    {
-      "id": 39,
-      "url": "https://api.seerapi.com/v1/skill_stone/39"
-    },
-    {
-      "id": 38,
-      "url": "https://api.seerapi.com/v1/skill_stone/38"
+      "id": 36,
+      "url": "https://api.seerapi.com/v1/skill_stone/36"
     },
     {
       "id": 37,
       "url": "https://api.seerapi.com/v1/skill_stone/37"
     },
     {
-      "id": 36,
-      "url": "https://api.seerapi.com/v1/skill_stone/36"
+      "id": 38,
+      "url": "https://api.seerapi.com/v1/skill_stone/38"
+    },
+    {
+      "id": 39,
+      "url": "https://api.seerapi.com/v1/skill_stone/39"
+    },
+    {
+      "id": 40,
+      "url": "https://api.seerapi.com/v1/skill_stone/40"
     }
   ],
   "type": {
     "id": 8,
     "url": "https://api.seerapi.com/v1/element_type_combination/8"
   },
-  "hash": "127dba33"
+  "hash": "bc3e5dc5"
 }

@@ -3,6 +3,7 @@
     "65": {
       "id": 65,
       "name": "S级暗影系技能石",
+      "move_name": "暗影石之力-S",
       "rank": 5,
       "power": 160,
       "max_pp": 2,
@@ -150,5 +151,5 @@
       ]
     }
   },
-  "hash": "a8fab1ec"
+  "hash": "ff1213ab"
 }

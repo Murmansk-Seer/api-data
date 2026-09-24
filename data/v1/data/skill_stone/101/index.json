@@ -1,6 +1,7 @@
 {
   "id": 101,
   "name": "D级虫系技能石",
+  "move_name": "虫石之力-D",
   "rank": 1,
   "power": 40,
   "max_pp": 30,
@@ -147,5 +148,5 @@
       ]
     }
   ],
-  "hash": "7bbc31ba"
+  "hash": "ecb1843a"
 }

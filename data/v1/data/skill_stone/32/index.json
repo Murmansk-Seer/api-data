@@ -1,6 +1,7 @@
 {
   "id": 32,
   "name": "C级地面系技能石",
+  "move_name": "地面石之力-C",
   "rank": 2,
   "power": 60,
   "max_pp": 25,
@@ -148,5 +149,5 @@
       ]
     }
   ],
-  "hash": "eeef0c08"
+  "hash": "157be3ef"
 }

@@ -1,6 +1,7 @@
 {
   "id": 96,
   "name": "D级自然系技能石",
+  "move_name": "自然石之力-D",
   "rank": 1,
   "power": 40,
   "max_pp": 30,
@@ -147,5 +148,5 @@
       ]
     }
   ],
-  "hash": "3a5dbcf6"
+  "hash": "f7143dbc"
 }

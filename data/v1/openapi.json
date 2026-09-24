@@ -25899,6 +25899,18 @@
                 "title": "Name",
                 "description": "技能石名称"
               },
+              "move_name": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Move Name",
+                "description": "当前Unity技能配置中的招式名称，例如“电石之力-S”"
+              },
               "rank": {
                 "type": "integer",
                 "title": "Rank",
@@ -25947,9 +25959,16 @@
                       "description": "技能石效果的内部ID，当技能石为完美技能石时，会使用此ID表示效果"
                     },
                     "prob": {
-                      "type": "number",
+                      "anyOf": [
+                        {
+                          "type": "number"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
                       "title": "Prob",
-                      "description": "技能石效果激活概率，0到1之间"
+                      "description": "技能石效果激活概率，0到1之间；官方旧版配置缺失时为null"
                     },
                     "effect": {
                       "items": {
@@ -25963,7 +25982,6 @@
                   "type": "object",
                   "required": [
                     "inner_id",
-                    "prob",
                     "effect"
                   ],
                   "title": "SkillStoneEffect"
