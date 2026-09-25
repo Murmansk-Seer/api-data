@@ -99,8 +99,8 @@ jobs:
 
             - name: Install solaris
               if: steps.source_check.outputs.skip != 'true'
-              # Pin the activity timezone fix until it is available on PyPI.
-              run: uv tool install --force 'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@be35da8b6c6b1a82b2c6acd88c4413626ae3a51a#subdirectory=packages/solaris'
+              # Pin the merged Solaris timezone and analyzer fixes used for data generation.
+              run: uv tool install --force 'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@ac7fb0e9fa40942492ba96f350f525149f132b01#subdirectory=packages/solaris'
 
             - name: Setup tmate session
               if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
