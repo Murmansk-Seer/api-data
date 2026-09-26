@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   sync:
-    uses: Murmansk-Seer/.github/.github/workflows/sync-identical-reusable.yml@688cca34f62b5c8efbc3482b92ea1afdc6675d26
+    uses: Murmansk-Seer/.github/.github/workflows/sync-identical-reusable.yml@822429c0b88b018d85823ca27a2607b2546d42df
     with:
-      implementation_ref: 688cca34f62b5c8efbc3482b92ea1afdc6675d26
+      implementation_ref: 822429c0b88b018d85823ca27a2607b2546d42df
       dry_run: ${{ inputs.dry_run == true }}
