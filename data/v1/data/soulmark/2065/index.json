@@ -1,8 +1,8 @@
 {
   "id": 2065,
-  "desc": "自身位于出战背包时，己方免疫受到的失明状态|（boss无效）",
+  "desc": "自身位于出战背包时，己方免疫受到的失明|（boss无效）",
   "desc_formatting_adjustment": null,
-  "analyze_desc": "[sprite name=dot4]自身位于出战背包时，[color=#52a5f2]己方[/color]免疫受到的[color=#57c975]失明[/color]",
+  "analyze_desc": "[sprite name=dot4]自身位于出战背包时，[color=#52a5f2]己方[/color][color=#57c975]免疫[/color]受到的[color=#57c975]失明[/color]",
   "pve_effective": false,
   "intensified": false,
   "is_adv": false,
@@ -32,5 +32,5 @@
   "intensified_to": null,
   "from": null,
   "advance": null,
-  "hash": "9098e797"
+  "hash": "4c70b3d7"
 }

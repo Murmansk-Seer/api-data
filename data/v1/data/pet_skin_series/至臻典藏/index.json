@@ -7,10 +7,14 @@
         {
           "id": 837,
           "url": "https://api.seerapi.com/v1/pet_skin/837"
+        },
+        {
+          "id": 871,
+          "url": "https://api.seerapi.com/v1/pet_skin/871"
         }
       ],
       "sub_types": []
     }
   },
-  "hash": "291b5e1e"
+  "hash": "14d5677e"
 }

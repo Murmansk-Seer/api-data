@@ -42,7 +42,7 @@
       }
     },
     {
-      "info": "击败对手则令对手下一只出场的精灵害怕，且获得害怕道邪龙之噬并附着至自身的攻击技能",
+      "info": "击败对手则令对手下一只出场的精灵害怕，且获得2道邪龙之噬并附着至自身的攻击技能",
       "analyze_info": "[sprite name=iconHit][color=#57c975]击败[/color]对手则令对手下一只出场的精灵[color=#57c975]害怕[/color]，且获得2道[color=#f35555]邪龙之噬[/color]并附着至自身的攻击技能",
       "args": [
         6,
@@ -57,5 +57,5 @@
   "friend_skill_effect": [],
   "hide_effect": null,
   "advance": null,
-  "hash": "60ccf670"
+  "hash": "6f701e2"
 }

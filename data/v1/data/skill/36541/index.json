@@ -29,7 +29,7 @@
       }
     },
     {
-      "info": "令对手下1次使用的威力高于150的攻击技能无效",
+      "info": "令对手下1次使用的威力值高于150的攻击技能无效",
       "analyze_info": "[sprite name=iconHit]令对手下1次使用的威力值高于150的攻击技能无效（boss有效）",
       "args": [
         150
@@ -43,5 +43,5 @@
   "friend_skill_effect": [],
   "hide_effect": null,
   "advance": null,
-  "hash": "fbc1a0de"
+  "hash": "70b54cf2"
 }

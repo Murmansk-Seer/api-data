@@ -2,9 +2,9 @@
   "data": {
     "1": {
       "id": 1,
-      "desc": "受到的所有攻击伤害减少10%",
+      "desc": "自身受到的攻击伤害减少10%",
       "desc_formatting_adjustment": null,
-      "analyze_desc": "受到的所有攻击伤害减少10",
+      "analyze_desc": "自身受到的攻击伤害减少10%",
       "pve_effective": false,
       "intensified": false,
       "is_adv": false,
@@ -97,5 +97,5 @@
       "advance": null
     }
   },
-  "hash": "c26e9995"
+  "hash": "f014f86"
 }

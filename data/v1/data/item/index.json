@@ -1,5 +1,5 @@
 {
-  "count": 12745,
+  "count": 12747,
   "next": null,
   "previous": null,
   "first": null,
@@ -30301,6 +30301,11 @@
       "name": "史沃勒的精元"
     },
     {
+      "id": 1728515,
+      "url": "https://api.seerapi.com/v1/item/1728515",
+      "name": "远古物质"
+    },
+    {
       "id": 1728511,
       "url": "https://api.seerapi.com/v1/item/1728511",
       "name": "暗冰结晶"
@@ -60286,6 +60291,11 @@
       "name": "Test一号箱子"
     },
     {
+      "id": 2400604,
+      "url": "https://api.seerapi.com/v1/item/2400604",
+      "name": "维德弗尼尔因子"
+    },
+    {
       "id": 2400603,
       "url": "https://api.seerapi.com/v1/item/2400603",
       "name": "琉梦因子"
@@ -63731,5 +63741,5 @@
       "name": "春日礼盒·浮云"
     }
   ],
-  "hash": "831fe0e5"
+  "hash": "2fb8641a"
 }

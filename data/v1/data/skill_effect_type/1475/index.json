@@ -170,6 +170,10 @@
     {
       "id": 38051,
       "url": "https://api.seerapi.com/v1/skill/38051"
+    },
+    {
+      "id": 38580,
+      "url": "https://api.seerapi.com/v1/skill/38580"
     }
   ],
   "tag": [
@@ -178,5 +182,5 @@
       "url": "https://api.seerapi.com/v1/skill_effect_type_tag/46009"
     }
   ],
-  "hash": "44f57d6a"
+  "hash": "c41e7894"
 }

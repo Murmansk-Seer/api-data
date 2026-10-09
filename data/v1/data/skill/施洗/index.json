@@ -32,7 +32,7 @@
         },
         {
           "info": "获得1分中音",
-          "analyze_info": "[sprite name=iconHit]获得1分[color=#f35555]中音[/color] ",
+          "analyze_info": "[sprite name=iconHit]获得1分[color=#f35555]中音[/color]",
           "args": [
             2
           ],
@@ -83,5 +83,5 @@
       "advance": null
     }
   },
-  "hash": "2807a1b8"
+  "hash": "eb951117"
 }

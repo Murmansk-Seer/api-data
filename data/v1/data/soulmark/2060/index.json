@@ -1,6 +1,6 @@
 {
   "id": 2060,
-  "desc": "自身攻击技能命中后2%的概率附加2025点固定伤害，未触发则附加216点固定伤害；自身属性技能命中后2%的概率自身恢复2026点体力，未触发则自身恢复217点体力",
+  "desc": "自身攻击技能命中后2%的概率附加2025点固定伤害，未触发则附加216点固定伤害；自身属性技能命中后2%的概率自身恢复2026点体力，未触发则自身恢复217点体力|（boss无效）",
   "desc_formatting_adjustment": null,
   "analyze_desc": "[sprite name=dot4]自身[color=#57c975]攻击技能命中后[/color]2%的概率附加2025点[color=#52a5f2]固定伤害[/color]，[color=#52a5f2]未触发[/color]则附加216点[color=#52a5f2]固定伤害[/color]；自身属性技能命中后2%的概率自身恢复2026点体力，[color=#52a5f2]未触发[/color]则自身恢复217点体力",
   "pve_effective": false,
@@ -36,5 +36,5 @@
   "intensified_to": null,
   "from": null,
   "advance": null,
-  "hash": "a3a00864"
+  "hash": "45887bd0"
 }

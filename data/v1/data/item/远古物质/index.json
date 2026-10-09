@@ -1,0 +1,15 @@
+{
+  "data": {
+    "1728515": {
+      "id": 1728515,
+      "name": "远古物质",
+      "desc": "在活动“召唤远古之力”中完成活跃度任务获得",
+      "max": 9999,
+      "category": {
+        "id": 17,
+        "url": "https://api.seerapi.com/v1/item_category/17"
+      }
+    }
+  },
+  "hash": "1e304e9c"
+}

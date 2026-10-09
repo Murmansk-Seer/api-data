@@ -24,10 +24,14 @@
       "url": "https://api.seerapi.com/v1/skill/29461"
     },
     {
+      "id": 29469,
+      "url": "https://api.seerapi.com/v1/skill/29469"
+    },
+    {
       "id": 37655,
       "url": "https://api.seerapi.com/v1/skill/37655"
     }
   ],
   "tag": [],
-  "hash": "ab8df3c8"
+  "hash": "d5a861ba"
 }

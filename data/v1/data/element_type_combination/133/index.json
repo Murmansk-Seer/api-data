@@ -1,0 +1,15 @@
+{
+  "id": 133,
+  "name": "远古 水",
+  "name_en": "ancient_water",
+  "primary": {
+    "id": 18,
+    "url": "https://api.seerapi.com/v1/element_type/18"
+  },
+  "secondary": {
+    "id": 2,
+    "url": "https://api.seerapi.com/v1/element_type/2"
+  },
+  "is_double": true,
+  "hash": "dd070177"
+}

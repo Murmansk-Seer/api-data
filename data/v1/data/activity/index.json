@@ -1,5 +1,5 @@
 {
-  "count": 561,
+  "count": 566,
   "next": null,
   "previous": null,
   "first": null,
@@ -2809,7 +2809,32 @@
       "id": 582,
       "url": "https://api.seerapi.com/v1/activity/582",
       "name": "绝魇魔女"
+    },
+    {
+      "id": 583,
+      "url": "https://api.seerapi.com/v1/activity/583",
+      "name": "陨石防卫战"
+    },
+    {
+      "id": 584,
+      "url": "https://api.seerapi.com/v1/activity/584",
+      "name": "万契之囹"
+    },
+    {
+      "id": 585,
+      "url": "https://api.seerapi.com/v1/activity/585",
+      "name": "召唤远古之力"
+    },
+    {
+      "id": 586,
+      "url": "https://api.seerapi.com/v1/activity/586",
+      "name": "圣灵之魂迈尔斯"
+    },
+    {
+      "id": 587,
+      "url": "https://api.seerapi.com/v1/activity/587",
+      "name": "投稿必得钻石"
     }
   ],
-  "hash": "40bb3013"
+  "hash": "77395337"
 }

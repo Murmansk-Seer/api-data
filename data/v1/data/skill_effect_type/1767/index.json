@@ -90,8 +90,12 @@
     {
       "id": 38510,
       "url": "https://api.seerapi.com/v1/skill/38510"
+    },
+    {
+      "id": 38577,
+      "url": "https://api.seerapi.com/v1/skill/38577"
     }
   ],
   "tag": [],
-  "hash": "e2179488"
+  "hash": "d25219b2"
 }

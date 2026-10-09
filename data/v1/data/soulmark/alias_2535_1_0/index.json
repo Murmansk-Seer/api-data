@@ -2,9 +2,9 @@
   "data": {
     "2123": {
       "id": 2123,
-      "desc": "自身使用技能后，若当次技能无效，则附加等同于当次技能威力值2倍的固定伤害并使此效果的倍数+1，最高增加至9（boss无效）",
+      "desc": "自身使用技能后，若当次技能无效，则附加等同于当次技能威力值2倍的固定伤害并使此效果的倍数+1，最高增加至9|（boss无效）",
       "desc_formatting_adjustment": null,
-      "analyze_desc": "[sprite name=dot4]自身[color=#57c975]使用技能后[/color]，若当次[color=#52a5f2]技能无效[/color]，则附加等同于当次技能威力值2倍的[color=#52a5f2]固定伤害[/color]并使此效果的倍数+1，最高增加至为9",
+      "analyze_desc": "[sprite name=dot4]自身[color=#57c975]使用技能后[/color]，若当次[color=#52a5f2]技能无效[/color]，则附加等同于当次技能威力值2倍的[color=#52a5f2]固定伤害[/color]并使此效果的倍数+1，最高增加至9",
       "pve_effective": false,
       "intensified": false,
       "is_adv": false,
@@ -36,5 +36,5 @@
       "advance": null
     }
   },
-  "hash": "c79f7166"
+  "hash": "3cd362c6"
 }

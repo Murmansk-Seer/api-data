@@ -1,7 +1,7 @@
 {
   "id": 2,
   "name": "挑战类",
-  "point_total": 5750,
+  "point_total": 5760,
   "achievement": [],
   "branch": [
     {
@@ -141,5 +141,5 @@
       "url": "https://api.seerapi.com/v1/achievement_branch/175"
     }
   ],
-  "hash": "f553eec6"
+  "hash": "e22a47ca"
 }

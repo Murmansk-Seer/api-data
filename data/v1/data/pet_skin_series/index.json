@@ -1,5 +1,5 @@
 {
-  "count": 26,
+  "count": 27,
   "next": null,
   "previous": null,
   "first": null,
@@ -134,7 +134,12 @@
       "id": 26,
       "url": "https://api.seerapi.com/v1/pet_skin_series/26",
       "name": "深海绮境"
+    },
+    {
+      "id": 27,
+      "url": "https://api.seerapi.com/v1/pet_skin_series/27",
+      "name": "星缘咖啡厅"
     }
   ],
-  "hash": "f46231aa"
+  "hash": "22ee54f9"
 }
