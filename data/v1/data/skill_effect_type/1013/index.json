@@ -60,6 +60,10 @@
       "url": "https://api.seerapi.com/v1/skill/29427"
     },
     {
+      "id": 29471,
+      "url": "https://api.seerapi.com/v1/skill/29471"
+    },
+    {
       "id": 33173,
       "url": "https://api.seerapi.com/v1/skill/33173"
     },
@@ -90,5 +94,5 @@
       "url": "https://api.seerapi.com/v1/skill_effect_type_tag/40695"
     }
   ],
-  "hash": "cbd89a62"
+  "hash": "4ce4b6"
 }

@@ -44,7 +44,7 @@
         },
         {
           "info": "随机附加240-360点固定伤害，技能无效时减少对手所有技能PP1点",
-          "analyze_info": "[sprite name=iconComp]随机附加240-360点[color=#52a5f2]固定伤害[/color]，技能无效时减少对手所有技能PP1点",
+          "analyze_info": "[sprite name=iconHit]随机附加240-360点[color=#52a5f2]固定伤害[/color]，[sprite name=iconInherent] 技能无效时减少对手所有技能PP1点",
           "args": [
             240,
             360
@@ -60,5 +60,5 @@
       "advance": null
     }
   },
-  "hash": "50e68f38"
+  "hash": "1f305be0"
 }

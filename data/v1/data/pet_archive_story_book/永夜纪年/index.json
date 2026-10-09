@@ -1839,9 +1839,13 @@
         {
           "id": 726,
           "url": "https://api.seerapi.com/v1/pet_archive_story_entry/726"
+        },
+        {
+          "id": 727,
+          "url": "https://api.seerapi.com/v1/pet_archive_story_entry/727"
         }
       ]
     }
   },
-  "hash": "9de3868a"
+  "hash": "6a5d3162"
 }

@@ -1,5 +1,5 @@
 {
-  "count": 3597,
+  "count": 3601,
   "next": null,
   "previous": null,
   "first": null,
@@ -17981,6 +17981,26 @@
       "name": null
     },
     {
+      "id": 3612,
+      "url": "https://api.seerapi.com/v1/pet_class/3612",
+      "name": null
+    },
+    {
+      "id": 3613,
+      "url": "https://api.seerapi.com/v1/pet_class/3613",
+      "name": null
+    },
+    {
+      "id": 3614,
+      "url": "https://api.seerapi.com/v1/pet_class/3614",
+      "name": null
+    },
+    {
+      "id": 3615,
+      "url": "https://api.seerapi.com/v1/pet_class/3615",
+      "name": null
+    },
+    {
       "id": 3656,
       "url": "https://api.seerapi.com/v1/pet_class/3656",
       "name": null
@@ -17991,5 +18011,5 @@
       "name": null
     }
   ],
-  "hash": "2deeb6b4"
+  "hash": "efa55765"
 }

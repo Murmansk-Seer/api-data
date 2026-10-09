@@ -1,0 +1,82 @@
+{
+  "id": 29468,
+  "name": "阻隔风墙",
+  "power": 0,
+  "max_pp": 5,
+  "accuracy": 95,
+  "crit_rate": null,
+  "priority": 0,
+  "must_hit": true,
+  "atk_num": 1,
+  "info": "免疫并反弹异常状态，将受到的伤害转化为体力，对手的能力开始下降",
+  "category": {
+    "id": 4,
+    "url": "https://api.seerapi.com/v1/skill_category/4"
+  },
+  "type": {
+    "id": 8,
+    "url": "https://api.seerapi.com/v1/element_type_combination/8"
+  },
+  "learned_by_pet": [],
+  "skill_effect": [
+    {
+      "info": "4回合内免疫并反弹所有受到的异常状态",
+      "analyze_info": "[sprite name=iconHit]4回合内免疫并[color=#52a5f2]反弹[/color]所有受到的异常状态（boss有效）",
+      "args": [
+        4
+      ],
+      "effect": {
+        "id": 191,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/191"
+      }
+    },
+    {
+      "info": "4回合内将受到的攻击伤害转化为自身体力",
+      "analyze_info": "[sprite name=iconHit]4回合内将受到的攻击伤害[color=#52a5f2]转化[/color]为自身体力（boss有效）",
+      "args": [
+        4
+      ],
+      "effect": {
+        "id": 128,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/128"
+      }
+    },
+    {
+      "info": "4回合内使用技能令对手攻击-2，防御-2，特攻-2，特防-2，未触发则自身下1次攻击造成伤害提升100%",
+      "analyze_info": "[sprite name=iconHit]4回合内使用技能令对手攻击-2，防御-2，特攻-2，特防-2，[color=#52a5f2]未触发[/color]则自身下1次攻击造成伤害提升100%",
+      "args": [
+        4,
+        -2,
+        -2,
+        -2,
+        -2,
+        0,
+        0,
+        1,
+        100
+      ],
+      "effect": {
+        "id": 2161,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/2161"
+      }
+    },
+    {
+      "info": "命中后100%使对手混乱，未触发则对手下2回合先制-3",
+      "analyze_info": "[sprite name=iconHit]命中后100%使对手[color=#57c975]混乱[/color]，[color=#52a5f2]未触发[/color]则对手下2回合[color=#52a5f2]先制[/color]-3",
+      "args": [
+        100,
+        10,
+        2,
+        3
+      ],
+      "effect": {
+        "id": 937,
+        "url": "https://api.seerapi.com/v1/skill_effect_type/937"
+      }
+    }
+  ],
+  "friend_skill_effect": [],
+  "hide_effect": null,
+  "advance": null,
+  "hash": "217c6cdc"
+}

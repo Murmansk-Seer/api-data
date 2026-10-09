@@ -1,0 +1,24 @@
+{
+  "data": {
+    "27": {
+      "id": 27,
+      "name": "星缘咖啡厅",
+      "skins": [
+        {
+          "id": 653,
+          "url": "https://api.seerapi.com/v1/pet_skin/653"
+        },
+        {
+          "id": 654,
+          "url": "https://api.seerapi.com/v1/pet_skin/654"
+        },
+        {
+          "id": 655,
+          "url": "https://api.seerapi.com/v1/pet_skin/655"
+        }
+      ],
+      "sub_types": []
+    }
+  },
+  "hash": "86fc0317"
+}

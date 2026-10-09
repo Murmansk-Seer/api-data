@@ -4508,6 +4508,10 @@
       "url": "https://api.seerapi.com/v1/skill/29466"
     },
     {
+      "id": 29468,
+      "url": "https://api.seerapi.com/v1/skill/29468"
+    },
+    {
       "id": 30443,
       "url": "https://api.seerapi.com/v1/skill/30443"
     },
@@ -4586,5 +4590,5 @@
       "url": "https://api.seerapi.com/v1/skill_effect_type_tag/34256"
     }
   ],
-  "hash": "4ba0d666"
+  "hash": "ebdb8dc2"
 }

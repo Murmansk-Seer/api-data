@@ -1,8 +1,8 @@
 {
   "id": 2111,
-  "desc": "每回合开始时为对手叠加一层暮月玄音，最高10层|自身攻击技能命中后，若当回合自身为先手方则攻击命中后100%附加烧伤、冻伤、中毒、麻痹、害怕、睡眠中的2种异常状态，未触发则令自身全属性+1，若当回合自身为后手方则令对手全属性-1|（boss无效）",
+  "desc": "回合开始时为对手附加一层暮月玄音，最高10层|自身攻击技能命中后，若当回合自身为先手方则攻击命中后100%附加烧伤、冻伤、中毒、麻痹、害怕、睡眠中的2种异常状态，未触发则令自身全属性+1，若当回合自身为后手方则令对手全属性-1|（boss无效）",
   "desc_formatting_adjustment": null,
-  "analyze_desc": "[sprite name=dot4][color=#57c975]回合开始时[/color]为对手附加一层[color=#f35555]暮月玄音[/color]，最高10层|[sprite name=dot4]自身[color=#57c975]攻击技能命中后[/color]，若[color=#52a5f2]当回合[/color]自身为先手方则攻击命中后100%附加[color=#57c975]烧伤[/color]、[color=#57c975]冻伤[/color]、[color=#57c975]中毒[/color]、[color=#57c975]麻痹[/color]、[color=#57c975]害怕[/color]、[color=#57c975]睡眠[/color]中的2种异常状态，[color=#52a5f2]未触发[/color]则令自身[color=#52a5f2]全属性[/color]+1，若[color=#52a5f2]当回合[/color]自身为后手方则令对手[color=#52a5f2]全属性[/color]-1",
+  "analyze_desc": "[sprite name=dot4][color=#57c975]回合开始时[/color]为[color=#52a5f2]对手[/color]附加一层[color=#f35555]暮月玄音[/color]，最高10层|[sprite name=dot4]自身[color=#57c975]攻击技能命中后[/color]，若[color=#52a5f2]当回合[/color]自身为先手方则攻击命中后100%附加[color=#57c975]烧伤[/color]、[color=#57c975]冻伤[/color]、[color=#57c975]中毒[/color]、[color=#57c975]麻痹[/color]、[color=#57c975]害怕[/color]、[color=#57c975]睡眠[/color]中的2种[color=#52a5f2]异常状态[/color]，[color=#52a5f2]未触发[/color]则令自身[color=#52a5f2]全属性[/color]+1，若[color=#52a5f2]当回合[/color]自身为后手方则令[color=#52a5f2]对手[/color][color=#52a5f2]全属性[/color]-1",
   "pve_effective": false,
   "intensified": false,
   "is_adv": false,
@@ -46,5 +46,5 @@
   "intensified_to": null,
   "from": null,
   "advance": null,
-  "hash": "4540c8db"
+  "hash": "eb2051e3"
 }

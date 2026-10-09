@@ -49,7 +49,7 @@
         },
         {
           "info": "3回合内若对手的体力低于30%则对手所有技能先制效果失效",
-          "analyze_info": "[sprite name=iconHit]3回合内若对手的体力低于30%则所有技能先制效果失效",
+          "analyze_info": "[sprite name=iconHit]3回合内若对手的体力低于30%则对手所有技能先制效果失效",
           "args": [
             3,
             30
@@ -80,5 +80,5 @@
       }
     }
   },
-  "hash": "a3b82a8c"
+  "hash": "5650e002"
 }

@@ -37775,6 +37775,38 @@
       "url": "https://api.seerapi.com/v1/skill/29467"
     },
     {
+      "id": 29468,
+      "url": "https://api.seerapi.com/v1/skill/29468"
+    },
+    {
+      "id": 29469,
+      "url": "https://api.seerapi.com/v1/skill/29469"
+    },
+    {
+      "id": 29470,
+      "url": "https://api.seerapi.com/v1/skill/29470"
+    },
+    {
+      "id": 29471,
+      "url": "https://api.seerapi.com/v1/skill/29471"
+    },
+    {
+      "id": 29472,
+      "url": "https://api.seerapi.com/v1/skill/29472"
+    },
+    {
+      "id": 29473,
+      "url": "https://api.seerapi.com/v1/skill/29473"
+    },
+    {
+      "id": 29474,
+      "url": "https://api.seerapi.com/v1/skill/29474"
+    },
+    {
+      "id": 29475,
+      "url": "https://api.seerapi.com/v1/skill/29475"
+    },
+    {
       "id": 40001,
       "url": "https://api.seerapi.com/v1/skill/40001"
     },
@@ -37791,5 +37823,5 @@
       "url": "https://api.seerapi.com/v1/skill/49999"
     }
   ],
-  "hash": "8f6e1a68"
+  "hash": "fa8dc071"
 }

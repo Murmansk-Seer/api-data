@@ -1,0 +1,15 @@
+{
+  "id": 4953,
+  "name": "神代·伊优",
+  "has_sound": false,
+  "height": 54.0,
+  "weight": 19.0,
+  "foundin": null,
+  "food": null,
+  "introduction": "神秘的远古之力似乎与赛尔产生了共鸣，神代·伊优由此被召唤而来，成为赛尔最坚毅的伙伴。",
+  "pet": {
+    "id": 4953,
+    "url": "https://api.seerapi.com/v1/pet/4953"
+  },
+  "hash": "325d2ab5"
+}

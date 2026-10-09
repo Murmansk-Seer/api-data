@@ -1,5 +1,5 @@
 {
-  "count": 138,
+  "count": 139,
   "next": null,
   "previous": null,
   "first": null,
@@ -666,6 +666,11 @@
       "name": "火 虫"
     },
     {
+      "id": 133,
+      "url": "https://api.seerapi.com/v1/element_type_combination/133",
+      "name": "远古 水"
+    },
+    {
       "id": 221,
       "url": "https://api.seerapi.com/v1/element_type_combination/221",
       "name": "王"
@@ -696,5 +701,5 @@
       "name": "虚空"
     }
   ],
-  "hash": "cd92d33d"
+  "hash": "4fb22312"
 }

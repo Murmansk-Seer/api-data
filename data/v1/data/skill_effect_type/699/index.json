@@ -3,7 +3,7 @@
   "args_num": 0,
   "info": "无视攻击免疫效果",
   "info_formatting_adjustment": null,
-  "analyze_info": "[sprite name=iconInherent]无视[color=#52a5f2]攻击免疫效果[/color] （boss有效）",
+  "analyze_info": "[sprite name=iconInherent]无视[color=#52a5f2]攻击免疫效果[/color]（boss有效）",
   "pve_effective": true,
   "param": null,
   "skill": [
@@ -365,5 +365,5 @@
     }
   ],
   "tag": [],
-  "hash": "a3e9e42b"
+  "hash": "b34cafd8"
 }

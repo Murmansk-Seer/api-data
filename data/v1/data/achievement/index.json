@@ -1,5 +1,5 @@
 {
-  "count": 1228,
+  "count": 1229,
   "next": null,
   "previous": null,
   "first": null,
@@ -2789,6 +2789,11 @@
       "id": 3172018,
       "url": "https://api.seerapi.com/v1/achievement/3172018",
       "name": "王座守卫"
+    },
+    {
+      "id": 3172019,
+      "url": "https://api.seerapi.com/v1/achievement/3172019",
+      "name": "隐秘之翼"
     },
     {
       "id": 3169001,
@@ -6146,5 +6151,5 @@
       "name": "节庆礼花"
     }
   ],
-  "hash": "5d0c2acb"
+  "hash": "cc89ced1"
 }

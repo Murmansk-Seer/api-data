@@ -43,7 +43,7 @@
       }
     },
     {
-      "info": "每造成1次攻击伤害，己方下只精灵出战时随机恢复1点PP值",
+      "info": "每造成1次攻击伤害，己方下只精灵出战时恢复1点PP值",
       "analyze_info": "[sprite name=iconHit]每造成1次攻击伤害，[color=#52a5f2]己方[/color]下只精灵[color=#57c975]出战时[/color]恢复1点PP值",
       "args": [
         1,
@@ -81,5 +81,5 @@
     "id": 24,
     "url": "https://api.seerapi.com/v1/pet_advance/24"
   },
-  "hash": "8389e76e"
+  "hash": "7a17c939"
 }

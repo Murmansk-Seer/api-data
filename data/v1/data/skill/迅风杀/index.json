@@ -1,0 +1,67 @@
+{
+  "data": {
+    "38570": {
+      "id": 38570,
+      "name": "迅风杀",
+      "power": 85,
+      "max_pp": 20,
+      "accuracy": 97,
+      "crit_rate": 6.25,
+      "priority": 3,
+      "must_hit": false,
+      "atk_num": 1,
+      "info": null,
+      "category": {
+        "id": 1,
+        "url": "https://api.seerapi.com/v1/skill_category/1"
+      },
+      "type": {
+        "id": 53,
+        "url": "https://api.seerapi.com/v1/element_type_combination/53"
+      },
+      "learned_by_pet": [],
+      "skill_effect": [
+        {
+          "info": "消除对手能力提升状态，消除成功则对手下1次攻击技能无效",
+          "analyze_info": "[sprite name=iconHit]消除对手能力提升状态（boss有效），消除成功则对手下1次攻击技能无效",
+          "args": [
+            1
+          ],
+          "effect": {
+            "id": 1217,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1217"
+          }
+        },
+        {
+          "info": "对手同时拥有护盾、护罩将其消除，消除成功则令对手麻痹、害怕",
+          "analyze_info": "[sprite name=iconHit]对手同时拥有护盾、护罩将其消除，消除成功则令对手麻痹、害怕",
+          "args": [
+            0,
+            6
+          ],
+          "effect": {
+            "id": 2485,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/2485"
+          }
+        },
+        {
+          "info": "附加自身最大体力值30%的百分比伤害，连续使用每次增加10%，最高60%",
+          "analyze_info": "[sprite name=iconHit]附加自身最大体力值30%的[color=#52a5f2]百分比伤害[/color]，连续使用每次增加10%，最高60%（boss有效）",
+          "args": [
+            30,
+            10,
+            60
+          ],
+          "effect": {
+            "id": 1155,
+            "url": "https://api.seerapi.com/v1/skill_effect_type/1155"
+          }
+        }
+      ],
+      "friend_skill_effect": [],
+      "hide_effect": null,
+      "advance": null
+    }
+  },
+  "hash": "1a9ed282"
+}

@@ -1,5 +1,5 @@
 {
-  "count": 592,
+  "count": 593,
   "next": null,
   "previous": null,
   "first": null,
@@ -1264,6 +1264,11 @@
       "id": 602,
       "url": "https://api.seerapi.com/v1/title/602",
       "name": "王座守卫"
+    },
+    {
+      "id": 609,
+      "url": "https://api.seerapi.com/v1/title/609",
+      "name": "隐秘之翼"
     },
     {
       "id": 536,
@@ -2966,5 +2971,5 @@
       "name": "节庆礼花"
     }
   ],
-  "hash": "adb1c70c"
+  "hash": "b75281fc"
 }

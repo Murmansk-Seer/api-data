@@ -34,7 +34,7 @@
         },
         {
           "info": "100%使对手疲惫，未触发则附加200点真实伤害，技能无效时100%使对手疲惫并附加400点真实伤害",
-          "analyze_info": "[sprite name=iconComp]100%使对手[color=#57c975]疲惫[/color]，[color=#52a5f2]未触发[/color]则附加200点[color=#52a5f2]真实伤害[/color]，技能无效时100%使对手[color=#57c975]疲惫[/color]并附加400点[color=#52a5f2]真实伤害[/color]",
+          "analyze_info": "[sprite name=iconHit]100%使对手[color=#57c975]疲惫[/color]，[color=#52a5f2]未触发[/color]则附加200点[color=#52a5f2]真实伤害[/color]，[sprite name=iconInherent] 技能无效时100%使对手[color=#57c975]疲惫[/color]并附加400点[color=#52a5f2]真实伤害[/color]",
           "args": [
             100,
             7,
@@ -76,5 +76,5 @@
       "advance": null
     }
   },
-  "hash": "6ec26292"
+  "hash": "1c1a7dc4"
 }

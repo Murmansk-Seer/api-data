@@ -6,6 +6,10 @@
       "max": 9999,
       "item": [
         {
+          "id": 2400604,
+          "url": "https://api.seerapi.com/v1/item/2400604"
+        },
+        {
           "id": 2400603,
           "url": "https://api.seerapi.com/v1/item/2400603"
         },
@@ -2420,5 +2424,5 @@
       ]
     }
   },
-  "hash": "c7db0c7c"
+  "hash": "180f886c"
 }

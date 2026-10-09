@@ -1,0 +1,19 @@
+{
+  "data": {
+    "4951": {
+      "id": 4951,
+      "name": "维德弗尼尔",
+      "has_sound": false,
+      "height": 235.0,
+      "weight": 94.0,
+      "foundin": null,
+      "food": null,
+      "introduction": "维德弗尼尔扇动翅膀时，风总是先到。寒风从它翼尖卷出去，穿过遗迹的断柱与沉船，在死寂的星球上呼啸而过。",
+      "pet": {
+        "id": 4951,
+        "url": "https://api.seerapi.com/v1/pet/4951"
+      }
+    }
+  },
+  "hash": "7b75319f"
+}

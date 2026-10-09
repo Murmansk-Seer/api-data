@@ -33,7 +33,7 @@
       }
     },
     {
-      "info": "3回合内对手使用威力不高于150的攻击技能时令对手疲惫，未触发则抵挡对手当次攻击",
+      "info": "3回合内对手使用威力值不高于150的攻击技能时令对手疲惫，未触发则抵挡对手当次攻击",
       "analyze_info": "[sprite name=iconHit]3回合内对手使用威力值不高于150的攻击技能时令对手[color=#57c975]疲惫[/color]，[color=#52a5f2]未触发[/color]则抵挡对手当次攻击",
       "args": [
         3,
@@ -60,5 +60,5 @@
   "friend_skill_effect": [],
   "hide_effect": null,
   "advance": null,
-  "hash": "d369b619"
+  "hash": "141af98d"
 }

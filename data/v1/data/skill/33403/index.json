@@ -33,7 +33,7 @@
       }
     },
     {
-      "info": "牺牲自己，消除对手能力提升状态、回合类效果、护盾效果、护罩效果、神耀能量、自然祝福，同时令对手3回合内属性技能无效",
+      "info": "牺牲自己，消除对手能力提升状态、回合类效果、护盾、护罩、神耀能量、自然祝福，同时令对手3回合内属性技能无效",
       "analyze_info": "[sprite name=iconHit]牺牲自己，消除对手能力提升状态、[color=#52a5f2]回合类效果[/color]、[color=#57c975]护盾[/color]、[color=#57c975]护罩[/color]、[color=#f35555]神耀能量[/color]、[color=#f35555]自然祝福[/color]，同时令对手3回合内属性技能无效",
       "args": [
         3
@@ -47,5 +47,5 @@
   "friend_skill_effect": [],
   "hide_effect": null,
   "advance": null,
-  "hash": "9850ab6b"
+  "hash": "5b40f77b"
 }

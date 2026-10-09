@@ -31,7 +31,7 @@
       }
     },
     {
-      "info": "未击败对手则自身下2回合免疫并反弹异常状态",
+      "info": "未击败对手则自身下2回合免疫并反弹受到的异常状态",
       "analyze_info": "[sprite name=iconHit][color=#57c975]未击败[/color]对手则自身下2回合免疫并[color=#52a5f2]反弹[/color]受到的异常状态",
       "args": [
         2
@@ -56,5 +56,5 @@
   "friend_skill_effect": [],
   "hide_effect": null,
   "advance": null,
-  "hash": "a9accbcf"
+  "hash": "8928e49d"
 }

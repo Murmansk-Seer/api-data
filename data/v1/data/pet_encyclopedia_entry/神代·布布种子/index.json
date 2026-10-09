@@ -1,0 +1,19 @@
+{
+  "data": {
+    "4954": {
+      "id": 4954,
+      "name": "神代·布布种子",
+      "has_sound": false,
+      "height": 52.0,
+      "weight": 18.0,
+      "foundin": null,
+      "food": null,
+      "introduction": "神秘的远古之力似乎与赛尔产生了共鸣，神代·布布种子由此被召唤而来，成为赛尔最忠诚的伙伴。",
+      "pet": {
+        "id": 4954,
+        "url": "https://api.seerapi.com/v1/pet/4954"
+      }
+    }
+  },
+  "hash": "4d91c2b9"
+}
