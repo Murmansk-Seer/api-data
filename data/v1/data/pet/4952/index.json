@@ -1,0 +1,172 @@
+{
+  "id": 4952,
+  "name": "神代·小火猴",
+  "yielding_exp": 140,
+  "catch_rate": 0,
+  "evolving_lv": 0,
+  "releaseable": false,
+  "fusion_master": false,
+  "fusion_sub": false,
+  "has_resistance": true,
+  "resource_id": 4952,
+  "enemy_resource_id": null,
+  "type": {
+    "id": 77,
+    "url": "https://api.seerapi.com/v1/element_type_combination/77"
+  },
+  "gender": {
+    "id": 1,
+    "url": "https://api.seerapi.com/v1/pet_gender/1"
+  },
+  "base_stats": {
+    "atk": 134,
+    "def": 110,
+    "sp_atk": 70,
+    "sp_def": 110,
+    "spd": 136,
+    "hp": 140,
+    "percent": false,
+    "total": 700
+  },
+  "pet_class": {
+    "id": 3613,
+    "url": "https://api.seerapi.com/v1/pet_class/3613"
+  },
+  "evolution_chain_index": 0,
+  "yielding_ev": {
+    "atk": 0,
+    "def": 0,
+    "sp_atk": 0,
+    "sp_def": 0,
+    "spd": 0,
+    "hp": 0,
+    "percent": false,
+    "total": 0
+  },
+  "vipbuff": null,
+  "mount_type": null,
+  "diy_stats": null,
+  "skill": [
+    {
+      "learning_level": 1,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 10086,
+        "url": "https://api.seerapi.com/v1/skill/10086"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 5,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 20001,
+        "url": "https://api.seerapi.com/v1/skill/20001"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 9,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 10817,
+        "url": "https://api.seerapi.com/v1/skill/10817"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 13,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 38573,
+        "url": "https://api.seerapi.com/v1/skill/38573"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 17,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 29470,
+        "url": "https://api.seerapi.com/v1/skill/29470"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 21,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 38574,
+        "url": "https://api.seerapi.com/v1/skill/38574"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 25,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 10412,
+        "url": "https://api.seerapi.com/v1/skill/10412"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 29,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 29471,
+        "url": "https://api.seerapi.com/v1/skill/29471"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 33,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": false,
+      "skill": {
+        "id": 10030,
+        "url": "https://api.seerapi.com/v1/skill/10030"
+      },
+      "skill_activation_item": null
+    },
+    {
+      "learning_level": 76,
+      "is_special": false,
+      "is_advanced": false,
+      "is_fifth": true,
+      "skill": {
+        "id": 38575,
+        "url": "https://api.seerapi.com/v1/skill/38575"
+      },
+      "skill_activation_item": null
+    }
+  ],
+  "soulmark": [],
+  "encyclopedia_entry": {
+    "id": 4952,
+    "url": "https://api.seerapi.com/v1/pet_encyclopedia_entry/4952"
+  },
+  "archive_story_entry": null,
+  "peak_pool": null,
+  "peak_expert_pool": null,
+  "peak_cost_pool": null,
+  "advance": null,
+  "hash": "2bac393d"
+}

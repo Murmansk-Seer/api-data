@@ -1,0 +1,15 @@
+{
+  "id": 4952,
+  "name": "神代·小火猴",
+  "has_sound": false,
+  "height": 50.0,
+  "weight": 17.0,
+  "foundin": null,
+  "food": null,
+  "introduction": "神秘的远古之力似乎与赛尔产生了共鸣，神代·小火猴由此被召唤而来，成为赛尔最勇敢的伙伴。",
+  "pet": {
+    "id": 4952,
+    "url": "https://api.seerapi.com/v1/pet/4952"
+  },
+  "hash": "c68b4f3e"
+}

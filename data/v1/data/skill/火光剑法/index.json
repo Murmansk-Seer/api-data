@@ -54,7 +54,7 @@
           }
         },
         {
-          "info": "每次使用后此技能造成的攻击伤害额外提升30%，最高120%",
+          "info": "每次使用后自身造成的攻击伤害额外提升30%，最高120%",
           "analyze_info": "[sprite name=iconInherent]每次使用后自身造成的攻击[color=#52a5f2]伤害额外提升[/color]30%，最高120%",
           "args": [],
           "effect": {
@@ -68,5 +68,5 @@
       "advance": null
     }
   },
-  "hash": "7de0c6d1"
+  "hash": "6dc15499"
 }

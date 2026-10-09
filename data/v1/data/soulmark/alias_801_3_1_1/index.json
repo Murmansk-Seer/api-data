@@ -2,9 +2,9 @@
   "data": {
     "497": {
       "id": 497,
-      "desc": "受到伤害时使对手随机三项能力-1；回合开始时若对手处于全属性下降状态则消除对手回合类效果并使对手害怕（BOSS无效）",
+      "desc": "对手行动结束时，若本次行动造成了技能伤害，则令对手随机3项能力-1|回合开始时，若对手处于全能力下降状态则消除对手回合类效果并令对手害怕|（boss无效）",
       "desc_formatting_adjustment": "<indent=0><sprite=0><indent=16>触发效果：\r\n<indent=16><sprite=3><indent=32>受到伤害时使对手随机三项能力-1\r\n\r\n<indent=0><sprite=0><indent=16>回合开始效果：\r\n<indent=16><sprite=3><indent=32>回合开始时若对手处于全属性下降状态则<color=#64F9FA>消除</color>对手<b>回合类效果</b>并<color=#64F9FA>使对手害怕</color>",
-      "analyze_desc": "[sprite name=dot4]对手行动结束时，若自身受到了技能伤害则令对手随机三项能力-1|[sprite name=dot4][color=#57c975]回合开始时[/color]，若对手处于全能力下降状态则消除对手[color=#52a5f2]回合类效果[/color]并令对手[color=#57c975]害怕[/color]",
+      "analyze_desc": "[sprite name=dot4][color=#52a5f2]对手[/color]行动结束时，若本次行动造成了技能伤害，则令[color=#52a5f2]对手[/color]随机3项能力-1|[sprite name=dot4][color=#57c975]回合开始时[/color]，若[color=#52a5f2]对手[/color]处于全[color=#52a5f2]能力下降状态[/color]则消除[color=#52a5f2]对手[/color][color=#52a5f2]回合类效果[/color]并令[color=#52a5f2]对手[/color][color=#57c975]害怕[/color]",
       "pve_effective": false,
       "intensified": false,
       "is_adv": false,
@@ -48,5 +48,5 @@
       "advance": null
     }
   },
-  "hash": "f3dbbdbf"
+  "hash": "c7c811b4"
 }

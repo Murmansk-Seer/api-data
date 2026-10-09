@@ -21,7 +21,7 @@
   "skill_effect": [
     {
       "info": "获得1分弱音",
-      "analyze_info": "[sprite name=iconHit]获得1分[color=#f35555]弱音[/color] ",
+      "analyze_info": "[sprite name=iconHit]获得1分[color=#f35555]弱音[/color]",
       "args": [
         1
       ],
@@ -92,5 +92,5 @@
   "friend_skill_effect": [],
   "hide_effect": null,
   "advance": null,
-  "hash": "30dc5de"
+  "hash": "2f6da42f"
 }

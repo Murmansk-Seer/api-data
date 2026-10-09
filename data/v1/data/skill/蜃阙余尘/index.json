@@ -59,7 +59,7 @@
         },
         {
           "info": "恢复自身最大体力的1/1，技能无效时恢复自身最大体力的1/3并令对手石化",
-          "analyze_info": "[sprite name=iconComp]恢复自身最大体力的1/1，技能无效时恢复自身最大体力的1/3并令对手[color=#57c975]石化[/color]",
+          "analyze_info": "[sprite name=iconHit]恢复自身最大体力的1/1，[sprite name=iconInherent] 技能无效时恢复自身最大体力的1/3并令对手[color=#57c975]石化[/color]",
           "args": [
             1
           ],
@@ -74,5 +74,5 @@
       "advance": null
     }
   },
-  "hash": "5816cd78"
+  "hash": "7e9df8a6"
 }

@@ -5,7 +5,7 @@
       "name": "圣灵守护奥斯卡",
       "start_time": null,
       "end_time": null,
-      "is_show": true,
+      "is_show": false,
       "sort_order": 50,
       "type": {
         "id": 1,
@@ -13,5 +13,5 @@
       }
     }
   },
-  "hash": "3cd82040"
+  "hash": "bff59fc3"
 }

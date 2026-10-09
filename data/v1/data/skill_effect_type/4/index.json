@@ -22355,6 +22355,22 @@
       "url": "https://api.seerapi.com/v1/skill/29315"
     },
     {
+      "id": 29472,
+      "url": "https://api.seerapi.com/v1/skill/29472"
+    },
+    {
+      "id": 29472,
+      "url": "https://api.seerapi.com/v1/skill/29472"
+    },
+    {
+      "id": 29473,
+      "url": "https://api.seerapi.com/v1/skill/29473"
+    },
+    {
+      "id": 29473,
+      "url": "https://api.seerapi.com/v1/skill/29473"
+    },
+    {
       "id": 30514,
       "url": "https://api.seerapi.com/v1/skill/30514"
     },
@@ -22465,5 +22481,5 @@
       "url": "https://api.seerapi.com/v1/skill_effect_type_tag/44951"
     }
   ],
-  "hash": "ce81f01f"
+  "hash": "259ebd64"
 }

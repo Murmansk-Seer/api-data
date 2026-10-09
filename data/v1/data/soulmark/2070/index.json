@@ -1,6 +1,6 @@
 {
   "id": 2070,
-  "desc": "回合开始时，若对手不处于异常状态，自身攻击技能命中时为对手附加随机一种附属诅咒；对手每有一种异常状态，自身攻击技能命中时附加100点固定伤害（boss无效）",
+  "desc": "回合开始时，若对手不处于异常状态，自身攻击技能命中时为对手附加随机一种附属诅咒|对手每有一种异常状态，自身攻击技能命中时附加100点固定伤害（boss无效）",
   "desc_formatting_adjustment": null,
   "analyze_desc": "[sprite name=dot4][color=#57c975]回合开始时[/color]，若对手不处于异常状态，自身攻击技能命中时为对手附加随机一种[color=#52a5f2]附属诅咒[/color]|[sprite name=dot4]对手每有一种异常状态，自身攻击技能命中时附加100点[color=#52a5f2]固定伤害[/color]",
   "pve_effective": false,
@@ -36,5 +36,5 @@
   "intensified_to": null,
   "from": null,
   "advance": null,
-  "hash": "6c122c5f"
+  "hash": "df2e0f45"
 }

@@ -5,8 +5,12 @@
     {
       "id": 837,
       "url": "https://api.seerapi.com/v1/pet_skin/837"
+    },
+    {
+      "id": 871,
+      "url": "https://api.seerapi.com/v1/pet_skin/871"
     }
   ],
   "sub_types": [],
-  "hash": "89ee9a48"
+  "hash": "5a329118"
 }

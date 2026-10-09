@@ -1,5 +1,5 @@
 {
-  "count": 27307,
+  "count": 27327,
   "next": null,
   "previous": null,
   "first": null,
@@ -93756,6 +93756,46 @@
       "name": "宇·列卿如阳"
     },
     {
+      "id": 29468,
+      "url": "https://api.seerapi.com/v1/skill/29468",
+      "name": "阻隔风墙"
+    },
+    {
+      "id": 29469,
+      "url": "https://api.seerapi.com/v1/skill/29469",
+      "name": "徐风缠绕"
+    },
+    {
+      "id": 29470,
+      "url": "https://api.seerapi.com/v1/skill/29470",
+      "name": "神代·压迫"
+    },
+    {
+      "id": 29471,
+      "url": "https://api.seerapi.com/v1/skill/29471",
+      "name": "神代·隔绝"
+    },
+    {
+      "id": 29472,
+      "url": "https://api.seerapi.com/v1/skill/29472",
+      "name": "神代·虚张声势"
+    },
+    {
+      "id": 29473,
+      "url": "https://api.seerapi.com/v1/skill/29473",
+      "name": "神代·剑舞"
+    },
+    {
+      "id": 29474,
+      "url": "https://api.seerapi.com/v1/skill/29474",
+      "name": "神代·花草护体"
+    },
+    {
+      "id": 29475,
+      "url": "https://api.seerapi.com/v1/skill/29475",
+      "name": "神代·寄生种子"
+    },
+    {
       "id": 30001,
       "url": "https://api.seerapi.com/v1/skill/30001",
       "name": "千星死魂灭"
@@ -136471,6 +136511,66 @@
       "name": "卫·极光圣芒"
     },
     {
+      "id": 38570,
+      "url": "https://api.seerapi.com/v1/skill/38570",
+      "name": "迅风杀"
+    },
+    {
+      "id": 38571,
+      "url": "https://api.seerapi.com/v1/skill/38571",
+      "name": "呼风密语"
+    },
+    {
+      "id": 38572,
+      "url": "https://api.seerapi.com/v1/skill/38572",
+      "name": "秘术疾风击"
+    },
+    {
+      "id": 38573,
+      "url": "https://api.seerapi.com/v1/skill/38573",
+      "name": "神代·火花"
+    },
+    {
+      "id": 38574,
+      "url": "https://api.seerapi.com/v1/skill/38574",
+      "name": "神代·音速火拳"
+    },
+    {
+      "id": 38575,
+      "url": "https://api.seerapi.com/v1/skill/38575",
+      "name": "神代·灵绝击"
+    },
+    {
+      "id": 38576,
+      "url": "https://api.seerapi.com/v1/skill/38576",
+      "name": "神代·克制"
+    },
+    {
+      "id": 38577,
+      "url": "https://api.seerapi.com/v1/skill/38577",
+      "name": "神代·闪击"
+    },
+    {
+      "id": 38578,
+      "url": "https://api.seerapi.com/v1/skill/38578",
+      "name": "神代·巨龙之击"
+    },
+    {
+      "id": 38579,
+      "url": "https://api.seerapi.com/v1/skill/38579",
+      "name": "神代·疾风刃"
+    },
+    {
+      "id": 38580,
+      "url": "https://api.seerapi.com/v1/skill/38580",
+      "name": "神代·强力吸取"
+    },
+    {
+      "id": 38581,
+      "url": "https://api.seerapi.com/v1/skill/38581",
+      "name": "神代·舍身撞击"
+    },
+    {
       "id": 40001,
       "url": "https://api.seerapi.com/v1/skill/40001",
       "name": "浓尘翻涌"
@@ -136541,5 +136641,5 @@
       "name": "暗龙咆哮"
     }
   ],
-  "hash": "262249a9"
+  "hash": "85ad71dd"
 }
