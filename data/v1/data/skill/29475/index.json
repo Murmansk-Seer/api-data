@@ -8,7 +8,7 @@
   "priority": 0,
   "must_hit": true,
   "atk_num": 1,
-  "info": "待添加",
+  "info": "开始吸收对手的能力强化，开始慢慢吸取对手体力",
   "category": {
     "id": 4,
     "url": "https://api.seerapi.com/v1/skill_category/4"
@@ -46,5 +46,5 @@
   "friend_skill_effect": [],
   "hide_effect": null,
   "advance": null,
-  "hash": "980adef6"
+  "hash": "925223fd"
 }

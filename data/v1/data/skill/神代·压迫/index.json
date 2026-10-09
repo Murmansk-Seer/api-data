@@ -10,7 +10,7 @@
       "priority": 0,
       "must_hit": true,
       "atk_num": 1,
-      "info": "待添加",
+      "info": "开始弱化对手了，下次攻击变得更加凌厉",
       "category": {
         "id": 4,
         "url": "https://api.seerapi.com/v1/skill_category/4"
@@ -46,5 +46,5 @@
       "advance": null
     }
   },
-  "hash": "ee6e6995"
+  "hash": "1a401dd0"
 }

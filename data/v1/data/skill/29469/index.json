@@ -8,7 +8,7 @@
   "priority": 0,
   "must_hit": true,
   "atk_num": 1,
-  "info": "待添加",
+  "info": "全属性都提升了，开始吸取对手体力，出手变得更快了",
   "category": {
     "id": 4,
     "url": "https://api.seerapi.com/v1/skill_category/4"
@@ -70,5 +70,5 @@
   "friend_skill_effect": [],
   "hide_effect": null,
   "advance": null,
-  "hash": "e216a375"
+  "hash": "1edeecc9"
 }
