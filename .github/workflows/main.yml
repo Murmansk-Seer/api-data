@@ -4,6 +4,9 @@ permissions:
     contents: write
 
 on:
+    push:
+        branches: [main]
+        paths: ['.github/workflows/main.yml', 'scripts/**', 'tests/**']
     workflow_dispatch:
         inputs:
             force:
@@ -30,6 +33,13 @@ concurrency:
 jobs:
     main:
         runs-on: ubuntu-latest
+        outputs:
+            published: ${{ steps.verify.outcome == 'success' }}
+            source: ${{ steps.source_check.outputs.config_head }}
+            parser: c4b5af7a00eec3daefe11e3ea0dce74299e539a8
+            dispatch: ${{ steps.dispatch.outcome }}
+            analysis: ${{ steps.analyze.outcome }}
+            upload: ${{ steps.upload.outcome }}
         env:
             SOLARIS_API_VERSION: v1
             SOLARIS_API_URL: https://api.seerapi.com
@@ -57,31 +67,8 @@ jobs:
                   set -e
                   config_head="$(git ls-remote "${SOLARIS_DATA_SOURCE}" HEAD | awk '{print $1}')"
                   patch_head="$(git ls-remote "${SOLARIS_PATCH_SOURCE}" HEAD | awk '{print $1}')"
-                  previous_config_head=""
-                  previous_patch_head=""
-                  if [ -f .build-state/config-sources-revision ]; then
-                      previous_config_head="$(cat .build-state/config-sources-revision)"
-                  fi
-                  if [ -f .build-state/patch-sources-revision ]; then
-                      previous_patch_head="$(cat .build-state/patch-sources-revision)"
-                  fi
-
-                  echo "config_head=${config_head}" >> "$GITHUB_OUTPUT"
-                  echo "patch_head=${patch_head}" >> "$GITHUB_OUTPUT"
-                  echo "previous_config_head=${previous_config_head}" >> "$GITHUB_OUTPUT"
-                  echo "previous_patch_head=${previous_patch_head}" >> "$GITHUB_OUTPUT"
-
-                  if [ "${FORCE}" != "true" ] \
-                      && [ -n "${previous_config_head}" ] \
-                      && [ -n "${previous_patch_head}" ] \
-                      && [ "${config_head}" = "${previous_config_head}" ] \
-                      && [ "${patch_head}" = "${previous_patch_head}" ]; then
-                      echo "skip=true" >> "$GITHUB_OUTPUT"
-                      echo "config-sources and patch-sources are unchanged; skipping api-data build."
-                  else
-                      echo "skip=false" >> "$GITHUB_OUTPUT"
-                      echo "Build required: force=${FORCE}, config=${config_head}/${previous_config_head:-none}, patch=${patch_head}/${previous_patch_head:-none}"
-                  fi
+                  test -n "$config_head" && test -n "$patch_head"
+                  CONFIG_HEAD="$config_head" PATCH_HEAD="$patch_head" python3 scripts/publication_state.py check
 
             - name: Skip unchanged build
               if: steps.source_check.outputs.skip == 'true'
@@ -100,7 +87,7 @@ jobs:
             - name: Install solaris
               if: steps.source_check.outputs.skip != 'true'
               # Pin the merged Solaris timezone and analyzer fixes used for data generation.
-              run: uv tool install --force 'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@ac7fb0e9fa40942492ba96f350f525149f132b01#subdirectory=packages/solaris'
+              run: uv tool install --force 'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@c4b5af7a00eec3daefe11e3ea0dce74299e539a8#subdirectory=packages/solaris'
 
             - name: Setup tmate session
               if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
@@ -111,6 +98,8 @@ jobs:
               run: |
                   git clone ${{ env.SOLARIS_DATA_SOURCE }} source
                   git clone ${{ env.SOLARIS_PATCH_SOURCE }} patch-sources
+                  git -C source checkout --detach ${{ steps.source_check.outputs.config_head }}
+                  git -C patch-sources checkout --detach ${{ steps.source_check.outputs.patch_head }}
                   mkdir -p source/patch
                   mv patch-sources/patches/* source/patch
 
@@ -119,6 +108,7 @@ jobs:
               run: python scripts/patch_unity_only_skills.py source
 
             - name: Analyze config
+              id: analyze
               if: steps.source_check.outputs.skip != 'true'
               run: |
                   solaris analyze data --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o data --json-format split \
@@ -146,13 +136,12 @@ jobs:
               run: |
                   git config --local user.email "github-actions[bot]@users.noreply.github.com"
                   git config --local user.name "github-actions[bot]"
-                  mkdir -p .build-state
-                  printf '%s\n' "${{ steps.source_check.outputs.config_head }}" > .build-state/config-sources-revision
-                  printf '%s\n' "${{ steps.source_check.outputs.patch_head }}" > .build-state/patch-sources-revision
-                  git add data .build-state/config-sources-revision .build-state/patch-sources-revision
+                  python3 scripts/publication_state.py validate
+                  git add data
                   timestamp=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S CST')
                   git diff --staged --quiet || git commit -m "Auto update config $timestamp"
                   python scripts/push_build.py --base "$BUILD_BASE" --branch "$BUILD_BRANCH"
+                  echo "DATA_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
                   echo "timestamp=$timestamp" >> $GITHUB_OUTPUT
 
             - name: Generate database checksum
@@ -167,6 +156,7 @@ jobs:
                   echo "sha256=${sha256}" >> "$GITHUB_OUTPUT"
 
             - name: Upload database to release
+              id: upload
               if: steps.source_check.outputs.skip != 'true'
               uses: softprops/action-gh-release@v2
               with:
@@ -187,11 +177,35 @@ jobs:
                   overwrite_files: true
                   fail_on_unmatched_files: true
 
+            - name: Verify published database and checksum
+              id: verify
+              if: steps.source_check.outputs.skip != 'true'
+              env:
+                  GH_TOKEN: ${{ github.token }}
+                  DB_SHA: ${{ steps.db_checksum.outputs.sha256 }}
+              run: python3 scripts/publication_state.py verify
+
+            - name: Record verified publication
+              if: steps.verify.outcome == 'success'
+              env:
+                  CONFIG_HEAD: ${{ steps.source_check.outputs.config_head }}
+                  PATCH_HEAD: ${{ steps.source_check.outputs.patch_head }}
+                  BUILD_FINGERPRINT: ${{ steps.source_check.outputs.fingerprint }}
+                  DB_SHA: ${{ steps.db_checksum.outputs.sha256 }}
+              run: |
+                  base=$(git rev-parse HEAD)
+                  python3 scripts/publication_state.py record
+                  git add .build-state
+                  git commit -m "Record verified api-data publication"
+                  python3 scripts/push_build.py --base "$base" --branch main
+
             - name: Trigger SeerAPI build
-              if: success() && steps.source_check.outputs.skip != 'true'
+              id: dispatch
+              if: success() && (steps.verify.outcome == 'success' || steps.source_check.outputs.notify == 'true')
               env:
                   GH_TOKEN: ${{ secrets.SEERAPI_DISPATCH_TOKEN }}
-                  DB_SHA: ${{ steps.db_checksum.outputs.sha256 }}
+                  DB_SHA: ${{ steps.db_checksum.outputs.sha256 || steps.source_check.outputs.published_sha }}
+                  SOURCE_COMMIT: ${{ env.DATA_COMMIT || steps.source_check.outputs.published_commit }}
               run: |
                   set -euo pipefail
                   if [ -z "${GH_TOKEN:-}" ]; then
@@ -205,7 +219,18 @@ jobs:
                   gh api --method POST repos/Murmansk-Seer/seerapi/dispatches \
                       -f event_type=api-data-published \
                       -f "client_payload[sha256]=${DB_SHA}" \
-                      -f "client_payload[source_commit]=$(git rev-parse HEAD)"
+                      -f "client_payload[source_commit]=${SOURCE_COMMIT}"
+
+            - name: Record successful downstream notification
+              if: steps.dispatch.outcome == 'success'
+              run: |
+                  git config user.email "github-actions[bot]@users.noreply.github.com"
+                  git config user.name "github-actions[bot]"
+                  base=$(git rev-parse HEAD)
+                  python3 scripts/publication_state.py ack
+                  git add .build-state/notified-fingerprint
+                  git diff --staged --quiet || git commit -m "Record SeerAPI notification receipt"
+                  python3 scripts/push_build.py --base "$base" --branch main
 
             # - name: Push to cnb.cool Git Repository
             #   run: |
@@ -241,3 +266,30 @@ jobs:
             - name: Skip blob upload
               if: steps.source_check.outputs.skip != 'true' && env.HAS_BLOB_CONFIG != 'true'
               run: echo "Blob secrets are not configured; GitHub Release assets have already been published."
+
+    report:
+        if: ${{ always() }}
+        needs: main
+        runs-on: ubuntu-latest
+        outputs:
+            label: ${{ steps.report.outputs.label }}
+            failed: ${{ steps.report.outputs.failed }}
+        steps:
+            - id: report
+              uses: Murmansk-Seer/.github/.github/actions/report-update@dadd404c9c0119e0326e1e4fb8fcdf3ef6330dab
+              env:
+                  GH_TOKEN: ${{ github.token }}
+              with:
+                  jobs: ${{ toJSON(needs) }}
+                  release-tag: latest
+                  evidence: '{"published":"${{ needs.main.outputs.published }}","source":"${{ needs.main.outputs.source }}","parser":"${{ needs.main.outputs.parser }}","analysis":"${{ needs.main.outputs.analysis }}","upload":"${{ needs.main.outputs.upload }}","dispatch":"${{ needs.main.outputs.dispatch }}"}'
+    result:
+        if: ${{ always() }}
+        needs: report
+        name: ${{ needs.report.outputs.label || '失败 · 状态报告未完成' }}
+        runs-on: ubuntu-latest
+        steps:
+            - env:
+                  FAILED: ${{ needs.report.outputs.failed }}
+                  REPORT_RESULT: ${{ needs.report.result }}
+              run: test "$FAILED" != true && test "$REPORT_RESULT" = success
