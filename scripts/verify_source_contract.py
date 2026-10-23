@@ -1,5 +1,6 @@
 """Reject missing generated records before committing or publishing api-data."""
 import argparse
+from collections import Counter
 from contextlib import closing
 import json
 from pathlib import Path
@@ -20,9 +21,10 @@ def validate_source_sets(database, source):
             if not expected or expected != actual:
                 raise ValueError(f'{table} source ID mismatch: missing={sorted(expected-actual)[:20]}, extra={sorted(actual-expected)[:20]}')
             print(f'{table}: {len(actual)} IDs exactly match official source')
-        errors = db.execute('PRAGMA foreign_key_check').fetchmany(20)
+        errors = db.execute('PRAGMA foreign_key_check').fetchall()
         if errors:
-            raise ValueError(f'Foreign key violations: {errors!r}')
+            groups = Counter((row[0], row[2]) for row in errors)
+            raise ValueError(f'Foreign key violations: total={len(errors)}, groups={dict(groups)!r}, first={errors[:20]!r}')
 
 
 def main():

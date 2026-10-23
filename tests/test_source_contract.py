@@ -24,3 +24,15 @@ class SourceContract(unittest.TestCase):
                 db.commit()
             with self.assertRaisesRegex(ValueError, 'skill source ID mismatch'):
                 validate_source_sets(database, root)
+
+    def test_dangling_reference_blocks_publication_even_with_complete_ids(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'unity').mkdir()
+            (root / 'unity/moves.json').write_text(json.dumps({'root': {'moves': {'move': [{'id': 1}]}}}))
+            (root / 'unity/fragment.json').write_text(json.dumps({'root': {'fragment': [{'id': 2}]}}))
+            database = root / 'db.sqlite'
+            with closing(sqlite3.connect(database)) as db:
+                db.executescript('CREATE TABLE skill(id INTEGER PRIMARY KEY); INSERT INTO skill VALUES(1); CREATE TABLE factor(id INTEGER PRIMARY KEY, skill_id INTEGER REFERENCES skill(id)); INSERT INTO factor VALUES(2,999);')
+            with self.assertRaisesRegex(ValueError, 'Foreign key violations: total=1'):
+                validate_source_sets(database, root)
