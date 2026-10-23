@@ -80,11 +80,13 @@ class SourceContract(unittest.TestCase):
         with TemporaryDirectory() as directory:
             root = Path(directory)
             data = self.source(root, references=True)
+            data['monsters.json']['monsters']['monster'].extend([{'id': 15001}, {'id': 5270}])
+            (root / 'unity/monsters.json').write_text(json.dumps(data['monsters.json']))
             before = {p.name: p.read_bytes() for p in (root / 'unity').iterdir()}
             _, _, missing = validate_source_references(root)
             self.assertEqual(set(missing), {('soulmark', 1753, 4543), ('glossary_entry', 117, 4543)})
             self.assertEqual(before, {p.name: p.read_bytes() for p in (root / 'unity').iterdir()})
-            data['monsters.json']['monsters']['monster'].append({'id': 4543})
+            data['monsters.json']['monsters']['monster'].insert(0, {'id': 4543})
             (root / 'unity/monsters.json').write_text(json.dumps(data['monsters.json']))
             self.assertEqual(validate_source_references(root)[2], {})
 

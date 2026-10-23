@@ -15,7 +15,12 @@ def validate_source_references(source):
     root = Path(source) / 'unity'
     def load(name):
         return json.loads((root / name).read_text(encoding='utf8'))
-    pets = {row['id'] for row in load('monsters.json')['monsters']['monster'] if row['id'] < 10000}
+    # Preserve the existing canonical-pet domain; later sections are battle copies.
+    pets = set()
+    for row in load('monsters.json')['monsters']['monster']:
+        if row['id'] > 9999:
+            break
+        pets.add(row['id'])
     if not pets:
         raise ValueError('monsters.json: no official pet records')
     valid = {'soulmark': set(), 'glossary_entry': set()}
