@@ -36,7 +36,7 @@ jobs:
         outputs:
             published: ${{ steps.verify.outcome == 'success' }}
             source: ${{ steps.source_check.outputs.config_head }}
-            parser: 5e5718719da12da33d62b33f469f550f6e81d260
+            parser: 73382ce03f6004d1b619d6041c8734d98f81513d
             dispatch: ${{ steps.dispatch.outcome }}
             analysis: ${{ steps.analyze.outcome }}
             upload: ${{ steps.upload.outcome }}
@@ -55,6 +55,9 @@ jobs:
                   fetch-depth: 0
                   # Resolve the branch when the queued job starts, not its old event SHA.
                   ref: ${{ github.event.repository.default_branch }}
+
+            - name: Publication and network regression tests
+              run: python3 -m unittest discover -s tests -v
 
             - name: Record checked-out build revision
               run: echo "BUILD_BASE=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
@@ -89,8 +92,8 @@ jobs:
               # Pin the merged Solaris timezone and analyzer fixes used for data generation.
               run: >-
                   uv tool install --force
-                  --with 'seerapi-models @ git+https://github.com/Murmansk-Seer/seerapi.git@5e5718719da12da33d62b33f469f550f6e81d260#subdirectory=packages/seerapi-models'
-                  'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@5e5718719da12da33d62b33f469f550f6e81d260#subdirectory=packages/solaris'
+                  --with 'seerapi-models @ git+https://github.com/Murmansk-Seer/seerapi.git@73382ce03f6004d1b619d6041c8734d98f81513d#subdirectory=packages/seerapi-models'
+                  'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@73382ce03f6004d1b619d6041c8734d98f81513d#subdirectory=packages/solaris'
 
             - name: Setup tmate session
               if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
@@ -114,6 +117,7 @@ jobs:
               id: analyze
               if: steps.source_check.outputs.skip != 'true'
               run: |
+                  python3 scripts/verify_source_contract.py --source source --source-only --prepare-reference-output --output-base "$BASE_OUTPUT_DIR" --api-version "$SOLARIS_API_VERSION"
                   solaris analyze data --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o data --json-format split \
                   --base-json-url https://api.seerapi.com/${{ env.SOLARIS_API_VERSION }} \
                   --db-url sqlite:///seerapi-data.sqlite \
