@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20018,
   "name": "血焰能量",
@@ -13,5 +13,5 @@
   "level": 5,
   "cost": 4,
   "is_token": true,
-  "hash": "9d64649f"
+  "hash": "58c16afc"
 }

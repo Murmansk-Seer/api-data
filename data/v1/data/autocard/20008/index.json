@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20008,
   "name": "物资补给",
@@ -18,5 +18,5 @@
   "is_awakened": false,
   "awaken_card": null,
   "non_awaken_card": null,
-  "hash": "e76930a9"
+  "hash": "fc1b59a7"
 }

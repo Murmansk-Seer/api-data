@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20013,
   "name": "永恒精华",
@@ -18,5 +18,5 @@
   "is_awakened": false,
   "awaken_card": null,
   "non_awaken_card": null,
-  "hash": "522a6854"
+  "hash": "68db8d2c"
 }

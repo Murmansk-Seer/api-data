@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20036,
   "name": "能量聚集",
@@ -13,5 +13,5 @@
   "level": 3,
   "cost": 2,
   "is_token": true,
-  "hash": "77f7f82a"
+  "hash": "cfad65b4"
 }

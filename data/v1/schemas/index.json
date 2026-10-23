@@ -154,6 +154,10 @@
           "title": "error_code Path",
           "type": "string"
         },
+        "factor_design": {
+          "title": "factor_design Path",
+          "type": "string"
+        },
         "field_effect": {
           "title": "field_effect Path",
           "type": "string"
@@ -172,6 +176,10 @@
         },
         "item_category": {
           "title": "item_category Path",
+          "type": "string"
+        },
+        "factor": {
+          "title": "factor Path",
           "type": "string"
         },
         "gem": {
@@ -337,6 +345,10 @@
         "skill_effect_type_tag": {
           "title": "skill_effect_type_tag Path",
           "type": "string"
+        },
+        "unresolved_pet_reference": {
+          "title": "unresolved_pet_reference Path",
+          "type": "string"
         }
       },
       "required": [
@@ -378,11 +390,13 @@
         "element_type",
         "element_type_combination",
         "error_code",
+        "factor_design",
         "field_effect",
         "field_effect_type",
         "glossary_entry",
         "item",
         "item_category",
+        "factor",
         "gem",
         "gem_category",
         "gem_generation_category",
@@ -423,7 +437,8 @@
         "skill_effect_param",
         "skill_hide_effect",
         "skill_category",
-        "skill_effect_type_tag"
+        "skill_effect_type_tag",
+        "unresolved_pet_reference"
       ],
       "title": "Index",
       "type": "object"

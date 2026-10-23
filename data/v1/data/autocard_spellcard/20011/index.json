@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20011,
   "name": "法术风暴",
@@ -13,5 +13,5 @@
   "level": 3,
   "cost": 2,
   "is_token": true,
-  "hash": "d5e5d3ed"
+  "hash": "1f024ab8"
 }

@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20001,
   "name": "金币卡",
@@ -18,5 +18,5 @@
   "is_awakened": false,
   "awaken_card": null,
   "non_awaken_card": null,
-  "hash": "21e58d8"
+  "hash": "ea5dda47"
 }

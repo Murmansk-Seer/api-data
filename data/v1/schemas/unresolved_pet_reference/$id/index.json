@@ -1,0 +1,71 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "owner_resource": {
+          "description": "原始引用所属资源类型",
+          "title": "Owner Resource",
+          "type": "string"
+        },
+        "owner_id": {
+          "description": "原始引用所属条目ID",
+          "title": "Owner Id",
+          "type": "integer"
+        },
+        "target_pet_id": {
+          "description": "官方原始目标ID，不代表有效精灵外键",
+          "title": "Target Pet Id",
+          "type": "integer"
+        },
+        "source_file": {
+          "description": "Unity配置文件名",
+          "title": "Source File",
+          "type": "string"
+        },
+        "source_field": {
+          "description": "原始引用字段",
+          "title": "Source Field",
+          "type": "string"
+        },
+        "source_json": {
+          "description": "完整原始条目JSON，保留空值和全部引用",
+          "title": "Source Json",
+          "type": "string"
+        },
+        "source_sha256": {
+          "description": "source_json的UTF-8 SHA256",
+          "title": "Source Sha256",
+          "type": "string"
+        },
+        "reason": {
+          "default": "target_missing",
+          "description": "未能建立有效关联的原因",
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "owner_resource",
+        "owner_id",
+        "target_pet_id",
+        "source_file",
+        "source_field",
+        "source_json",
+        "source_sha256"
+      ],
+      "title": "UnresolvedPetReference",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

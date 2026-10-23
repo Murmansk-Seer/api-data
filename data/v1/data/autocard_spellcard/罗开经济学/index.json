@@ -6,8 +6,8 @@
         "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
       },
       "element_type": {
-        "id": 0,
-        "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+        "id": 999,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/999"
       },
       "id": 20004,
       "name": "罗开经济学",
@@ -17,5 +17,5 @@
       "is_token": true
     }
   },
-  "hash": "67cf6024"
+  "hash": "e972a99b"
 }

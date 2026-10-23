@@ -5844,6 +5844,120 @@
         "deprecated": false
       }
     },
+    "v1/factor_design/{id}": {
+      "get": {
+        "tags": [
+          "因子",
+          "关卡",
+          "精灵"
+        ],
+        "summary": "获取因子关卡资源",
+        "description": "因子关卡资源，包含通关奖励、可兑换刻印、关联成就和各难度的挑战信息。difficulties 按简单、普通、困难排列，每个难度内嵌有序的 BOSS 列表、禁用精灵和规则。规则 ID 仅在当前关卡内有效。",
+        "operationId": "get_factor_design_by_id",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/factor_design"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/factor_design"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "v1/factor_design/": {
+      "get": {
+        "tags": [
+          "因子",
+          "关卡",
+          "精灵"
+        ],
+        "summary": "获取因子关卡资源列表",
+        "description": "因子关卡资源，包含通关奖励、可兑换刻印、关联成就和各难度的挑战信息。difficulties 按简单、普通、困难排列，每个难度内嵌有序的 BOSS 列表、禁用精灵和规则。规则 ID 仅在当前关卡内有效。",
+        "operationId": "get_factor_design_list",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/offset"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/expand"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/factor_design_List"
+                    },
+                    {
+                      "$ref": "#/components/schemas/factor_design_ListExpanded"
+                    }
+                  ],
+                  "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/factor_design_List"
+                    },
+                    {
+                      "$ref": "#/components/schemas/factor_design_ListExpanded"
+                    }
+                  ],
+                  "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
     "v1/field_effect/{id}": {
       "get": {
         "tags": [
@@ -6581,6 +6695,169 @@
                     },
                     {
                       "$ref": "#/components/schemas/item_category_ListExpanded"
+                    }
+                  ],
+                  "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "v1/factor/{id}": {
+      "get": {
+        "tags": [
+          "因子",
+          "道具",
+          "精灵"
+        ],
+        "summary": "获取因子道具资源",
+        "description": "因子道具资源，包含兑换精灵、第五技能和魂印所需的数量及关联资源。pet_limit 表示兑换的精灵是否具有唯一性；need_pet 表示兑换所需的前置精灵。不可兑换的技能、魂印及其消耗数量为 null，未关联因子关卡时 design 为 null。",
+        "operationId": "get_factor_by_id",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/factor"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/factor"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "v1/factor/{name}": {
+      "get": {
+        "tags": [
+          "因子",
+          "道具",
+          "精灵"
+        ],
+        "summary": "通过名称获取因子道具资源",
+        "description": "因子道具资源，包含兑换精灵、第五技能和魂印所需的数量及关联资源。pet_limit 表示兑换的精灵是否具有唯一性；need_pet 表示兑换所需的前置精灵。不可兑换的技能、魂印及其消耗数量为 null，未关联因子关卡时 design 为 null。",
+        "operationId": "get_factor_by_name",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/name"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/factor_NamedData"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/factor_NamedData"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "v1/factor/": {
+      "get": {
+        "tags": [
+          "因子",
+          "道具",
+          "精灵"
+        ],
+        "summary": "获取因子道具资源列表",
+        "description": "因子道具资源，包含兑换精灵、第五技能和魂印所需的数量及关联资源。pet_limit 表示兑换的精灵是否具有唯一性；need_pet 表示兑换所需的前置精灵。不可兑换的技能、魂印及其消耗数量为 null，未关联因子关卡时 design 为 null。",
+        "operationId": "get_factor_list",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/offset"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/expand"
+          },
+          {
+            "$ref": "#/components/parameters/name_query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/factor_List"
+                    },
+                    {
+                      "$ref": "#/components/schemas/factor_ListExpanded"
+                    }
+                  ],
+                  "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/factor_List"
+                    },
+                    {
+                      "$ref": "#/components/schemas/factor_ListExpanded"
                     }
                   ],
                   "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
@@ -12626,6 +12903,118 @@
         },
         "deprecated": false
       }
+    },
+    "v1/unresolved_pet_reference/{id}": {
+      "get": {
+        "tags": [
+          "数据完整性",
+          "原始配置"
+        ],
+        "summary": "获取官方悬空精灵引用原始记录资源",
+        "description": "完整保留官方魂印或词条中指向缺失精灵的原始条目与目标ID。target_pet_id是原始字段，不表示有效精灵外键；正常pet关系仅包含已存在的精灵。source_sha256校验source_json，官方补齐目标后会恢复正常关系并移除此保留记录。",
+        "operationId": "get_unresolved_pet_reference_by_id",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/unresolved_pet_reference"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/unresolved_pet_reference"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "v1/unresolved_pet_reference/": {
+      "get": {
+        "tags": [
+          "数据完整性",
+          "原始配置"
+        ],
+        "summary": "获取官方悬空精灵引用原始记录资源列表",
+        "description": "完整保留官方魂印或词条中指向缺失精灵的原始条目与目标ID。target_pet_id是原始字段，不表示有效精灵外键；正常pet关系仅包含已存在的精灵。source_sha256校验source_json，官方补齐目标后会恢复正常关系并移除此保留记录。",
+        "operationId": "get_unresolved_pet_reference_list",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/offset"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/expand"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/unresolved_pet_reference_List"
+                    },
+                    {
+                      "$ref": "#/components/schemas/unresolved_pet_reference_ListExpanded"
+                    }
+                  ],
+                  "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/unresolved_pet_reference_List"
+                    },
+                    {
+                      "$ref": "#/components/schemas/unresolved_pet_reference_ListExpanded"
+                    }
+                  ],
+                  "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
     }
   },
   "components": {
@@ -16255,6 +16644,7 @@
                 "url": "https://api.seerapi.com/v1/autocard/40005"
               }
             ],
+            "role": [],
             "hash": "3973130b"
           }
         ]
@@ -16465,6 +16855,7 @@
                 "url": "https://api.seerapi.com/v1/autocard/40005"
               }
             ],
+            "role": [],
             "hash": "3973130b"
           }
         ]
@@ -16659,6 +17050,7 @@
                 "url": "https://api.seerapi.com/v1/autocard/40005"
               }
             ],
+            "role": [],
             "hash": "3973130b"
           }
         ]
@@ -17357,6 +17749,10 @@
                 "url": "https://api.seerapi.com/v1/battle_effect_type/1"
               }
             ],
+            "resistance": {
+              "id": 1,
+              "url": "https://api.seerapi.com/v1/resistance_category/1"
+            },
             "hash": "fa7cf7b"
           }
         ]
@@ -17396,6 +17792,10 @@
                 "url": "https://api.seerapi.com/v1/battle_effect_type/1"
               }
             ],
+            "resistance": {
+              "id": 1,
+              "url": "https://api.seerapi.com/v1/resistance_category/1"
+            },
             "hash": "fa7cf7b"
           }
         ]
@@ -17419,6 +17819,10 @@
                 "url": "https://api.seerapi.com/v1/battle_effect_type/1"
               }
             ],
+            "resistance": {
+              "id": 1,
+              "url": "https://api.seerapi.com/v1/resistance_category/1"
+            },
             "hash": "fa7cf7b"
           }
         ]
@@ -18107,6 +18511,7 @@
               "id": 0,
               "url": "https://api.seerapi.com/v1/buff_type/0"
             },
+            "desc_tag": "roundnext, abst",
             "hash": "f3a2c1d0"
           },
           {
@@ -18121,6 +18526,7 @@
               "id": 0,
               "url": "https://api.seerapi.com/v1/buff_type/0"
             },
+            "desc_tag": null,
             "hash": "b8e7f6a5"
           }
         ]
@@ -18146,6 +18552,7 @@
               "id": 0,
               "url": "https://api.seerapi.com/v1/buff_type/0"
             },
+            "desc_tag": "roundnext, abst",
             "hash": "f3a2c1d0"
           },
           {
@@ -18160,6 +18567,7 @@
               "id": 0,
               "url": "https://api.seerapi.com/v1/buff_type/0"
             },
+            "desc_tag": null,
             "hash": "b8e7f6a5"
           }
         ]
@@ -19284,6 +19692,7 @@
               "id": 4,
               "url": "https://api.seerapi.com/v1/pet_effect_group/4"
             },
+            "effect_alias": "28_4_5",
             "hash": "d7952756"
           }
         ]
@@ -19332,6 +19741,7 @@
               "id": 4,
               "url": "https://api.seerapi.com/v1/pet_effect_group/4"
             },
+            "effect_alias": "28_4_5",
             "hash": "d7952756"
           }
         ]
@@ -19364,6 +19774,7 @@
               "id": 4,
               "url": "https://api.seerapi.com/v1/pet_effect_group/4"
             },
+            "effect_alias": "28_4_5",
             "hash": "d7952756"
           }
         ]
@@ -19731,6 +20142,7 @@
                 "url": "https://api.seerapi.com/v1/eid_effect/404"
               }
             },
+            "effect_alias": "404_3_0",
             "hash": "fd1200eb"
           }
         ]
@@ -19774,6 +20186,7 @@
                 "url": "https://api.seerapi.com/v1/eid_effect/404"
               }
             },
+            "effect_alias": "404_3_0",
             "hash": "fd1200eb"
           }
         ]
@@ -19801,6 +20214,7 @@
                 "url": "https://api.seerapi.com/v1/eid_effect/404"
               }
             },
+            "effect_alias": "404_3_0",
             "hash": "fd1200eb"
           }
         ]
@@ -20525,6 +20939,19 @@
                 "url": "https://api.seerapi.com/v1/suit/208"
               }
             ],
+            "occasion": {
+              "id": 0,
+              "url": "https://api.seerapi.com/v1/equip_effective_occasion/0"
+            },
+            "part_type": {
+              "id": 0,
+              "url": "https://api.seerapi.com/v1/equip_type/0"
+            },
+            "pk_attribute": {
+              "pk_hp": 60,
+              "pk_atk": 25,
+              "pk_fire_range": 0
+            },
             "hash": "d6e0c3f9"
           }
         ]
@@ -20600,6 +21027,19 @@
                 "url": "https://api.seerapi.com/v1/suit/208"
               }
             ],
+            "occasion": {
+              "id": 0,
+              "url": "https://api.seerapi.com/v1/equip_effective_occasion/0"
+            },
+            "part_type": {
+              "id": 0,
+              "url": "https://api.seerapi.com/v1/equip_type/0"
+            },
+            "pk_attribute": {
+              "pk_hp": 60,
+              "pk_atk": 25,
+              "pk_fire_range": 0
+            },
             "hash": "d6e0c3f9"
           }
         ]
@@ -20659,6 +21099,19 @@
                 "url": "https://api.seerapi.com/v1/suit/208"
               }
             ],
+            "occasion": {
+              "id": 0,
+              "url": "https://api.seerapi.com/v1/equip_effective_occasion/0"
+            },
+            "part_type": {
+              "id": 0,
+              "url": "https://api.seerapi.com/v1/equip_type/0"
+            },
+            "pk_attribute": {
+              "pk_hp": 60,
+              "pk_atk": 25,
+              "pk_fire_range": 0
+            },
             "hash": "d6e0c3f9"
           }
         ]
@@ -21524,7 +21977,7 @@
                 },
                 "type": "array",
                 "title": "Pet",
-                "description": "可持有该魂印的精灵ID"
+                "description": "可持有该魂印且主表存在的精灵ID；官方悬空引用见 unresolved_pet_reference"
               },
               "effect": {
                 "anyOf": [
@@ -21649,6 +22102,8 @@
             "intensified_to": null,
             "from": null,
             "advance": null,
+            "analyze_desc": "",
+            "from_": null,
             "hash": "17abd989"
           }
         ]
@@ -21715,6 +22170,8 @@
             "intensified_to": null,
             "from": null,
             "advance": null,
+            "analyze_desc": "",
+            "from_": null,
             "hash": "17abd989"
           }
         ]
@@ -21765,6 +22222,8 @@
             "intensified_to": null,
             "from": null,
             "advance": null,
+            "analyze_desc": "",
+            "from_": null,
             "hash": "17abd989"
           }
         ]
@@ -23129,6 +23588,884 @@
         "description": "expand=true 时返回完整资源对象列表",
         "x-model-name": "error_code"
       },
+      "factor_design": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/hash_partial"
+          },
+          {
+            "properties": {
+              "id": {
+                "type": "integer",
+                "title": "Id",
+                "description": "资源ID"
+              },
+              "time_value": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Time Value",
+                "description": "该ID用于查询当前剩余挑战次数"
+              },
+              "progress_value": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Progress Value",
+                "description": "该ID用于查询当前轮挑战进度"
+              },
+              "fail_times": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Fail Times",
+                "description": "该ID用于查询本轮战败次数"
+              },
+              "achievement": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/common_resource_ref",
+                    "x-model-name": "achievement"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "可通过该因子关卡获得的成就"
+              },
+              "difficulties": {
+                "items": {
+                  "properties": {
+                    "id": {
+                      "anyOf": [
+                        {
+                          "type": "integer"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ],
+                      "title": "Id"
+                    },
+                    "level": {
+                      "type": "string",
+                      "enum": [
+                        "easy",
+                        "normal",
+                        "hard"
+                      ],
+                      "title": "FactorDesignLevel"
+                    },
+                    "reward_count": {
+                      "type": "integer",
+                      "title": "Reward Count",
+                      "description": "通关全部关卡后奖励的道具数量"
+                    },
+                    "tasks": {
+                      "items": {
+                        "properties": {
+                          "id": {
+                            "anyOf": [
+                              {
+                                "type": "integer"
+                              },
+                              {
+                                "type": "null"
+                              }
+                            ],
+                            "title": "Id"
+                          },
+                          "desc": {
+                            "type": "string",
+                            "title": "Desc",
+                            "description": "BOSS描述"
+                          },
+                          "is_single_pet": {
+                            "type": "boolean",
+                            "title": "Is Single Pet",
+                            "description": "该BOSS是否为单精灵对战"
+                          },
+                          "boss_pet": {
+                            "$ref": "#/components/schemas/common_resource_ref",
+                            "x-model-name": "pet"
+                          }
+                        },
+                        "type": "object",
+                        "required": [
+                          "desc",
+                          "is_single_pet",
+                          "boss_pet"
+                        ],
+                        "title": "FactorDesignTask"
+                      },
+                      "type": "array",
+                      "title": "Tasks",
+                      "description": "BOSS列表"
+                    },
+                    "banned_pets": {
+                      "items": {
+                        "$ref": "#/components/schemas/common_resource_ref",
+                        "x-model-name": "pet"
+                      },
+                      "type": "array",
+                      "title": "Banned Pets",
+                      "description": "该难度禁用的精灵"
+                    },
+                    "rules": {
+                      "items": {
+                        "properties": {
+                          "tips": {
+                            "type": "string",
+                            "title": "Tips",
+                            "description": "规则提示"
+                          },
+                          "fail_tips": {
+                            "type": "string",
+                            "title": "Fail Tips",
+                            "description": "规则验证失败时的提示"
+                          },
+                          "args": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array",
+                            "title": "Args",
+                            "description": "规则参数"
+                          },
+                          "user_info": {
+                            "items": {
+                              "type": "integer"
+                            },
+                            "type": "array",
+                            "title": "User Info",
+                            "description": "玩家状态查询参数"
+                          },
+                          "id": {
+                            "type": "integer",
+                            "title": "Id",
+                            "description": "关卡内的规则ID"
+                          }
+                        },
+                        "type": "object",
+                        "required": [
+                          "tips",
+                          "fail_tips",
+                          "args",
+                          "user_info",
+                          "id"
+                        ],
+                        "title": "FactorDesignRule"
+                      },
+                      "type": "array",
+                      "title": "Rules",
+                      "description": "当前难度使用的规则"
+                    }
+                  },
+                  "type": "object",
+                  "required": [
+                    "level",
+                    "reward_count",
+                    "tasks",
+                    "banned_pets",
+                    "rules"
+                  ],
+                  "title": "FactorDesignDifficulty"
+                },
+                "type": "array",
+                "title": "Difficulties",
+                "description": "难度列表"
+              },
+              "reward": {
+                "$ref": "#/components/schemas/common_resource_ref",
+                "x-model-name": "factor"
+              },
+              "mintmark_reward": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/common_resource_ref",
+                    "x-model-name": "mintmark"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "可在该关卡页面兑换的刻印，当该关卡不支持兑换刻印时为 null"
+              }
+            },
+            "type": "object",
+            "required": [
+              "id",
+              "difficulties",
+              "reward"
+            ],
+            "title": "FactorDesign"
+          }
+        ],
+        "title": "因子关卡资源",
+        "examples": [
+          {
+            "id": 5,
+            "time_value": 200723,
+            "progress_value": 200722,
+            "fail_times": 200720,
+            "achievement": {
+              "id": 3145004,
+              "url": "https://api.seerapi.com/v1/achievement/3145004"
+            },
+            "difficulties": [
+              {
+                "level": "easy",
+                "reward_count": 12,
+                "tasks": [
+                  {
+                    "desc": "【简单的敌人，伤害提升100%】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4189,
+                      "url": "https://api.seerapi.com/v1/pet/4189"
+                    }
+                  },
+                  {
+                    "desc": "【简单的敌人，先制+1，伤害提升100%】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4078,
+                      "url": "https://api.seerapi.com/v1/pet/4078"
+                    }
+                  },
+                  {
+                    "desc": "【有点难度的敌人，先制+2，伤害提升200%，每回合使对手随机2项属性-1且吸取对手一定体力】",
+                    "is_single_pet": true,
+                    "boss_pet": {
+                      "id": 4163,
+                      "url": "https://api.seerapi.com/v1/pet/4163"
+                    }
+                  },
+                  {
+                    "desc": "【有点难度的敌人，先制+3，伤害提升200%，攻击有概率使对手害怕，每回合使对手随机3项属性-1且吸取对手一定体力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4200,
+                      "url": "https://api.seerapi.com/v1/pet/4200"
+                    }
+                  },
+                  {
+                    "desc": "【有点难度的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4208,
+                      "url": "https://api.seerapi.com/v1/pet/4208"
+                    }
+                  }
+                ],
+                "banned_pets": [],
+                "rules": []
+              },
+              {
+                "level": "normal",
+                "reward_count": 18,
+                "tasks": [
+                  {
+                    "desc": "【比较简单的敌人，先制+2，伤害提升200%，每回合附带一定固伤，受到伤害超出一定程度时恢复自身全部体力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4189,
+                      "url": "https://api.seerapi.com/v1/pet/4189"
+                    }
+                  },
+                  {
+                    "desc": "【比较简单的敌人，先制+2，伤害提升200%，每回合附带一定固伤，受到伤害超出一定程度时恢复自身全部体力，有概率使对手1个技能PP值归零】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4078,
+                      "url": "https://api.seerapi.com/v1/pet/4078"
+                    }
+                  },
+                  {
+                    "desc": "【有点强的敌人，先制+3，伤害提升300%，可以消除对手能力提升状态，每回合使对手随机2项属性-1，免疫过低的伤害】",
+                    "is_single_pet": true,
+                    "boss_pet": {
+                      "id": 4163,
+                      "url": "https://api.seerapi.com/v1/pet/4163"
+                    }
+                  },
+                  {
+                    "desc": "【较强的敌人，伤害提升300%，对手无法强化自己，无法探知其他能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4200,
+                      "url": "https://api.seerapi.com/v1/pet/4200"
+                    }
+                  },
+                  {
+                    "desc": "【有点强的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4208,
+                      "url": "https://api.seerapi.com/v1/pet/4208"
+                    }
+                  }
+                ],
+                "banned_pets": [],
+                "rules": [
+                  {
+                    "tips": "每场battle都需要在6回合内击败BOSS，否则battle按失败结算",
+                    "fail_tips": "战斗未在6回合内结束，结算为失败",
+                    "args": [
+                      6
+                    ],
+                    "user_info": [],
+                    "id": 2
+                  },
+                  {
+                    "tips": "本关卡在挑战中，不可重复上阵（出战背包派出过的）精灵",
+                    "fail_tips": "",
+                    "args": [],
+                    "user_info": [
+                      200699,
+                      200700,
+                      200701,
+                      200702,
+                      200703,
+                      200704,
+                      200705,
+                      200706,
+                      200707,
+                      200708,
+                      200709,
+                      200710,
+                      200711,
+                      200712,
+                      200713,
+                      200714,
+                      200715,
+                      200716,
+                      200717,
+                      200718,
+                      200719,
+                      200728,
+                      200729,
+                      200730
+                    ],
+                    "id": 1
+                  }
+                ]
+              },
+              {
+                "level": "hard",
+                "reward_count": 36,
+                "tasks": [
+                  {
+                    "desc": "【有点强的敌人，先制+3，伤害提升300%，对手无法强化自己，可以消除对手能力提升状态，每回合有概率免疫所有伤害且附带一定固伤】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4189,
+                      "url": "https://api.seerapi.com/v1/pet/4189"
+                    }
+                  },
+                  {
+                    "desc": "【较强的敌人，每回合有概率免疫所有伤害，无法探知其他能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4078,
+                      "url": "https://api.seerapi.com/v1/pet/4078"
+                    }
+                  },
+                  {
+                    "desc": "【较强的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4163,
+                      "url": "https://api.seerapi.com/v1/pet/4163"
+                    }
+                  },
+                  {
+                    "desc": "【较强的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4200,
+                      "url": "https://api.seerapi.com/v1/pet/4200"
+                    }
+                  },
+                  {
+                    "desc": "【强的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4208,
+                      "url": "https://api.seerapi.com/v1/pet/4208"
+                    }
+                  }
+                ],
+                "banned_pets": [
+                  {
+                    "id": 3022,
+                    "url": "https://api.seerapi.com/v1/pet/3022"
+                  },
+                  {
+                    "id": 3460,
+                    "url": "https://api.seerapi.com/v1/pet/3460"
+                  },
+                  {
+                    "id": 3437,
+                    "url": "https://api.seerapi.com/v1/pet/3437"
+                  }
+                ],
+                "rules": [
+                  {
+                    "tips": "本关卡在挑战中，不可重复上阵（出战背包派出过的）精灵",
+                    "fail_tips": "",
+                    "args": [],
+                    "user_info": [
+                      200699,
+                      200700,
+                      200701,
+                      200702,
+                      200703,
+                      200704,
+                      200705,
+                      200706,
+                      200707,
+                      200708,
+                      200709,
+                      200710,
+                      200711,
+                      200712,
+                      200713,
+                      200714,
+                      200715,
+                      200716,
+                      200717,
+                      200718,
+                      200719,
+                      200728,
+                      200729,
+                      200730
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "tips": "本关卡不可使用精灵：王之哈莫、幻境界皇、艾欧丽娅",
+                    "fail_tips": "",
+                    "args": [
+                      3022,
+                      3460,
+                      3437
+                    ],
+                    "user_info": [],
+                    "id": 3
+                  },
+                  {
+                    "tips": "出战精灵需等于100级",
+                    "fail_tips": "",
+                    "args": [
+                      100
+                    ],
+                    "user_info": [],
+                    "id": 4
+                  },
+                  {
+                    "tips": "关卡挑战中的对战累计失败次数＞3次，则本轮关卡挑战自动放弃",
+                    "fail_tips": "本关卡中对战累计失败次数已大于3次，挑战失败",
+                    "args": [
+                      3
+                    ],
+                    "user_info": [
+                      200720
+                    ],
+                    "id": 5
+                  }
+                ]
+              }
+            ],
+            "reward": {
+              "id": 2400021,
+              "url": "https://api.seerapi.com/v1/factor/2400021"
+            },
+            "mintmark_reward": {
+              "id": 42055,
+              "url": "https://api.seerapi.com/v1/mintmark/42055"
+            },
+            "hash": "b5d55895"
+          }
+        ]
+      },
+      "factor_design_List": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/common_api_resource_list",
+            "x-model-name": "factor_design"
+          }
+        ],
+        "title": "因子关卡资源列表",
+        "examples": [
+          {
+            "id": 5,
+            "time_value": 200723,
+            "progress_value": 200722,
+            "fail_times": 200720,
+            "achievement": {
+              "id": 3145004,
+              "url": "https://api.seerapi.com/v1/achievement/3145004"
+            },
+            "difficulties": [
+              {
+                "level": "easy",
+                "reward_count": 12,
+                "tasks": [
+                  {
+                    "desc": "【简单的敌人，伤害提升100%】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4189,
+                      "url": "https://api.seerapi.com/v1/pet/4189"
+                    }
+                  },
+                  {
+                    "desc": "【简单的敌人，先制+1，伤害提升100%】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4078,
+                      "url": "https://api.seerapi.com/v1/pet/4078"
+                    }
+                  },
+                  {
+                    "desc": "【有点难度的敌人，先制+2，伤害提升200%，每回合使对手随机2项属性-1且吸取对手一定体力】",
+                    "is_single_pet": true,
+                    "boss_pet": {
+                      "id": 4163,
+                      "url": "https://api.seerapi.com/v1/pet/4163"
+                    }
+                  },
+                  {
+                    "desc": "【有点难度的敌人，先制+3，伤害提升200%，攻击有概率使对手害怕，每回合使对手随机3项属性-1且吸取对手一定体力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4200,
+                      "url": "https://api.seerapi.com/v1/pet/4200"
+                    }
+                  },
+                  {
+                    "desc": "【有点难度的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4208,
+                      "url": "https://api.seerapi.com/v1/pet/4208"
+                    }
+                  }
+                ],
+                "banned_pets": [],
+                "rules": []
+              },
+              {
+                "level": "normal",
+                "reward_count": 18,
+                "tasks": [
+                  {
+                    "desc": "【比较简单的敌人，先制+2，伤害提升200%，每回合附带一定固伤，受到伤害超出一定程度时恢复自身全部体力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4189,
+                      "url": "https://api.seerapi.com/v1/pet/4189"
+                    }
+                  },
+                  {
+                    "desc": "【比较简单的敌人，先制+2，伤害提升200%，每回合附带一定固伤，受到伤害超出一定程度时恢复自身全部体力，有概率使对手1个技能PP值归零】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4078,
+                      "url": "https://api.seerapi.com/v1/pet/4078"
+                    }
+                  },
+                  {
+                    "desc": "【有点强的敌人，先制+3，伤害提升300%，可以消除对手能力提升状态，每回合使对手随机2项属性-1，免疫过低的伤害】",
+                    "is_single_pet": true,
+                    "boss_pet": {
+                      "id": 4163,
+                      "url": "https://api.seerapi.com/v1/pet/4163"
+                    }
+                  },
+                  {
+                    "desc": "【较强的敌人，伤害提升300%，对手无法强化自己，无法探知其他能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4200,
+                      "url": "https://api.seerapi.com/v1/pet/4200"
+                    }
+                  },
+                  {
+                    "desc": "【有点强的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4208,
+                      "url": "https://api.seerapi.com/v1/pet/4208"
+                    }
+                  }
+                ],
+                "banned_pets": [],
+                "rules": [
+                  {
+                    "tips": "每场battle都需要在6回合内击败BOSS，否则battle按失败结算",
+                    "fail_tips": "战斗未在6回合内结束，结算为失败",
+                    "args": [
+                      6
+                    ],
+                    "user_info": [],
+                    "id": 2
+                  },
+                  {
+                    "tips": "本关卡在挑战中，不可重复上阵（出战背包派出过的）精灵",
+                    "fail_tips": "",
+                    "args": [],
+                    "user_info": [
+                      200699,
+                      200700,
+                      200701,
+                      200702,
+                      200703,
+                      200704,
+                      200705,
+                      200706,
+                      200707,
+                      200708,
+                      200709,
+                      200710,
+                      200711,
+                      200712,
+                      200713,
+                      200714,
+                      200715,
+                      200716,
+                      200717,
+                      200718,
+                      200719,
+                      200728,
+                      200729,
+                      200730
+                    ],
+                    "id": 1
+                  }
+                ]
+              },
+              {
+                "level": "hard",
+                "reward_count": 36,
+                "tasks": [
+                  {
+                    "desc": "【有点强的敌人，先制+3，伤害提升300%，对手无法强化自己，可以消除对手能力提升状态，每回合有概率免疫所有伤害且附带一定固伤】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4189,
+                      "url": "https://api.seerapi.com/v1/pet/4189"
+                    }
+                  },
+                  {
+                    "desc": "【较强的敌人，每回合有概率免疫所有伤害，无法探知其他能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4078,
+                      "url": "https://api.seerapi.com/v1/pet/4078"
+                    }
+                  },
+                  {
+                    "desc": "【较强的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4163,
+                      "url": "https://api.seerapi.com/v1/pet/4163"
+                    }
+                  },
+                  {
+                    "desc": "【较强的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4200,
+                      "url": "https://api.seerapi.com/v1/pet/4200"
+                    }
+                  },
+                  {
+                    "desc": "【强的敌人，无法探知能力】",
+                    "is_single_pet": false,
+                    "boss_pet": {
+                      "id": 4208,
+                      "url": "https://api.seerapi.com/v1/pet/4208"
+                    }
+                  }
+                ],
+                "banned_pets": [
+                  {
+                    "id": 3022,
+                    "url": "https://api.seerapi.com/v1/pet/3022"
+                  },
+                  {
+                    "id": 3460,
+                    "url": "https://api.seerapi.com/v1/pet/3460"
+                  },
+                  {
+                    "id": 3437,
+                    "url": "https://api.seerapi.com/v1/pet/3437"
+                  }
+                ],
+                "rules": [
+                  {
+                    "tips": "本关卡在挑战中，不可重复上阵（出战背包派出过的）精灵",
+                    "fail_tips": "",
+                    "args": [],
+                    "user_info": [
+                      200699,
+                      200700,
+                      200701,
+                      200702,
+                      200703,
+                      200704,
+                      200705,
+                      200706,
+                      200707,
+                      200708,
+                      200709,
+                      200710,
+                      200711,
+                      200712,
+                      200713,
+                      200714,
+                      200715,
+                      200716,
+                      200717,
+                      200718,
+                      200719,
+                      200728,
+                      200729,
+                      200730
+                    ],
+                    "id": 1
+                  },
+                  {
+                    "tips": "本关卡不可使用精灵：王之哈莫、幻境界皇、艾欧丽娅",
+                    "fail_tips": "",
+                    "args": [
+                      3022,
+                      3460,
+                      3437
+                    ],
+                    "user_info": [],
+                    "id": 3
+                  },
+                  {
+                    "tips": "出战精灵需等于100级",
+                    "fail_tips": "",
+                    "args": [
+                      100
+                    ],
+                    "user_info": [],
+                    "id": 4
+                  },
+                  {
+                    "tips": "关卡挑战中的对战累计失败次数＞3次，则本轮关卡挑战自动放弃",
+                    "fail_tips": "本关卡中对战累计失败次数已大于3次，挑战失败",
+                    "args": [
+                      3
+                    ],
+                    "user_info": [
+                      200720
+                    ],
+                    "id": 5
+                  }
+                ]
+              }
+            ],
+            "reward": {
+              "id": 2400021,
+              "url": "https://api.seerapi.com/v1/factor/2400021"
+            },
+            "mintmark_reward": {
+              "id": 42055,
+              "url": "https://api.seerapi.com/v1/mintmark/42055"
+            },
+            "hash": "b5d55895"
+          }
+        ]
+      },
+      "factor_design_ListExpanded": {
+        "properties": {
+          "count": {
+            "type": "integer",
+            "description": "资源数量"
+          },
+          "next": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "下一页URL"
+          },
+          "previous": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "上一页URL"
+          },
+          "first": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "第一页URL"
+          },
+          "last": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "最后一页URL"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/factor_design"
+            },
+            "type": "array",
+            "description": "资源列表"
+          }
+        },
+        "type": "object",
+        "required": [
+          "count",
+          "results"
+        ],
+        "title": "因子关卡资源列表（expand=true）",
+        "description": "expand=true 时返回完整资源对象列表",
+        "x-model-name": "factor_design"
+      },
       "field_effect": {
         "allOf": [
           {
@@ -23502,7 +24839,7 @@
                   }
                 ],
                 "title": "Pet",
-                "description": "用于指示该术语是否是特定精灵专属的"
+                "description": "该术语关联的有效精灵；官方悬空引用见 unresolved_pet_reference"
               }
             },
             "type": "object",
@@ -24294,6 +25631,396 @@
         "title": "道具分类资源列表（expand=true）",
         "description": "expand=true 时返回完整资源对象列表",
         "x-model-name": "item_category"
+      },
+      "factor": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/hash_partial"
+          },
+          {
+            "properties": {
+              "id": {
+                "type": "integer",
+                "title": "Id",
+                "description": "因子道具ID"
+              },
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": "因子道具名称"
+              },
+              "pet_limit": {
+                "type": "boolean",
+                "title": "Pet Limit",
+                "description": "该因子兑换的精灵是否具有唯一性"
+              },
+              "pet_consume": {
+                "type": "integer",
+                "title": "Pet Consume",
+                "description": "兑换精灵所需因子数量"
+              },
+              "skill_consume": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Skill Consume",
+                "description": "兑换技能所需因子数量，当因子不可兑换技能时为null"
+              },
+              "soulmark_consume": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Soulmark Consume",
+                "description": "兑换魂印所需因子数量，当因子不可兑换魂印时为null"
+              },
+              "item": {
+                "$ref": "#/components/schemas/common_resource_ref",
+                "x-model-name": "item"
+              },
+              "design": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/common_resource_ref",
+                    "x-model-name": "factor_design"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "因子关卡设计资源引用"
+              },
+              "need_pet": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/common_resource_ref",
+                    "x-model-name": "pet"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "兑换该精灵所需的前置精灵，当不需要前置时为 null"
+              },
+              "pet": {
+                "$ref": "#/components/schemas/common_resource_ref",
+                "x-model-name": "pet"
+              },
+              "skill": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/common_resource_ref",
+                    "x-model-name": "skill"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "因子可兑换的技能资源引用，当因子不可兑换技能时为null"
+              },
+              "soulmark": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/common_resource_ref",
+                    "x-model-name": "soulmark"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "description": "因子可兑换的魂印资源引用，当因子不可兑换魂印时为null"
+              }
+            },
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "pet_limit",
+              "pet_consume",
+              "item"
+            ],
+            "title": "Factor"
+          }
+        ],
+        "title": "因子道具资源",
+        "examples": [
+          {
+            "id": 2400021,
+            "name": "墨纪拉因子",
+            "pet_limit": true,
+            "pet_consume": 540,
+            "skill_consume": 108,
+            "soulmark_consume": 270,
+            "item": {
+              "id": 2400021,
+              "url": "https://api.seerapi.com/v1/item/2400021"
+            },
+            "design": {
+              "id": 5,
+              "url": "https://api.seerapi.com/v1/factor_design/5"
+            },
+            "need_pet": null,
+            "pet": {
+              "id": 4246,
+              "url": "https://api.seerapi.com/v1/pet/4246"
+            },
+            "skill": {
+              "id": 35220,
+              "url": "https://api.seerapi.com/v1/skill/35220"
+            },
+            "soulmark": {
+              "id": 1466,
+              "url": "https://api.seerapi.com/v1/soulmark/1466"
+            },
+            "hash": "358d3b0"
+          },
+          {
+            "id": 2400317,
+            "name": "鲁迪诺斯因子",
+            "pet_limit": false,
+            "pet_consume": 200,
+            "skill_consume": null,
+            "soulmark_consume": null,
+            "item": {
+              "id": 2400317,
+              "url": "https://api.seerapi.com/v1/item/2400317"
+            },
+            "design": null,
+            "need_pet": {
+              "id": 55,
+              "url": "https://api.seerapi.com/v1/pet/55"
+            },
+            "pet": {
+              "id": 1143,
+              "url": "https://api.seerapi.com/v1/pet/1143"
+            },
+            "skill": null,
+            "soulmark": null,
+            "hash": "929f85a0"
+          }
+        ]
+      },
+      "factor_NamedData": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/hash_partial"
+          },
+          {
+            "properties": {
+              "data": {
+                "patternProperties": {
+                  "^[0-9]+$": {
+                    "$ref": "#/components/schemas/factor"
+                  }
+                },
+                "additionalProperties": false,
+                "type": "object"
+              }
+            },
+            "type": "object",
+            "required": [
+              "data"
+            ]
+          }
+        ],
+        "title": "名称映射因子道具资源",
+        "examples": [
+          {
+            "id": 2400021,
+            "name": "墨纪拉因子",
+            "pet_limit": true,
+            "pet_consume": 540,
+            "skill_consume": 108,
+            "soulmark_consume": 270,
+            "item": {
+              "id": 2400021,
+              "url": "https://api.seerapi.com/v1/item/2400021"
+            },
+            "design": {
+              "id": 5,
+              "url": "https://api.seerapi.com/v1/factor_design/5"
+            },
+            "need_pet": null,
+            "pet": {
+              "id": 4246,
+              "url": "https://api.seerapi.com/v1/pet/4246"
+            },
+            "skill": {
+              "id": 35220,
+              "url": "https://api.seerapi.com/v1/skill/35220"
+            },
+            "soulmark": {
+              "id": 1466,
+              "url": "https://api.seerapi.com/v1/soulmark/1466"
+            },
+            "hash": "358d3b0"
+          },
+          {
+            "id": 2400317,
+            "name": "鲁迪诺斯因子",
+            "pet_limit": false,
+            "pet_consume": 200,
+            "skill_consume": null,
+            "soulmark_consume": null,
+            "item": {
+              "id": 2400317,
+              "url": "https://api.seerapi.com/v1/item/2400317"
+            },
+            "design": null,
+            "need_pet": {
+              "id": 55,
+              "url": "https://api.seerapi.com/v1/pet/55"
+            },
+            "pet": {
+              "id": 1143,
+              "url": "https://api.seerapi.com/v1/pet/1143"
+            },
+            "skill": null,
+            "soulmark": null,
+            "hash": "929f85a0"
+          }
+        ]
+      },
+      "factor_List": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/common_api_resource_list",
+            "x-model-name": "factor"
+          }
+        ],
+        "title": "因子道具资源列表",
+        "examples": [
+          {
+            "id": 2400021,
+            "name": "墨纪拉因子",
+            "pet_limit": true,
+            "pet_consume": 540,
+            "skill_consume": 108,
+            "soulmark_consume": 270,
+            "item": {
+              "id": 2400021,
+              "url": "https://api.seerapi.com/v1/item/2400021"
+            },
+            "design": {
+              "id": 5,
+              "url": "https://api.seerapi.com/v1/factor_design/5"
+            },
+            "need_pet": null,
+            "pet": {
+              "id": 4246,
+              "url": "https://api.seerapi.com/v1/pet/4246"
+            },
+            "skill": {
+              "id": 35220,
+              "url": "https://api.seerapi.com/v1/skill/35220"
+            },
+            "soulmark": {
+              "id": 1466,
+              "url": "https://api.seerapi.com/v1/soulmark/1466"
+            },
+            "hash": "358d3b0"
+          },
+          {
+            "id": 2400317,
+            "name": "鲁迪诺斯因子",
+            "pet_limit": false,
+            "pet_consume": 200,
+            "skill_consume": null,
+            "soulmark_consume": null,
+            "item": {
+              "id": 2400317,
+              "url": "https://api.seerapi.com/v1/item/2400317"
+            },
+            "design": null,
+            "need_pet": {
+              "id": 55,
+              "url": "https://api.seerapi.com/v1/pet/55"
+            },
+            "pet": {
+              "id": 1143,
+              "url": "https://api.seerapi.com/v1/pet/1143"
+            },
+            "skill": null,
+            "soulmark": null,
+            "hash": "929f85a0"
+          }
+        ]
+      },
+      "factor_ListExpanded": {
+        "properties": {
+          "count": {
+            "type": "integer",
+            "description": "资源数量"
+          },
+          "next": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "下一页URL"
+          },
+          "previous": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "上一页URL"
+          },
+          "first": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "第一页URL"
+          },
+          "last": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "最后一页URL"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/factor"
+            },
+            "type": "array",
+            "description": "资源列表"
+          }
+        },
+        "type": "object",
+        "required": [
+          "count",
+          "results"
+        ],
+        "title": "因子道具资源列表（expand=true）",
+        "description": "expand=true 时返回完整资源对象列表",
+        "x-model-name": "factor"
       },
       "gem": {
         "allOf": [
@@ -25185,6 +26912,7 @@
               1,
               1
             ],
+            "generation_id": 1,
             "hash": "c9a7b3ed"
           }
         ]
@@ -25249,6 +26977,7 @@
               1,
               1
             ],
+            "generation_id": 1,
             "hash": "c9a7b3ed"
           }
         ]
@@ -25297,6 +27026,7 @@
               1,
               1
             ],
+            "generation_id": 1,
             "hash": "c9a7b3ed"
           }
         ]
@@ -26668,6 +28398,7 @@
             "skill": [],
             "is_hidden": false,
             "connect": null,
+            "extra_attr_value": null,
             "hash": "7d5f8c9e"
           }
         ]
@@ -26726,6 +28457,7 @@
             "skill": [],
             "is_hidden": false,
             "connect": null,
+            "extra_attr_value": null,
             "hash": "7d5f8c9e"
           }
         ]
@@ -26768,6 +28500,7 @@
             "skill": [],
             "is_hidden": false,
             "connect": null,
+            "extra_attr_value": null,
             "hash": "7d5f8c9e"
           }
         ]
@@ -27539,6 +29272,7 @@
             },
             "is_hidden": false,
             "connect": null,
+            "extra_attr_value": null,
             "hash": "84g9d7ak"
           }
         ]
@@ -27607,6 +29341,7 @@
             },
             "is_hidden": false,
             "connect": null,
+            "extra_attr_value": null,
             "hash": "84g9d7ak"
           }
         ]
@@ -27659,6 +29394,7 @@
             },
             "is_hidden": false,
             "connect": null,
+            "extra_attr_value": null,
             "hash": "84g9d7ak"
           }
         ]
@@ -30134,6 +31870,15 @@
                 "title": "Soulmark",
                 "description": "精灵可持有的魂印"
               },
+              "factor": {
+                "items": {
+                  "$ref": "#/components/schemas/common_resource_ref",
+                  "x-model-name": "factor"
+                },
+                "type": "array",
+                "title": "Factor",
+                "description": "精灵对应的因子列表"
+              },
               "encyclopedia_entry": {
                 "anyOf": [
                   {
@@ -30626,6 +32371,7 @@
               "id": 20,
               "url": "https://api.seerapi.com/v1/pet_advance/20"
             },
+            "factor": [],
             "hash": "367a7cde"
           }
         ]
@@ -31039,6 +32785,7 @@
               "id": 20,
               "url": "https://api.seerapi.com/v1/pet_advance/20"
             },
+            "factor": [],
             "hash": "367a7cde"
           }
         ]
@@ -31436,6 +33183,7 @@
               "id": 20,
               "url": "https://api.seerapi.com/v1/pet_advance/20"
             },
+            "factor": [],
             "hash": "367a7cde"
           }
         ]
@@ -31773,6 +33521,7 @@
                 "url": "https://api.seerapi.com/v1/pet/6"
               }
             ],
+            "description": "雄性",
             "hash": "69bd7249"
           }
         ]
@@ -31819,6 +33568,7 @@
                 "url": "https://api.seerapi.com/v1/pet/6"
               }
             ],
+            "description": "雄性",
             "hash": "69bd7249"
           }
         ]
@@ -31849,6 +33599,7 @@
                 "url": "https://api.seerapi.com/v1/pet/6"
               }
             ],
+            "description": "雄性",
             "hash": "69bd7249"
           }
         ]
@@ -36005,6 +37756,7 @@
             ],
             "friend_skill_effect": [],
             "hide_effect": null,
+            "advance": null,
             "hash": "5254529c"
           }
         ]
@@ -36104,6 +37856,7 @@
             ],
             "friend_skill_effect": [],
             "hide_effect": null,
+            "advance": null,
             "hash": "5254529c"
           }
         ]
@@ -36187,6 +37940,7 @@
             ],
             "friend_skill_effect": [],
             "hide_effect": null,
+            "advance": null,
             "hash": "5254529c"
           }
         ]
@@ -36393,6 +38147,7 @@
             ],
             "skill": [],
             "tag": [],
+            "analyze_info": "[sprite name=iconHit]命中则{0}%使对手[color=#57c975]{1}[/color]，[color=#52a5f2]未触发[/color]则附加{2}点[color=#52a5f2]固定伤害[/color]",
             "hash": "e73d9b1e"
           }
         ]
@@ -36423,6 +38178,7 @@
             ],
             "skill": [],
             "tag": [],
+            "analyze_info": "[sprite name=iconHit]命中则{0}%使对手[color=#57c975]{1}[/color]，[color=#52a5f2]未触发[/color]则附加{2}点[color=#52a5f2]固定伤害[/color]",
             "hash": "e73d9b1e"
           }
         ]
@@ -37289,6 +39045,154 @@
         "description": "expand=true 时返回完整资源对象列表",
         "x-model-name": "skill_effect_type_tag"
       },
+      "unresolved_pet_reference": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/hash_partial"
+          },
+          {
+            "properties": {
+              "id": {
+                "type": "integer",
+                "title": "Id",
+                "description": "资源ID"
+              },
+              "owner_resource": {
+                "type": "string",
+                "title": "Owner Resource",
+                "description": "原始引用所属资源类型"
+              },
+              "owner_id": {
+                "type": "integer",
+                "title": "Owner Id",
+                "description": "原始引用所属条目ID"
+              },
+              "target_pet_id": {
+                "type": "integer",
+                "title": "Target Pet Id",
+                "description": "官方原始目标ID，不代表有效精灵外键"
+              },
+              "source_file": {
+                "type": "string",
+                "title": "Source File",
+                "description": "Unity配置文件名"
+              },
+              "source_field": {
+                "type": "string",
+                "title": "Source Field",
+                "description": "原始引用字段"
+              },
+              "source_json": {
+                "type": "string",
+                "title": "Source Json",
+                "description": "完整原始条目JSON，保留空值和全部引用"
+              },
+              "source_sha256": {
+                "type": "string",
+                "title": "Source Sha256",
+                "description": "source_json的UTF-8 SHA256"
+              },
+              "reason": {
+                "type": "string",
+                "title": "Reason",
+                "description": "未能建立有效关联的原因",
+                "default": "target_missing"
+              }
+            },
+            "type": "object",
+            "required": [
+              "id",
+              "owner_resource",
+              "owner_id",
+              "target_pet_id",
+              "source_file",
+              "source_field",
+              "source_json",
+              "source_sha256"
+            ],
+            "title": "UnresolvedPetReference"
+          }
+        ],
+        "title": "官方悬空精灵引用原始记录资源",
+        "examples": []
+      },
+      "unresolved_pet_reference_List": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/common_api_resource_list",
+            "x-model-name": "unresolved_pet_reference"
+          }
+        ],
+        "title": "官方悬空精灵引用原始记录资源列表",
+        "examples": []
+      },
+      "unresolved_pet_reference_ListExpanded": {
+        "properties": {
+          "count": {
+            "type": "integer",
+            "description": "资源数量"
+          },
+          "next": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "下一页URL"
+          },
+          "previous": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "上一页URL"
+          },
+          "first": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "第一页URL"
+          },
+          "last": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "最后一页URL"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/unresolved_pet_reference"
+            },
+            "type": "array",
+            "description": "资源列表"
+          }
+        },
+        "type": "object",
+        "required": [
+          "count",
+          "results"
+        ],
+        "title": "官方悬空精灵引用原始记录资源列表（expand=true）",
+        "description": "expand=true 时返回完整资源对象列表",
+        "x-model-name": "unresolved_pet_reference"
+      },
       "api_metadata": {
         "allOf": [
           {
@@ -37518,6 +39422,10 @@
                 "type": "string",
                 "title": "error_code Path"
               },
+              "factor_design": {
+                "type": "string",
+                "title": "factor_design Path"
+              },
               "field_effect": {
                 "type": "string",
                 "title": "field_effect Path"
@@ -37537,6 +39445,10 @@
               "item_category": {
                 "type": "string",
                 "title": "item_category Path"
+              },
+              "factor": {
+                "type": "string",
+                "title": "factor Path"
               },
               "gem": {
                 "type": "string",
@@ -37701,6 +39613,10 @@
               "skill_effect_type_tag": {
                 "type": "string",
                 "title": "skill_effect_type_tag Path"
+              },
+              "unresolved_pet_reference": {
+                "type": "string",
+                "title": "unresolved_pet_reference Path"
               }
             },
             "type": "object",
@@ -37743,11 +39659,13 @@
               "element_type",
               "element_type_combination",
               "error_code",
+              "factor_design",
               "field_effect",
               "field_effect_type",
               "glossary_entry",
               "item",
               "item_category",
+              "factor",
               "gem",
               "gem_category",
               "gem_generation_category",
@@ -37788,7 +39706,8 @@
               "skill_effect_param",
               "skill_hide_effect",
               "skill_category",
-              "skill_effect_type_tag"
+              "skill_effect_type_tag",
+              "unresolved_pet_reference"
             ],
             "title": "Index"
           }
