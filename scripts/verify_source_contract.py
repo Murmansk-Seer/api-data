@@ -5,6 +5,7 @@ from contextlib import closing
 import json
 from pathlib import Path
 import sqlite3
+import hashlib
 
 
 def validate_source_references(source):
@@ -14,19 +15,56 @@ def validate_source_references(source):
     pets = {row['id'] for row in load('monsters.json')['monsters']['monster'] if row['id'] < 10000}
     if not pets:
         raise ValueError('monsters.json: no official pet records')
-    errors = []
-    for row in load('effectIcon.json')['root']['effect']:
-        for pet_id in row['pet_id']:
-            if pet_id not in pets:
-                errors.append(f'effectIcon.json: id={row["id"]}, field=pet_id, missing pet={pet_id}')
-    for row in load('effectDes.json')['root']['item']:
-        raw = row['monster']
-        for pet_id in (map(int, raw.split(',')) if raw and raw != '0' else ()):
-            if pet_id not in pets:
-                errors.append(f'effectDes.json: id={row["id"]}, field=monster, missing pet={pet_id}')
-    if errors:
-        raise ValueError('Official source references are inconsistent: ' + '; '.join(errors))
-    print('Official pet source references validated before analysis')
+    valid = {'soulmark': set(), 'glossary_entry': set()}
+    missing = {}
+    for resource, filename, field, container in (
+        ('soulmark', 'effectIcon.json', 'pet_id', 'effect'),
+        ('glossary_entry', 'effectDes.json', 'monster', 'item'),
+    ):
+        for row in load(filename)['root'][container]:
+            raw = row[field]
+            ids = raw if field == 'pet_id' else (list(map(int, raw.split(','))) if raw and raw != '0' else [])
+            for pet_id in ids:
+                if type(pet_id) is not int or pet_id <= 0:
+                    raise ValueError(f'{filename}: id={row["id"]}, invalid pet ID={pet_id!r}')
+                if pet_id in pets:
+                    valid[resource].add((row['id'], pet_id))
+                else:
+                    missing[(resource, row['id'], pet_id)] = (filename, field, row)
+    print(f'Official pet references inspected: {len(missing)} require lossless preservation')
+    return pets, valid, missing
+
+
+def validate_reference_preservation(db, source):
+    pets, valid, expected = validate_source_references(source)
+    actual_pets = {row[0] for row in db.execute('SELECT id FROM pet')}
+    if actual_pets != pets:
+        raise ValueError('Generated pet IDs differ from official source; no fabricated or omitted pets allowed')
+    for resource, table, owner_column in (
+        ('soulmark', 'petsoulmarklink', 'soulmark_id'),
+        ('glossary_entry', 'petglossaryentrylink', 'glossary_entry_id'),
+    ):
+        actual = set(db.execute(f'SELECT {owner_column}, pet_id FROM {table}'))
+        if actual != valid[resource]:
+            raise ValueError(f'{resource}: valid pet associations do not exactly match official source')
+    retained = set()
+    for resource, owner, target, filename, field, payload, digest, reason in db.execute(
+        'SELECT owner_resource, owner_id, target_pet_id, source_file, source_field, source_json, source_sha256, reason FROM unresolved_pet_reference'
+    ):
+        key = (resource, owner, target)
+        if key not in expected or key in retained:
+            raise ValueError(f'Unexpected or duplicate preserved reference: {key!r}')
+        expected_file, expected_field, raw = expected[key]
+        if (filename, field, reason) != (expected_file, expected_field, 'target_missing') or json.loads(payload) != raw:
+            raise ValueError(f'Preserved original source differs: {key!r}')
+        if hashlib.sha256(payload.encode()).hexdigest() != digest:
+            raise ValueError(f'Preserved source SHA256 mismatch: {key!r}')
+        if db.execute(f'SELECT 1 FROM {resource} WHERE id=?', (owner,)).fetchone() is None:
+            raise ValueError(f'Preserved reference owner is missing: {key!r}')
+        retained.add(key)
+    if retained != set(expected):
+        raise ValueError(f'Missing lossless reference evidence: {sorted(set(expected)-retained)!r}')
+    print(f'Exact source coverage: resolved edges + {len(retained)} preserved edges; no fabricated pets')
 
 
 def validate_source_sets(database, source):
@@ -47,6 +85,7 @@ def validate_source_sets(database, source):
         if errors:
             groups = Counter((row[0], row[2]) for row in errors)
             raise ValueError(f'Foreign key violations: total={len(errors)}, groups={dict(groups)!r}, first={errors[:20]!r}')
+        validate_reference_preservation(db, source)
 
 
 def main():
