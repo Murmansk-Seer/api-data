@@ -8,10 +8,30 @@ import unittest
 
 from scripts.verify_source_contract import (
     validate_source_sets, validate_source_references, validate_reference_preservation,
+    prepare_reference_output,
 )
 
 
 class SourceContract(unittest.TestCase):
+    def test_reference_cleanup_preserves_other_resources_and_rejects_traversal(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            for kind in ('data', 'sharded_data'):
+                path = root / 'v1' / kind / 'unresolved_pet_reference/old/index.json'
+                path.parent.mkdir(parents=True)
+                path.write_text('old evidence')
+            other = root / 'v1/data/pet/4542/index.json'
+            other.parent.mkdir(parents=True)
+            other.write_text('keep')
+            with self.assertRaisesRegex(ValueError, 'Invalid API version'):
+                prepare_reference_output(root, '../outside')
+            self.assertTrue((root / 'v1/data/unresolved_pet_reference').exists())
+            prepare_reference_output(root, 'v1')
+            self.assertEqual(other.read_text(), 'keep')
+            self.assertFalse((root / 'v1/data/unresolved_pet_reference').exists())
+            self.assertFalse((root / 'v1/sharded_data/unresolved_pet_reference').exists())
+            prepare_reference_output(root, 'v1')
+
     def source(self, root, references=False):
         (root / 'unity').mkdir()
         data = {

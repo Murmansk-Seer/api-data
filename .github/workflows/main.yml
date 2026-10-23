@@ -117,7 +117,7 @@ jobs:
               id: analyze
               if: steps.source_check.outputs.skip != 'true'
               run: |
-                  python3 scripts/verify_source_contract.py --source source --source-only
+                  python3 scripts/verify_source_contract.py --source source --source-only --prepare-reference-output --output-base "$BASE_OUTPUT_DIR" --api-version "$SOLARIS_API_VERSION"
                   solaris analyze data --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o data --json-format split \
                   --base-json-url https://api.seerapi.com/${{ env.SOLARIS_API_VERSION }} \
                   --db-url sqlite:///seerapi-data.sqlite \

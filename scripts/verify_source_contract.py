@@ -6,6 +6,9 @@ import json
 from pathlib import Path
 import sqlite3
 import hashlib
+import os
+import re
+import shutil
 
 
 def validate_source_references(source):
@@ -67,6 +70,20 @@ def validate_reference_preservation(db, source):
     print(f'Exact source coverage: resolved edges + {len(retained)} preserved edges; no fabricated pets')
 
 
+def prepare_reference_output(base, version):
+    """Remove only stale generated evidence URLs, never other resources or Releases."""
+    if version in ('.', '..') or re.fullmatch(r'[A-Za-z0-9_.-]+', version) is None:
+        raise ValueError('Invalid API version for generated reference output')
+    root = Path(base).resolve()
+    targets = [root / version / kind / 'unresolved_pet_reference' for kind in ('data', 'sharded_data')]
+    for path in targets:
+        if path.is_symlink() or not path.resolve().is_relative_to(root):
+            raise ValueError('Unsafe generated reference output path')
+    for path in targets:
+        if path.exists():
+            shutil.rmtree(path)
+
+
 def validate_source_sets(database, source):
     with closing(sqlite3.connect(database)) as db:
         for table, filename, keys in (
@@ -92,10 +109,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--database', type=Path)
     parser.add_argument('--source-only', action='store_true')
+    parser.add_argument('--prepare-reference-output', action='store_true')
+    parser.add_argument('--output-base', type=Path, default=Path('data'))
+    parser.add_argument('--api-version', default=os.environ.get('SOLARIS_API_VERSION', 'v1'))
     parser.add_argument('--source', type=Path, required=True)
     args = parser.parse_args()
     if args.source_only:
         validate_source_references(args.source)
+        if args.prepare_reference_output:
+            prepare_reference_output(args.output_base, args.api_version)
     elif args.database is None:
         parser.error('--database is required unless --source-only is used')
     else:
