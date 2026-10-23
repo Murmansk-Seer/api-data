@@ -83,7 +83,7 @@
           "type": "boolean"
         },
         "pet": {
-          "description": "可持有该魂印的精灵ID",
+          "description": "可持有该魂印且主表存在的精灵ID；官方悬空引用见 unresolved_pet_reference",
           "items": {
             "$ref": "#/$defs/ResourceRef_Pet_"
           },

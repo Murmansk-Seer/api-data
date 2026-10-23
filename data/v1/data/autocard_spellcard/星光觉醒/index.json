@@ -6,8 +6,8 @@
         "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
       },
       "element_type": {
-        "id": 0,
-        "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+        "id": 999,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/999"
       },
       "id": 20010,
       "name": "星光觉醒",
@@ -17,5 +17,5 @@
       "is_token": true
     }
   },
-  "hash": "7787b6eb"
+  "hash": "276d627f"
 }

@@ -6,8 +6,8 @@
         "url": "https://api.seerapi.com/v1/autocard_cardtype/4"
       },
       "element_type": {
-        "id": 0,
-        "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+        "id": 999,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/999"
       },
       "id": 20021,
       "name": "觉醒奖励",
@@ -27,8 +27,8 @@
         "url": "https://api.seerapi.com/v1/autocard_cardtype/4"
       },
       "element_type": {
-        "id": 0,
-        "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+        "id": 999,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/999"
       },
       "id": 20022,
       "name": "觉醒奖励",
@@ -48,8 +48,8 @@
         "url": "https://api.seerapi.com/v1/autocard_cardtype/4"
       },
       "element_type": {
-        "id": 0,
-        "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+        "id": 999,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/999"
       },
       "id": 20023,
       "name": "觉醒奖励",
@@ -69,8 +69,8 @@
         "url": "https://api.seerapi.com/v1/autocard_cardtype/4"
       },
       "element_type": {
-        "id": 0,
-        "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+        "id": 999,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/999"
       },
       "id": 20024,
       "name": "觉醒奖励",
@@ -90,8 +90,8 @@
         "url": "https://api.seerapi.com/v1/autocard_cardtype/4"
       },
       "element_type": {
-        "id": 0,
-        "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+        "id": 999,
+        "url": "https://api.seerapi.com/v1/autocard_element_type/999"
       },
       "id": 20025,
       "name": "觉醒奖励",
@@ -106,5 +106,5 @@
       "non_awaken_card": null
     }
   },
-  "hash": "f8848184"
+  "hash": "6795cd4f"
 }

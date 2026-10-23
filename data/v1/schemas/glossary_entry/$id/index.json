@@ -60,7 +60,7 @@
             }
           ],
           "default": null,
-          "description": "用于指示该术语是否是特定精灵专属的",
+          "description": "该术语关联的有效精灵；官方悬空引用见 unresolved_pet_reference",
           "title": "Pet"
         }
       },

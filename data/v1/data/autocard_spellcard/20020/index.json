@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20020,
   "name": "紧急增援",
@@ -13,5 +13,5 @@
   "level": 6,
   "cost": 2,
   "is_token": true,
-  "hash": "20b9cb7f"
+  "hash": "773e3c3d"
 }

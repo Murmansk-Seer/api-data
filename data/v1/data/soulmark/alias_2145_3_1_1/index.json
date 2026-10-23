@@ -8,12 +8,7 @@
       "pve_effective": false,
       "intensified": false,
       "is_adv": false,
-      "pet": [
-        {
-          "id": 4543,
-          "url": "https://api.seerapi.com/v1/pet/4543"
-        }
-      ],
+      "pet": [],
       "effect": {
         "effect_args": [
           3,
@@ -45,5 +40,5 @@
       "advance": null
     }
   },
-  "hash": "ea02858b"
+  "hash": "9734fa17"
 }

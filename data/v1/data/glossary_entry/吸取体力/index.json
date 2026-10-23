@@ -8,10 +8,6 @@
       "link": null,
       "pet": [
         {
-          "id": 4543,
-          "url": "https://api.seerapi.com/v1/pet/4543"
-        },
-        {
           "id": 4528,
           "url": "https://api.seerapi.com/v1/pet/4528"
         },
@@ -818,5 +814,5 @@
       ]
     }
   },
-  "hash": "1246e2d"
+  "hash": "a962346e"
 }

@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/4"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20025,
   "name": "觉醒奖励",
@@ -13,5 +13,5 @@
   "level": 0,
   "cost": 0,
   "is_token": true,
-  "hash": "98a47ab"
+  "hash": "33c03560"
 }

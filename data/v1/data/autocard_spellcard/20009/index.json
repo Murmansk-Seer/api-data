@@ -4,8 +4,8 @@
     "url": "https://api.seerapi.com/v1/autocard_cardtype/2"
   },
   "element_type": {
-    "id": 0,
-    "url": "https://api.seerapi.com/v1/autocard_element_type/0"
+    "id": 999,
+    "url": "https://api.seerapi.com/v1/autocard_element_type/999"
   },
   "id": 20009,
   "name": "系别全明星",
@@ -13,5 +13,5 @@
   "level": 3,
   "cost": 3,
   "is_token": true,
-  "hash": "b8a45f49"
+  "hash": "e5ff80b8"
 }
