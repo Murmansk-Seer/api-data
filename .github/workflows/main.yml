@@ -36,7 +36,7 @@ jobs:
         outputs:
             published: ${{ steps.verify.outcome == 'success' }}
             source: ${{ steps.source_check.outputs.config_head }}
-            parser: 73382ce03f6004d1b619d6041c8734d98f81513d
+            parser: 3df3db546a36d1bed6e31fbdf3a2d5f514c3ff8e
             dispatch: ${{ steps.dispatch.outcome }}
             analysis: ${{ steps.analyze.outcome }}
             upload: ${{ steps.upload.outcome }}
@@ -89,11 +89,11 @@ jobs:
 
             - name: Install solaris
               if: steps.source_check.outputs.skip != 'true'
-              # Pin the merged Solaris timezone and analyzer fixes used for data generation.
+              # Pin the verified Solaris official-layout merge and matching data models.
               run: >-
                   uv tool install --force
-                  --with 'seerapi-models @ git+https://github.com/Murmansk-Seer/seerapi.git@73382ce03f6004d1b619d6041c8734d98f81513d#subdirectory=packages/seerapi-models'
-                  'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@73382ce03f6004d1b619d6041c8734d98f81513d#subdirectory=packages/solaris'
+                  --with 'seerapi-models @ git+https://github.com/Murmansk-Seer/seerapi.git@3df3db546a36d1bed6e31fbdf3a2d5f514c3ff8e#subdirectory=packages/seerapi-models'
+                  'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@3df3db546a36d1bed6e31fbdf3a2d5f514c3ff8e#subdirectory=packages/solaris'
 
             - name: Setup tmate session
               if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
