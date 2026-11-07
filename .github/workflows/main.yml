@@ -36,7 +36,7 @@ jobs:
         outputs:
             published: ${{ steps.verify.outcome == 'success' }}
             source: ${{ steps.source_check.outputs.config_head }}
-            parser: 9030fad018887869657c1e0c3fdbd1f16440f5e2
+            parser: ${{ env.SEERAPI_TOOLING_REVISION }}
             dispatch: ${{ steps.dispatch.outcome }}
             analysis: ${{ steps.analyze.outcome }}
             upload: ${{ steps.upload.outcome }}
@@ -46,6 +46,7 @@ jobs:
             SOLARIS_DATA_SOURCE: https://github.com/Murmansk-Seer/config-sources.git
             SOLARIS_PATCH_SOURCE: https://github.com/Murmansk-Seer/patch-sources.git
             BASE_OUTPUT_DIR: data
+            SEERAPI_TOOLING_REVISION: 2b6a071be7457478a68b687ea60011aae3dd0afa
             HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
 
         steps:
@@ -68,6 +69,7 @@ jobs:
                   FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force == true }}
               run: |
                   set -e
+                  [[ "$SEERAPI_TOOLING_REVISION" =~ ^[0-9a-f]{40}$ ]] || { echo "::error::Set SEERAPI_TOOLING_REVISION to the full Somua-enabled commit SHA"; exit 1; }
                   config_head="$(git ls-remote "${SOLARIS_DATA_SOURCE}" HEAD | awk '{print $1}')"
                   patch_head="$(git ls-remote "${SOLARIS_PATCH_SOURCE}" HEAD | awk '{print $1}')"
                   test -n "$config_head" && test -n "$patch_head"
@@ -89,11 +91,11 @@ jobs:
 
             - name: Install solaris
               if: steps.source_check.outputs.skip != 'true'
-              # Pin the verified Solaris official-layout merge and matching data models.
-              run: >-
-                  uv tool install --force
-                  --with 'seerapi-models @ git+https://github.com/Murmansk-Seer/seerapi.git@9030fad018887869657c1e0c3fdbd1f16440f5e2#subdirectory=packages/seerapi-models'
-                  'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@9030fad018887869657c1e0c3fdbd1f16440f5e2#subdirectory=packages/solaris'
+              # One reviewed full SHA pins both models and Solaris.
+              run: |
+                  uv pip install --system \
+                    "seerapi-models @ git+https://github.com/Murmansk-Seer/seerapi.git@${SEERAPI_TOOLING_REVISION}#subdirectory=packages/seerapi-models" \
+                    "seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@${SEERAPI_TOOLING_REVISION}#subdirectory=packages/solaris"
 
             - name: Setup tmate session
               if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
@@ -106,6 +108,12 @@ jobs:
                   git clone ${{ env.SOLARIS_PATCH_SOURCE }} patch-sources
                   git -C source checkout --detach ${{ steps.source_check.outputs.config_head }}
                   git -C patch-sources checkout --detach ${{ steps.source_check.outputs.patch_head }}
+                  test "$(cat source/unity/.parser-revision)" = "$SEERAPI_TOOLING_REVISION"
+                  test "$(cat source/unity/.somua-version)" = "$(cat source/unity/.version)"
+                  official_version="$(cat source/unity/.version)"
+                  [[ "$official_version" =~ ^[0-9]{14}$ ]]
+                  printf 'SOLARIS_DATA_VERSION=%s\n' "$official_version" >> "$GITHUB_ENV"
+                  printf 'SOLARIS_PATCH_VERSION=%s\n' '${{ steps.source_check.outputs.patch_head }}' >> "$GITHUB_ENV"
                   mkdir -p source/patch
                   mv patch-sources/patches/* source/patch
 
@@ -135,9 +143,10 @@ jobs:
                   solaris analyze openapi --base-output-dir ${{ env.BASE_OUTPUT_DIR }} -o openapi.json \
                   --description "$openapi_desc" --detail-version "$detail_version" --output-named-data
 
-            - name: Verify complete source skill and factor records
+            - name: Verify complete source skill, factor and Somua records
               if: steps.source_check.outputs.skip != 'true'
-              run: python3 scripts/verify_source_contract.py --database seerapi-data.sqlite --source source
+              run: |
+                  python3 scripts/verify_source_contract.py --database seerapi-data.sqlite --source source --output-base "$BASE_OUTPUT_DIR" --api-version "$SOLARIS_API_VERSION"
 
             - name: Commit and push changes
               if: steps.source_check.outputs.skip != 'true'
@@ -148,9 +157,12 @@ jobs:
                   git config --local user.email "github-actions[bot]@users.noreply.github.com"
                   git config --local user.name "github-actions[bot]"
                   python3 scripts/publication_state.py validate
+                  python3 scripts/preserve_json_metadata.py --base-output-dir "$BASE_OUTPUT_DIR" --api-version "$SOLARIS_API_VERSION"
                   git add data
                   timestamp=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S CST')
-                  git diff --staged --quiet || git commit -m "Auto update config $timestamp"
+                  git diff --staged --quiet || git commit -m "data(api): export verified official configuration $SOLARIS_DATA_VERSION" \
+                    -m "EN reason/scope: Export the complete official configuration $SOLARIS_DATA_VERSION using tooling $SEERAPI_TOOLING_REVISION. Verification: source coverage, SQLite integrity and all27Somua/dango tables passed before this commit; publication and notification remain separate later steps." \
+                    -m "中文原因／范围：使用工具链 $SEERAPI_TOOLING_REVISION 导出完整官方配置 $SOLARIS_DATA_VERSION。验证：本提交前来源覆盖、SQLite完整性及全部27张苏摩表已通过；发布和通知仍由后续步骤单独记录。"
                   python scripts/push_build.py --base "$BUILD_BASE" --branch "$BUILD_BRANCH"
                   echo "DATA_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
                   echo "timestamp=$timestamp" >> $GITHUB_OUTPUT

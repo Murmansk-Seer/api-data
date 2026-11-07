@@ -14,6 +14,7 @@ ACK = Path('.build-state/notified-fingerprint')
 
 def fingerprint(config, patch):
     digest = hashlib.sha256((config + '\n' + patch).encode())
+    digest.update(os.environ.get('SEERAPI_TOOLING_REVISION', '').encode())
     for path in sorted([Path('.github/workflows/main.yml'), *Path('scripts').glob('*.py')]):
         digest.update(path.as_posix().encode())
         digest.update(path.read_bytes())

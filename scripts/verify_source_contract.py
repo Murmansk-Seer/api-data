@@ -12,6 +12,9 @@ import shutil
 import xml.etree.ElementTree as ET
 
 
+# These complete scopes belong exclusively to the standard Somua producer.
+SOMUA_OUTPUT_SCOPES = ('somua_model', 'somua_gene', 'somua_basic_attribute', 'somua_entry', 'somua_status_effect', 'somua_weapon', 'somua_achievement', 'somua_dispatch', 'somua_house', 'somua_keeper', 'somua_ranking', 'somua_shop', 'somua_task', 'somua_tutorial', 'dango', 'dango_action', 'dango_gene', 'dango_gold', 'dango_guide', 'dango_house', 'dango_level', 'dango_shop', 'dango_slot', 'dango_story', 'dango_task', 'dango_chess', 'dango_chess_stage')
+
 def validate_source_references(source):
     root = Path(source) / 'unity'
     def load(name):
@@ -82,11 +85,11 @@ def validate_reference_preservation(db, source):
 
 
 def prepare_reference_output(base, version):
-    """Remove only stale generated evidence URLs, never other resources or Releases."""
+    """Remove owned reference and Somua URLs, retaining other resources and Releases."""
     if version in ('.', '..') or re.fullmatch(r'[A-Za-z0-9_.-]+', version) is None:
         raise ValueError('Invalid API version for generated reference output')
     root = Path(base).resolve()
-    targets = [root / version / kind / 'unresolved_pet_reference' for kind in ('data', 'sharded_data')]
+    targets = [root / version / kind / scope for kind in ('data', 'sharded_data') for scope in ('unresolved_pet_reference', *SOMUA_OUTPUT_SCOPES)]
     for path in targets:
         if path.is_symlink() or not path.resolve().is_relative_to(root):
             raise ValueError('Unsafe generated reference output path')
@@ -131,6 +134,8 @@ def main():
     parser.add_argument('--source', type=Path, required=True)
     args = parser.parse_args()
     if args.source_only:
+        from seerapi_models.somua_source import load_somua_source
+        load_somua_source(args.source)
         validate_source_references(args.source)
         if args.prepare_reference_output:
             prepare_reference_output(args.output_base, args.api_version)
@@ -138,6 +143,27 @@ def main():
         parser.error('--database is required unless --source-only is used')
     else:
         validate_source_sets(args.database, args.source)
+        from seerapi_models.somua_source import validate_somua_source
+        with closing(sqlite3.connect(args.database)) as db:
+            validate_somua_source(db, args.source)
+        import solaris
+        if __package__:
+            from .generation_metadata import validate_generation_metadata
+        else:
+            from generation_metadata import validate_generation_metadata
+        validate_generation_metadata(
+            args.database, args.source, args.output_base, args.api_version,
+            dict(
+                api_url=os.environ.get('SOLARIS_API_URL', ''),
+                api_version=args.api_version,
+                generator_name=solaris.__name__,
+                generator_version=solaris.__version__,
+                data_source=os.environ.get('SOLARIS_DATA_SOURCE', ''),
+                data_version=os.environ.get('SOLARIS_DATA_VERSION', ''),
+                patch_source=os.environ.get('SOLARIS_PATCH_SOURCE', ''),
+                patch_version=os.environ.get('SOLARIS_PATCH_VERSION', ''),
+            ),
+        )
 
 
 if __name__ == '__main__':
