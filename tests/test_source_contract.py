@@ -34,6 +34,7 @@ class SourceContract(unittest.TestCase):
 
     def source(self, root, references=False):
         (root / 'unity').mkdir()
+        self.book(root, [4542])
         data = {
             'monsters.json': {'monsters': {'monster': [{'id': 4542}]}},
             'effectIcon.json': {'root': {'effect': [{'id': 1753, 'pet_id': [4543], 'tips': '', 'args': ''}] if references else []}},
@@ -45,6 +46,11 @@ class SourceContract(unittest.TestCase):
             (root / 'unity' / name).write_text(json.dumps(content))
         return data
 
+    def book(self, root, ids):
+        (root / 'flash').mkdir(exist_ok=True)
+        (root / 'flash/config.xml.PetBookXMLInfo.xml').write_text(
+            '<root>' + ''.join(f'<Monster ID="{id_}"/>' for id_ in ids) + '</root>')
+
     def database(self, path):
         db = sqlite3.connect(path)
         db.executescript('''
@@ -54,6 +60,8 @@ class SourceContract(unittest.TestCase):
             INSERT INTO factor(id) VALUES(2400001);
             CREATE TABLE pet(id INTEGER PRIMARY KEY);
             INSERT INTO pet VALUES(4542);
+            CREATE TABLE pet_encyclopedia_entry(id INTEGER PRIMARY KEY REFERENCES pet(id));
+            INSERT INTO pet_encyclopedia_entry VALUES(4542);
             CREATE TABLE soulmark(id INTEGER PRIMARY KEY);
             INSERT INTO soulmark VALUES(1753);
             CREATE TABLE glossary_entry(id INTEGER PRIMARY KEY);
@@ -86,6 +94,7 @@ class SourceContract(unittest.TestCase):
             _, _, missing = validate_source_references(root)
             self.assertEqual(set(missing), {('soulmark', 1753, 4543), ('glossary_entry', 117, 4543)})
             self.assertEqual(before, {p.name: p.read_bytes() for p in (root / 'unity').iterdir()})
+            self.book(root, [4542, 4543])
             data['monsters.json']['monsters']['monster'].insert(0, {'id': 4543})
             (root / 'unity/monsters.json').write_text(json.dumps(data['monsters.json']))
             self.assertEqual(validate_source_references(root)[2], {})
@@ -123,9 +132,10 @@ class SourceContract(unittest.TestCase):
                 validate_source_sets(database, root)
                 self.assertEqual(db.execute('PRAGMA foreign_key_check').fetchall(), [])
                 self.assertIsNone(db.execute('SELECT 1 FROM pet WHERE id=4543').fetchone())
+                self.book(root, [4542, 4543])
                 data['monsters.json']['monsters']['monster'].append({'id': 4543})
                 (root / 'unity/monsters.json').write_text(json.dumps(data['monsters.json']))
-                db.executescript('INSERT INTO pet VALUES(4543); INSERT INTO petsoulmarklink VALUES(4543,1753); INSERT INTO petglossaryentrylink VALUES(4543,117); DELETE FROM unresolved_pet_reference;')
+                db.executescript('INSERT INTO pet VALUES(4543); INSERT INTO pet_encyclopedia_entry VALUES(4543); INSERT INTO petsoulmarklink VALUES(4543,1753); INSERT INTO petglossaryentrylink VALUES(4543,117); DELETE FROM unresolved_pet_reference;')
                 validate_source_sets(database, root)
 
     def test_loss_corruption_duplicates_and_fabrication_are_rejected(self):
@@ -147,3 +157,33 @@ class SourceContract(unittest.TestCase):
                     db.execute(corruption)
                     with self.assertRaises(ValueError):
                         validate_reference_preservation(db, root)
+
+    def test_forms_and_unsorted_ordinary_domain_exclude_battle_copies(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            data = self.source(root, references=True)
+            data['monsters.json']['monsters']['monster'] = [
+                {'id': 15001}, {'id': 13311}, {'id': 5270}, {'id': 4542}, {'id': 3311}]
+            data['effectIcon.json']['root']['effect'][0]['pet_id'] = [13311]
+            self.book(root, [3311, 4542, 13311])
+            for name in ('monsters.json', 'effectIcon.json'):
+                (root / 'unity' / name).write_text(json.dumps(data[name]))
+            pets, valid, missing = validate_source_references(root)
+            self.assertEqual(pets, {3311, 4542, 13311})
+            self.assertEqual(valid['soulmark'], {(1753, 13311)})
+            self.assertNotIn(('soulmark', 1753, 13311), missing)
+
+    def test_missing_form_entity_and_omitted_book_block_publication(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.source(root)
+            self.book(root, [4542, 13311])
+            with self.assertRaisesRegex(ValueError, '13311'):
+                validate_source_references(root)
+            self.book(root, [4542])
+            database = root / 'db.sqlite'
+            with closing(self.database(database)) as db:
+                db.execute('DELETE FROM pet_encyclopedia_entry')
+                db.commit()
+                with self.assertRaisesRegex(ValueError, 'encyclopedia IDs'):
+                    validate_source_sets(database, root)
