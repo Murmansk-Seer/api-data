@@ -9,18 +9,24 @@ import hashlib
 import os
 import re
 import shutil
+import xml.etree.ElementTree as ET
 
 
 def validate_source_references(source):
     root = Path(source) / 'unity'
     def load(name):
         return json.loads((root / name).read_text(encoding='utf8'))
-    # Preserve the existing canonical-pet domain; later sections are battle copies.
-    pets = set()
-    for row in load('monsters.json')['monsters']['monster']:
-        if row['id'] > 9999:
-            break
-        pets.add(row['id'])
+    # Match Solaris: ordinary range plus explicitly documented official forms.
+    available = {row['id'] for row in load('monsters.json')['monsters']['monster']}
+    book = ET.parse(Path(source) / 'flash/config.xml.PetBookXMLInfo.xml')
+    encyclopedia = {int(row.attrib['ID']) for row in book.getroot().findall('Monster')}
+    if not encyclopedia:
+        raise ValueError('Official encyclopedia has no entries')
+    missing_books = encyclopedia - available
+    if missing_books:
+        raise ValueError(f'Official encyclopedia entries missing monster records: {sorted(missing_books)}')
+    ordinary_limit = max((id_ for id_ in encyclopedia if id_ <= 9999), default=0)
+    pets = {id_ for id_ in available if id_ <= ordinary_limit} | encyclopedia
     if not pets:
         raise ValueError('monsters.json: no official pet records')
     valid = {'soulmark': set(), 'glossary_entry': set()}
@@ -108,6 +114,11 @@ def validate_source_sets(database, source):
             groups = Counter((row[0], row[2]) for row in errors)
             raise ValueError(f'Foreign key violations: total={len(errors)}, groups={dict(groups)!r}, first={errors[:20]!r}')
         validate_reference_preservation(db, source)
+        book = ET.parse(Path(source) / 'flash/config.xml.PetBookXMLInfo.xml')
+        expected_books = {int(row.attrib['ID']) for row in book.getroot().findall('Monster')}
+        actual_books = {row[0] for row in db.execute('SELECT id FROM pet_encyclopedia_entry')}
+        if actual_books != expected_books:
+            raise ValueError('Generated encyclopedia IDs differ from official source')
 
 
 def main():

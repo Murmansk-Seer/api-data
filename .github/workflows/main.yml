@@ -36,7 +36,7 @@ jobs:
         outputs:
             published: ${{ steps.verify.outcome == 'success' }}
             source: ${{ steps.source_check.outputs.config_head }}
-            parser: 3df3db546a36d1bed6e31fbdf3a2d5f514c3ff8e
+            parser: 9030fad018887869657c1e0c3fdbd1f16440f5e2
             dispatch: ${{ steps.dispatch.outcome }}
             analysis: ${{ steps.analyze.outcome }}
             upload: ${{ steps.upload.outcome }}
@@ -92,8 +92,8 @@ jobs:
               # Pin the verified Solaris official-layout merge and matching data models.
               run: >-
                   uv tool install --force
-                  --with 'seerapi-models @ git+https://github.com/Murmansk-Seer/seerapi.git@3df3db546a36d1bed6e31fbdf3a2d5f514c3ff8e#subdirectory=packages/seerapi-models'
-                  'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@3df3db546a36d1bed6e31fbdf3a2d5f514c3ff8e#subdirectory=packages/solaris'
+                  --with 'seerapi-models @ git+https://github.com/Murmansk-Seer/seerapi.git@9030fad018887869657c1e0c3fdbd1f16440f5e2#subdirectory=packages/seerapi-models'
+                  'seerapi-solaris @ git+https://github.com/Murmansk-Seer/seerapi.git@9030fad018887869657c1e0c3fdbd1f16440f5e2#subdirectory=packages/solaris'
 
             - name: Setup tmate session
               if: ${{ steps.source_check.outputs.skip != 'true' && github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
