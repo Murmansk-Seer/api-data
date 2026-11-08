@@ -1,0 +1,21 @@
+{
+  "id": 13,
+  "attack_mode": 10013,
+  "attack_mode_sp": 11013,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 0,
+  "is_body": 1,
+  "is_ear": 1,
+  "is_expression": 1,
+  "is_hand": 0,
+  "is_head": 0,
+  "is_surrounding": 1,
+  "is_tail": 0,
+  "is_topwear": 0,
+  "name": "布莱克",
+  "pet_id": 875,
+  "prefix": "布",
+  "season": "",
+  "suffix": "莱克",
+  "hash": "f871aeaa"
+}

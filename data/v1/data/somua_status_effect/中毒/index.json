@@ -1,0 +1,17 @@
+{
+  "data": {
+    "7001": {
+      "id": 7001,
+      "fx_on_get": "",
+      "fx_on_trig": "",
+      "icon": 0,
+      "max_stack": 1,
+      "stack_rule": "refresh",
+      "status_desc": "每秒会受到最大生命值 value% 的伤害。",
+      "status_name": "中毒",
+      "type": 2,
+      "value_rule": ""
+    }
+  },
+  "hash": "23864ec1"
+}

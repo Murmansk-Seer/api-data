@@ -1,0 +1,85 @@
+{
+  "count": 15,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/dango_story/1",
+      "name": null
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/dango_story/2",
+      "name": null
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/dango_story/3",
+      "name": null
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/dango_story/4",
+      "name": null
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/dango_story/5",
+      "name": null
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/dango_story/6",
+      "name": null
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/dango_story/7",
+      "name": null
+    },
+    {
+      "id": 8,
+      "url": "https://api.seerapi.com/v1/dango_story/8",
+      "name": null
+    },
+    {
+      "id": 9,
+      "url": "https://api.seerapi.com/v1/dango_story/9",
+      "name": null
+    },
+    {
+      "id": 10,
+      "url": "https://api.seerapi.com/v1/dango_story/10",
+      "name": null
+    },
+    {
+      "id": 11,
+      "url": "https://api.seerapi.com/v1/dango_story/11",
+      "name": null
+    },
+    {
+      "id": 12,
+      "url": "https://api.seerapi.com/v1/dango_story/12",
+      "name": null
+    },
+    {
+      "id": 13,
+      "url": "https://api.seerapi.com/v1/dango_story/13",
+      "name": null
+    },
+    {
+      "id": 14,
+      "url": "https://api.seerapi.com/v1/dango_story/14",
+      "name": null
+    },
+    {
+      "id": 15,
+      "url": "https://api.seerapi.com/v1/dango_story/15",
+      "name": null
+    }
+  ],
+  "hash": "136dfa8e"
+}

@@ -1,0 +1,8 @@
+{
+  "id": 5019,
+  "fx_on_hit": "hit_common_land",
+  "prefab": "weapon_5019",
+  "shape": 1,
+  "type": 1,
+  "hash": "b850c374"
+}

@@ -1,0 +1,19 @@
+{
+  "data": {
+    "3": {
+      "id": 3,
+      "new_msglog_id": 0,
+      "describe": "",
+      "limit": 0,
+      "planet": "",
+      "rewardinfo": 0,
+      "task_skin": "",
+      "task_team": 1,
+      "tasktype": 3,
+      "time": 0,
+      "title": "喂食苏摩3次",
+      "value": 3
+    }
+  },
+  "hash": "ff17b09"
+}

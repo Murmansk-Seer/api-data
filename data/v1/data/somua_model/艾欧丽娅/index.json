@@ -1,0 +1,25 @@
+{
+  "data": {
+    "36": {
+      "id": 36,
+      "attack_mode": 10036,
+      "attack_mode_sp": 11036,
+      "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+      "is_back": 1,
+      "is_body": 1,
+      "is_ear": 1,
+      "is_expression": 1,
+      "is_hand": 1,
+      "is_head": 1,
+      "is_surrounding": 1,
+      "is_tail": 1,
+      "is_topwear": 0,
+      "name": "艾欧丽娅",
+      "pet_id": 3437,
+      "prefix": "艾欧",
+      "season": "",
+      "suffix": "丽娅"
+    }
+  },
+  "hash": "7fcebdee"
+}

@@ -1,0 +1,59 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "icon": {
+          "description": "Client SomuaRankingConfig.icon; raw int32",
+          "title": "Icon",
+          "type": "integer"
+        },
+        "is_falling": {
+          "description": "Client SomuaRankingConfig.isFalling; raw int32",
+          "title": "Is Falling",
+          "type": "integer"
+        },
+        "level": {
+          "description": "Client SomuaRankingConfig.level; raw string",
+          "title": "Level",
+          "type": "string"
+        },
+        "minscore": {
+          "description": "Client SomuaRankingConfig.minscore; raw string",
+          "title": "Minscore",
+          "type": "string"
+        },
+        "name": {
+          "description": "Client SomuaRankingConfig.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "phase": {
+          "description": "Client SomuaRankingConfig.phase; raw int32",
+          "title": "Phase",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "icon",
+        "is_falling",
+        "level",
+        "minscore",
+        "name",
+        "phase"
+      ],
+      "title": "SomuaRanking",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": 52,
+  "action": "happy",
+  "action_team": 1,
+  "dango_id": null,
+  "describ": "天气，好好！",
+  "limit_dango": 0,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "8d9d2cba"
+}

@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11065": {
+      "id": 11065,
+      "desc": "每间隔[0.6*(1/ATR)]<sprite name=SPD>秒，会生成1个无人机，短暂延迟后向敌人冲去，命中后造成[53%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·狂绝大冲撞",
+      "rarity": 0,
+      "type": 1,
+      "value1": 530,
+      "value2": 600,
+      "value3": 5065,
+      "value4": 30,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "12974471"
+}

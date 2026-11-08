@@ -1,0 +1,13 @@
+{
+  "id": 7021,
+  "fx_on_get": "",
+  "fx_on_trig": "",
+  "icon": 0,
+  "max_stack": 6,
+  "stack_rule": "stack",
+  "status_desc": "每层使移动力等级-1（上限6层）。",
+  "status_name": "迟钝诅咒",
+  "type": 2,
+  "value_rule": "",
+  "hash": "e454cea"
+}

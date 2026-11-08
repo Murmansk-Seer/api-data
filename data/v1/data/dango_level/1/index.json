@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "benefit1": 0,
+  "benefit2": 0,
+  "benefit3": 0,
+  "dango_task": [
+    1,
+    2,
+    3
+  ],
+  "describe1": "金色奇迹产出20/每小时",
+  "describe2": "",
+  "describe3": "",
+  "minor_num": 1,
+  "reward": 1000,
+  "task_num": 0,
+  "hash": "9cfbef1f"
+}

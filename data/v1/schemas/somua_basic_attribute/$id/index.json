@@ -1,0 +1,71 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "attack_ratio": {
+          "description": "Client SomuaBasicAttritube.attackRatio; raw int32",
+          "title": "Attack Ratio",
+          "type": "integer"
+        },
+        "attack_value": {
+          "description": "Client SomuaBasicAttritube.attackValue; raw int32",
+          "title": "Attack Value",
+          "type": "integer"
+        },
+        "critical_chance": {
+          "description": "Client SomuaBasicAttritube.criticalChance; raw int32",
+          "title": "Critical Chance",
+          "type": "integer"
+        },
+        "critical_damage_ratio": {
+          "description": "Client SomuaBasicAttritube.criticalDamageRatio; raw int32",
+          "title": "Critical Damage Ratio",
+          "type": "integer"
+        },
+        "defense_ratio": {
+          "description": "Client SomuaBasicAttritube.defenseRatio; raw int32",
+          "title": "Defense Ratio",
+          "type": "integer"
+        },
+        "health_value": {
+          "description": "Client SomuaBasicAttritube.healthValue; raw int32",
+          "title": "Health Value",
+          "type": "integer"
+        },
+        "knock_ratio": {
+          "description": "Client SomuaBasicAttritube.knockRatio; raw int32",
+          "title": "Knock Ratio",
+          "type": "integer"
+        },
+        "speed_value": {
+          "description": "Client SomuaBasicAttritube.speedValue; raw int32",
+          "title": "Speed Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "attack_ratio",
+        "attack_value",
+        "critical_chance",
+        "critical_damage_ratio",
+        "defense_ratio",
+        "health_value",
+        "knock_ratio",
+        "speed_value"
+      ],
+      "title": "SomuaBasicAttribute",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

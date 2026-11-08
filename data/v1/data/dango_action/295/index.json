@@ -1,0 +1,13 @@
+{
+  "id": 295,
+  "action": "pain",
+  "action_team": 2,
+  "dango_id": [
+    25
+  ],
+  "describ": "救救！",
+  "limit_dango": 63,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "51deb4f2"
+}

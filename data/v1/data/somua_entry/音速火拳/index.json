@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10006": {
+      "id": 10006,
+      "desc": "会以[1.2*(1/ATR)]<sprite name=SPD>秒的间隔对靠近的敌人不断挥动拳头，每次造成[81%*ATK]<sprite name=ATK>点伤害。",
+      "name": "音速火拳",
+      "rarity": 0,
+      "type": 1,
+      "value1": 810,
+      "value2": 1200,
+      "value3": 65,
+      "value4": 5006,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "62d7119b"
+}

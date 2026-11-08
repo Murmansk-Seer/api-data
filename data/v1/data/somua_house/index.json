@@ -1,0 +1,60 @@
+{
+  "count": 10,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/somua_house/1",
+      "name": "经典小屋"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/somua_house/2",
+      "name": "塞西利亚小屋"
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/somua_house/3",
+      "name": "克洛斯小屋"
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/somua_house/4",
+      "name": "太空站小屋"
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/somua_house/5",
+      "name": "阿尔法小屋"
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/somua_house/6",
+      "name": "贝塔小屋"
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/somua_house/7",
+      "name": "火山小屋"
+    },
+    {
+      "id": 8,
+      "url": "https://api.seerapi.com/v1/somua_house/8",
+      "name": "云霄小屋"
+    },
+    {
+      "id": 9,
+      "url": "https://api.seerapi.com/v1/somua_house/9",
+      "name": "赫尔卡小屋"
+    },
+    {
+      "id": 10,
+      "url": "https://api.seerapi.com/v1/somua_house/10",
+      "name": "露希欧小屋"
+    }
+  ],
+  "hash": "1cacb071"
+}

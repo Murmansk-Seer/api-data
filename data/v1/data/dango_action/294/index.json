@@ -1,0 +1,13 @@
+{
+  "id": 294,
+  "action": "happy",
+  "action_team": 2,
+  "dango_id": [
+    34
+  ],
+  "describ": "胶囊，钻钻！",
+  "limit_dango": 0,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "a91b843d"
+}

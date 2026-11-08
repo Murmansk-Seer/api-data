@@ -1,0 +1,14 @@
+{
+  "id": 10000,
+  "desc": "撞击后对敌人造成自身[780%*ATK]<sprite name=ATK>点伤害",
+  "name": "某种攻击",
+  "rarity": 0,
+  "type": 1,
+  "value1": 780,
+  "value2": 0,
+  "value3": 0,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "1fba13a1"
+}

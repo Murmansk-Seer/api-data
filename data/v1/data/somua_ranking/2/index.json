@@ -1,0 +1,10 @@
+{
+  "id": 2,
+  "icon": 2,
+  "is_falling": 1,
+  "level": "2",
+  "minscore": "60",
+  "name": "青铜II",
+  "phase": 1,
+  "hash": "99b3ed15"
+}

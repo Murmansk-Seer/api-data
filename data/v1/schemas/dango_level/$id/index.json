@@ -1,0 +1,93 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "benefit1": {
+          "description": "Client dangoLv.benefit1; raw int32",
+          "title": "Benefit1",
+          "type": "integer"
+        },
+        "benefit2": {
+          "description": "Client dangoLv.benefit2; raw int32",
+          "title": "Benefit2",
+          "type": "integer"
+        },
+        "benefit3": {
+          "description": "Client dangoLv.benefit3; raw int32",
+          "title": "Benefit3",
+          "type": "integer"
+        },
+        "dango_task": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Client dangoLv.dangoTask; raw int32[]",
+          "title": "Dango Task"
+        },
+        "describe1": {
+          "description": "Client dangoLv.describe1; raw string",
+          "title": "Describe1",
+          "type": "string"
+        },
+        "describe2": {
+          "description": "Client dangoLv.describe2; raw string",
+          "title": "Describe2",
+          "type": "string"
+        },
+        "describe3": {
+          "description": "Client dangoLv.describe3; raw string",
+          "title": "Describe3",
+          "type": "string"
+        },
+        "minor_num": {
+          "description": "Client dangoLv.minorNum; raw int32",
+          "title": "Minor Num",
+          "type": "integer"
+        },
+        "reward": {
+          "description": "Client dangoLv.reward; raw int32",
+          "title": "Reward",
+          "type": "integer"
+        },
+        "task_num": {
+          "description": "Client dangoLv.taskNum; raw int32",
+          "title": "Task Num",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "benefit1",
+        "benefit2",
+        "benefit3",
+        "dango_task",
+        "describe1",
+        "describe2",
+        "describe3",
+        "minor_num",
+        "reward",
+        "task_num"
+      ],
+      "title": "DangoLevel",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

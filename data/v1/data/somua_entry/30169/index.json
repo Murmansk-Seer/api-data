@@ -1,0 +1,14 @@
+{
+  "id": 30169,
+  "desc": "每次攻击对敌人造成伤害后，会小幅<sprite name=HLP>击退敌人。",
+  "name": "击退手I",
+  "rarity": 1,
+  "type": 3,
+  "value1": 20,
+  "value2": 0,
+  "value3": 0,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "6c09b4da"
+}

@@ -1,0 +1,18 @@
+{
+  "data": {
+    "30103": {
+      "id": 30103,
+      "desc": "拥有【狂暴祝福】时，自身的速度力<sprite name=SPD>等级会小幅提升。",
+      "name": "狂暴加速I",
+      "rarity": 1,
+      "type": 3,
+      "value1": 7011,
+      "value2": 1,
+      "value3": 0,
+      "value4": 0,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "139b5738"
+}

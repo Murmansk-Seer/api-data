@@ -1,0 +1,41 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "limit_cost": {
+          "description": "Client dangoHouse.limitCost; raw int32",
+          "title": "Limit Cost",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Client dangoHouse.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "room_id": {
+          "description": "Client dangoHouse.roomID; raw int32",
+          "title": "Room Id",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "limit_cost",
+        "name",
+        "room_id"
+      ],
+      "title": "DangoHouse",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "describe": {
+          "description": "Client SomuaTaskConfig.describe; raw string",
+          "title": "Describe",
+          "type": "string"
+        },
+        "group": {
+          "description": "Client SomuaTaskConfig.group; raw int32",
+          "title": "Group",
+          "type": "integer"
+        },
+        "period": {
+          "description": "Client SomuaTaskConfig.period; raw int32",
+          "title": "Period",
+          "type": "integer"
+        },
+        "rewardinfo": {
+          "description": "Client SomuaTaskConfig.rewardinfo; raw string",
+          "title": "Rewardinfo",
+          "type": "string"
+        },
+        "season": {
+          "description": "Client SomuaTaskConfig.season; raw int32",
+          "title": "Season",
+          "type": "integer"
+        },
+        "tasktype": {
+          "description": "Client SomuaTaskConfig.tasktype; raw int32",
+          "title": "Tasktype",
+          "type": "integer"
+        },
+        "value": {
+          "description": "Client SomuaTaskConfig.value; raw int32",
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "describe",
+        "group",
+        "period",
+        "rewardinfo",
+        "season",
+        "tasktype",
+        "value"
+      ],
+      "title": "SomuaTask",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

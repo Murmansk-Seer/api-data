@@ -1,0 +1,21 @@
+{
+  "id": 66,
+  "attack_mode": 10066,
+  "attack_mode_sp": 11066,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 1,
+  "is_body": 2,
+  "is_ear": 0,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 2,
+  "is_surrounding": 0,
+  "is_tail": 0,
+  "is_topwear": 1,
+  "name": "莫伊莱",
+  "pet_id": 4275,
+  "prefix": "莫",
+  "season": "",
+  "suffix": "伊莱",
+  "hash": "5ad4c115"
+}

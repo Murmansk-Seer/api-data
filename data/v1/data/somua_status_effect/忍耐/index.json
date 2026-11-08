@@ -1,0 +1,17 @@
+{
+  "data": {
+    "7018": {
+      "id": 7018,
+      "fx_on_get": "",
+      "fx_on_trig": "",
+      "icon": 0,
+      "max_stack": 100,
+      "stack_rule": "stack",
+      "status_desc": "每层会使自身暴击率增加 1%。",
+      "status_name": "忍耐",
+      "type": 1,
+      "value_rule": ""
+    }
+  },
+  "hash": "713691b3"
+}

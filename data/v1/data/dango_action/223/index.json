@@ -1,0 +1,13 @@
+{
+  "id": 223,
+  "action": "power",
+  "action_team": 2,
+  "dango_id": [
+    54
+  ],
+  "describ": "千里，击涛！千里，击涛！千里，击涛！",
+  "limit_dango": 1,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "9b73387"
+}

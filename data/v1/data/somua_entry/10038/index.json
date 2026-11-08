@@ -1,0 +1,14 @@
+{
+  "id": 10038,
+  "desc": "每间隔[4.8*(1/ATR)]<sprite name=SPD>秒，会在原地引导1.2秒，随后召唤1道海浪，对范围内的敌人造成[1552%*ATK]<sprite name=ATK>点伤害。",
+  "name": "洛水惊鸿",
+  "rarity": 0,
+  "type": 1,
+  "value1": 15520,
+  "value2": 4800,
+  "value3": 1200,
+  "value4": 5038,
+  "value5": 0,
+  "value6": 0,
+  "hash": "f604f30c"
+}

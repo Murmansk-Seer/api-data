@@ -1,0 +1,21 @@
+{
+  "id": 19,
+  "attack_mode": 10019,
+  "attack_mode_sp": 11019,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 1,
+  "is_body": 1,
+  "is_ear": 0,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 1,
+  "is_surrounding": 1,
+  "is_tail": 0,
+  "is_topwear": 1,
+  "name": "天启帝君",
+  "pet_id": 3550,
+  "prefix": "天启",
+  "season": "",
+  "suffix": "帝君",
+  "hash": "a660f937"
+}

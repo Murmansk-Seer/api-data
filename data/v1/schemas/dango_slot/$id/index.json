@@ -1,0 +1,41 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Client dangoSlot.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "pet_id": {
+          "description": "Client dangoSlot.petID; raw int32",
+          "title": "Pet Id",
+          "type": "integer"
+        },
+        "value": {
+          "description": "Client dangoSlot.value; raw int32",
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "pet_id",
+        "value"
+      ],
+      "title": "DangoSlot",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

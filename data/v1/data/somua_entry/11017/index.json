@@ -1,0 +1,14 @@
+{
+  "id": 11017,
+  "desc": "会向靠近自己的敌人挥动大剑，对其造成[130%*ATK]<sprite name=ATK>点伤害，每次挥动都有[1.3*(1/ATR)]<sprite name=SPD>秒间隔 。",
+  "name": "真·无上天命剑",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1300,
+  "value2": 1300,
+  "value3": 70,
+  "value4": 5017,
+  "value5": 1,
+  "value6": 0,
+  "hash": "48dc78dc"
+}

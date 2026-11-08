@@ -1,0 +1,21 @@
+{
+  "id": 34,
+  "attack_mode": 10034,
+  "attack_mode_sp": 11034,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 0,
+  "is_body": 1,
+  "is_ear": 1,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 1,
+  "is_surrounding": 0,
+  "is_tail": 1,
+  "is_topwear": 0,
+  "name": "西塔伦",
+  "pet_id": 4636,
+  "prefix": "西",
+  "season": "",
+  "suffix": "塔伦",
+  "hash": "c9665c0d"
+}

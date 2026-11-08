@@ -1,0 +1,25 @@
+{
+  "data": {
+    "61": {
+      "id": 61,
+      "attack_mode": 10061,
+      "attack_mode_sp": 11061,
+      "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+      "is_back": 1,
+      "is_body": 2,
+      "is_ear": 0,
+      "is_expression": 1,
+      "is_hand": 1,
+      "is_head": 2,
+      "is_surrounding": 1,
+      "is_tail": 0,
+      "is_topwear": 1,
+      "name": "马尔修斯",
+      "pet_id": 3393,
+      "prefix": "马尔",
+      "season": "1",
+      "suffix": "修斯"
+    }
+  },
+  "hash": "7cbd5654"
+}

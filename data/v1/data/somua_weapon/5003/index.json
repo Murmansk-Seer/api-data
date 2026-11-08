@@ -1,0 +1,8 @@
+{
+  "id": 5003,
+  "fx_on_hit": "hit_common_phy",
+  "prefab": "weapon_5003",
+  "shape": 2,
+  "type": 2,
+  "hash": "8582a560"
+}

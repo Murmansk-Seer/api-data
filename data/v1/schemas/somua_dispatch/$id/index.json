@@ -1,0 +1,65 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "award": {
+          "description": "Client SomuaDispatchConfig.award; raw string",
+          "title": "Award",
+          "type": "string"
+        },
+        "bonus1": {
+          "description": "Client SomuaDispatchConfig.bonus1; raw string",
+          "title": "Bonus1",
+          "type": "string"
+        },
+        "bonus2": {
+          "description": "Client SomuaDispatchConfig.bonus2; raw string",
+          "title": "Bonus2",
+          "type": "string"
+        },
+        "bonus3": {
+          "description": "Client SomuaDispatchConfig.bonus3; raw string",
+          "title": "Bonus3",
+          "type": "string"
+        },
+        "name": {
+          "description": "Client SomuaDispatchConfig.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "tasktype": {
+          "description": "Client SomuaDispatchConfig.tasktype; raw int32",
+          "title": "Tasktype",
+          "type": "integer"
+        },
+        "value": {
+          "description": "Client SomuaDispatchConfig.value; raw int32",
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "award",
+        "bonus1",
+        "bonus2",
+        "bonus3",
+        "name",
+        "tasktype",
+        "value"
+      ],
+      "title": "SomuaDispatch",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

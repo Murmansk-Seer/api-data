@@ -1,0 +1,47 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "img": {
+          "description": "Client SomuaToturialConfig.img; raw string",
+          "title": "Img",
+          "type": "string"
+        },
+        "module": {
+          "description": "Client SomuaToturialConfig.module; raw string",
+          "title": "Module",
+          "type": "string"
+        },
+        "page": {
+          "description": "Client SomuaToturialConfig.page; raw int32",
+          "title": "Page",
+          "type": "integer"
+        },
+        "txt": {
+          "description": "Client SomuaToturialConfig.txt; raw string",
+          "title": "Txt",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "img",
+        "module",
+        "page",
+        "txt"
+      ],
+      "title": "SomuaTutorial",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

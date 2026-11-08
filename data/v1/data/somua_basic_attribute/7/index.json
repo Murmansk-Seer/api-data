@@ -1,0 +1,12 @@
+{
+  "id": 7,
+  "attack_ratio": 72,
+  "attack_value": 40,
+  "critical_chance": 170,
+  "critical_damage_ratio": 417,
+  "defense_ratio": 28,
+  "health_value": 552,
+  "knock_ratio": 127,
+  "speed_value": 136,
+  "hash": "d334bbc4"
+}

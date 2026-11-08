@@ -1,0 +1,14 @@
+{
+  "id": 11012,
+  "desc": "每撞击3次墙体，就会在原地蓄力5秒，蓄力后以130%<sprite name=SPD>的速度冲刺一段距离，对命中的敌人造成[542%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·乾坤反转",
+  "rarity": 0,
+  "type": 1,
+  "value1": 5420,
+  "value2": 3,
+  "value3": 5000,
+  "value4": 1300,
+  "value5": 5012,
+  "value6": 200,
+  "hash": "401c7d06"
+}

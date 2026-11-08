@@ -1,0 +1,41 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "dango_id": {
+          "description": "Client dangoStory.dangoID; raw int32",
+          "title": "Dango Id",
+          "type": "integer"
+        },
+        "dango_task": {
+          "description": "Client dangoStory.dangoTask; raw int32",
+          "title": "Dango Task",
+          "type": "integer"
+        },
+        "describe": {
+          "description": "Client dangoStory.describe; raw string",
+          "title": "Describe",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "dango_id",
+        "dango_task",
+        "describe"
+      ],
+      "title": "DangoStory",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

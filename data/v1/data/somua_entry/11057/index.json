@@ -1,0 +1,14 @@
+{
+  "id": 11057,
+  "desc": "每间隔[0.7*(1/ATR)]<sprite name=SPD>秒，会生成1个持续10秒齿轮地雷，敌人碰到后会受到[52%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·这就是科学！",
+  "rarity": 0,
+  "type": 1,
+  "value1": 520,
+  "value2": 700,
+  "value3": 5057,
+  "value4": 30,
+  "value5": 0,
+  "value6": 0,
+  "hash": "da893b28"
+}

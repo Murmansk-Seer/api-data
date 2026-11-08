@@ -1,0 +1,8 @@
+{
+  "id": 5030,
+  "fx_on_hit": "hit_weapon_5030",
+  "prefab": "weapon_5030",
+  "shape": 2,
+  "type": 6,
+  "hash": "83f58484"
+}

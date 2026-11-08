@@ -1,0 +1,25 @@
+{
+  "data": {
+    "58": {
+      "id": 58,
+      "attack_mode": 10058,
+      "attack_mode_sp": 11058,
+      "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+      "is_back": 0,
+      "is_body": 2,
+      "is_ear": 1,
+      "is_expression": 1,
+      "is_hand": 1,
+      "is_head": 2,
+      "is_surrounding": 1,
+      "is_tail": 0,
+      "is_topwear": 0,
+      "name": "格劳瑞",
+      "pet_id": 4004,
+      "prefix": "格劳",
+      "season": "1",
+      "suffix": "瑞"
+    }
+  },
+  "hash": "7795e669"
+}

@@ -1,0 +1,14 @@
+{
+  "id": 10023,
+  "desc": "每间隔[1.5*(1/ATR)]<sprite name=SPD>秒，会在地上插下1把持续6秒的宝剑，敌人碰到后会受到[93%*ATK]<sprite name=ATK>点伤害。",
+  "name": "圣剑处决",
+  "rarity": 0,
+  "type": 1,
+  "value1": 930,
+  "value2": 1500,
+  "value3": 5023,
+  "value4": 30,
+  "value5": 0,
+  "value6": 0,
+  "hash": "d11837e0"
+}

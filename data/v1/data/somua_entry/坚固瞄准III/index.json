@@ -1,0 +1,18 @@
+{
+  "data": {
+    "30111": {
+      "id": 30111,
+      "desc": "拥有【坚固祝福】时，自身的暴击力<sprite name=CRT>等级会大幅提升。",
+      "name": "坚固瞄准III",
+      "rarity": 3,
+      "type": 3,
+      "value1": 7009,
+      "value2": 5,
+      "value3": 0,
+      "value4": 0,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "636a2117"
+}

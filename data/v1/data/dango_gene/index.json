@@ -1,0 +1,85 @@
+{
+  "count": 15,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/dango_gene/1",
+      "name": "可爱基因"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/dango_gene/2",
+      "name": "正义基因"
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/dango_gene/3",
+      "name": "邪恶基因"
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/dango_gene/4",
+      "name": "庆典基因"
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/dango_gene/5",
+      "name": "王者基因"
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/dango_gene/6",
+      "name": "黑色基因"
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/dango_gene/7",
+      "name": "白色基因"
+    },
+    {
+      "id": 8,
+      "url": "https://api.seerapi.com/v1/dango_gene/8",
+      "name": "蓝色基因"
+    },
+    {
+      "id": 9,
+      "url": "https://api.seerapi.com/v1/dango_gene/9",
+      "name": "绿色基因"
+    },
+    {
+      "id": 10,
+      "url": "https://api.seerapi.com/v1/dango_gene/10",
+      "name": "黄色基因"
+    },
+    {
+      "id": 11,
+      "url": "https://api.seerapi.com/v1/dango_gene/11",
+      "name": "紫色基因"
+    },
+    {
+      "id": 12,
+      "url": "https://api.seerapi.com/v1/dango_gene/12",
+      "name": "红色基因"
+    },
+    {
+      "id": 13,
+      "url": "https://api.seerapi.com/v1/dango_gene/13",
+      "name": "原始基因"
+    },
+    {
+      "id": 14,
+      "url": "https://api.seerapi.com/v1/dango_gene/14",
+      "name": "突变基因"
+    },
+    {
+      "id": 15,
+      "url": "https://api.seerapi.com/v1/dango_gene/15",
+      "name": "宝宝基因"
+    }
+  ],
+  "hash": "4d979c50"
+}

@@ -1,0 +1,53 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "gene_id": {
+          "description": "Client dangoGene.geneID; raw int32",
+          "title": "Gene Id",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Client dangoGene.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "skinbaby": {
+          "description": "Client dangoGene.skinbaby; raw string",
+          "title": "Skinbaby",
+          "type": "string"
+        },
+        "skinteen": {
+          "description": "Client dangoGene.skinteen; raw string",
+          "title": "Skinteen",
+          "type": "string"
+        },
+        "value": {
+          "description": "Client dangoGene.value; raw int32",
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "gene_id",
+        "name",
+        "skinbaby",
+        "skinteen",
+        "value"
+      ],
+      "title": "DangoGene",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

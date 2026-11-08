@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "benefit1": 0,
+  "benefit2": 0,
+  "benefit3": 0,
+  "benefit4": 1,
+  "benefit5": 0,
+  "benefit6": 0,
+  "benefit7": 0,
+  "dango_gold": 120,
+  "dango_task": "1,2,3",
+  "describe1": "每小时产出120金色奇迹",
+  "describe2": "",
+  "describe3": "解锁\r\n《每日祈愿》",
+  "minor_num": 1,
+  "reward": "1_1400162_10000",
+  "store_max": 100,
+  "task_num": 0,
+  "hash": "69a8cb6e"
+}

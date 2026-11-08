@@ -1,0 +1,19 @@
+{
+  "data": {
+    "22": {
+      "id": 22,
+      "new_msglog_id": 0,
+      "describe": "",
+      "limit": 3,
+      "planet": "planet_2",
+      "rewardinfo": 800,
+      "task_skin": "dangoTask_bj",
+      "task_team": 3,
+      "tasktype": 12,
+      "time": 1,
+      "title": "卡兰星系",
+      "value": 8
+    }
+  },
+  "hash": "fa286c8d"
+}

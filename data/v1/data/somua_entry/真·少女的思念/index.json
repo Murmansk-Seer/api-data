@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11031": {
+      "id": 11031,
+      "desc": "拥有2个不断环绕旋转的星星，星星每次碰到敌人都会对其造成[97%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·少女的思念",
+      "rarity": 0,
+      "type": 1,
+      "value1": 970,
+      "value2": 5031,
+      "value3": 2,
+      "value4": 0,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "ad1b3aa3"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 7019,
+  "fx_on_get": "",
+  "fx_on_trig": "",
+  "icon": 0,
+  "max_stack": 1,
+  "stack_rule": "extend",
+  "status_desc": "会记录受到的伤害，并在状态持续时间内不断扣除。",
+  "status_name": "抑制",
+  "type": 1,
+  "value_rule": "",
+  "hash": "d272343b"
+}

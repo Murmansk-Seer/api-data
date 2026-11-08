@@ -1,0 +1,47 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "fx_on_hit": {
+          "description": "Client SomuaWeaponConfig.fxOnHit; raw string",
+          "title": "Fx On Hit",
+          "type": "string"
+        },
+        "prefab": {
+          "description": "Client SomuaWeaponConfig.prefab; raw string",
+          "title": "Prefab",
+          "type": "string"
+        },
+        "shape": {
+          "description": "Client SomuaWeaponConfig.shape; raw int32",
+          "title": "Shape",
+          "type": "integer"
+        },
+        "type": {
+          "description": "Client SomuaWeaponConfig.type; raw int32",
+          "title": "Type",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "fx_on_hit",
+        "prefab",
+        "shape",
+        "type"
+      ],
+      "title": "SomuaWeapon",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

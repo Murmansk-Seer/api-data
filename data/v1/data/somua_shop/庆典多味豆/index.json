@@ -1,0 +1,21 @@
+{
+  "data": {
+    "4": {
+      "id": 4,
+      "new_msglog_id": 0,
+      "price": 1400162,
+      "describe1": "食用后获得【庆典基因】",
+      "describe2": "",
+      "forever": 152894,
+      "limit": 4,
+      "limit_type": 0,
+      "quantity": 400,
+      "rewardinfo": "1_1727529_1",
+      "shop_type1": 1,
+      "title": "庆典多味豆",
+      "userinfo": 0,
+      "value": 0
+    }
+  },
+  "hash": "5af44dc4"
+}

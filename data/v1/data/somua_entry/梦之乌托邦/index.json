@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10039": {
+      "id": 10039,
+      "desc": "每间隔[5*(1/ATR)]<sprite name=SPD>秒，会召唤1座巨大的空岛，对碰撞到的敌人造成[107%*ATK]<sprite name=ATK>点伤害。（空岛被视为墙体拥有[100+5%*HLP]<sprite name=HLP>生命值，持续20秒，最多同时拥有2座）",
+      "name": "梦之乌托邦",
+      "rarity": 0,
+      "type": 1,
+      "value1": 1070,
+      "value2": 5000,
+      "value3": 5039,
+      "value4": 2,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "81da26ed"
+}

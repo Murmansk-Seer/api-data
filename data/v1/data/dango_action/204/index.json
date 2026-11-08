@@ -1,0 +1,13 @@
+{
+  "id": 204,
+  "action": "happy",
+  "action_team": 1,
+  "dango_id": [
+    10
+  ],
+  "describ": "盖亚，对决！",
+  "limit_dango": 11,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "887b0c89"
+}

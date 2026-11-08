@@ -1,0 +1,14 @@
+{
+  "data": {
+    "5": {
+      "id": 5,
+      "icon": 5,
+      "is_falling": 1,
+      "level": "2",
+      "minscore": "260",
+      "name": "白银II",
+      "phase": 2
+    }
+  },
+  "hash": "8d7bafed"
+}

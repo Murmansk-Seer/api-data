@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11026": {
+      "id": 11026,
+      "desc": "每间隔[3.2*(1/ATR)]<sprite name=SPD>秒，会在原地引导 1.5秒，随后发射一道激光，在0.8秒内共计造成[536%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·万物哀鸣",
+      "rarity": 0,
+      "type": 1,
+      "value1": 670,
+      "value2": 3200,
+      "value3": 1500,
+      "value4": 5026,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "c9fad9f1"
+}

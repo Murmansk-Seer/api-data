@@ -1,0 +1,17 @@
+{
+  "data": {
+    "7022": {
+      "id": 7022,
+      "fx_on_get": "",
+      "fx_on_trig": "",
+      "icon": 0,
+      "max_stack": 1,
+      "stack_rule": "replaceStronger",
+      "status_desc": "减少 value% 受到的控制时长。",
+      "status_name": "韧性",
+      "type": 1,
+      "value_rule": ""
+    }
+  },
+  "hash": "a2db89bb"
+}

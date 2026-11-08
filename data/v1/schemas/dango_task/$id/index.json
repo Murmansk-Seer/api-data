@@ -1,0 +1,89 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "new_msglog_id": {
+          "description": "Client dangoTask.NewMsglogId; raw int32",
+          "title": "New Msglog Id",
+          "type": "integer"
+        },
+        "describe": {
+          "description": "Client dangoTask.describe; raw string",
+          "title": "Describe",
+          "type": "string"
+        },
+        "limit": {
+          "description": "Client dangoTask.limit; raw int32",
+          "title": "Limit",
+          "type": "integer"
+        },
+        "planet": {
+          "description": "Client dangoTask.planet; raw string",
+          "title": "Planet",
+          "type": "string"
+        },
+        "rewardinfo": {
+          "description": "Client dangoTask.rewardinfo; raw int32",
+          "title": "Rewardinfo",
+          "type": "integer"
+        },
+        "task_skin": {
+          "description": "Client dangoTask.taskSkin; raw string",
+          "title": "Task Skin",
+          "type": "string"
+        },
+        "task_team": {
+          "description": "Client dangoTask.taskTeam; raw int32",
+          "title": "Task Team",
+          "type": "integer"
+        },
+        "tasktype": {
+          "description": "Client dangoTask.tasktype; raw int32",
+          "title": "Tasktype",
+          "type": "integer"
+        },
+        "time": {
+          "description": "Client dangoTask.time; raw int32",
+          "title": "Time",
+          "type": "integer"
+        },
+        "title": {
+          "description": "Client dangoTask.title; raw string",
+          "title": "Title",
+          "type": "string"
+        },
+        "value": {
+          "description": "Client dangoTask.value; raw int32",
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "new_msglog_id",
+        "describe",
+        "limit",
+        "planet",
+        "rewardinfo",
+        "task_skin",
+        "task_team",
+        "tasktype",
+        "time",
+        "title",
+        "value"
+      ],
+      "title": "DangoTask",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

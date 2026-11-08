@@ -1,0 +1,13 @@
+{
+  "id": 202,
+  "action": "happy",
+  "action_team": 1,
+  "dango_id": [
+    1
+  ],
+  "describ": "格林，抱抱~",
+  "limit_dango": 2,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "42efa8f0"
+}

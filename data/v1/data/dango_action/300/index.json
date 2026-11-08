@@ -1,0 +1,13 @@
+{
+  "id": 300,
+  "action": "happy",
+  "action_team": 1,
+  "dango_id": [
+    66
+  ],
+  "describ": "莫伊，来咯！",
+  "limit_dango": 0,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "6b52fbb4"
+}

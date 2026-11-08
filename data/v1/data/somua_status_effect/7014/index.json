@@ -1,0 +1,13 @@
+{
+  "id": 7014,
+  "fx_on_get": "",
+  "fx_on_trig": "",
+  "icon": 0,
+  "max_stack": 1,
+  "stack_rule": "reject",
+  "status_desc": "苏摩无法移动无法攻击，但是每秒恢复 value% 的最大生命值。",
+  "status_name": "睡眠",
+  "type": 2,
+  "value_rule": "",
+  "hash": "89e91b1c"
+}

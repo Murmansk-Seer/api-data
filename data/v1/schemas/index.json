@@ -98,6 +98,10 @@
           "title": "homepage_background Path",
           "type": "string"
         },
+        "emoji": {
+          "title": "emoji Path",
+          "type": "string"
+        },
         "pet_effect": {
           "title": "pet_effect Path",
           "type": "string"
@@ -346,6 +350,114 @@
           "title": "skill_effect_type_tag Path",
           "type": "string"
         },
+        "somua_achievement": {
+          "title": "somua_achievement Path",
+          "type": "string"
+        },
+        "somua_basic_attribute": {
+          "title": "somua_basic_attribute Path",
+          "type": "string"
+        },
+        "somua_dispatch": {
+          "title": "somua_dispatch Path",
+          "type": "string"
+        },
+        "somua_entry": {
+          "title": "somua_entry Path",
+          "type": "string"
+        },
+        "somua_gene": {
+          "title": "somua_gene Path",
+          "type": "string"
+        },
+        "somua_house": {
+          "title": "somua_house Path",
+          "type": "string"
+        },
+        "somua_keeper": {
+          "title": "somua_keeper Path",
+          "type": "string"
+        },
+        "somua_model": {
+          "title": "somua_model Path",
+          "type": "string"
+        },
+        "somua_ranking": {
+          "title": "somua_ranking Path",
+          "type": "string"
+        },
+        "somua_shop": {
+          "title": "somua_shop Path",
+          "type": "string"
+        },
+        "somua_status_effect": {
+          "title": "somua_status_effect Path",
+          "type": "string"
+        },
+        "somua_task": {
+          "title": "somua_task Path",
+          "type": "string"
+        },
+        "somua_tutorial": {
+          "title": "somua_tutorial Path",
+          "type": "string"
+        },
+        "somua_weapon": {
+          "title": "somua_weapon Path",
+          "type": "string"
+        },
+        "dango": {
+          "title": "dango Path",
+          "type": "string"
+        },
+        "dango_action": {
+          "title": "dango_action Path",
+          "type": "string"
+        },
+        "dango_gene": {
+          "title": "dango_gene Path",
+          "type": "string"
+        },
+        "dango_gold": {
+          "title": "dango_gold Path",
+          "type": "string"
+        },
+        "dango_guide": {
+          "title": "dango_guide Path",
+          "type": "string"
+        },
+        "dango_house": {
+          "title": "dango_house Path",
+          "type": "string"
+        },
+        "dango_level": {
+          "title": "dango_level Path",
+          "type": "string"
+        },
+        "dango_shop": {
+          "title": "dango_shop Path",
+          "type": "string"
+        },
+        "dango_slot": {
+          "title": "dango_slot Path",
+          "type": "string"
+        },
+        "dango_story": {
+          "title": "dango_story Path",
+          "type": "string"
+        },
+        "dango_task": {
+          "title": "dango_task Path",
+          "type": "string"
+        },
+        "dango_chess": {
+          "title": "dango_chess Path",
+          "type": "string"
+        },
+        "dango_chess_stage": {
+          "title": "dango_chess_stage Path",
+          "type": "string"
+        },
         "unresolved_pet_reference": {
           "title": "unresolved_pet_reference Path",
           "type": "string"
@@ -376,6 +488,7 @@
         "namecard_background",
         "nickname_background",
         "homepage_background",
+        "emoji",
         "pet_effect",
         "pet_effect_group",
         "pet_variation",
@@ -438,6 +551,33 @@
         "skill_hide_effect",
         "skill_category",
         "skill_effect_type_tag",
+        "somua_achievement",
+        "somua_basic_attribute",
+        "somua_dispatch",
+        "somua_entry",
+        "somua_gene",
+        "somua_house",
+        "somua_keeper",
+        "somua_model",
+        "somua_ranking",
+        "somua_shop",
+        "somua_status_effect",
+        "somua_task",
+        "somua_tutorial",
+        "somua_weapon",
+        "dango",
+        "dango_action",
+        "dango_gene",
+        "dango_gold",
+        "dango_guide",
+        "dango_house",
+        "dango_level",
+        "dango_shop",
+        "dango_slot",
+        "dango_story",
+        "dango_task",
+        "dango_chess",
+        "dango_chess_stage",
         "unresolved_pet_reference"
       ],
       "title": "Index",

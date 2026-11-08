@@ -1,0 +1,77 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "fx_on_get": {
+          "description": "Client SomuaStatusEffectConfig.fxOnGet; raw string",
+          "title": "Fx On Get",
+          "type": "string"
+        },
+        "fx_on_trig": {
+          "description": "Client SomuaStatusEffectConfig.fxOnTrig; raw string",
+          "title": "Fx On Trig",
+          "type": "string"
+        },
+        "icon": {
+          "description": "Client SomuaStatusEffectConfig.icon; raw int32",
+          "title": "Icon",
+          "type": "integer"
+        },
+        "max_stack": {
+          "description": "Client SomuaStatusEffectConfig.maxStack; raw int32",
+          "title": "Max Stack",
+          "type": "integer"
+        },
+        "stack_rule": {
+          "description": "Client SomuaStatusEffectConfig.stackRule; raw string",
+          "title": "Stack Rule",
+          "type": "string"
+        },
+        "status_desc": {
+          "description": "Client SomuaStatusEffectConfig.statusDesc; raw string",
+          "title": "Status Desc",
+          "type": "string"
+        },
+        "status_name": {
+          "description": "Client SomuaStatusEffectConfig.statusName; raw string",
+          "title": "Status Name",
+          "type": "string"
+        },
+        "type": {
+          "description": "Client SomuaStatusEffectConfig.type; raw int32",
+          "title": "Type",
+          "type": "integer"
+        },
+        "value_rule": {
+          "description": "Client SomuaStatusEffectConfig.valueRule; raw string",
+          "title": "Value Rule",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "fx_on_get",
+        "fx_on_trig",
+        "icon",
+        "max_stack",
+        "stack_rule",
+        "status_desc",
+        "status_name",
+        "type",
+        "value_rule"
+      ],
+      "title": "SomuaStatusEffect",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

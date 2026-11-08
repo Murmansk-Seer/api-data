@@ -1,0 +1,310 @@
+{
+  "count": 60,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/dango_slot/1",
+      "name": "利利"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/dango_slot/2",
+      "name": "小豆芽"
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/dango_slot/3",
+      "name": "莫比"
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/dango_slot/4",
+      "name": "奇洛"
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/dango_slot/5",
+      "name": "西塔"
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/dango_slot/6",
+      "name": "格林"
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/dango_slot/7",
+      "name": "林克"
+    },
+    {
+      "id": 8,
+      "url": "https://api.seerapi.com/v1/dango_slot/8",
+      "name": "果冻鸭"
+    },
+    {
+      "id": 9,
+      "url": "https://api.seerapi.com/v1/dango_slot/9",
+      "name": "尼尔"
+    },
+    {
+      "id": 10,
+      "url": "https://api.seerapi.com/v1/dango_slot/10",
+      "name": "依依"
+    },
+    {
+      "id": 11,
+      "url": "https://api.seerapi.com/v1/dango_slot/11",
+      "name": "奇塔"
+    },
+    {
+      "id": 12,
+      "url": "https://api.seerapi.com/v1/dango_slot/12",
+      "name": "布鲁"
+    },
+    {
+      "id": 13,
+      "url": "https://api.seerapi.com/v1/dango_slot/13",
+      "name": "拉博"
+    },
+    {
+      "id": 14,
+      "url": "https://api.seerapi.com/v1/dango_slot/14",
+      "name": "卢比"
+    },
+    {
+      "id": 15,
+      "url": "https://api.seerapi.com/v1/dango_slot/15",
+      "name": "迪卢卡"
+    },
+    {
+      "id": 16,
+      "url": "https://api.seerapi.com/v1/dango_slot/16",
+      "name": "卡塔"
+    },
+    {
+      "id": 17,
+      "url": "https://api.seerapi.com/v1/dango_slot/17",
+      "name": "吉斯"
+    },
+    {
+      "id": 18,
+      "url": "https://api.seerapi.com/v1/dango_slot/18",
+      "name": "尼克"
+    },
+    {
+      "id": 19,
+      "url": "https://api.seerapi.com/v1/dango_slot/19",
+      "name": "小莹蜂"
+    },
+    {
+      "id": 20,
+      "url": "https://api.seerapi.com/v1/dango_slot/20",
+      "name": "闪光皮皮"
+    },
+    {
+      "id": 21,
+      "url": "https://api.seerapi.com/v1/dango_slot/21",
+      "name": "扎克"
+    },
+    {
+      "id": 22,
+      "url": "https://api.seerapi.com/v1/dango_slot/22",
+      "name": "依卢"
+    },
+    {
+      "id": 23,
+      "url": "https://api.seerapi.com/v1/dango_slot/23",
+      "name": "吉宝"
+    },
+    {
+      "id": 24,
+      "url": "https://api.seerapi.com/v1/dango_slot/24",
+      "name": "斯内克"
+    },
+    {
+      "id": 25,
+      "url": "https://api.seerapi.com/v1/dango_slot/25",
+      "name": "宾波"
+    },
+    {
+      "id": 26,
+      "url": "https://api.seerapi.com/v1/dango_slot/26",
+      "name": "艾格"
+    },
+    {
+      "id": 27,
+      "url": "https://api.seerapi.com/v1/dango_slot/27",
+      "name": "埃闻"
+    },
+    {
+      "id": 28,
+      "url": "https://api.seerapi.com/v1/dango_slot/28",
+      "name": "迅牙虎"
+    },
+    {
+      "id": 29,
+      "url": "https://api.seerapi.com/v1/dango_slot/29",
+      "name": "宝贝鲤"
+    },
+    {
+      "id": 30,
+      "url": "https://api.seerapi.com/v1/dango_slot/30",
+      "name": "丘波"
+    },
+    {
+      "id": 31,
+      "url": "https://api.seerapi.com/v1/dango_slot/31",
+      "name": "奎尼"
+    },
+    {
+      "id": 32,
+      "url": "https://api.seerapi.com/v1/dango_slot/32",
+      "name": "史空"
+    },
+    {
+      "id": 33,
+      "url": "https://api.seerapi.com/v1/dango_slot/33",
+      "name": "夏伏兽"
+    },
+    {
+      "id": 34,
+      "url": "https://api.seerapi.com/v1/dango_slot/34",
+      "name": "尼奥"
+    },
+    {
+      "id": 35,
+      "url": "https://api.seerapi.com/v1/dango_slot/35",
+      "name": "鲁迪"
+    },
+    {
+      "id": 36,
+      "url": "https://api.seerapi.com/v1/dango_slot/36",
+      "name": "兰妮"
+    },
+    {
+      "id": 37,
+      "url": "https://api.seerapi.com/v1/dango_slot/37",
+      "name": "卡拉"
+    },
+    {
+      "id": 38,
+      "url": "https://api.seerapi.com/v1/dango_slot/38",
+      "name": "阿尔克"
+    },
+    {
+      "id": 39,
+      "url": "https://api.seerapi.com/v1/dango_slot/39",
+      "name": "米奈"
+    },
+    {
+      "id": 40,
+      "url": "https://api.seerapi.com/v1/dango_slot/40",
+      "name": "伊特"
+    },
+    {
+      "id": 41,
+      "url": "https://api.seerapi.com/v1/dango_slot/41",
+      "name": "埃尔特"
+    },
+    {
+      "id": 42,
+      "url": "https://api.seerapi.com/v1/dango_slot/42",
+      "name": "阿零"
+    },
+    {
+      "id": 43,
+      "url": "https://api.seerapi.com/v1/dango_slot/43",
+      "name": "诺特"
+    },
+    {
+      "id": 44,
+      "url": "https://api.seerapi.com/v1/dango_slot/44",
+      "name": "利加"
+    },
+    {
+      "id": 45,
+      "url": "https://api.seerapi.com/v1/dango_slot/45",
+      "name": "奈落"
+    },
+    {
+      "id": 46,
+      "url": "https://api.seerapi.com/v1/dango_slot/46",
+      "name": "艾克"
+    },
+    {
+      "id": 47,
+      "url": "https://api.seerapi.com/v1/dango_slot/47",
+      "name": "水球"
+    },
+    {
+      "id": 48,
+      "url": "https://api.seerapi.com/v1/dango_slot/48",
+      "name": "沃特"
+    },
+    {
+      "id": 49,
+      "url": "https://api.seerapi.com/v1/dango_slot/49",
+      "name": "桑妮"
+    },
+    {
+      "id": 50,
+      "url": "https://api.seerapi.com/v1/dango_slot/50",
+      "name": "德普"
+    },
+    {
+      "id": 51,
+      "url": "https://api.seerapi.com/v1/dango_slot/51",
+      "name": "卡罗"
+    },
+    {
+      "id": 52,
+      "url": "https://api.seerapi.com/v1/dango_slot/52",
+      "name": "埃森"
+    },
+    {
+      "id": 53,
+      "url": "https://api.seerapi.com/v1/dango_slot/53",
+      "name": "帕尔"
+    },
+    {
+      "id": 54,
+      "url": "https://api.seerapi.com/v1/dango_slot/54",
+      "name": "嘟拉"
+    },
+    {
+      "id": 55,
+      "url": "https://api.seerapi.com/v1/dango_slot/55",
+      "name": "佩希"
+    },
+    {
+      "id": 56,
+      "url": "https://api.seerapi.com/v1/dango_slot/56",
+      "name": "卡西达"
+    },
+    {
+      "id": 57,
+      "url": "https://api.seerapi.com/v1/dango_slot/57",
+      "name": "古丽"
+    },
+    {
+      "id": 58,
+      "url": "https://api.seerapi.com/v1/dango_slot/58",
+      "name": "普顿"
+    },
+    {
+      "id": 59,
+      "url": "https://api.seerapi.com/v1/dango_slot/59",
+      "name": "电雪球"
+    },
+    {
+      "id": 60,
+      "url": "https://api.seerapi.com/v1/dango_slot/60",
+      "name": "阿尔尼"
+    }
+  ],
+  "hash": "fae5503b"
+}

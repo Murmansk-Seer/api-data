@@ -1,0 +1,101 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "new_msglog_id": {
+          "description": "Client SomuaShopConfig.NewMsglogId; raw int32",
+          "title": "New Msglog Id",
+          "type": "integer"
+        },
+        "price": {
+          "description": "Client SomuaShopConfig.Price; raw int32",
+          "title": "Price",
+          "type": "integer"
+        },
+        "describe1": {
+          "description": "Client SomuaShopConfig.describe1; raw string",
+          "title": "Describe1",
+          "type": "string"
+        },
+        "describe2": {
+          "description": "Client SomuaShopConfig.describe2; raw string",
+          "title": "Describe2",
+          "type": "string"
+        },
+        "forever": {
+          "description": "Client SomuaShopConfig.forever; raw int32",
+          "title": "Forever",
+          "type": "integer"
+        },
+        "limit": {
+          "description": "Client SomuaShopConfig.limit; raw int32",
+          "title": "Limit",
+          "type": "integer"
+        },
+        "limit_type": {
+          "description": "Client SomuaShopConfig.limitType; raw int32",
+          "title": "Limit Type",
+          "type": "integer"
+        },
+        "quantity": {
+          "description": "Client SomuaShopConfig.quantity; raw int32",
+          "title": "Quantity",
+          "type": "integer"
+        },
+        "rewardinfo": {
+          "description": "Client SomuaShopConfig.rewardinfo; raw string",
+          "title": "Rewardinfo",
+          "type": "string"
+        },
+        "shop_type1": {
+          "description": "Client SomuaShopConfig.shopType1; raw int32",
+          "title": "Shop Type1",
+          "type": "integer"
+        },
+        "title": {
+          "description": "Client SomuaShopConfig.title; raw string",
+          "title": "Title",
+          "type": "string"
+        },
+        "userinfo": {
+          "description": "Client SomuaShopConfig.userinfo; raw int32",
+          "title": "Userinfo",
+          "type": "integer"
+        },
+        "value": {
+          "description": "Client SomuaShopConfig.value; raw int32",
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "new_msglog_id",
+        "price",
+        "describe1",
+        "describe2",
+        "forever",
+        "limit",
+        "limit_type",
+        "quantity",
+        "rewardinfo",
+        "shop_type1",
+        "title",
+        "userinfo",
+        "value"
+      ],
+      "title": "SomuaShop",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

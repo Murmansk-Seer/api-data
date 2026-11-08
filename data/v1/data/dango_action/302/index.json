@@ -1,0 +1,13 @@
+{
+  "id": 302,
+  "action": "pain",
+  "action_team": 2,
+  "dango_id": [
+    68
+  ],
+  "describ": "你，走开！",
+  "limit_dango": 67,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "d3e62df0"
+}

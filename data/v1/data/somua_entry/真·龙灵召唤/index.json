@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11049": {
+      "id": 11049,
+      "desc": "每间隔[7.5*(1/ATR)]<sprite name=SPD>秒，会召唤1只自由飞行的小龙，小龙每次碰撞后会对敌人造成[166%*ATK]<sprite name=ATK>点伤害。（小龙会移动与碰撞，拥有[10%*HLP]<sprite name=HLP>生命值，持续15秒，最多同时拥有2只）",
+      "name": "真·龙灵召唤",
+      "rarity": 0,
+      "type": 1,
+      "value1": 1610,
+      "value2": 7500,
+      "value3": 5049,
+      "value4": 2,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "136878c4"
+}

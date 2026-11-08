@@ -1,0 +1,14 @@
+{
+  "id": 11062,
+  "desc": "拥有1把环绕自身且不断旋转的双刃剑，每次碰到敌人后都会对其造成[176%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·洪荒之刃",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1760,
+  "value2": 5062,
+  "value3": 1,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "c1fc0925"
+}

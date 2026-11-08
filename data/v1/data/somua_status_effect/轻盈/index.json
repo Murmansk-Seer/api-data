@@ -1,0 +1,17 @@
+{
+  "data": {
+    "7017": {
+      "id": 7017,
+      "fx_on_get": "",
+      "fx_on_trig": "",
+      "icon": 0,
+      "max_stack": 100,
+      "stack_rule": "stack",
+      "status_desc": "每层会使自身闪避率增加 1%。",
+      "status_name": "轻盈",
+      "type": 1,
+      "value_rule": ""
+    }
+  },
+  "hash": "8394909a"
+}

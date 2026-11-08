@@ -1,0 +1,14 @@
+{
+  "id": 10042,
+  "desc": "每间隔[5*(1/ATR)]<sprite name=SPD>秒，会在原地引导1.2秒，让一块矩形区域在2秒内连续爆炸5次，每次造成[196%*ATK]<sprite name=ATK>点伤害。",
+  "name": "酷烈风息",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1960,
+  "value2": 5000,
+  "value3": 1200,
+  "value4": 5042,
+  "value5": 0,
+  "value6": 0,
+  "hash": "b287024a"
+}

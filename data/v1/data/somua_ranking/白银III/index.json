@@ -1,0 +1,14 @@
+{
+  "data": {
+    "6": {
+      "id": 6,
+      "icon": 6,
+      "is_falling": 1,
+      "level": "3",
+      "minscore": "330",
+      "name": "白银III",
+      "phase": 2
+    }
+  },
+  "hash": "4d9a3b64"
+}

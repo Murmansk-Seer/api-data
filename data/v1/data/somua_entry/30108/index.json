@@ -1,0 +1,14 @@
+{
+  "id": 30108,
+  "desc": "拥有【致命一击】时，自身的暴击力<sprite name=CRT>等级会大幅提升。",
+  "name": "致命瞄准III",
+  "rarity": 3,
+  "type": 3,
+  "value1": 7016,
+  "value2": 5,
+  "value3": 0,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "a9d4d2d4"
+}

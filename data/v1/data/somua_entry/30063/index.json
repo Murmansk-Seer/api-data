@@ -1,0 +1,14 @@
+{
+  "id": 30063,
+  "desc": "攻击对敌人造成伤害时，恢复自身造成伤害34%的生命值。",
+  "name": "吸血III",
+  "rarity": 3,
+  "type": 3,
+  "value1": 340,
+  "value2": 0,
+  "value3": 0,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "36701ddf"
+}

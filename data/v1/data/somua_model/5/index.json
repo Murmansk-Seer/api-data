@@ -1,0 +1,21 @@
+{
+  "id": 5,
+  "attack_mode": 10005,
+  "attack_mode_sp": 11005,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 0,
+  "is_body": 1,
+  "is_ear": 1,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 1,
+  "is_surrounding": 0,
+  "is_tail": 1,
+  "is_topwear": 1,
+  "name": "鲁斯王",
+  "pet_id": 4648,
+  "prefix": "鲁斯",
+  "season": "",
+  "suffix": "王",
+  "hash": "b699369f"
+}

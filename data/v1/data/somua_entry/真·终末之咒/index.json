@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11052": {
+      "id": 11052,
+      "desc": "每间隔[3.6*(1/ATR)]<sprite name=SPD>秒，会发射1个不断移动的小法阵，对法阵中的敌人每秒造成[644%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·终末之咒",
+      "rarity": 0,
+      "type": 1,
+      "value1": 1290,
+      "value2": 3600,
+      "value3": 5052,
+      "value4": 3,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "53e04b18"
+}

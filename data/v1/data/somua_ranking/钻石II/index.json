@@ -1,0 +1,14 @@
+{
+  "data": {
+    "14": {
+      "id": 14,
+      "icon": 14,
+      "is_falling": 1,
+      "level": "2",
+      "minscore": "860",
+      "name": "钻石II",
+      "phase": 5
+    }
+  },
+  "hash": "c39d2a1b"
+}

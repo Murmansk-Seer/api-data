@@ -1,0 +1,14 @@
+{
+  "id": 11051,
+  "desc": "会以[0.3*(1/ATR)]<sprite name=SPD>秒的间隔不断向中距离范围内的敌人挥砍 ，每次造成[43%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·黑暗之剑",
+  "rarity": 0,
+  "type": 1,
+  "value1": 430,
+  "value2": 300,
+  "value3": 80,
+  "value4": 5051,
+  "value5": 1,
+  "value6": 0,
+  "hash": "540ae071"
+}

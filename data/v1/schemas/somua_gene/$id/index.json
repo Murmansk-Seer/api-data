@@ -1,0 +1,65 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "foodid": {
+          "description": "Client SomuaGeneConfig.foodid; raw int32",
+          "title": "Foodid",
+          "type": "integer"
+        },
+        "gene": {
+          "description": "Client SomuaGeneConfig.gene; raw string",
+          "title": "Gene",
+          "type": "string"
+        },
+        "rarity": {
+          "description": "Client SomuaGeneConfig.rarity; raw int32",
+          "title": "Rarity",
+          "type": "integer"
+        },
+        "shop_id": {
+          "description": "Client SomuaGeneConfig.shopID; raw int32",
+          "title": "Shop Id",
+          "type": "integer"
+        },
+        "skinbaby": {
+          "description": "Client SomuaGeneConfig.skinbaby; raw string",
+          "title": "Skinbaby",
+          "type": "string"
+        },
+        "skinteen": {
+          "description": "Client SomuaGeneConfig.skinteen; raw string",
+          "title": "Skinteen",
+          "type": "string"
+        },
+        "sort": {
+          "description": "Client SomuaGeneConfig.sort; raw int32",
+          "title": "Sort",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "foodid",
+        "gene",
+        "rarity",
+        "shop_id",
+        "skinbaby",
+        "skinteen",
+        "sort"
+      ],
+      "title": "SomuaGene",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 35,
+  "attack_mode": 10035,
+  "attack_mode_sp": 11035,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 1,
+  "is_body": 1,
+  "is_ear": 0,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 1,
+  "is_surrounding": 0,
+  "is_tail": 0,
+  "is_topwear": 0,
+  "name": "琉梦",
+  "pet_id": 4761,
+  "prefix": "琉",
+  "season": "",
+  "suffix": "梦",
+  "hash": "d9d22198"
+}

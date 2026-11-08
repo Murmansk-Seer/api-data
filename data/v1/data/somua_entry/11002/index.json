@@ -1,0 +1,14 @@
+{
+  "id": 11002,
+  "desc": "每次撞墙会留下一个地刺,对碰到的敌人造成[59%*ATK]<sprite name=ATK>点伤害。最多同时存在20个。",
+  "name": "真·大地之铠",
+  "rarity": 0,
+  "type": 1,
+  "value1": 590,
+  "value2": 1,
+  "value3": 5002,
+  "value4": 20,
+  "value5": 0,
+  "value6": 0,
+  "hash": "7811d1d7"
+}

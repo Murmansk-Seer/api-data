@@ -1,0 +1,14 @@
+{
+  "id": 10009,
+  "desc": "会以[0.6*(1/ATR)]<sprite name=SPD>秒的间隔对靠近的敌人不断伸出利爪，每次造成[68%*ATK]<sprite name=ATK>点伤害。",
+  "name": "狂龙击杀",
+  "rarity": 0,
+  "type": 1,
+  "value1": 680,
+  "value2": 600,
+  "value3": 60,
+  "value4": 5009,
+  "value5": 0,
+  "value6": 0,
+  "hash": "2bd4add5"
+}

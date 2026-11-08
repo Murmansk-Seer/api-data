@@ -1,0 +1,13 @@
+{
+  "id": 222,
+  "action": "sad",
+  "action_team": 2,
+  "dango_id": [
+    27
+  ],
+  "describ": "天蛇，我很抱歉……",
+  "limit_dango": 55,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "b5ab1253"
+}

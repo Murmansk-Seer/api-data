@@ -1,0 +1,45 @@
+{
+  "count": 7,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/somua_dispatch/1",
+      "name": "帕诺星系"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/somua_dispatch/2",
+      "name": "卡兰星系"
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/somua_dispatch/3",
+      "name": "罗格星系"
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/somua_dispatch/4",
+      "name": "裂空星系"
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/somua_dispatch/5",
+      "name": "赛尔号"
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/somua_dispatch/6",
+      "name": "上古战场"
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/somua_dispatch/7",
+      "name": "茫茫宇宙"
+    }
+  ],
+  "hash": "cf2f53c1"
+}

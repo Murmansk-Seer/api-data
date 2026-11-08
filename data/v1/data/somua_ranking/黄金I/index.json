@@ -1,0 +1,14 @@
+{
+  "data": {
+    "7": {
+      "id": 7,
+      "icon": 7,
+      "is_falling": 1,
+      "level": "1",
+      "minscore": "400",
+      "name": "黄金I",
+      "phase": 3
+    }
+  },
+  "hash": "1f6a24bd"
+}

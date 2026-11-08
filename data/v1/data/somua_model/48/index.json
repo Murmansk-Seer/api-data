@@ -1,0 +1,21 @@
+{
+  "id": 48,
+  "attack_mode": 10048,
+  "attack_mode_sp": 11048,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 0,
+  "is_body": 1,
+  "is_ear": 1,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 1,
+  "is_surrounding": 0,
+  "is_tail": 1,
+  "is_topwear": 0,
+  "name": "莱茵哈特",
+  "pet_id": 3516,
+  "prefix": "莱茵",
+  "season": "",
+  "suffix": "哈特",
+  "hash": "448fa935"
+}

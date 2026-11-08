@@ -1,0 +1,18 @@
+{
+  "data": {
+    "30180": {
+      "id": 30180,
+      "desc": "每次攻击对敌人造成伤害后，会猛烈<sprite name=HLP>击退敌人，该效果有1秒冷却时间。",
+      "name": "强击手III",
+      "rarity": 3,
+      "type": 3,
+      "value1": 300,
+      "value2": 1000,
+      "value3": 0,
+      "value4": 0,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "c6bd1a8b"
+}

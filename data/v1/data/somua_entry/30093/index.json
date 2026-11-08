@@ -1,0 +1,14 @@
+{
+  "id": 30093,
+  "desc": "每次受到攻击时，都有固定 21% 的概率闪避该次攻击。",
+  "name": "闪避技巧III",
+  "rarity": 3,
+  "type": 3,
+  "value1": 210,
+  "value2": 0,
+  "value3": 0,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "b5848ace"
+}

@@ -1,0 +1,19 @@
+{
+  "data": {
+    "25": {
+      "id": 25,
+      "new_msglog_id": 0,
+      "describe": "",
+      "limit": 5,
+      "planet": "planet_5",
+      "rewardinfo": 200,
+      "task_skin": "dangoTask_bj_03",
+      "task_team": 3,
+      "tasktype": 12,
+      "time": 1,
+      "title": "螺旋星系",
+      "value": 2
+    }
+  },
+  "hash": "ce639d9f"
+}

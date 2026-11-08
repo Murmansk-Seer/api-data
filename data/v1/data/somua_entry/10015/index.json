@@ -1,0 +1,14 @@
+{
+  "id": 10015,
+  "desc": "每间隔[3.8*(1/ATR)]<sprite name=SPD>秒会向敌人方向连续发射3发冰棱，每个冰棱会造成自身[142%*ATK]<sprite name=ATK>点伤害。",
+  "name": "玄冰箭",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1420,
+  "value2": 5015,
+  "value3": 3800,
+  "value4": 3,
+  "value5": 1,
+  "value6": 0,
+  "hash": "b482099a"
+}

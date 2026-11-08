@@ -1,0 +1,14 @@
+{
+  "id": 11037,
+  "desc": "每间隔[2*(1/ATR)]<sprite name=SPD>秒会发射1道龙卷风，龙卷风在命中前会产生最多3次反弹，命中后会造成[101%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·芳馨风暴",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1010,
+  "value2": 5037,
+  "value3": 2000,
+  "value4": 1,
+  "value5": 1,
+  "value6": 0,
+  "hash": "1b374d8"
+}

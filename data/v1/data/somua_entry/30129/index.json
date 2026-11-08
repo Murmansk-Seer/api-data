@@ -1,0 +1,14 @@
+{
+  "id": 30129,
+  "desc": "每间隔3.9秒，会获得20点【护盾】。",
+  "name": "持续护盾III",
+  "rarity": 3,
+  "type": 3,
+  "value1": 7013,
+  "value2": 20,
+  "value3": 0,
+  "value4": 3900,
+  "value5": 0,
+  "value6": 0,
+  "hash": "c5c696c3"
+}

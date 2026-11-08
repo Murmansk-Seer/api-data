@@ -1,0 +1,13 @@
+{
+  "data": {
+    "14": {
+      "id": 14,
+      "condition": 3,
+      "desc": "累计赢得3场战斗",
+      "icon": 14,
+      "name": "初尝胜果",
+      "type": 3
+    }
+  },
+  "hash": "c4d4ecff"
+}

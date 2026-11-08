@@ -1,0 +1,13 @@
+{
+  "id": 201,
+  "action": "happy",
+  "action_team": 1,
+  "dango_id": [
+    2
+  ],
+  "describ": "布鲁，想你~",
+  "limit_dango": 1,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "92b63a2f"
+}

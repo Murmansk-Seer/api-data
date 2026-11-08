@@ -1,0 +1,14 @@
+{
+  "id": 11060,
+  "desc": "每间隔[3.8*(1/ATR)]<sprite name=SPD>秒会发射3波共9片逐渐减速的花瓣，每个花瓣会造成[71%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·凌踏九霄",
+  "rarity": 0,
+  "type": 1,
+  "value1": 710,
+  "value2": 5060,
+  "value3": 3800,
+  "value4": 3,
+  "value5": 3,
+  "value6": 100,
+  "hash": "f6efba8c"
+}

@@ -1,0 +1,95 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "chapterid": {
+          "description": "Client dangochessstage.chapterid; raw int32",
+          "title": "Chapterid",
+          "type": "integer"
+        },
+        "hangid": {
+          "description": "Client dangochessstage.hangid; raw int32",
+          "title": "Hangid",
+          "type": "integer"
+        },
+        "lieid1": {
+          "description": "Client dangochessstage.lieid1; raw int32",
+          "title": "Lieid1",
+          "type": "integer"
+        },
+        "lieid2": {
+          "description": "Client dangochessstage.lieid2; raw int32",
+          "title": "Lieid2",
+          "type": "integer"
+        },
+        "lieid3": {
+          "description": "Client dangochessstage.lieid3; raw int32",
+          "title": "Lieid3",
+          "type": "integer"
+        },
+        "lieid4": {
+          "description": "Client dangochessstage.lieid4; raw int32",
+          "title": "Lieid4",
+          "type": "integer"
+        },
+        "lieid5": {
+          "description": "Client dangochessstage.lieid5; raw int32",
+          "title": "Lieid5",
+          "type": "integer"
+        },
+        "lieid6": {
+          "description": "Client dangochessstage.lieid6; raw int32",
+          "title": "Lieid6",
+          "type": "integer"
+        },
+        "lieid7": {
+          "description": "Client dangochessstage.lieid7; raw int32",
+          "title": "Lieid7",
+          "type": "integer"
+        },
+        "lieid8": {
+          "description": "Client dangochessstage.lieid8; raw int32",
+          "title": "Lieid8",
+          "type": "integer"
+        },
+        "lieid9": {
+          "description": "Client dangochessstage.lieid9; raw int32",
+          "title": "Lieid9",
+          "type": "integer"
+        },
+        "stageid": {
+          "description": "Client dangochessstage.stageid; raw int32",
+          "title": "Stageid",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "chapterid",
+        "hangid",
+        "lieid1",
+        "lieid2",
+        "lieid3",
+        "lieid4",
+        "lieid5",
+        "lieid6",
+        "lieid7",
+        "lieid8",
+        "lieid9",
+        "stageid"
+      ],
+      "title": "DangoChessStage",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": 5049,
+  "fx_on_hit": "hit_common_leaf",
+  "prefab": "weapon_5049",
+  "shape": 2,
+  "type": 6,
+  "hash": "4070c430"
+}

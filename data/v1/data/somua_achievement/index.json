@@ -1,0 +1,210 @@
+{
+  "count": 40,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/somua_achievement/1",
+      "name": "完美基因"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/somua_achievement/2",
+      "name": "完美父母"
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/somua_achievement/3",
+      "name": "0世代"
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/somua_achievement/4",
+      "name": "1世代"
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/somua_achievement/5",
+      "name": "2世代"
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/somua_achievement/6",
+      "name": "3世代"
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/somua_achievement/7",
+      "name": "4世代"
+    },
+    {
+      "id": 8,
+      "url": "https://api.seerapi.com/v1/somua_achievement/8",
+      "name": "5世代"
+    },
+    {
+      "id": 9,
+      "url": "https://api.seerapi.com/v1/somua_achievement/9",
+      "name": "6世代"
+    },
+    {
+      "id": 10,
+      "url": "https://api.seerapi.com/v1/somua_achievement/10",
+      "name": "7世代"
+    },
+    {
+      "id": 11,
+      "url": "https://api.seerapi.com/v1/somua_achievement/11",
+      "name": "8世代"
+    },
+    {
+      "id": 12,
+      "url": "https://api.seerapi.com/v1/somua_achievement/12",
+      "name": "9世代"
+    },
+    {
+      "id": 13,
+      "url": "https://api.seerapi.com/v1/somua_achievement/13",
+      "name": "n世代"
+    },
+    {
+      "id": 14,
+      "url": "https://api.seerapi.com/v1/somua_achievement/14",
+      "name": "初尝胜果"
+    },
+    {
+      "id": 15,
+      "url": "https://api.seerapi.com/v1/somua_achievement/15",
+      "name": "渐入佳境"
+    },
+    {
+      "id": 16,
+      "url": "https://api.seerapi.com/v1/somua_achievement/16",
+      "name": "斗技新星"
+    },
+    {
+      "id": 17,
+      "url": "https://api.seerapi.com/v1/somua_achievement/17",
+      "name": "百战先锋"
+    },
+    {
+      "id": 18,
+      "url": "https://api.seerapi.com/v1/somua_achievement/18",
+      "name": "常胜搭档"
+    },
+    {
+      "id": 19,
+      "url": "https://api.seerapi.com/v1/somua_achievement/19",
+      "name": "斗技达人"
+    },
+    {
+      "id": 20,
+      "url": "https://api.seerapi.com/v1/somua_achievement/20",
+      "name": "身经百战"
+    },
+    {
+      "id": 21,
+      "url": "https://api.seerapi.com/v1/somua_achievement/21",
+      "name": "荣耀名将"
+    },
+    {
+      "id": 22,
+      "url": "https://api.seerapi.com/v1/somua_achievement/22",
+      "name": "制胜传奇"
+    },
+    {
+      "id": 23,
+      "url": "https://api.seerapi.com/v1/somua_achievement/23",
+      "name": "千胜之星"
+    },
+    {
+      "id": 24,
+      "url": "https://api.seerapi.com/v1/somua_achievement/24",
+      "name": "初识挫折"
+    },
+    {
+      "id": 25,
+      "url": "https://api.seerapi.com/v1/somua_achievement/25",
+      "name": "再接再厉"
+    },
+    {
+      "id": 26,
+      "url": "https://api.seerapi.com/v1/somua_achievement/26",
+      "name": "越挫越勇"
+    },
+    {
+      "id": 27,
+      "url": "https://api.seerapi.com/v1/somua_achievement/27",
+      "name": "百折不挠"
+    },
+    {
+      "id": 28,
+      "url": "https://api.seerapi.com/v1/somua_achievement/28",
+      "name": "韧性初成"
+    },
+    {
+      "id": 29,
+      "url": "https://api.seerapi.com/v1/somua_achievement/29",
+      "name": "久经沙场"
+    },
+    {
+      "id": 30,
+      "url": "https://api.seerapi.com/v1/somua_achievement/30",
+      "name": "磨砺之路"
+    },
+    {
+      "id": 31,
+      "url": "https://api.seerapi.com/v1/somua_achievement/31",
+      "name": "千锤百炼"
+    },
+    {
+      "id": 32,
+      "url": "https://api.seerapi.com/v1/somua_achievement/32",
+      "name": "百炼成钢"
+    },
+    {
+      "id": 33,
+      "url": "https://api.seerapi.com/v1/somua_achievement/33",
+      "name": "不屈之心"
+    },
+    {
+      "id": 34,
+      "url": "https://api.seerapi.com/v1/somua_achievement/34",
+      "name": "干净利落"
+    },
+    {
+      "id": 35,
+      "url": "https://api.seerapi.com/v1/somua_achievement/35",
+      "name": "片尘不染"
+    },
+    {
+      "id": 36,
+      "url": "https://api.seerapi.com/v1/somua_achievement/36",
+      "name": "无瑕传奇"
+    },
+    {
+      "id": 37,
+      "url": "https://api.seerapi.com/v1/somua_achievement/37",
+      "name": "心心相印"
+    },
+    {
+      "id": 38,
+      "url": "https://api.seerapi.com/v1/somua_achievement/38",
+      "name": "开枝散叶"
+    },
+    {
+      "id": 39,
+      "url": "https://api.seerapi.com/v1/somua_achievement/39",
+      "name": "家族兴旺"
+    },
+    {
+      "id": 40,
+      "url": "https://api.seerapi.com/v1/somua_achievement/40",
+      "name": "子孙满堂"
+    }
+  ],
+  "hash": "83f19121"
+}

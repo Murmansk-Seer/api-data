@@ -1,0 +1,8 @@
+{
+  "id": 5015,
+  "fx_on_hit": "hit_common_ice",
+  "prefab": "weapon_5015",
+  "shape": 2,
+  "type": 1,
+  "hash": "463bb524"
+}

@@ -1,0 +1,125 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "attack_mode": {
+          "description": "Client SomuaModelConfig.attackMode; raw int32",
+          "title": "Attack Mode",
+          "type": "integer"
+        },
+        "attack_mode_sp": {
+          "description": "Client SomuaModelConfig.attackModeSP; raw int32",
+          "title": "Attack Mode Sp",
+          "type": "integer"
+        },
+        "describe": {
+          "description": "Client SomuaModelConfig.describe; raw string",
+          "title": "Describe",
+          "type": "string"
+        },
+        "is_back": {
+          "description": "Client SomuaModelConfig.isBack; raw int32",
+          "title": "Is Back",
+          "type": "integer"
+        },
+        "is_body": {
+          "description": "Client SomuaModelConfig.isBody; raw int32",
+          "title": "Is Body",
+          "type": "integer"
+        },
+        "is_ear": {
+          "description": "Client SomuaModelConfig.isEar; raw int32",
+          "title": "Is Ear",
+          "type": "integer"
+        },
+        "is_expression": {
+          "description": "Client SomuaModelConfig.isExpression; raw int32",
+          "title": "Is Expression",
+          "type": "integer"
+        },
+        "is_hand": {
+          "description": "Client SomuaModelConfig.isHand; raw int32",
+          "title": "Is Hand",
+          "type": "integer"
+        },
+        "is_head": {
+          "description": "Client SomuaModelConfig.isHead; raw int32",
+          "title": "Is Head",
+          "type": "integer"
+        },
+        "is_surrounding": {
+          "description": "Client SomuaModelConfig.isSurrounding; raw int32",
+          "title": "Is Surrounding",
+          "type": "integer"
+        },
+        "is_tail": {
+          "description": "Client SomuaModelConfig.isTail; raw int32",
+          "title": "Is Tail",
+          "type": "integer"
+        },
+        "is_topwear": {
+          "description": "Client SomuaModelConfig.isTopwear; raw int32",
+          "title": "Is Topwear",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Client SomuaModelConfig.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "pet_id": {
+          "description": "Client SomuaModelConfig.petID; raw int32",
+          "title": "Pet Id",
+          "type": "integer"
+        },
+        "prefix": {
+          "description": "Client SomuaModelConfig.prefix; raw string",
+          "title": "Prefix",
+          "type": "string"
+        },
+        "season": {
+          "description": "Client SomuaModelConfig.season; raw string",
+          "title": "Season",
+          "type": "string"
+        },
+        "suffix": {
+          "description": "Client SomuaModelConfig.suffix; raw string",
+          "title": "Suffix",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "attack_mode",
+        "attack_mode_sp",
+        "describe",
+        "is_back",
+        "is_body",
+        "is_ear",
+        "is_expression",
+        "is_hand",
+        "is_head",
+        "is_surrounding",
+        "is_tail",
+        "is_topwear",
+        "name",
+        "pet_id",
+        "prefix",
+        "season",
+        "suffix"
+      ],
+      "title": "SomuaModel",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11061": {
+      "id": 11061,
+      "desc": "每间隔[2.1*(1/ATR)]<sprite name=SPD>秒会发射1颗追踪性能极强的能量弹，命中后造成[102%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·毁灭之焰",
+      "rarity": 0,
+      "type": 1,
+      "value1": 1020,
+      "value2": 5061,
+      "value3": 2100,
+      "value4": 1,
+      "value5": 1,
+      "value6": 0
+    }
+  },
+  "hash": "d4da2fda"
+}

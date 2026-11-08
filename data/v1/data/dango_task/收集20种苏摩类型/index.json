@@ -1,0 +1,19 @@
+{
+  "data": {
+    "17": {
+      "id": 17,
+      "new_msglog_id": 0,
+      "describe": "",
+      "limit": 0,
+      "planet": "",
+      "rewardinfo": 100,
+      "task_skin": "",
+      "task_team": 2,
+      "tasktype": 6,
+      "time": 0,
+      "title": "收集20种苏摩类型",
+      "value": 20
+    }
+  },
+  "hash": "db2802eb"
+}

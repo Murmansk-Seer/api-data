@@ -1,0 +1,17 @@
+{
+  "data": {
+    "7009": {
+      "id": 7009,
+      "fx_on_get": "",
+      "fx_on_trig": "",
+      "icon": 0,
+      "max_stack": 6,
+      "stack_rule": "stack",
+      "status_desc": "每层使防御力等级+1（上限6层）。",
+      "status_name": "坚固祝福",
+      "type": 1,
+      "value_rule": ""
+    }
+  },
+  "hash": "2d083c48"
+}

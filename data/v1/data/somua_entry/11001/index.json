@@ -1,0 +1,14 @@
+{
+  "id": 11001,
+  "desc": "每间隔[3*(1/ATR)]<sprite name=SPD>秒向敌人方向发射3个小水泡，每个小水泡会造成[109%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·海洋之心",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1090,
+  "value2": 5001,
+  "value3": 3000,
+  "value4": 1,
+  "value5": 3,
+  "value6": 60,
+  "hash": "6a82ccff"
+}

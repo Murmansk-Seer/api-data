@@ -1,0 +1,65 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "describe": {
+          "description": "Client dango.describe; raw string",
+          "title": "Describe",
+          "type": "string"
+        },
+        "gene": {
+          "description": "Client dango.gene; raw string",
+          "title": "Gene",
+          "type": "string"
+        },
+        "grade": {
+          "description": "Client dango.grade; raw int32",
+          "title": "Grade",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Client dango.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "pet_id": {
+          "description": "Client dango.petID; raw int32",
+          "title": "Pet Id",
+          "type": "integer"
+        },
+        "skin": {
+          "description": "Client dango.skin; raw string",
+          "title": "Skin",
+          "type": "string"
+        },
+        "value": {
+          "description": "Client dango.value; raw int32",
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "describe",
+        "gene",
+        "grade",
+        "name",
+        "pet_id",
+        "skin",
+        "value"
+      ],
+      "title": "Dango",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

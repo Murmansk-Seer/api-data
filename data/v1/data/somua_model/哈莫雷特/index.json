@@ -1,0 +1,25 @@
+{
+  "data": {
+    "9": {
+      "id": 9,
+      "attack_mode": 10009,
+      "attack_mode_sp": 11009,
+      "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+      "is_back": 1,
+      "is_body": 1,
+      "is_ear": 0,
+      "is_expression": 1,
+      "is_hand": 1,
+      "is_head": 0,
+      "is_surrounding": 0,
+      "is_tail": 1,
+      "is_topwear": 0,
+      "name": "哈莫雷特",
+      "pet_id": 215,
+      "prefix": "哈莫",
+      "season": "",
+      "suffix": "雷特"
+    }
+  },
+  "hash": "a9efc67c"
+}

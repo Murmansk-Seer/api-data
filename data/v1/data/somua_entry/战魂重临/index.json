@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10059": {
+      "id": 10059,
+      "desc": "每间隔[8.6*(1/ATR)]<sprite name=SPD>秒，发射1道缓慢移动的黑影，黑影每2秒会攻击一次，对进入其中的敌人造成[450%*ATK]<sprite name=ATK>点伤害。",
+      "name": "战魂重临",
+      "rarity": 0,
+      "type": 1,
+      "value1": 4500,
+      "value2": 8600,
+      "value3": 5059,
+      "value4": 3,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "27ead7c8"
+}

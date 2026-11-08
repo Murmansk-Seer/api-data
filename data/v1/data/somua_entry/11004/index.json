@@ -1,0 +1,14 @@
+{
+  "id": 11004,
+  "desc": "每间隔[0.3*(1/ATR)]<sprite name=SPD>秒会在地上留下1个持续5秒的种子地雷，对碰到的敌人造成[23%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·寄生种子",
+  "rarity": 0,
+  "type": 1,
+  "value1": 230,
+  "value2": 300,
+  "value3": 5004,
+  "value4": 30,
+  "value5": 0,
+  "value6": 0,
+  "hash": "df8342c8"
+}

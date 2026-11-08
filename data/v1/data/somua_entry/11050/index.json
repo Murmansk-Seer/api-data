@@ -1,0 +1,14 @@
+{
+  "id": 11050,
+  "desc": "撞击后对敌人造成自身[103%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·妈妈！！",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1030,
+  "value2": 0,
+  "value3": 0,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "85819fd3"
+}

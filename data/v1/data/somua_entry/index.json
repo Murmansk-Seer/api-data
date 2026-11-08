@@ -1,0 +1,1860 @@
+{
+  "count": 370,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 10000,
+      "url": "https://api.seerapi.com/v1/somua_entry/10000",
+      "name": "某种攻击"
+    },
+    {
+      "id": 10001,
+      "url": "https://api.seerapi.com/v1/somua_entry/10001",
+      "name": "海洋之心"
+    },
+    {
+      "id": 10002,
+      "url": "https://api.seerapi.com/v1/somua_entry/10002",
+      "name": "大地之铠"
+    },
+    {
+      "id": 10003,
+      "url": "https://api.seerapi.com/v1/somua_entry/10003",
+      "name": "皮神冲击"
+    },
+    {
+      "id": 10004,
+      "url": "https://api.seerapi.com/v1/somua_entry/10004",
+      "name": "寄生种子"
+    },
+    {
+      "id": 10005,
+      "url": "https://api.seerapi.com/v1/somua_entry/10005",
+      "name": "浪打千击"
+    },
+    {
+      "id": 10006,
+      "url": "https://api.seerapi.com/v1/somua_entry/10006",
+      "name": "音速火拳"
+    },
+    {
+      "id": 10007,
+      "url": "https://api.seerapi.com/v1/somua_entry/10007",
+      "name": "天河圣芒斩"
+    },
+    {
+      "id": 10008,
+      "url": "https://api.seerapi.com/v1/somua_entry/10008",
+      "name": "牙连绝袭击"
+    },
+    {
+      "id": 10009,
+      "url": "https://api.seerapi.com/v1/somua_entry/10009",
+      "name": "狂龙击杀"
+    },
+    {
+      "id": 10010,
+      "url": "https://api.seerapi.com/v1/somua_entry/10010",
+      "name": "极电千鸟"
+    },
+    {
+      "id": 10011,
+      "url": "https://api.seerapi.com/v1/somua_entry/10011",
+      "name": "日月皆伤"
+    },
+    {
+      "id": 10012,
+      "url": "https://api.seerapi.com/v1/somua_entry/10012",
+      "name": "乾坤反转"
+    },
+    {
+      "id": 10013,
+      "url": "https://api.seerapi.com/v1/somua_entry/10013",
+      "name": "夜魔之球"
+    },
+    {
+      "id": 10014,
+      "url": "https://api.seerapi.com/v1/somua_entry/10014",
+      "name": "极月无双破"
+    },
+    {
+      "id": 10015,
+      "url": "https://api.seerapi.com/v1/somua_entry/10015",
+      "name": "玄冰箭"
+    },
+    {
+      "id": 10016,
+      "url": "https://api.seerapi.com/v1/somua_entry/10016",
+      "name": "诛魔杀阵"
+    },
+    {
+      "id": 10017,
+      "url": "https://api.seerapi.com/v1/somua_entry/10017",
+      "name": "无上天命剑"
+    },
+    {
+      "id": 10018,
+      "url": "https://api.seerapi.com/v1/somua_entry/10018",
+      "name": "圣世惩杀"
+    },
+    {
+      "id": 10019,
+      "url": "https://api.seerapi.com/v1/somua_entry/10019",
+      "name": "轮回之狱"
+    },
+    {
+      "id": 10020,
+      "url": "https://api.seerapi.com/v1/somua_entry/10020",
+      "name": "混元天尊"
+    },
+    {
+      "id": 10021,
+      "url": "https://api.seerapi.com/v1/somua_entry/10021",
+      "name": "神器之佑"
+    },
+    {
+      "id": 10022,
+      "url": "https://api.seerapi.com/v1/somua_entry/10022",
+      "name": "致命牢笼"
+    },
+    {
+      "id": 10023,
+      "url": "https://api.seerapi.com/v1/somua_entry/10023",
+      "name": "圣剑处决"
+    },
+    {
+      "id": 10024,
+      "url": "https://api.seerapi.com/v1/somua_entry/10024",
+      "name": "奇点漩涡"
+    },
+    {
+      "id": 10025,
+      "url": "https://api.seerapi.com/v1/somua_entry/10025",
+      "name": "少女的柔情"
+    },
+    {
+      "id": 10026,
+      "url": "https://api.seerapi.com/v1/somua_entry/10026",
+      "name": "万物哀鸣"
+    },
+    {
+      "id": 10027,
+      "url": "https://api.seerapi.com/v1/somua_entry/10027",
+      "name": "灵剑封魂"
+    },
+    {
+      "id": 10028,
+      "url": "https://api.seerapi.com/v1/somua_entry/10028",
+      "name": "亡灵招来"
+    },
+    {
+      "id": 10029,
+      "url": "https://api.seerapi.com/v1/somua_entry/10029",
+      "name": "千烈虚光闪"
+    },
+    {
+      "id": 10030,
+      "url": "https://api.seerapi.com/v1/somua_entry/10030",
+      "name": "魔君之镇"
+    },
+    {
+      "id": 10031,
+      "url": "https://api.seerapi.com/v1/somua_entry/10031",
+      "name": "少女的思念"
+    },
+    {
+      "id": 10032,
+      "url": "https://api.seerapi.com/v1/somua_entry/10032",
+      "name": "少女的回旋"
+    },
+    {
+      "id": 10033,
+      "url": "https://api.seerapi.com/v1/somua_entry/10033",
+      "name": "公主我来保护你！"
+    },
+    {
+      "id": 10034,
+      "url": "https://api.seerapi.com/v1/somua_entry/10034",
+      "name": "少女的忐忑"
+    },
+    {
+      "id": 10035,
+      "url": "https://api.seerapi.com/v1/somua_entry/10035",
+      "name": "记忆的涟漪"
+    },
+    {
+      "id": 10036,
+      "url": "https://api.seerapi.com/v1/somua_entry/10036",
+      "name": "少女的守候"
+    },
+    {
+      "id": 10037,
+      "url": "https://api.seerapi.com/v1/somua_entry/10037",
+      "name": "芳馨风暴"
+    },
+    {
+      "id": 10038,
+      "url": "https://api.seerapi.com/v1/somua_entry/10038",
+      "name": "洛水惊鸿"
+    },
+    {
+      "id": 10039,
+      "url": "https://api.seerapi.com/v1/somua_entry/10039",
+      "name": "梦之乌托邦"
+    },
+    {
+      "id": 10040,
+      "url": "https://api.seerapi.com/v1/somua_entry/10040",
+      "name": "天堂祈祷"
+    },
+    {
+      "id": 10041,
+      "url": "https://api.seerapi.com/v1/somua_entry/10041",
+      "name": "幻世螺旋"
+    },
+    {
+      "id": 10042,
+      "url": "https://api.seerapi.com/v1/somua_entry/10042",
+      "name": "酷烈风息"
+    },
+    {
+      "id": 10043,
+      "url": "https://api.seerapi.com/v1/somua_entry/10043",
+      "name": "零度扼杀"
+    },
+    {
+      "id": 10044,
+      "url": "https://api.seerapi.com/v1/somua_entry/10044",
+      "name": "灵威天羽"
+    },
+    {
+      "id": 10045,
+      "url": "https://api.seerapi.com/v1/somua_entry/10045",
+      "name": "黄泉葬华"
+    },
+    {
+      "id": 10046,
+      "url": "https://api.seerapi.com/v1/somua_entry/10046",
+      "name": "天叶领域"
+    },
+    {
+      "id": 10047,
+      "url": "https://api.seerapi.com/v1/somua_entry/10047",
+      "name": "极冥妖天"
+    },
+    {
+      "id": 10048,
+      "url": "https://api.seerapi.com/v1/somua_entry/10048",
+      "name": "昏天灭地"
+    },
+    {
+      "id": 10049,
+      "url": "https://api.seerapi.com/v1/somua_entry/10049",
+      "name": "龙灵召唤"
+    },
+    {
+      "id": 10050,
+      "url": "https://api.seerapi.com/v1/somua_entry/10050",
+      "name": "妈妈！！"
+    },
+    {
+      "id": 10051,
+      "url": "https://api.seerapi.com/v1/somua_entry/10051",
+      "name": "黑暗之剑"
+    },
+    {
+      "id": 10052,
+      "url": "https://api.seerapi.com/v1/somua_entry/10052",
+      "name": "终末之咒"
+    },
+    {
+      "id": 10053,
+      "url": "https://api.seerapi.com/v1/somua_entry/10053",
+      "name": "空元之铭"
+    },
+    {
+      "id": 10054,
+      "url": "https://api.seerapi.com/v1/somua_entry/10054",
+      "name": "千里击涛"
+    },
+    {
+      "id": 10055,
+      "url": "https://api.seerapi.com/v1/somua_entry/10055",
+      "name": "天蛇禁法"
+    },
+    {
+      "id": 10056,
+      "url": "https://api.seerapi.com/v1/somua_entry/10056",
+      "name": "变成星星吧！"
+    },
+    {
+      "id": 10057,
+      "url": "https://api.seerapi.com/v1/somua_entry/10057",
+      "name": "这就是科学！"
+    },
+    {
+      "id": 10058,
+      "url": "https://api.seerapi.com/v1/somua_entry/10058",
+      "name": "光火神王之座"
+    },
+    {
+      "id": 10059,
+      "url": "https://api.seerapi.com/v1/somua_entry/10059",
+      "name": "战魂重临"
+    },
+    {
+      "id": 10060,
+      "url": "https://api.seerapi.com/v1/somua_entry/10060",
+      "name": "凌踏九霄"
+    },
+    {
+      "id": 10061,
+      "url": "https://api.seerapi.com/v1/somua_entry/10061",
+      "name": "毁灭之焰"
+    },
+    {
+      "id": 10062,
+      "url": "https://api.seerapi.com/v1/somua_entry/10062",
+      "name": "洪荒之刃"
+    },
+    {
+      "id": 10063,
+      "url": "https://api.seerapi.com/v1/somua_entry/10063",
+      "name": "黑洞频率"
+    },
+    {
+      "id": 10064,
+      "url": "https://api.seerapi.com/v1/somua_entry/10064",
+      "name": "热沙的信仰"
+    },
+    {
+      "id": 10065,
+      "url": "https://api.seerapi.com/v1/somua_entry/10065",
+      "name": "狂绝大冲撞"
+    },
+    {
+      "id": 10066,
+      "url": "https://api.seerapi.com/v1/somua_entry/10066",
+      "name": "命运之轮"
+    },
+    {
+      "id": 10067,
+      "url": "https://api.seerapi.com/v1/somua_entry/10067",
+      "name": "神诏之诀别"
+    },
+    {
+      "id": 10068,
+      "url": "https://api.seerapi.com/v1/somua_entry/10068",
+      "name": "圣邪之虚妄"
+    },
+    {
+      "id": 11001,
+      "url": "https://api.seerapi.com/v1/somua_entry/11001",
+      "name": "真·海洋之心"
+    },
+    {
+      "id": 11002,
+      "url": "https://api.seerapi.com/v1/somua_entry/11002",
+      "name": "真·大地之铠"
+    },
+    {
+      "id": 11003,
+      "url": "https://api.seerapi.com/v1/somua_entry/11003",
+      "name": "真·皮神冲击"
+    },
+    {
+      "id": 11004,
+      "url": "https://api.seerapi.com/v1/somua_entry/11004",
+      "name": "真·寄生种子"
+    },
+    {
+      "id": 11005,
+      "url": "https://api.seerapi.com/v1/somua_entry/11005",
+      "name": "真·浪打千击"
+    },
+    {
+      "id": 11006,
+      "url": "https://api.seerapi.com/v1/somua_entry/11006",
+      "name": "真·音速火拳"
+    },
+    {
+      "id": 11007,
+      "url": "https://api.seerapi.com/v1/somua_entry/11007",
+      "name": "真·天河圣芒斩"
+    },
+    {
+      "id": 11008,
+      "url": "https://api.seerapi.com/v1/somua_entry/11008",
+      "name": "真·牙连绝袭击"
+    },
+    {
+      "id": 11009,
+      "url": "https://api.seerapi.com/v1/somua_entry/11009",
+      "name": "真·狂龙击杀"
+    },
+    {
+      "id": 11010,
+      "url": "https://api.seerapi.com/v1/somua_entry/11010",
+      "name": "真·极电千鸟"
+    },
+    {
+      "id": 11011,
+      "url": "https://api.seerapi.com/v1/somua_entry/11011",
+      "name": "真·日月皆伤"
+    },
+    {
+      "id": 11012,
+      "url": "https://api.seerapi.com/v1/somua_entry/11012",
+      "name": "真·乾坤反转"
+    },
+    {
+      "id": 11013,
+      "url": "https://api.seerapi.com/v1/somua_entry/11013",
+      "name": "真·夜魔之球"
+    },
+    {
+      "id": 11014,
+      "url": "https://api.seerapi.com/v1/somua_entry/11014",
+      "name": "真·极月无双破"
+    },
+    {
+      "id": 11015,
+      "url": "https://api.seerapi.com/v1/somua_entry/11015",
+      "name": "真·玄冰箭"
+    },
+    {
+      "id": 11016,
+      "url": "https://api.seerapi.com/v1/somua_entry/11016",
+      "name": "真·诛魔杀阵"
+    },
+    {
+      "id": 11017,
+      "url": "https://api.seerapi.com/v1/somua_entry/11017",
+      "name": "真·无上天命剑"
+    },
+    {
+      "id": 11018,
+      "url": "https://api.seerapi.com/v1/somua_entry/11018",
+      "name": "真·圣世惩杀"
+    },
+    {
+      "id": 11019,
+      "url": "https://api.seerapi.com/v1/somua_entry/11019",
+      "name": "真·轮回之狱"
+    },
+    {
+      "id": 11020,
+      "url": "https://api.seerapi.com/v1/somua_entry/11020",
+      "name": "真·混元天尊"
+    },
+    {
+      "id": 11021,
+      "url": "https://api.seerapi.com/v1/somua_entry/11021",
+      "name": "真·神器之佑"
+    },
+    {
+      "id": 11022,
+      "url": "https://api.seerapi.com/v1/somua_entry/11022",
+      "name": "真·致命牢笼"
+    },
+    {
+      "id": 11023,
+      "url": "https://api.seerapi.com/v1/somua_entry/11023",
+      "name": "真·圣剑处决"
+    },
+    {
+      "id": 11024,
+      "url": "https://api.seerapi.com/v1/somua_entry/11024",
+      "name": "真·奇点漩涡"
+    },
+    {
+      "id": 11025,
+      "url": "https://api.seerapi.com/v1/somua_entry/11025",
+      "name": "真·少女的柔情"
+    },
+    {
+      "id": 11026,
+      "url": "https://api.seerapi.com/v1/somua_entry/11026",
+      "name": "真·万物哀鸣"
+    },
+    {
+      "id": 11027,
+      "url": "https://api.seerapi.com/v1/somua_entry/11027",
+      "name": "真·灵剑封魂"
+    },
+    {
+      "id": 11028,
+      "url": "https://api.seerapi.com/v1/somua_entry/11028",
+      "name": "真·亡灵招来"
+    },
+    {
+      "id": 11029,
+      "url": "https://api.seerapi.com/v1/somua_entry/11029",
+      "name": "真·千烈虚光闪"
+    },
+    {
+      "id": 11030,
+      "url": "https://api.seerapi.com/v1/somua_entry/11030",
+      "name": "真·魔君之镇"
+    },
+    {
+      "id": 11031,
+      "url": "https://api.seerapi.com/v1/somua_entry/11031",
+      "name": "真·少女的思念"
+    },
+    {
+      "id": 11032,
+      "url": "https://api.seerapi.com/v1/somua_entry/11032",
+      "name": "真·少女的回旋"
+    },
+    {
+      "id": 11033,
+      "url": "https://api.seerapi.com/v1/somua_entry/11033",
+      "name": "真·公主我来保护你！"
+    },
+    {
+      "id": 11034,
+      "url": "https://api.seerapi.com/v1/somua_entry/11034",
+      "name": "真·少女的忐忑"
+    },
+    {
+      "id": 11035,
+      "url": "https://api.seerapi.com/v1/somua_entry/11035",
+      "name": "真·记忆的涟漪"
+    },
+    {
+      "id": 11036,
+      "url": "https://api.seerapi.com/v1/somua_entry/11036",
+      "name": "真·少女的守候"
+    },
+    {
+      "id": 11037,
+      "url": "https://api.seerapi.com/v1/somua_entry/11037",
+      "name": "真·芳馨风暴"
+    },
+    {
+      "id": 11038,
+      "url": "https://api.seerapi.com/v1/somua_entry/11038",
+      "name": "真·洛水惊鸿"
+    },
+    {
+      "id": 11039,
+      "url": "https://api.seerapi.com/v1/somua_entry/11039",
+      "name": "真·梦之乌托邦"
+    },
+    {
+      "id": 11040,
+      "url": "https://api.seerapi.com/v1/somua_entry/11040",
+      "name": "真·天堂祈祷"
+    },
+    {
+      "id": 11041,
+      "url": "https://api.seerapi.com/v1/somua_entry/11041",
+      "name": "真·幻世螺旋"
+    },
+    {
+      "id": 11042,
+      "url": "https://api.seerapi.com/v1/somua_entry/11042",
+      "name": "真·酷烈风息"
+    },
+    {
+      "id": 11043,
+      "url": "https://api.seerapi.com/v1/somua_entry/11043",
+      "name": "真·零度扼杀"
+    },
+    {
+      "id": 11044,
+      "url": "https://api.seerapi.com/v1/somua_entry/11044",
+      "name": "真·灵威天羽"
+    },
+    {
+      "id": 11045,
+      "url": "https://api.seerapi.com/v1/somua_entry/11045",
+      "name": "真·黄泉葬华"
+    },
+    {
+      "id": 11046,
+      "url": "https://api.seerapi.com/v1/somua_entry/11046",
+      "name": "真·天叶领域"
+    },
+    {
+      "id": 11047,
+      "url": "https://api.seerapi.com/v1/somua_entry/11047",
+      "name": "真·极冥妖天"
+    },
+    {
+      "id": 11048,
+      "url": "https://api.seerapi.com/v1/somua_entry/11048",
+      "name": "真·昏天灭地"
+    },
+    {
+      "id": 11049,
+      "url": "https://api.seerapi.com/v1/somua_entry/11049",
+      "name": "真·龙灵召唤"
+    },
+    {
+      "id": 11050,
+      "url": "https://api.seerapi.com/v1/somua_entry/11050",
+      "name": "真·妈妈！！"
+    },
+    {
+      "id": 11051,
+      "url": "https://api.seerapi.com/v1/somua_entry/11051",
+      "name": "真·黑暗之剑"
+    },
+    {
+      "id": 11052,
+      "url": "https://api.seerapi.com/v1/somua_entry/11052",
+      "name": "真·终末之咒"
+    },
+    {
+      "id": 11053,
+      "url": "https://api.seerapi.com/v1/somua_entry/11053",
+      "name": "真·空元之铭"
+    },
+    {
+      "id": 11054,
+      "url": "https://api.seerapi.com/v1/somua_entry/11054",
+      "name": "真·千里击涛"
+    },
+    {
+      "id": 11055,
+      "url": "https://api.seerapi.com/v1/somua_entry/11055",
+      "name": "真·天蛇禁法"
+    },
+    {
+      "id": 11056,
+      "url": "https://api.seerapi.com/v1/somua_entry/11056",
+      "name": "真·变成星星吧！"
+    },
+    {
+      "id": 11057,
+      "url": "https://api.seerapi.com/v1/somua_entry/11057",
+      "name": "真·这就是科学！"
+    },
+    {
+      "id": 11058,
+      "url": "https://api.seerapi.com/v1/somua_entry/11058",
+      "name": "真·光火神王之座"
+    },
+    {
+      "id": 11059,
+      "url": "https://api.seerapi.com/v1/somua_entry/11059",
+      "name": "真·战魂重临"
+    },
+    {
+      "id": 11060,
+      "url": "https://api.seerapi.com/v1/somua_entry/11060",
+      "name": "真·凌踏九霄"
+    },
+    {
+      "id": 11061,
+      "url": "https://api.seerapi.com/v1/somua_entry/11061",
+      "name": "真·毁灭之焰"
+    },
+    {
+      "id": 11062,
+      "url": "https://api.seerapi.com/v1/somua_entry/11062",
+      "name": "真·洪荒之刃"
+    },
+    {
+      "id": 11063,
+      "url": "https://api.seerapi.com/v1/somua_entry/11063",
+      "name": "真·黑洞频率"
+    },
+    {
+      "id": 11064,
+      "url": "https://api.seerapi.com/v1/somua_entry/11064",
+      "name": "真·热沙的信仰"
+    },
+    {
+      "id": 11065,
+      "url": "https://api.seerapi.com/v1/somua_entry/11065",
+      "name": "真·狂绝大冲撞"
+    },
+    {
+      "id": 11066,
+      "url": "https://api.seerapi.com/v1/somua_entry/11066",
+      "name": "真·命运之轮"
+    },
+    {
+      "id": 11067,
+      "url": "https://api.seerapi.com/v1/somua_entry/11067",
+      "name": "真·神诏之诀别"
+    },
+    {
+      "id": 11068,
+      "url": "https://api.seerapi.com/v1/somua_entry/11068",
+      "name": "真·圣邪之虚妄"
+    },
+    {
+      "id": 20000,
+      "url": "https://api.seerapi.com/v1/somua_entry/20000",
+      "name": "某种性格"
+    },
+    {
+      "id": 20001,
+      "url": "https://api.seerapi.com/v1/somua_entry/20001",
+      "name": "固执"
+    },
+    {
+      "id": 20002,
+      "url": "https://api.seerapi.com/v1/somua_entry/20002",
+      "name": "好胜"
+    },
+    {
+      "id": 20003,
+      "url": "https://api.seerapi.com/v1/somua_entry/20003",
+      "name": "狂傲"
+    },
+    {
+      "id": 20004,
+      "url": "https://api.seerapi.com/v1/somua_entry/20004",
+      "name": "强硬"
+    },
+    {
+      "id": 20005,
+      "url": "https://api.seerapi.com/v1/somua_entry/20005",
+      "name": "激进"
+    },
+    {
+      "id": 20006,
+      "url": "https://api.seerapi.com/v1/somua_entry/20006",
+      "name": "亢奋"
+    },
+    {
+      "id": 20007,
+      "url": "https://api.seerapi.com/v1/somua_entry/20007",
+      "name": "狂暴"
+    },
+    {
+      "id": 20008,
+      "url": "https://api.seerapi.com/v1/somua_entry/20008",
+      "name": "果敢"
+    },
+    {
+      "id": 20009,
+      "url": "https://api.seerapi.com/v1/somua_entry/20009",
+      "name": "刁钻"
+    },
+    {
+      "id": 20010,
+      "url": "https://api.seerapi.com/v1/somua_entry/20010",
+      "name": "狡黠"
+    },
+    {
+      "id": 20011,
+      "url": "https://api.seerapi.com/v1/somua_entry/20011",
+      "name": "狠厉"
+    },
+    {
+      "id": 20012,
+      "url": "https://api.seerapi.com/v1/somua_entry/20012",
+      "name": "认真"
+    },
+    {
+      "id": 20013,
+      "url": "https://api.seerapi.com/v1/somua_entry/20013",
+      "name": "机敏"
+    },
+    {
+      "id": 20014,
+      "url": "https://api.seerapi.com/v1/somua_entry/20014",
+      "name": "谨慎"
+    },
+    {
+      "id": 20015,
+      "url": "https://api.seerapi.com/v1/somua_entry/20015",
+      "name": "调皮"
+    },
+    {
+      "id": 20016,
+      "url": "https://api.seerapi.com/v1/somua_entry/20016",
+      "name": "冷峻"
+    },
+    {
+      "id": 20017,
+      "url": "https://api.seerapi.com/v1/somua_entry/20017",
+      "name": "稳重"
+    },
+    {
+      "id": 20018,
+      "url": "https://api.seerapi.com/v1/somua_entry/20018",
+      "name": "温顺"
+    },
+    {
+      "id": 20019,
+      "url": "https://api.seerapi.com/v1/somua_entry/20019",
+      "name": "执着"
+    },
+    {
+      "id": 20020,
+      "url": "https://api.seerapi.com/v1/somua_entry/20020",
+      "name": "顽强"
+    },
+    {
+      "id": 20021,
+      "url": "https://api.seerapi.com/v1/somua_entry/20021",
+      "name": "沉着"
+    },
+    {
+      "id": 20022,
+      "url": "https://api.seerapi.com/v1/somua_entry/20022",
+      "name": "敦厚"
+    },
+    {
+      "id": 20023,
+      "url": "https://api.seerapi.com/v1/somua_entry/20023",
+      "name": "悠闲"
+    },
+    {
+      "id": 20024,
+      "url": "https://api.seerapi.com/v1/somua_entry/20024",
+      "name": "不屈"
+    },
+    {
+      "id": 20025,
+      "url": "https://api.seerapi.com/v1/somua_entry/20025",
+      "name": "好奇"
+    },
+    {
+      "id": 20026,
+      "url": "https://api.seerapi.com/v1/somua_entry/20026",
+      "name": "勤勉"
+    },
+    {
+      "id": 20027,
+      "url": "https://api.seerapi.com/v1/somua_entry/20027",
+      "name": "进取"
+    },
+    {
+      "id": 20028,
+      "url": "https://api.seerapi.com/v1/somua_entry/20028",
+      "name": "踏实"
+    },
+    {
+      "id": 20029,
+      "url": "https://api.seerapi.com/v1/somua_entry/20029",
+      "name": "警觉"
+    },
+    {
+      "id": 20030,
+      "url": "https://api.seerapi.com/v1/somua_entry/20030",
+      "name": "慎重"
+    },
+    {
+      "id": 20031,
+      "url": "https://api.seerapi.com/v1/somua_entry/20031",
+      "name": "凌厉"
+    },
+    {
+      "id": 20032,
+      "url": "https://api.seerapi.com/v1/somua_entry/20032",
+      "name": "隐忍"
+    },
+    {
+      "id": 20033,
+      "url": "https://api.seerapi.com/v1/somua_entry/20033",
+      "name": "急躁"
+    },
+    {
+      "id": 20034,
+      "url": "https://api.seerapi.com/v1/somua_entry/20034",
+      "name": "轻快"
+    },
+    {
+      "id": 20035,
+      "url": "https://api.seerapi.com/v1/somua_entry/20035",
+      "name": "迅猛"
+    },
+    {
+      "id": 20036,
+      "url": "https://api.seerapi.com/v1/somua_entry/20036",
+      "name": "灵巧"
+    },
+    {
+      "id": 20037,
+      "url": "https://api.seerapi.com/v1/somua_entry/20037",
+      "name": "开朗"
+    },
+    {
+      "id": 20038,
+      "url": "https://api.seerapi.com/v1/somua_entry/20038",
+      "name": "热忱"
+    },
+    {
+      "id": 20039,
+      "url": "https://api.seerapi.com/v1/somua_entry/20039",
+      "name": "豪放"
+    },
+    {
+      "id": 20040,
+      "url": "https://api.seerapi.com/v1/somua_entry/20040",
+      "name": "温和"
+    },
+    {
+      "id": 40000,
+      "url": "https://api.seerapi.com/v1/somua_entry/40000",
+      "name": "某种移动"
+    },
+    {
+      "id": 40001,
+      "url": "https://api.seerapi.com/v1/somua_entry/40001",
+      "name": "追逐步伐 I"
+    },
+    {
+      "id": 40002,
+      "url": "https://api.seerapi.com/v1/somua_entry/40002",
+      "name": "追逐步伐 II"
+    },
+    {
+      "id": 40003,
+      "url": "https://api.seerapi.com/v1/somua_entry/40003",
+      "name": "追逐步伐 III"
+    },
+    {
+      "id": 40004,
+      "url": "https://api.seerapi.com/v1/somua_entry/40004",
+      "name": "无伤步伐 I"
+    },
+    {
+      "id": 40005,
+      "url": "https://api.seerapi.com/v1/somua_entry/40005",
+      "name": "无伤步伐 II"
+    },
+    {
+      "id": 40006,
+      "url": "https://api.seerapi.com/v1/somua_entry/40006",
+      "name": "无伤步伐 III"
+    },
+    {
+      "id": 40007,
+      "url": "https://api.seerapi.com/v1/somua_entry/40007",
+      "name": "加速步伐 I"
+    },
+    {
+      "id": 40008,
+      "url": "https://api.seerapi.com/v1/somua_entry/40008",
+      "name": "加速步伐 II"
+    },
+    {
+      "id": 40009,
+      "url": "https://api.seerapi.com/v1/somua_entry/40009",
+      "name": "加速步伐 III"
+    },
+    {
+      "id": 40010,
+      "url": "https://api.seerapi.com/v1/somua_entry/40010",
+      "name": "蓄能步伐 I"
+    },
+    {
+      "id": 40011,
+      "url": "https://api.seerapi.com/v1/somua_entry/40011",
+      "name": "蓄能步伐 II"
+    },
+    {
+      "id": 40012,
+      "url": "https://api.seerapi.com/v1/somua_entry/40012",
+      "name": "蓄能步伐 III"
+    },
+    {
+      "id": 40013,
+      "url": "https://api.seerapi.com/v1/somua_entry/40013",
+      "name": "偏转步伐"
+    },
+    {
+      "id": 30000,
+      "url": "https://api.seerapi.com/v1/somua_entry/30000",
+      "name": "某种效果"
+    },
+    {
+      "id": 30001,
+      "url": "https://api.seerapi.com/v1/somua_entry/30001",
+      "name": "中毒攻击I"
+    },
+    {
+      "id": 30002,
+      "url": "https://api.seerapi.com/v1/somua_entry/30002",
+      "name": "中毒攻击II"
+    },
+    {
+      "id": 30003,
+      "url": "https://api.seerapi.com/v1/somua_entry/30003",
+      "name": "中毒攻击III"
+    },
+    {
+      "id": 30004,
+      "url": "https://api.seerapi.com/v1/somua_entry/30004",
+      "name": "感染攻击I"
+    },
+    {
+      "id": 30005,
+      "url": "https://api.seerapi.com/v1/somua_entry/30005",
+      "name": "感染攻击II"
+    },
+    {
+      "id": 30006,
+      "url": "https://api.seerapi.com/v1/somua_entry/30006",
+      "name": "感染攻击III"
+    },
+    {
+      "id": 30007,
+      "url": "https://api.seerapi.com/v1/somua_entry/30007",
+      "name": "冻伤攻击I"
+    },
+    {
+      "id": 30008,
+      "url": "https://api.seerapi.com/v1/somua_entry/30008",
+      "name": "冻伤攻击II"
+    },
+    {
+      "id": 30009,
+      "url": "https://api.seerapi.com/v1/somua_entry/30009",
+      "name": "冻伤攻击III"
+    },
+    {
+      "id": 30010,
+      "url": "https://api.seerapi.com/v1/somua_entry/30010",
+      "name": "燃烧攻击I"
+    },
+    {
+      "id": 30011,
+      "url": "https://api.seerapi.com/v1/somua_entry/30011",
+      "name": "燃烧攻击II"
+    },
+    {
+      "id": 30012,
+      "url": "https://api.seerapi.com/v1/somua_entry/30012",
+      "name": "燃烧攻击III"
+    },
+    {
+      "id": 30013,
+      "url": "https://api.seerapi.com/v1/somua_entry/30013",
+      "name": "伤口攻击I"
+    },
+    {
+      "id": 30014,
+      "url": "https://api.seerapi.com/v1/somua_entry/30014",
+      "name": "伤口攻击II"
+    },
+    {
+      "id": 30015,
+      "url": "https://api.seerapi.com/v1/somua_entry/30015",
+      "name": "伤口攻击III"
+    },
+    {
+      "id": 30016,
+      "url": "https://api.seerapi.com/v1/somua_entry/30016",
+      "name": "流血攻击I"
+    },
+    {
+      "id": 30017,
+      "url": "https://api.seerapi.com/v1/somua_entry/30017",
+      "name": "流血攻击II"
+    },
+    {
+      "id": 30018,
+      "url": "https://api.seerapi.com/v1/somua_entry/30018",
+      "name": "流血攻击III"
+    },
+    {
+      "id": 30019,
+      "url": "https://api.seerapi.com/v1/somua_entry/30019",
+      "name": "致命攻击I"
+    },
+    {
+      "id": 30020,
+      "url": "https://api.seerapi.com/v1/somua_entry/30020",
+      "name": "致命攻击II"
+    },
+    {
+      "id": 30021,
+      "url": "https://api.seerapi.com/v1/somua_entry/30021",
+      "name": "致命攻击III"
+    },
+    {
+      "id": 30022,
+      "url": "https://api.seerapi.com/v1/somua_entry/30022",
+      "name": "虚弱攻击I"
+    },
+    {
+      "id": 30023,
+      "url": "https://api.seerapi.com/v1/somua_entry/30023",
+      "name": "虚弱攻击II"
+    },
+    {
+      "id": 30024,
+      "url": "https://api.seerapi.com/v1/somua_entry/30024",
+      "name": "虚弱攻击III"
+    },
+    {
+      "id": 30025,
+      "url": "https://api.seerapi.com/v1/somua_entry/30025",
+      "name": "迟钝攻击I"
+    },
+    {
+      "id": 30026,
+      "url": "https://api.seerapi.com/v1/somua_entry/30026",
+      "name": "迟钝攻击II"
+    },
+    {
+      "id": 30027,
+      "url": "https://api.seerapi.com/v1/somua_entry/30027",
+      "name": "迟钝攻击III"
+    },
+    {
+      "id": 30028,
+      "url": "https://api.seerapi.com/v1/somua_entry/30028",
+      "name": "寄生攻击I"
+    },
+    {
+      "id": 30029,
+      "url": "https://api.seerapi.com/v1/somua_entry/30029",
+      "name": "寄生攻击II"
+    },
+    {
+      "id": 30030,
+      "url": "https://api.seerapi.com/v1/somua_entry/30030",
+      "name": "寄生攻击III"
+    },
+    {
+      "id": 30031,
+      "url": "https://api.seerapi.com/v1/somua_entry/30031",
+      "name": "蓄力攻击I"
+    },
+    {
+      "id": 30032,
+      "url": "https://api.seerapi.com/v1/somua_entry/30032",
+      "name": "蓄力攻击II"
+    },
+    {
+      "id": 30033,
+      "url": "https://api.seerapi.com/v1/somua_entry/30033",
+      "name": "蓄力攻击III"
+    },
+    {
+      "id": 30040,
+      "url": "https://api.seerapi.com/v1/somua_entry/30040",
+      "name": "坚固攻击I"
+    },
+    {
+      "id": 30041,
+      "url": "https://api.seerapi.com/v1/somua_entry/30041",
+      "name": "坚固攻击II"
+    },
+    {
+      "id": 30042,
+      "url": "https://api.seerapi.com/v1/somua_entry/30042",
+      "name": "坚固攻击III"
+    },
+    {
+      "id": 30043,
+      "url": "https://api.seerapi.com/v1/somua_entry/30043",
+      "name": "狂暴攻击I"
+    },
+    {
+      "id": 30044,
+      "url": "https://api.seerapi.com/v1/somua_entry/30044",
+      "name": "狂暴攻击II"
+    },
+    {
+      "id": 30045,
+      "url": "https://api.seerapi.com/v1/somua_entry/30045",
+      "name": "狂暴攻击III"
+    },
+    {
+      "id": 30046,
+      "url": "https://api.seerapi.com/v1/somua_entry/30046",
+      "name": "迅捷攻击I"
+    },
+    {
+      "id": 30047,
+      "url": "https://api.seerapi.com/v1/somua_entry/30047",
+      "name": "迅捷攻击II"
+    },
+    {
+      "id": 30048,
+      "url": "https://api.seerapi.com/v1/somua_entry/30048",
+      "name": "迅捷攻击III"
+    },
+    {
+      "id": 30049,
+      "url": "https://api.seerapi.com/v1/somua_entry/30049",
+      "name": "屏障攻击I"
+    },
+    {
+      "id": 30050,
+      "url": "https://api.seerapi.com/v1/somua_entry/30050",
+      "name": "屏障攻击II"
+    },
+    {
+      "id": 30051,
+      "url": "https://api.seerapi.com/v1/somua_entry/30051",
+      "name": "屏障攻击III"
+    },
+    {
+      "id": 30052,
+      "url": "https://api.seerapi.com/v1/somua_entry/30052",
+      "name": "碰撞蓄力I"
+    },
+    {
+      "id": 30053,
+      "url": "https://api.seerapi.com/v1/somua_entry/30053",
+      "name": "碰撞蓄力II"
+    },
+    {
+      "id": 30054,
+      "url": "https://api.seerapi.com/v1/somua_entry/30054",
+      "name": "碰撞蓄力III"
+    },
+    {
+      "id": 30055,
+      "url": "https://api.seerapi.com/v1/somua_entry/30055",
+      "name": "碰撞护盾I"
+    },
+    {
+      "id": 30056,
+      "url": "https://api.seerapi.com/v1/somua_entry/30056",
+      "name": "碰撞护盾II"
+    },
+    {
+      "id": 30057,
+      "url": "https://api.seerapi.com/v1/somua_entry/30057",
+      "name": "碰撞护盾III"
+    },
+    {
+      "id": 30058,
+      "url": "https://api.seerapi.com/v1/somua_entry/30058",
+      "name": "碰撞屏障I"
+    },
+    {
+      "id": 30059,
+      "url": "https://api.seerapi.com/v1/somua_entry/30059",
+      "name": "碰撞屏障II"
+    },
+    {
+      "id": 30060,
+      "url": "https://api.seerapi.com/v1/somua_entry/30060",
+      "name": "碰撞屏障III"
+    },
+    {
+      "id": 30061,
+      "url": "https://api.seerapi.com/v1/somua_entry/30061",
+      "name": "吸血I"
+    },
+    {
+      "id": 30062,
+      "url": "https://api.seerapi.com/v1/somua_entry/30062",
+      "name": "吸血II"
+    },
+    {
+      "id": 30063,
+      "url": "https://api.seerapi.com/v1/somua_entry/30063",
+      "name": "吸血III"
+    },
+    {
+      "id": 30064,
+      "url": "https://api.seerapi.com/v1/somua_entry/30064",
+      "name": "趁胜追击I"
+    },
+    {
+      "id": 30065,
+      "url": "https://api.seerapi.com/v1/somua_entry/30065",
+      "name": "趁胜追击II"
+    },
+    {
+      "id": 30066,
+      "url": "https://api.seerapi.com/v1/somua_entry/30066",
+      "name": "趁胜追击III"
+    },
+    {
+      "id": 30067,
+      "url": "https://api.seerapi.com/v1/somua_entry/30067",
+      "name": "中毒追击I"
+    },
+    {
+      "id": 30068,
+      "url": "https://api.seerapi.com/v1/somua_entry/30068",
+      "name": "中毒追击II"
+    },
+    {
+      "id": 30069,
+      "url": "https://api.seerapi.com/v1/somua_entry/30069",
+      "name": "中毒追击III"
+    },
+    {
+      "id": 30070,
+      "url": "https://api.seerapi.com/v1/somua_entry/30070",
+      "name": "感染追击I"
+    },
+    {
+      "id": 30071,
+      "url": "https://api.seerapi.com/v1/somua_entry/30071",
+      "name": "感染追击II"
+    },
+    {
+      "id": 30072,
+      "url": "https://api.seerapi.com/v1/somua_entry/30072",
+      "name": "感染追击III"
+    },
+    {
+      "id": 30073,
+      "url": "https://api.seerapi.com/v1/somua_entry/30073",
+      "name": "冻伤追击I"
+    },
+    {
+      "id": 30074,
+      "url": "https://api.seerapi.com/v1/somua_entry/30074",
+      "name": "冻伤追击II"
+    },
+    {
+      "id": 30075,
+      "url": "https://api.seerapi.com/v1/somua_entry/30075",
+      "name": "冻伤追击III"
+    },
+    {
+      "id": 30076,
+      "url": "https://api.seerapi.com/v1/somua_entry/30076",
+      "name": "燃烧追击I"
+    },
+    {
+      "id": 30077,
+      "url": "https://api.seerapi.com/v1/somua_entry/30077",
+      "name": "燃烧追击II"
+    },
+    {
+      "id": 30078,
+      "url": "https://api.seerapi.com/v1/somua_entry/30078",
+      "name": "燃烧追击III"
+    },
+    {
+      "id": 30079,
+      "url": "https://api.seerapi.com/v1/somua_entry/30079",
+      "name": "伤口追击I"
+    },
+    {
+      "id": 30080,
+      "url": "https://api.seerapi.com/v1/somua_entry/30080",
+      "name": "伤口追击II"
+    },
+    {
+      "id": 30081,
+      "url": "https://api.seerapi.com/v1/somua_entry/30081",
+      "name": "伤口追击III"
+    },
+    {
+      "id": 30082,
+      "url": "https://api.seerapi.com/v1/somua_entry/30082",
+      "name": "流血追击I"
+    },
+    {
+      "id": 30083,
+      "url": "https://api.seerapi.com/v1/somua_entry/30083",
+      "name": "流血追击II"
+    },
+    {
+      "id": 30084,
+      "url": "https://api.seerapi.com/v1/somua_entry/30084",
+      "name": "流血追击III"
+    },
+    {
+      "id": 30085,
+      "url": "https://api.seerapi.com/v1/somua_entry/30085",
+      "name": "护盾追击I"
+    },
+    {
+      "id": 30086,
+      "url": "https://api.seerapi.com/v1/somua_entry/30086",
+      "name": "护盾追击II"
+    },
+    {
+      "id": 30087,
+      "url": "https://api.seerapi.com/v1/somua_entry/30087",
+      "name": "护盾追击III"
+    },
+    {
+      "id": 30088,
+      "url": "https://api.seerapi.com/v1/somua_entry/30088",
+      "name": "转化护盾I"
+    },
+    {
+      "id": 30089,
+      "url": "https://api.seerapi.com/v1/somua_entry/30089",
+      "name": "转化护盾II"
+    },
+    {
+      "id": 30090,
+      "url": "https://api.seerapi.com/v1/somua_entry/30090",
+      "name": "转化护盾III"
+    },
+    {
+      "id": 30091,
+      "url": "https://api.seerapi.com/v1/somua_entry/30091",
+      "name": "闪避技巧I"
+    },
+    {
+      "id": 30092,
+      "url": "https://api.seerapi.com/v1/somua_entry/30092",
+      "name": "闪避技巧II"
+    },
+    {
+      "id": 30093,
+      "url": "https://api.seerapi.com/v1/somua_entry/30093",
+      "name": "闪避技巧III"
+    },
+    {
+      "id": 30094,
+      "url": "https://api.seerapi.com/v1/somua_entry/30094",
+      "name": "护盾加速I"
+    },
+    {
+      "id": 30095,
+      "url": "https://api.seerapi.com/v1/somua_entry/30095",
+      "name": "护盾加速II"
+    },
+    {
+      "id": 30096,
+      "url": "https://api.seerapi.com/v1/somua_entry/30096",
+      "name": "护盾加速III"
+    },
+    {
+      "id": 30097,
+      "url": "https://api.seerapi.com/v1/somua_entry/30097",
+      "name": "蓄力加速I"
+    },
+    {
+      "id": 30098,
+      "url": "https://api.seerapi.com/v1/somua_entry/30098",
+      "name": "蓄力加速II"
+    },
+    {
+      "id": 30099,
+      "url": "https://api.seerapi.com/v1/somua_entry/30099",
+      "name": "蓄力加速III"
+    },
+    {
+      "id": 30100,
+      "url": "https://api.seerapi.com/v1/somua_entry/30100",
+      "name": "坚固加速I"
+    },
+    {
+      "id": 30101,
+      "url": "https://api.seerapi.com/v1/somua_entry/30101",
+      "name": "坚固加速II"
+    },
+    {
+      "id": 30102,
+      "url": "https://api.seerapi.com/v1/somua_entry/30102",
+      "name": "坚固加速III"
+    },
+    {
+      "id": 30103,
+      "url": "https://api.seerapi.com/v1/somua_entry/30103",
+      "name": "狂暴加速I"
+    },
+    {
+      "id": 30104,
+      "url": "https://api.seerapi.com/v1/somua_entry/30104",
+      "name": "狂暴加速II"
+    },
+    {
+      "id": 30105,
+      "url": "https://api.seerapi.com/v1/somua_entry/30105",
+      "name": "狂暴加速III"
+    },
+    {
+      "id": 30106,
+      "url": "https://api.seerapi.com/v1/somua_entry/30106",
+      "name": "致命瞄准I"
+    },
+    {
+      "id": 30107,
+      "url": "https://api.seerapi.com/v1/somua_entry/30107",
+      "name": "致命瞄准II"
+    },
+    {
+      "id": 30108,
+      "url": "https://api.seerapi.com/v1/somua_entry/30108",
+      "name": "致命瞄准III"
+    },
+    {
+      "id": 30109,
+      "url": "https://api.seerapi.com/v1/somua_entry/30109",
+      "name": "坚固瞄准I"
+    },
+    {
+      "id": 30110,
+      "url": "https://api.seerapi.com/v1/somua_entry/30110",
+      "name": "坚固瞄准II"
+    },
+    {
+      "id": 30111,
+      "url": "https://api.seerapi.com/v1/somua_entry/30111",
+      "name": "坚固瞄准III"
+    },
+    {
+      "id": 30112,
+      "url": "https://api.seerapi.com/v1/somua_entry/30112",
+      "name": "迅捷瞄准I"
+    },
+    {
+      "id": 30113,
+      "url": "https://api.seerapi.com/v1/somua_entry/30113",
+      "name": "迅捷瞄准II"
+    },
+    {
+      "id": 30114,
+      "url": "https://api.seerapi.com/v1/somua_entry/30114",
+      "name": "迅捷瞄准III"
+    },
+    {
+      "id": 30115,
+      "url": "https://api.seerapi.com/v1/somua_entry/30115",
+      "name": "抑制瞄准I"
+    },
+    {
+      "id": 30116,
+      "url": "https://api.seerapi.com/v1/somua_entry/30116",
+      "name": "抑制瞄准II"
+    },
+    {
+      "id": 30117,
+      "url": "https://api.seerapi.com/v1/somua_entry/30117",
+      "name": "抑制瞄准III"
+    },
+    {
+      "id": 30118,
+      "url": "https://api.seerapi.com/v1/somua_entry/30118",
+      "name": "大胃袋I"
+    },
+    {
+      "id": 30119,
+      "url": "https://api.seerapi.com/v1/somua_entry/30119",
+      "name": "大胃袋II"
+    },
+    {
+      "id": 30120,
+      "url": "https://api.seerapi.com/v1/somua_entry/30120",
+      "name": "大胃袋III"
+    },
+    {
+      "id": 30121,
+      "url": "https://api.seerapi.com/v1/somua_entry/30121",
+      "name": "反伤甲I"
+    },
+    {
+      "id": 30122,
+      "url": "https://api.seerapi.com/v1/somua_entry/30122",
+      "name": "反伤甲II"
+    },
+    {
+      "id": 30123,
+      "url": "https://api.seerapi.com/v1/somua_entry/30123",
+      "name": "反伤甲III"
+    },
+    {
+      "id": 30124,
+      "url": "https://api.seerapi.com/v1/somua_entry/30124",
+      "name": "生命侵蚀I"
+    },
+    {
+      "id": 30125,
+      "url": "https://api.seerapi.com/v1/somua_entry/30125",
+      "name": "生命侵蚀II"
+    },
+    {
+      "id": 30126,
+      "url": "https://api.seerapi.com/v1/somua_entry/30126",
+      "name": "生命侵蚀III"
+    },
+    {
+      "id": 30127,
+      "url": "https://api.seerapi.com/v1/somua_entry/30127",
+      "name": "持续护盾I"
+    },
+    {
+      "id": 30128,
+      "url": "https://api.seerapi.com/v1/somua_entry/30128",
+      "name": "持续护盾II"
+    },
+    {
+      "id": 30129,
+      "url": "https://api.seerapi.com/v1/somua_entry/30129",
+      "name": "持续护盾III"
+    },
+    {
+      "id": 30130,
+      "url": "https://api.seerapi.com/v1/somua_entry/30130",
+      "name": "持续蓄力I"
+    },
+    {
+      "id": 30131,
+      "url": "https://api.seerapi.com/v1/somua_entry/30131",
+      "name": "持续蓄力II"
+    },
+    {
+      "id": 30132,
+      "url": "https://api.seerapi.com/v1/somua_entry/30132",
+      "name": "持续蓄力III"
+    },
+    {
+      "id": 30133,
+      "url": "https://api.seerapi.com/v1/somua_entry/30133",
+      "name": "贪睡小猪I"
+    },
+    {
+      "id": 30134,
+      "url": "https://api.seerapi.com/v1/somua_entry/30134",
+      "name": "贪睡小猪II"
+    },
+    {
+      "id": 30135,
+      "url": "https://api.seerapi.com/v1/somua_entry/30135",
+      "name": "贪睡小猪III"
+    },
+    {
+      "id": 30136,
+      "url": "https://api.seerapi.com/v1/somua_entry/30136",
+      "name": "清障大运I"
+    },
+    {
+      "id": 30137,
+      "url": "https://api.seerapi.com/v1/somua_entry/30137",
+      "name": "清障大运II"
+    },
+    {
+      "id": 30138,
+      "url": "https://api.seerapi.com/v1/somua_entry/30138",
+      "name": "清障大运III"
+    },
+    {
+      "id": 30139,
+      "url": "https://api.seerapi.com/v1/somua_entry/30139",
+      "name": "暴躁老摩I"
+    },
+    {
+      "id": 30140,
+      "url": "https://api.seerapi.com/v1/somua_entry/30140",
+      "name": "暴躁老摩II"
+    },
+    {
+      "id": 30141,
+      "url": "https://api.seerapi.com/v1/somua_entry/30141",
+      "name": "暴躁老摩III"
+    },
+    {
+      "id": 30142,
+      "url": "https://api.seerapi.com/v1/somua_entry/30142",
+      "name": "破盾者I"
+    },
+    {
+      "id": 30143,
+      "url": "https://api.seerapi.com/v1/somua_entry/30143",
+      "name": "破盾者II"
+    },
+    {
+      "id": 30144,
+      "url": "https://api.seerapi.com/v1/somua_entry/30144",
+      "name": "破盾者III"
+    },
+    {
+      "id": 30145,
+      "url": "https://api.seerapi.com/v1/somua_entry/30145",
+      "name": "碎盾者I"
+    },
+    {
+      "id": 30146,
+      "url": "https://api.seerapi.com/v1/somua_entry/30146",
+      "name": "碎盾者II"
+    },
+    {
+      "id": 30147,
+      "url": "https://api.seerapi.com/v1/somua_entry/30147",
+      "name": "碎盾者III"
+    },
+    {
+      "id": 30148,
+      "url": "https://api.seerapi.com/v1/somua_entry/30148",
+      "name": "老顽摩I"
+    },
+    {
+      "id": 30149,
+      "url": "https://api.seerapi.com/v1/somua_entry/30149",
+      "name": "老顽摩II"
+    },
+    {
+      "id": 30150,
+      "url": "https://api.seerapi.com/v1/somua_entry/30150",
+      "name": "老顽摩III"
+    },
+    {
+      "id": 30151,
+      "url": "https://api.seerapi.com/v1/somua_entry/30151",
+      "name": "势能守恒I"
+    },
+    {
+      "id": 30152,
+      "url": "https://api.seerapi.com/v1/somua_entry/30152",
+      "name": "势能守恒II"
+    },
+    {
+      "id": 30153,
+      "url": "https://api.seerapi.com/v1/somua_entry/30153",
+      "name": "势能守恒III"
+    },
+    {
+      "id": 30154,
+      "url": "https://api.seerapi.com/v1/somua_entry/30154",
+      "name": "忍耐攻击I"
+    },
+    {
+      "id": 30155,
+      "url": "https://api.seerapi.com/v1/somua_entry/30155",
+      "name": "忍耐攻击II"
+    },
+    {
+      "id": 30156,
+      "url": "https://api.seerapi.com/v1/somua_entry/30156",
+      "name": "忍耐攻击III"
+    },
+    {
+      "id": 30157,
+      "url": "https://api.seerapi.com/v1/somua_entry/30157",
+      "name": "忍耐碰撞I"
+    },
+    {
+      "id": 30158,
+      "url": "https://api.seerapi.com/v1/somua_entry/30158",
+      "name": "忍耐碰撞II"
+    },
+    {
+      "id": 30159,
+      "url": "https://api.seerapi.com/v1/somua_entry/30159",
+      "name": "忍耐碰撞III"
+    },
+    {
+      "id": 30160,
+      "url": "https://api.seerapi.com/v1/somua_entry/30160",
+      "name": "轻盈攻击I"
+    },
+    {
+      "id": 30161,
+      "url": "https://api.seerapi.com/v1/somua_entry/30161",
+      "name": "轻盈攻击II"
+    },
+    {
+      "id": 30162,
+      "url": "https://api.seerapi.com/v1/somua_entry/30162",
+      "name": "轻盈攻击III"
+    },
+    {
+      "id": 30163,
+      "url": "https://api.seerapi.com/v1/somua_entry/30163",
+      "name": "轻盈碰撞I"
+    },
+    {
+      "id": 30164,
+      "url": "https://api.seerapi.com/v1/somua_entry/30164",
+      "name": "轻盈碰撞II"
+    },
+    {
+      "id": 30165,
+      "url": "https://api.seerapi.com/v1/somua_entry/30165",
+      "name": "轻盈碰撞III"
+    },
+    {
+      "id": 30166,
+      "url": "https://api.seerapi.com/v1/somua_entry/30166",
+      "name": "安全气囊I"
+    },
+    {
+      "id": 30167,
+      "url": "https://api.seerapi.com/v1/somua_entry/30167",
+      "name": "安全气囊II"
+    },
+    {
+      "id": 30168,
+      "url": "https://api.seerapi.com/v1/somua_entry/30168",
+      "name": "安全气囊III"
+    },
+    {
+      "id": 30169,
+      "url": "https://api.seerapi.com/v1/somua_entry/30169",
+      "name": "击退手I"
+    },
+    {
+      "id": 30170,
+      "url": "https://api.seerapi.com/v1/somua_entry/30170",
+      "name": "击退手II"
+    },
+    {
+      "id": 30171,
+      "url": "https://api.seerapi.com/v1/somua_entry/30171",
+      "name": "击退手III"
+    },
+    {
+      "id": 30172,
+      "url": "https://api.seerapi.com/v1/somua_entry/30172",
+      "name": "静态打击I"
+    },
+    {
+      "id": 30173,
+      "url": "https://api.seerapi.com/v1/somua_entry/30173",
+      "name": "静态打击II"
+    },
+    {
+      "id": 30174,
+      "url": "https://api.seerapi.com/v1/somua_entry/30174",
+      "name": "静态打击III"
+    },
+    {
+      "id": 30175,
+      "url": "https://api.seerapi.com/v1/somua_entry/30175",
+      "name": "当头一棒I"
+    },
+    {
+      "id": 30176,
+      "url": "https://api.seerapi.com/v1/somua_entry/30176",
+      "name": "当头一棒II"
+    },
+    {
+      "id": 30177,
+      "url": "https://api.seerapi.com/v1/somua_entry/30177",
+      "name": "当头一棒III"
+    },
+    {
+      "id": 30178,
+      "url": "https://api.seerapi.com/v1/somua_entry/30178",
+      "name": "强击手I"
+    },
+    {
+      "id": 30179,
+      "url": "https://api.seerapi.com/v1/somua_entry/30179",
+      "name": "强击手II"
+    },
+    {
+      "id": 30180,
+      "url": "https://api.seerapi.com/v1/somua_entry/30180",
+      "name": "强击手III"
+    },
+    {
+      "id": 30034,
+      "url": "https://api.seerapi.com/v1/somua_entry/30034",
+      "name": "小个子I"
+    },
+    {
+      "id": 30035,
+      "url": "https://api.seerapi.com/v1/somua_entry/30035",
+      "name": "小个子II"
+    },
+    {
+      "id": 30036,
+      "url": "https://api.seerapi.com/v1/somua_entry/30036",
+      "name": "小个子III"
+    }
+  ],
+  "hash": "fb2f4f55"
+}

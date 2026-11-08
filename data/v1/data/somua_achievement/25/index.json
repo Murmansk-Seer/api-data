@@ -1,0 +1,9 @@
+{
+  "id": 25,
+  "condition": 30,
+  "desc": "累计经历30场战斗失败",
+  "icon": 25,
+  "name": "再接再厉",
+  "type": 4,
+  "hash": "bfab7d99"
+}

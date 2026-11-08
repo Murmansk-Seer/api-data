@@ -1,0 +1,14 @@
+{
+  "id": 10029,
+  "desc": "每两次撞墙间会生成一条激光束，敌人碰到后会受到[95%*ATK]<sprite name=ATK>点伤害，最多同时存在 60 条。",
+  "name": "千烈虚光闪",
+  "rarity": 0,
+  "type": 1,
+  "value1": 950,
+  "value2": 5029,
+  "value3": 60,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "d0dc3b87"
+}

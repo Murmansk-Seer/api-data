@@ -1,0 +1,25 @@
+{
+  "data": {
+    "53": {
+      "id": 53,
+      "attack_mode": 10053,
+      "attack_mode_sp": 11053,
+      "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+      "is_back": 0,
+      "is_body": 1,
+      "is_ear": 0,
+      "is_expression": 1,
+      "is_hand": 1,
+      "is_head": 1,
+      "is_surrounding": 0,
+      "is_tail": 1,
+      "is_topwear": 0,
+      "name": "空元行者",
+      "pet_id": 4586,
+      "prefix": "空元",
+      "season": "",
+      "suffix": "行者"
+    }
+  },
+  "hash": "cdd84a0c"
+}

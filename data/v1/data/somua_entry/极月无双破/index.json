@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10014": {
+      "id": 10014,
+      "desc": "每间隔[3*(1/ATR)]<sprite name=SPD>秒，会刺击中距离内的敌人，对其造成自身[186%*ATK]<sprite name=ATK>点伤害。",
+      "name": "极月无双破",
+      "rarity": 0,
+      "type": 1,
+      "value1": 1860,
+      "value2": 3000,
+      "value3": 75,
+      "value4": 5014,
+      "value5": 1,
+      "value6": 0
+    }
+  },
+  "hash": "4a8e0894"
+}

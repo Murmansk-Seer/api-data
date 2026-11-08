@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11025": {
+      "id": 11025,
+      "desc": "每间隔[2.6*(1/ATR)]<sprite name=SPD>秒会发射1枚能量弹，能量弹会在命中或移动一段距离后爆炸，对范围内的敌人造成[282%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·少女的柔情",
+      "rarity": 0,
+      "type": 1,
+      "value1": 2820,
+      "value2": 5025,
+      "value3": 2600,
+      "value4": 1,
+      "value5": 1,
+      "value6": 0
+    }
+  },
+  "hash": "9934a8d8"
+}

@@ -1,0 +1,8 @@
+{
+  "id": 5014,
+  "fx_on_hit": "hit_common_blad",
+  "prefab": "weapon_5014",
+  "shape": 2,
+  "type": 2,
+  "hash": "de4335ce"
+}

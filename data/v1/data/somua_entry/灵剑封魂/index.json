@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10027": {
+      "id": 10027,
+      "desc": "每间隔[1.4*(1/ATR)]<sprite name=SPD>秒会召唤1把能量剑，能量剑会在1秒延迟后快速射出，每把能量剑会造成[91%*ATK]<sprite name=ATK>点伤害。",
+      "name": "灵剑封魂",
+      "rarity": 0,
+      "type": 1,
+      "value1": 910,
+      "value2": 5027,
+      "value3": 1400,
+      "value4": 1,
+      "value5": 1,
+      "value6": 0
+    }
+  },
+  "hash": "ae34afa1"
+}

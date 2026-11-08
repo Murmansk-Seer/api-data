@@ -1,0 +1,13 @@
+{
+  "id": 301,
+  "action": "pain",
+  "action_team": 2,
+  "dango_id": [
+    67
+  ],
+  "describ": "别，过来",
+  "limit_dango": 68,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "3e0b02f0"
+}

@@ -1,0 +1,75 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "action": {
+          "description": "Client dangoAction.action; raw string",
+          "title": "Action",
+          "type": "string"
+        },
+        "action_team": {
+          "description": "Client dangoAction.actionTeam; raw int32",
+          "title": "Action Team",
+          "type": "integer"
+        },
+        "dango_id": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Client dangoAction.dangoID; raw int32[]",
+          "title": "Dango Id"
+        },
+        "describ": {
+          "description": "Client dangoAction.describ; raw string",
+          "title": "Describ",
+          "type": "string"
+        },
+        "limit_dango": {
+          "description": "Client dangoAction.limitDango; raw int32",
+          "title": "Limit Dango",
+          "type": "integer"
+        },
+        "limit_type": {
+          "description": "Client dangoAction.limitType; raw int32",
+          "title": "Limit Type",
+          "type": "integer"
+        },
+        "value": {
+          "description": "Client dangoAction.value; raw int32",
+          "title": "Value",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "action",
+        "action_team",
+        "dango_id",
+        "describ",
+        "limit_dango",
+        "limit_type",
+        "value"
+      ],
+      "title": "DangoAction",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

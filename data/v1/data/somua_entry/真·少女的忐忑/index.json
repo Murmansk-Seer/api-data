@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11034": {
+      "id": 11034,
+      "desc": "每间隔[1*(1/ATR)]<sprite name=SPD>秒会发射3颗能量弹，每个能量弹会造成[36%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·少女的忐忑",
+      "rarity": 0,
+      "type": 1,
+      "value1": 360,
+      "value2": 5034,
+      "value3": 1000,
+      "value4": 1,
+      "value5": 3,
+      "value6": 60
+    }
+  },
+  "hash": "a1fa5890"
+}

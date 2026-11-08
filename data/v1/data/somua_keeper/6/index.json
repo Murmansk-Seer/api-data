@@ -1,0 +1,20 @@
+{
+  "id": 6,
+  "benefit1": 0,
+  "benefit2": 0,
+  "benefit3": 0,
+  "benefit4": 1,
+  "benefit5": 1,
+  "benefit6": 1,
+  "benefit7": 1,
+  "dango_gold": 600,
+  "dango_task": "",
+  "describe1": "每小时产出600金色奇迹",
+  "describe2": "商店解锁\r\n[至尊曲奇]\r\n[宝宝奶昔]",
+  "describe3": "仓库上限+50",
+  "minor_num": 1,
+  "reward": "1_1400162_40000",
+  "store_max": 200,
+  "task_num": 7,
+  "hash": "e262c637"
+}

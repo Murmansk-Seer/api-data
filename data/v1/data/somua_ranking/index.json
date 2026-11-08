@@ -1,0 +1,90 @@
+{
+  "count": 16,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/somua_ranking/1",
+      "name": "青铜I"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/somua_ranking/2",
+      "name": "青铜II"
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/somua_ranking/3",
+      "name": "青铜III"
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/somua_ranking/4",
+      "name": "白银I"
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/somua_ranking/5",
+      "name": "白银II"
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/somua_ranking/6",
+      "name": "白银III"
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/somua_ranking/7",
+      "name": "黄金I"
+    },
+    {
+      "id": 8,
+      "url": "https://api.seerapi.com/v1/somua_ranking/8",
+      "name": "黄金II"
+    },
+    {
+      "id": 9,
+      "url": "https://api.seerapi.com/v1/somua_ranking/9",
+      "name": "黄金III"
+    },
+    {
+      "id": 10,
+      "url": "https://api.seerapi.com/v1/somua_ranking/10",
+      "name": "铂金I"
+    },
+    {
+      "id": 11,
+      "url": "https://api.seerapi.com/v1/somua_ranking/11",
+      "name": "铂金II"
+    },
+    {
+      "id": 12,
+      "url": "https://api.seerapi.com/v1/somua_ranking/12",
+      "name": "铂金III"
+    },
+    {
+      "id": 13,
+      "url": "https://api.seerapi.com/v1/somua_ranking/13",
+      "name": "钻石I"
+    },
+    {
+      "id": 14,
+      "url": "https://api.seerapi.com/v1/somua_ranking/14",
+      "name": "钻石II"
+    },
+    {
+      "id": 15,
+      "url": "https://api.seerapi.com/v1/somua_ranking/15",
+      "name": "钻石III"
+    },
+    {
+      "id": 16,
+      "url": "https://api.seerapi.com/v1/somua_ranking/16",
+      "name": "苏摩大师"
+    }
+  ],
+  "hash": "8584c056"
+}

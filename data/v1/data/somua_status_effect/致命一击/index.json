@@ -1,0 +1,17 @@
+{
+  "data": {
+    "7016": {
+      "id": 7016,
+      "fx_on_get": "",
+      "fx_on_trig": "",
+      "icon": 0,
+      "max_stack": 1,
+      "stack_rule": "refresh",
+      "status_desc": "下次造成的伤害+100%，若暴击则+200%，触发后清除。",
+      "status_name": "致命一击",
+      "type": 1,
+      "value_rule": ""
+    }
+  },
+  "hash": "be7e9b35"
+}

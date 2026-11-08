@@ -1,0 +1,18 @@
+{
+  "data": {
+    "30036": {
+      "id": 30036,
+      "desc": "进入战斗时，自身体型大幅变小。",
+      "name": "小个子III",
+      "rarity": 3,
+      "type": 3,
+      "value1": 600,
+      "value2": 0,
+      "value3": 0,
+      "value4": 0,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "a9eed9ae"
+}

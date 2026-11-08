@@ -1,0 +1,18 @@
+{
+  "data": {
+    "30112": {
+      "id": 30112,
+      "desc": "拥有【迅捷祝福】时，自身的暴击力<sprite name=CRT>等级会小幅提升。",
+      "name": "迅捷瞄准I",
+      "rarity": 1,
+      "type": 3,
+      "value1": 7020,
+      "value2": 1,
+      "value3": 0,
+      "value4": 0,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "111da599"
+}

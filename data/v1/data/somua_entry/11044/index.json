@@ -1,0 +1,14 @@
+{
+  "id": 11044,
+  "desc": "每间隔[2.6*(1/ATR)]<sprite name=SPD>秒，发射1只雷鸟，雷鸟每0.8秒会对周围的敌人造成[66%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·灵威天羽",
+  "rarity": 0,
+  "type": 1,
+  "value1": 660,
+  "value2": 2600,
+  "value3": 5044,
+  "value4": 3,
+  "value5": 0,
+  "value6": 0,
+  "hash": "fe4663d"
+}

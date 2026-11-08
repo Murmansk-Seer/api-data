@@ -1,0 +1,53 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "condition": {
+          "description": "Client SomuaAchievementConfig.condition; raw int32",
+          "title": "Condition",
+          "type": "integer"
+        },
+        "desc": {
+          "description": "Client SomuaAchievementConfig.desc; raw string",
+          "title": "Desc",
+          "type": "string"
+        },
+        "icon": {
+          "description": "Client SomuaAchievementConfig.icon; raw int32",
+          "title": "Icon",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Client SomuaAchievementConfig.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "type": {
+          "description": "Client SomuaAchievementConfig.type; raw int32",
+          "title": "Type",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "condition",
+        "desc",
+        "icon",
+        "name",
+        "type"
+      ],
+      "title": "SomuaAchievement",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

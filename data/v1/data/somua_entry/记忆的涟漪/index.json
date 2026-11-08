@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10035": {
+      "id": 10035,
+      "desc": "身体周围有3颗水球不断环绕，水球每次碰到敌人都会对其造成[86%*ATK]<sprite name=ATK>点伤害。",
+      "name": "记忆的涟漪",
+      "rarity": 0,
+      "type": 1,
+      "value1": 860,
+      "value2": 5035,
+      "value3": 3,
+      "value4": 0,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "186e7ce"
+}

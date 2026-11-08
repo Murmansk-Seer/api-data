@@ -1,0 +1,14 @@
+{
+  "id": 30128,
+  "desc": "每间隔2.5秒，会获得10点【护盾】。",
+  "name": "持续护盾II",
+  "rarity": 2,
+  "type": 3,
+  "value1": 7013,
+  "value2": 10,
+  "value3": 0,
+  "value4": 2500,
+  "value5": 0,
+  "value6": 0,
+  "hash": "6a7f5d20"
+}

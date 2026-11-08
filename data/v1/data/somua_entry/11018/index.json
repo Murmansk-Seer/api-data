@@ -1,0 +1,14 @@
+{
+  "id": 11018,
+  "desc": "每间隔[4.5*(1/ATR)]<sprite name=SPD>秒，会在原地蓄力1.5秒，随后带着长枪以120%<sprite name=SPD>的速度冲刺一段距离，对命中的敌人造成[400%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·圣世惩杀",
+  "rarity": 0,
+  "type": 1,
+  "value1": 4000,
+  "value2": 4500,
+  "value3": 800,
+  "value4": 1200,
+  "value5": 5018,
+  "value6": 200,
+  "hash": "bda734c0"
+}

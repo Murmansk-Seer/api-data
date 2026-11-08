@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10067": {
+      "id": 10067,
+      "desc": "每间隔[5.6*(1/ATR)]<sprite name=SPD>秒，会挥动手中的大剑对180度远距离范围内的敌人造成[247%*ATK]<sprite name=ATK>点伤害。",
+      "name": "神诏之诀别",
+      "rarity": 0,
+      "type": 1,
+      "value1": 2470,
+      "value2": 5600,
+      "value3": 130,
+      "value4": 5067,
+      "value5": 1,
+      "value6": 0
+    }
+  },
+  "hash": "37c71e7d"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 205,
+  "action": "happy",
+  "action_team": 1,
+  "dango_id": [
+    11
+  ],
+  "describ": "红红的，喜欢！",
+  "limit_dango": 14,
+  "limit_type": 1,
+  "value": 30,
+  "hash": "12e80301"
+}

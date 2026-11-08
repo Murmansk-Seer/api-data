@@ -1,0 +1,14 @@
+{
+  "id": 30030,
+  "desc": "攻击对敌人造成伤害后，会施加持续5秒的【寄生】，使其每秒受到 [28%*ATK]<sprite name=ATK> 点伤害，并回复自身 [28%*ATK]<sprite name=ATK> 点生命值。（词条触发有10秒冷却）",
+  "name": "寄生攻击III",
+  "rarity": 3,
+  "type": 3,
+  "value1": 7012,
+  "value2": 280,
+  "value3": 5000,
+  "value4": 10000,
+  "value5": 0,
+  "value6": 0,
+  "hash": "784cfd4a"
+}

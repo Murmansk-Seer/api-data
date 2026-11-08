@@ -1,0 +1,14 @@
+{
+  "id": 10007,
+  "desc": "每间隔[3.6*(1/ATR)]<sprite name=SPD>秒，会向敌人发射1道巨大光刃，命中后造成[193%*ATK]<sprite name=ATK>点伤害。",
+  "name": "天河圣芒斩",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1930,
+  "value2": 5007,
+  "value3": 3600,
+  "value4": 1,
+  "value5": 1,
+  "value6": 0,
+  "hash": "7ee48a95"
+}

@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11028": {
+      "id": 11028,
+      "desc": "撞击后造成[73%*ATK]<sprite name=ATK>点伤害，每第4次撞击会召唤黑鳄，对敌人造成[201%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·亡灵招来",
+      "rarity": 0,
+      "type": 1,
+      "value1": 730,
+      "value2": 3,
+      "value3": 2010,
+      "value4": 5028,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "8d7ebfbc"
+}

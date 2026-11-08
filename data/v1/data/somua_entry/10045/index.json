@@ -1,0 +1,14 @@
+{
+  "id": 10045,
+  "desc": "每间隔[2.5*(1/ATR)]<sprite name=SPD>秒，向敌人发射1只利爪对敌人造成[170%*ATK]<sprite name=ATK>点伤害。每间隔5秒，会开启持续2秒的反制，期间若受到敌人攻击，则立即发射1发必定暴击的爆炸能量弹，造成[170%*ATK*CTD]<sprite name=CRT>点伤害。",
+  "name": "黄泉葬华",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1700,
+  "value2": 2500,
+  "value3": 5045,
+  "value4": 5000,
+  "value5": 2000,
+  "value6": 5545,
+  "hash": "30a7771d"
+}

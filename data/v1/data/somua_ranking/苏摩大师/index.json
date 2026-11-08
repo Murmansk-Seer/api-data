@@ -1,0 +1,14 @@
+{
+  "data": {
+    "16": {
+      "id": 16,
+      "icon": 16,
+      "is_falling": 0,
+      "level": "",
+      "minscore": "1000",
+      "name": "苏摩大师",
+      "phase": 6
+    }
+  },
+  "hash": "c0495102"
+}

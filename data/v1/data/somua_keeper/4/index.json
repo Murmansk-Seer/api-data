@@ -1,0 +1,20 @@
+{
+  "id": 4,
+  "benefit1": 0,
+  "benefit2": 0,
+  "benefit3": 0,
+  "benefit4": 1,
+  "benefit5": 1,
+  "benefit6": 1,
+  "benefit7": 1,
+  "dango_gold": 360,
+  "dango_task": "10,11,12",
+  "describe1": "每小时产出360金色奇迹",
+  "describe2": "商店解锁\r\n[邪恶贝果]\r\n[庆典多味豆]…",
+  "describe3": "解锁\r\n《贴贴小屋》",
+  "minor_num": 1,
+  "reward": "4_4837_1",
+  "store_max": 100,
+  "task_num": 0,
+  "hash": "5317a2bd"
+}

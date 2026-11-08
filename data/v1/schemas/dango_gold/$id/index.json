@@ -1,0 +1,41 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "dango_gold": {
+          "description": "Client dangoGold.dangoGold; raw int32",
+          "title": "Dango Gold",
+          "type": "integer"
+        },
+        "dango_num_max": {
+          "description": "Client dangoGold.dangoNumMax; raw int32",
+          "title": "Dango Num Max",
+          "type": "integer"
+        },
+        "dango_num_mix": {
+          "description": "Client dangoGold.dangoNumMix; raw int32",
+          "title": "Dango Num Mix",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "dango_gold",
+        "dango_num_max",
+        "dango_num_mix"
+      ],
+      "title": "DangoGold",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

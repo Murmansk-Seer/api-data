@@ -1,0 +1,17 @@
+{
+  "data": {
+    "7015": {
+      "id": 7015,
+      "fx_on_get": "",
+      "fx_on_trig": "",
+      "icon": 0,
+      "max_stack": 100,
+      "stack_rule": "stack",
+      "status_desc": "累计 100 层后，获得【致命一击】。",
+      "status_name": "蓄力",
+      "type": 1,
+      "value_rule": ""
+    }
+  },
+  "hash": "2bff0397"
+}

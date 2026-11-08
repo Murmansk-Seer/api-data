@@ -1,0 +1,13 @@
+{
+  "id": 7024,
+  "fx_on_get": "",
+  "fx_on_trig": "",
+  "icon": 0,
+  "max_stack": 1,
+  "stack_rule": "reject",
+  "status_desc": "使下一次受到的攻击伤害减少 value%。",
+  "status_name": "屏障",
+  "type": 1,
+  "value_rule": "",
+  "hash": "4617e0d"
+}

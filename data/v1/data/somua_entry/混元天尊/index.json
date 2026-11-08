@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10020": {
+      "id": 10020,
+      "desc": "每间隔[2.4*(1/ATR)]<sprite name=SPD>秒，会在原地引导0.6秒，随后向着敌人所在方向投掷一把长枪，对命中的敌人造成自身[204%*ATK]<sprite name=ATK>点伤害。",
+      "name": "混元天尊",
+      "rarity": 0,
+      "type": 1,
+      "value1": 2040,
+      "value2": 2400,
+      "value3": 600,
+      "value4": 5020,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "b6af4254"
+}

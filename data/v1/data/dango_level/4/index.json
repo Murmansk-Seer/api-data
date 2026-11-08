@@ -1,0 +1,17 @@
+{
+  "id": 4,
+  "benefit1": 1,
+  "benefit2": 1,
+  "benefit3": 0,
+  "dango_task": [
+    10,
+    11
+  ],
+  "describe1": "特权：离线后苏摩也会获得成长值",
+  "describe2": "金色奇迹产出80/每小时",
+  "describe3": "",
+  "minor_num": 2,
+  "reward": 2000,
+  "task_num": 4,
+  "hash": "577d28ec"
+}

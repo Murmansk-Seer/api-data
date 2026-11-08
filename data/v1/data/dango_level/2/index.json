@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "benefit1": 1,
+  "benefit2": 0,
+  "benefit3": 0,
+  "dango_task": [
+    4,
+    6
+  ],
+  "describe1": "特权：自动领取掉落的金色奇迹",
+  "describe2": "金色奇迹产出40/每小时",
+  "describe3": "",
+  "minor_num": 1,
+  "reward": 1000,
+  "task_num": 1,
+  "hash": "a4ea4e32"
+}

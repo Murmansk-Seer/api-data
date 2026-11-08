@@ -1,0 +1,18 @@
+{
+  "data": {
+    "11041": {
+      "id": 11041,
+      "desc": "每间隔[1.6*(1/ATR)]<sprite name=SPD>秒，会随机生成1个持续6.5秒的黑洞陷阱，敌人碰到后会受到[101%*ATK]<sprite name=ATK>点伤害。",
+      "name": "真·幻世螺旋",
+      "rarity": 0,
+      "type": 1,
+      "value1": 1010,
+      "value2": 1600,
+      "value3": 5041,
+      "value4": 10,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "549a3307"
+}

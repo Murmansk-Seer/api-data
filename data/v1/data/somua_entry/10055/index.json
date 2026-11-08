@@ -1,0 +1,14 @@
+{
+  "id": 10055,
+  "desc": "每间隔[10*(1/ATR)]<sprite name=SPD>秒，会召唤一颗龙头，龙头会以每秒10次的速度发射子弹，每发子弹会造成[87%*ATK]<sprite name=ATK>点伤害。（龙头被视为墙体，持续20秒，最多同时拥有2座）",
+  "name": "天蛇禁法",
+  "rarity": 0,
+  "type": 1,
+  "value1": 870,
+  "value2": 10000,
+  "value3": 5055,
+  "value4": 2,
+  "value5": 0,
+  "value6": 0,
+  "hash": "c981db72"
+}

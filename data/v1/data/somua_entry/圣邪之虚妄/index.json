@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10068": {
+      "id": 10068,
+      "desc": "每间隔[3.8*(1/ATR)]<sprite name=SPD>秒，会斩击一块区域，在1.2秒后，会撕裂该处在1秒内共计造成[730%*ATK]<sprite name=ATK>点伤害。",
+      "name": "圣邪之虚妄",
+      "rarity": 0,
+      "type": 1,
+      "value1": 730,
+      "value2": 3800,
+      "value3": 0,
+      "value4": 5068,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "57f65a40"
+}

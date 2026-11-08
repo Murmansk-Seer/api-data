@@ -1,0 +1,14 @@
+{
+  "id": 11014,
+  "desc": "每间隔[3*(1/ATR)]<sprite name=SPD>秒，会刺击中距离内的敌人，对其造成自身[205%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·极月无双破",
+  "rarity": 0,
+  "type": 1,
+  "value1": 2050,
+  "value2": 3000,
+  "value3": 75,
+  "value4": 5014,
+  "value5": 1,
+  "value6": 0,
+  "hash": "36f30387"
+}

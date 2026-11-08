@@ -1,0 +1,25 @@
+{
+  "data": {
+    "30": {
+      "id": 30,
+      "attack_mode": 10030,
+      "attack_mode_sp": 11030,
+      "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+      "is_back": 0,
+      "is_body": 1,
+      "is_ear": 1,
+      "is_expression": 1,
+      "is_hand": 1,
+      "is_head": 0,
+      "is_surrounding": 1,
+      "is_tail": 0,
+      "is_topwear": 0,
+      "name": "索伦森",
+      "pet_id": 3414,
+      "prefix": "索伦",
+      "season": "",
+      "suffix": "森"
+    }
+  },
+  "hash": "dd39ecf9"
+}

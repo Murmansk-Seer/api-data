@@ -1,0 +1,14 @@
+{
+  "id": 11054,
+  "desc": "每间隔[1.4*(1/ATR)]<sprite name=SPD>秒，会在原地引导1秒，随后发动千里击涛，对范围内的敌人造成[584%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·千里击涛",
+  "rarity": 0,
+  "type": 1,
+  "value1": 5840,
+  "value2": 1400,
+  "value3": 1000,
+  "value4": 5054,
+  "value5": 0,
+  "value6": 0,
+  "hash": "7e26473d"
+}

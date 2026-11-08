@@ -1,0 +1,21 @@
+{
+  "id": 38,
+  "attack_mode": 10038,
+  "attack_mode_sp": 11038,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 0,
+  "is_body": 2,
+  "is_ear": 1,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 2,
+  "is_surrounding": 0,
+  "is_tail": 1,
+  "is_topwear": 1,
+  "name": "沧岚",
+  "pet_id": 3740,
+  "prefix": "沧",
+  "season": "",
+  "suffix": "岚",
+  "hash": "f6ad9c5a"
+}

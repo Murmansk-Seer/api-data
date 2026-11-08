@@ -1,0 +1,14 @@
+{
+  "id": 11016,
+  "desc": "每间隔[4.2*(1/ATR)]<sprite name=SPD>秒，会在原地引导1.8秒，随后会斩击一大片区域，对其中的敌人造成[1106%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·诛魔杀阵",
+  "rarity": 0,
+  "type": 1,
+  "value1": 11060,
+  "value2": 4200,
+  "value3": 1800,
+  "value4": 5016,
+  "value5": 0,
+  "value6": 0,
+  "hash": "d45da99e"
+}

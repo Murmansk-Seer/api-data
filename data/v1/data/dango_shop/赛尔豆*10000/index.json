@@ -1,0 +1,21 @@
+{
+  "data": {
+    "26": {
+      "id": 26,
+      "new_msglog_id": 0,
+      "price": 1400163,
+      "describe1": "",
+      "describe2": "",
+      "forever": 140173,
+      "limit": 0,
+      "quantity": 1000,
+      "rewardinfo": "1_1_10000",
+      "shop_type1": 2,
+      "shop_type2": 1,
+      "title": "赛尔豆*10000",
+      "userinfo": 125363,
+      "value": 9999
+    }
+  },
+  "hash": "6496b5db"
+}

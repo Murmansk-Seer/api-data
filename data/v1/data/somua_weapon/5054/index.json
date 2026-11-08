@@ -1,0 +1,8 @@
+{
+  "id": 5054,
+  "fx_on_hit": "hit_common_aqua",
+  "prefab": "weapon_5054",
+  "shape": 2,
+  "type": 4,
+  "hash": "b7ba81c0"
+}

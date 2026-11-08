@@ -1,0 +1,18 @@
+{
+  "data": {
+    "30178": {
+      "id": 30178,
+      "desc": "每次攻击对敌人造成伤害后，会小幅<sprite name=HLP>击退敌人，该效果有6秒冷却时间。",
+      "name": "强击手I",
+      "rarity": 1,
+      "type": 3,
+      "value1": 100,
+      "value2": 6000,
+      "value3": 0,
+      "value4": 0,
+      "value5": 0,
+      "value6": 0
+    }
+  },
+  "hash": "a0fc1d6e"
+}

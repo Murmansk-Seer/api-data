@@ -1,0 +1,14 @@
+{
+  "id": 11008,
+  "desc": "每间隔[3.4*(1/ATR)]<sprite name=SPD>秒，会向四周发射8道小光刃，每个光刃会造成[124%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·牙连绝袭击",
+  "rarity": 0,
+  "type": 1,
+  "value1": 1240,
+  "value2": 5008,
+  "value3": 3400,
+  "value4": 1,
+  "value5": 8,
+  "value6": 360,
+  "hash": "a05b2b90"
+}

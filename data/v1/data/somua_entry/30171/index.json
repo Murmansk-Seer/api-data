@@ -1,0 +1,14 @@
+{
+  "id": 30171,
+  "desc": "每次攻击对敌人造成伤害后，会大幅<sprite name=HLP>击退敌人。",
+  "name": "击退手III",
+  "rarity": 3,
+  "type": 3,
+  "value1": 50,
+  "value2": 0,
+  "value3": 0,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "ededa56f"
+}

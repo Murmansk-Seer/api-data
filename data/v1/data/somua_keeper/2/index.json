@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "benefit1": 0,
+  "benefit2": 0,
+  "benefit3": 0,
+  "benefit4": 1,
+  "benefit5": 1,
+  "benefit6": 0,
+  "benefit7": 0,
+  "dango_gold": 200,
+  "dango_task": "4,5,6",
+  "describe1": "每小时产出200金色奇迹",
+  "describe2": "商店解锁\r\n[翻糖纸飞机]\r\n[正义冰淇凌]",
+  "describe3": "解锁\r\n《乱斗竞技场》",
+  "minor_num": 1,
+  "reward": "1_1400162_20000",
+  "store_max": 100,
+  "task_num": 0,
+  "hash": "1a65bb65"
+}

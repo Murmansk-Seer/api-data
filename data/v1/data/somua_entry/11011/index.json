@@ -1,0 +1,14 @@
+{
+  "id": 11011,
+  "desc": "每间隔[4.8*(1/ATR)]<sprite name=SPD>秒，会停下引导1秒，随后对一个圆形区域降下4波攻势。每波造成[256%*ATK]<sprite name=ATK>点伤害。",
+  "name": "真·日月皆伤",
+  "rarity": 0,
+  "type": 1,
+  "value1": 2560,
+  "value2": 4800,
+  "value3": 1000,
+  "value4": 5011,
+  "value5": 0,
+  "value6": 0,
+  "hash": "db3fe37"
+}

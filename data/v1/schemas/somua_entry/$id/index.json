@@ -1,0 +1,83 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "desc": {
+          "description": "Client SomuaEntryConfig.desc; raw string",
+          "title": "Desc",
+          "type": "string"
+        },
+        "name": {
+          "description": "Client SomuaEntryConfig.name; raw string",
+          "title": "Name",
+          "type": "string"
+        },
+        "rarity": {
+          "description": "Client SomuaEntryConfig.rarity; raw int32",
+          "title": "Rarity",
+          "type": "integer"
+        },
+        "type": {
+          "description": "Client SomuaEntryConfig.type; raw int32",
+          "title": "Type",
+          "type": "integer"
+        },
+        "value1": {
+          "description": "Client SomuaEntryConfig.value1; raw int32",
+          "title": "Value1",
+          "type": "integer"
+        },
+        "value2": {
+          "description": "Client SomuaEntryConfig.value2; raw int32",
+          "title": "Value2",
+          "type": "integer"
+        },
+        "value3": {
+          "description": "Client SomuaEntryConfig.value3; raw int32",
+          "title": "Value3",
+          "type": "integer"
+        },
+        "value4": {
+          "description": "Client SomuaEntryConfig.value4; raw int32",
+          "title": "Value4",
+          "type": "integer"
+        },
+        "value5": {
+          "description": "Client SomuaEntryConfig.value5; raw int32",
+          "title": "Value5",
+          "type": "integer"
+        },
+        "value6": {
+          "description": "Client SomuaEntryConfig.value6; raw int32",
+          "title": "Value6",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "desc",
+        "name",
+        "rarity",
+        "type",
+        "value1",
+        "value2",
+        "value3",
+        "value4",
+        "value5",
+        "value6"
+      ],
+      "title": "SomuaEntry",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

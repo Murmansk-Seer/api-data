@@ -1,0 +1,65 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "guide_card": {
+          "description": "Client dangochess.GuideCard; raw string",
+          "title": "Guide Card",
+          "type": "string"
+        },
+        "cardid": {
+          "description": "Client dangochess.cardid; raw string",
+          "title": "Cardid",
+          "type": "string"
+        },
+        "chapterid": {
+          "description": "Client dangochess.chapterid; raw int32",
+          "title": "Chapterid",
+          "type": "integer"
+        },
+        "dango_id": {
+          "description": "Client dangochess.dangoID; raw int32",
+          "title": "Dango Id",
+          "type": "integer"
+        },
+        "firstreward": {
+          "description": "Client dangochess.firstreward; raw string",
+          "title": "Firstreward",
+          "type": "string"
+        },
+        "stageid": {
+          "description": "Client dangochess.stageid; raw int32",
+          "title": "Stageid",
+          "type": "integer"
+        },
+        "starttime": {
+          "description": "Client dangochess.starttime; raw string",
+          "title": "Starttime",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "guide_card",
+        "cardid",
+        "chapterid",
+        "dango_id",
+        "firstreward",
+        "stageid",
+        "starttime"
+      ],
+      "title": "DangoChess",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "data": {
+    "6": {
+      "id": 6,
+      "new_msglog_id": 0,
+      "price": 1400162,
+      "describe1": "食用后获得【黑色基因】",
+      "describe2": "成长值+10",
+      "forever": 140170,
+      "limit": 0,
+      "quantity": 10,
+      "rewardinfo": "1_1727536_1",
+      "shop_type1": 1,
+      "shop_type2": 1,
+      "title": "暗物质巧克力",
+      "userinfo": 125329,
+      "value": 9999
+    }
+  },
+  "hash": "cf4db3ce"
+}

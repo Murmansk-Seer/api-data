@@ -1,0 +1,18 @@
+{
+  "data": {
+    "10047": {
+      "id": 10047,
+      "desc": "每间隔[4.6*(1/ATR)]<sprite name=SPD>秒，会在自身周围生成1个持续8秒幽魂领域，对进入其中的敌人每秒造成[107%*ATK]<sprite name=ATK>点伤害。",
+      "name": "极冥妖天",
+      "rarity": 0,
+      "type": 1,
+      "value1": 1070,
+      "value2": 4600,
+      "value3": 5047,
+      "value4": 8000,
+      "value5": 5,
+      "value6": 0
+    }
+  },
+  "hash": "dcfeb82b"
+}

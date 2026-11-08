@@ -1,0 +1,21 @@
+{
+  "id": 60,
+  "attack_mode": 10060,
+  "attack_mode_sp": 11060,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 0,
+  "is_body": 1,
+  "is_ear": 1,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 1,
+  "is_surrounding": 1,
+  "is_tail": 0,
+  "is_topwear": 0,
+  "name": "欧德奈瑞",
+  "pet_id": 3807,
+  "prefix": "欧德",
+  "season": "1",
+  "suffix": "奈瑞",
+  "hash": "16cd2ecf"
+}

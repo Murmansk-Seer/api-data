@@ -1,0 +1,13 @@
+{
+  "id": 7002,
+  "fx_on_get": "",
+  "fx_on_trig": "",
+  "icon": 0,
+  "max_stack": 1,
+  "stack_rule": "refresh",
+  "status_desc": "会使下次受到伤害额外附加自身当前生命值 value% 的伤害，触发后清除。",
+  "status_name": "感染",
+  "type": 2,
+  "value_rule": "",
+  "hash": "13080980"
+}

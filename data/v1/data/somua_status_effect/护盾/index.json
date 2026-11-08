@@ -1,0 +1,17 @@
+{
+  "data": {
+    "7013": {
+      "id": 7013,
+      "fx_on_get": "",
+      "fx_on_trig": "",
+      "icon": 0,
+      "max_stack": 0,
+      "stack_rule": "stack",
+      "status_desc": "可以用于抵挡伤害数值。",
+      "status_name": "护盾",
+      "type": 1,
+      "value_rule": ""
+    }
+  },
+  "hash": "3172c4c9"
+}

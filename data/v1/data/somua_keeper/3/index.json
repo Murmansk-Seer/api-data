@@ -1,0 +1,20 @@
+{
+  "id": 3,
+  "benefit1": 0,
+  "benefit2": 0,
+  "benefit3": 0,
+  "benefit4": 1,
+  "benefit5": 1,
+  "benefit6": 1,
+  "benefit7": 0,
+  "dango_gold": 280,
+  "dango_task": "7,8,9",
+  "describe1": "每小时产出280金色奇迹",
+  "describe2": "",
+  "describe3": "解锁\r\n《模拟宇宙》",
+  "minor_num": 1,
+  "reward": "1_1728448_5",
+  "store_max": 100,
+  "task_num": 0,
+  "hash": "8e1d7199"
+}

@@ -1,0 +1,14 @@
+{
+  "id": 30179,
+  "desc": "每次攻击对敌人造成伤害后，会强烈<sprite name=HLP>击退敌人，该效果有3秒冷却时间。",
+  "name": "强击手II",
+  "rarity": 2,
+  "type": 3,
+  "value1": 200,
+  "value2": 3000,
+  "value3": 0,
+  "value4": 0,
+  "value5": 0,
+  "value6": 0,
+  "hash": "72a5bf3f"
+}

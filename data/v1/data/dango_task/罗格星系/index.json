@@ -1,0 +1,19 @@
+{
+  "data": {
+    "23": {
+      "id": 23,
+      "new_msglog_id": 0,
+      "describe": "",
+      "limit": 4,
+      "planet": "planet_3",
+      "rewardinfo": 400,
+      "task_skin": "dangoTask_bj_02",
+      "task_team": 3,
+      "tasktype": 12,
+      "time": 1,
+      "title": "罗格星系",
+      "value": 4
+    }
+  },
+  "hash": "1ac94ca1"
+}

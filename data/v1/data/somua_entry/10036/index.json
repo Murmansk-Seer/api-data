@@ -1,0 +1,14 @@
+{
+  "id": 10036,
+  "desc": "每间隔[7.8*(1/ATR)]<sprite name=SPD>秒，会在原地蓄力1.5秒，随后握起长枪以160%<sprite name=SPD>的速度冲刺一小段距离，对命中的敌人造成[455%*ATK]<sprite name=ATK>点伤害。",
+  "name": "少女的守候",
+  "rarity": 0,
+  "type": 1,
+  "value1": 4550,
+  "value2": 7800,
+  "value3": 1200,
+  "value4": 1600,
+  "value5": 5036,
+  "value6": 150,
+  "hash": "73eb4090"
+}

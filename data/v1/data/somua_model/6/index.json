@@ -1,0 +1,21 @@
+{
+  "id": 6,
+  "attack_mode": 10006,
+  "attack_mode_sp": 11006,
+  "describe": "随流星雨降临的神秘生物，在精心培育下拥有了赛尔精灵的特征！",
+  "is_back": 0,
+  "is_body": 2,
+  "is_ear": 1,
+  "is_expression": 1,
+  "is_hand": 1,
+  "is_head": 2,
+  "is_surrounding": 0,
+  "is_tail": 0,
+  "is_topwear": 0,
+  "name": "魔焰猩猩",
+  "pet_id": 4649,
+  "prefix": "魔焰",
+  "season": "",
+  "suffix": "猩猩",
+  "hash": "3c212059"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 3,
+  "benefit1": 1,
+  "benefit2": 0,
+  "benefit3": 0,
+  "dango_task": [
+    7,
+    8,
+    9
+  ],
+  "describe1": "同时养成苏摩数量+1",
+  "describe2": "金色奇迹产出60/每小时",
+  "describe3": "",
+  "minor_num": 2,
+  "reward": 2000,
+  "task_num": 2,
+  "hash": "1d3b4d2b"
+}

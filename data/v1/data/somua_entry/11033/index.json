@@ -1,0 +1,14 @@
+{
+  "id": 11033,
+  "desc": "每间隔[5*(1/ATR)]<sprite name=SPD>秒，会召唤1把光剑，光剑每秒会向敌人发射光球，命中后造成[52%*ATK]<sprite name=ATK>点伤害。（光剑被视为墙体，持续15秒，最多同时拥有3座）",
+  "name": "真·公主我来保护你！",
+  "rarity": 0,
+  "type": 1,
+  "value1": 520,
+  "value2": 5000,
+  "value3": 5033,
+  "value4": 3,
+  "value5": 0,
+  "value6": 0,
+  "hash": "e6a12747"
+}

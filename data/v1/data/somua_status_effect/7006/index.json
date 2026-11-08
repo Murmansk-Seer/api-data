@@ -1,0 +1,13 @@
+{
+  "id": 7006,
+  "fx_on_get": "",
+  "fx_on_trig": "",
+  "icon": 0,
+  "max_stack": 1,
+  "stack_rule": "refresh",
+  "status_desc": "每次撞到墙体后都会受到 value 点伤害。",
+  "status_name": "伤口",
+  "type": 2,
+  "value_rule": "1",
+  "hash": "52052e2a"
+}
