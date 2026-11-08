@@ -57,6 +57,19 @@ jobs:
                   # Resolve the branch when the queued job starts, not its old event SHA.
                   ref: ${{ github.event.repository.default_branch }}
 
+            - name: Require migrated pipeline checkpoint
+              run: |
+                  set -euo pipefail
+                  git ls-remote --exit-code --heads origin refs/heads/pipeline-state >/dev/null || {
+                    echo "::error::Publish the verified original pipeline-state seed before enabling this workflow. No build or release was attempted."
+                    exit 1
+                  }
+
+            - name: Restore verified pipeline checkpoint
+              uses: Murmansk-Seer/.github/.github/actions/pipeline-state@e50f91b8dc44002ce0e15cad50e88f2bd34d6210
+              with:
+                  mode: restore
+
             - name: Publication and network regression tests
               run: python3 -m unittest discover -s tests -v
 
@@ -215,12 +228,13 @@ jobs:
                   PATCH_HEAD: ${{ steps.source_check.outputs.patch_head }}
                   BUILD_FINGERPRINT: ${{ steps.source_check.outputs.fingerprint }}
                   DB_SHA: ${{ steps.db_checksum.outputs.sha256 }}
-              run: |
-                  base=$(git rev-parse HEAD)
-                  python3 scripts/publication_state.py record
-                  git add .build-state
-                  git commit -m "Record verified api-data publication"
-                  python3 scripts/push_build.py --base "$base" --branch main
+              run: python3 scripts/publication_state.py record
+
+            - name: Persist verified publication checkpoint
+              if: steps.verify.outcome == 'success'
+              uses: Murmansk-Seer/.github/.github/actions/pipeline-state@e50f91b8dc44002ce0e15cad50e88f2bd34d6210
+              with:
+                  mode: publish
 
             - name: Trigger SeerAPI build
               id: dispatch
@@ -246,14 +260,13 @@ jobs:
 
             - name: Record successful downstream notification
               if: steps.dispatch.outcome == 'success'
-              run: |
-                  git config user.email "github-actions[bot]@users.noreply.github.com"
-                  git config user.name "github-actions[bot]"
-                  base=$(git rev-parse HEAD)
-                  python3 scripts/publication_state.py ack
-                  git add .build-state/notified-fingerprint
-                  git diff --staged --quiet || git commit -m "Record SeerAPI notification receipt"
-                  python3 scripts/push_build.py --base "$base" --branch main
+              run: python3 scripts/publication_state.py ack
+
+            - name: Persist confirmed notification checkpoint
+              if: steps.dispatch.outcome == 'success'
+              uses: Murmansk-Seer/.github/.github/actions/pipeline-state@e50f91b8dc44002ce0e15cad50e88f2bd34d6210
+              with:
+                  mode: publish
 
             # - name: Push to cnb.cool Git Repository
             #   run: |

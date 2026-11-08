@@ -29,3 +29,6 @@ Thumbs.db
 
 # Claude Code
 .claude/
+
+# Runtime publication/notification checkpoints live on pipeline-state.
+/.build-state/
