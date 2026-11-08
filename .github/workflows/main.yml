@@ -171,6 +171,13 @@ jobs:
                   git config --local user.name "github-actions[bot]"
                   python3 scripts/publication_state.py validate
                   python3 scripts/preserve_json_metadata.py --base-output-dir "$BASE_OUTPUT_DIR" --api-version "$SOLARIS_API_VERSION"
+                  generation_id="$(python3 scripts/source_history.py \
+                    --config '${{ steps.source_check.outputs.config_head }}' \
+                    --patch '${{ steps.source_check.outputs.patch_head }}' \
+                    --tooling "$SEERAPI_TOOLING_REVISION" \
+                    --official-config-version "$SOLARIS_DATA_VERSION" \
+                    --data-directory "$BASE_OUTPUT_DIR/$SOLARIS_API_VERSION/data")"
+                  echo "GENERATION_ID=$generation_id" >> "$GITHUB_ENV"
                   git add data
                   timestamp=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S CST')
                   git diff --staged --quiet || git commit -m "data(api): export verified official configuration $SOLARIS_DATA_VERSION" \

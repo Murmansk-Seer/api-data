@@ -98,3 +98,71 @@ class SourceHistoryTests(unittest.TestCase):
         (self.directory / 'skill/index.json').unlink()
         with self.assertRaisesRegex(ValueError, 'Missing complete resource list'):
             history.entity_ids(self.directory)
+
+    def test_duplicate_unknown_predecessor_or_unready_latest_is_rejected(self):
+        import copy
+        entities = {c: [] for c in history.CATEGORIES}
+        first, identity = history.advance(dict(schema_version=1, generations=[], latest_entities={}), entities, {})
+        for kind in ('duplicate', 'predecessor', 'unready'):
+            bad = copy.deepcopy(first)
+            if kind == 'duplicate':
+                bad['generations'].append(copy.deepcopy(bad['generations'][0]))
+            elif kind == 'predecessor':
+                bad['generations'][0]['base_generation'] = '0' * 64
+            else:
+                bad['generations'][0]['inventory_verified'] = False
+            with self.subTest(kind=kind), self.assertRaises(ValueError):
+                history.advance(bad, entities, {})
+        self.assertEqual(first['latest_generation'], identity)
+
+    def test_latest_entity_addition_or_snapshot_corruption_is_rejected(self):
+        import copy
+        entities = {c: [] for c in history.CATEGORIES}
+        entities['pet'] = [13311]
+        first, _ = history.advance(dict(schema_version=1, generations=[], latest_entities={}), entities, {})
+        for kind in ('entities', 'snapshot'):
+            bad = copy.deepcopy(first)
+            if kind == 'entities':
+                bad['latest_entities']['pet'].append(1)
+            else:
+                bad['generations'][0]['snapshot_id'] = '0' * 64
+            with self.subTest(kind=kind), self.assertRaises(ValueError):
+                history.validate_index(bad)
+
+    def test_cli_rejects_invalid_sources_without_replacing_index(self):
+        import json
+        import subprocess
+        import sys
+        sources = dict(config='1' * 40, patch='2' * 40, tooling='3' * 40, official_config_version='20261106181039')
+        doc, _ = history.advance(dict(schema_version=1, generations=[], latest_entities={}), {c: [] for c in history.CATEGORIES}, sources)
+        index = self.directory / 'seed.json'
+        index.write_bytes((json.dumps(doc) + '\n').encode())
+        before = index.read_bytes()
+        for field in sources:
+            bad = dict(sources, **{field: 'bad'})
+            args = [sys.executable, str(Path(history.__file__)), '--index', str(index), '--data-directory', str(self.directory)]
+            for key, value in bad.items():
+                args.extend(['--' + key.replace('_', '-'), value])
+            with self.subTest(field=field):
+                result = subprocess.run(args, capture_output=True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertEqual(index.read_bytes(), before)
+        self.assertEqual(list(self.directory.glob('.generation-*')), [])
+
+    def test_cli_identical_generation_does_not_replace_file(self):
+        import json
+        import subprocess
+        import sys
+        sources = dict(config='1' * 40, patch='2' * 40, tooling='3' * 40, official_config_version='20261106181039')
+        doc, identity = history.advance(dict(schema_version=1, generations=[], latest_entities={}), {c: [] for c in history.CATEGORIES}, sources)
+        index = self.directory / 'seed.json'
+        index.write_bytes((json.dumps(doc, ensure_ascii=False, separators=(',', ':')) + '\n').encode())
+        before, modified = index.read_bytes(), index.stat().st_mtime_ns
+        args = [sys.executable, str(Path(history.__file__)), '--index', str(index), '--data-directory', str(self.directory)]
+        for key, value in sources.items():
+            args.extend(['--' + key.replace('_', '-'), value])
+        result = subprocess.run(args, capture_output=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(result.stdout.decode().strip(), identity)
+        self.assertEqual(index.read_bytes(), before)
+        self.assertEqual(index.stat().st_mtime_ns, modified)
