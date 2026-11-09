@@ -46,7 +46,7 @@ jobs:
             SOLARIS_DATA_SOURCE: https://github.com/Murmansk-Seer/config-sources.git
             SOLARIS_PATCH_SOURCE: https://github.com/Murmansk-Seer/patch-sources.git
             BASE_OUTPUT_DIR: data
-            SEERAPI_TOOLING_REVISION: bb29e761b498c3307d756f941b43ee9613385341
+            SEERAPI_TOOLING_REVISION: 4a6395907ddd755b580b18d62bcc0bd113b49493
             HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
 
         steps:

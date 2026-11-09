@@ -8,138 +8,138 @@
     {
       "id": 1,
       "url": "https://api.seerapi.com/v1/dango_task/1",
-      "name": null
+      "name": "养成3个成年苏摩"
     },
     {
       "id": 2,
       "url": "https://api.seerapi.com/v1/dango_task/2",
-      "name": null
+      "name": "抚摸1次未进化苏摩"
     },
     {
       "id": 3,
       "url": "https://api.seerapi.com/v1/dango_task/3",
-      "name": null
+      "name": "喂食苏摩3次"
     },
     {
       "id": 4,
       "url": "https://api.seerapi.com/v1/dango_task/4",
-      "name": null
+      "name": "养成9个成年苏摩"
     },
     {
       "id": 5,
       "url": "https://api.seerapi.com/v1/dango_task/5",
-      "name": null
+      "name": "完成1次苏摩打工"
     },
     {
       "id": 6,
       "url": "https://api.seerapi.com/v1/dango_task/6",
-      "name": null
+      "name": " 购买3种食物"
     },
     {
       "id": 7,
       "url": "https://api.seerapi.com/v1/dango_task/7",
-      "name": null
+      "name": "养成18个成年苏摩"
     },
     {
       "id": 8,
       "url": "https://api.seerapi.com/v1/dango_task/8",
-      "name": null
+      "name": "培养5个不同类型的成年期苏摩"
     },
     {
       "id": 9,
       "url": "https://api.seerapi.com/v1/dango_task/9",
-      "name": null
+      "name": "解锁3个基地"
     },
     {
       "id": 10,
       "url": "https://api.seerapi.com/v1/dango_task/10",
-      "name": null
+      "name": "养成42个成年苏摩"
     },
     {
       "id": 11,
       "url": "https://api.seerapi.com/v1/dango_task/11",
-      "name": null
+      "name": "培养10个不同类型的成年期苏摩"
     },
     {
       "id": 12,
       "url": "https://api.seerapi.com/v1/dango_task/12",
-      "name": null
+      "name": "完成10次苏摩打工"
     },
     {
       "id": 13,
       "url": "https://api.seerapi.com/v1/dango_task/13",
-      "name": null
+      "name": "养成70个成年苏摩"
     },
     {
       "id": 14,
       "url": "https://api.seerapi.com/v1/dango_task/14",
-      "name": null
+      "name": "培养5个正义性格的成年期苏摩"
     },
     {
       "id": 15,
       "url": "https://api.seerapi.com/v1/dango_task/15",
-      "name": null
+      "name": "培养5个白色性格的成年期苏摩"
     },
     {
       "id": 16,
       "url": "https://api.seerapi.com/v1/dango_task/16",
-      "name": null
+      "name": "收集10种苏摩类型"
     },
     {
       "id": 17,
       "url": "https://api.seerapi.com/v1/dango_task/17",
-      "name": null
+      "name": "收集20种苏摩类型"
     },
     {
       "id": 18,
       "url": "https://api.seerapi.com/v1/dango_task/18",
-      "name": null
+      "name": "收集30种苏摩类型"
     },
     {
       "id": 19,
       "url": "https://api.seerapi.com/v1/dango_task/19",
-      "name": null
+      "name": "收集40种苏摩类型"
     },
     {
       "id": 20,
       "url": "https://api.seerapi.com/v1/dango_task/20",
-      "name": null
+      "name": "收集50种苏摩类型"
     },
     {
       "id": 21,
       "url": "https://api.seerapi.com/v1/dango_task/21",
-      "name": null
+      "name": "帕诺星系"
     },
     {
       "id": 22,
       "url": "https://api.seerapi.com/v1/dango_task/22",
-      "name": null
+      "name": "卡兰星系"
     },
     {
       "id": 23,
       "url": "https://api.seerapi.com/v1/dango_task/23",
-      "name": null
+      "name": "罗格星系"
     },
     {
       "id": 24,
       "url": "https://api.seerapi.com/v1/dango_task/24",
-      "name": null
+      "name": "裂空星系"
     },
     {
       "id": 25,
       "url": "https://api.seerapi.com/v1/dango_task/25",
-      "name": null
+      "name": "螺旋星系"
     },
     {
       "id": 26,
       "url": "https://api.seerapi.com/v1/dango_task/26",
-      "name": null
+      "name": "上古战场"
     },
     {
       "id": 27,
       "url": "https://api.seerapi.com/v1/dango_task/27",
-      "name": null
+      "name": "赛尔号"
     }
   ],
-  "hash": "3367df6"
+  "hash": "61d69d99"
 }

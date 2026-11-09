@@ -8,78 +8,78 @@
     {
       "id": 1,
       "url": "https://api.seerapi.com/v1/somua_gene/1",
-      "name": null
+      "name": "可爱"
     },
     {
       "id": 2,
       "url": "https://api.seerapi.com/v1/somua_gene/2",
-      "name": null
+      "name": "正义"
     },
     {
       "id": 3,
       "url": "https://api.seerapi.com/v1/somua_gene/3",
-      "name": null
+      "name": "邪恶"
     },
     {
       "id": 4,
       "url": "https://api.seerapi.com/v1/somua_gene/4",
-      "name": null
+      "name": "庆典"
     },
     {
       "id": 5,
       "url": "https://api.seerapi.com/v1/somua_gene/5",
-      "name": null
+      "name": "王者"
     },
     {
       "id": 6,
       "url": "https://api.seerapi.com/v1/somua_gene/6",
-      "name": null
+      "name": "黑色"
     },
     {
       "id": 7,
       "url": "https://api.seerapi.com/v1/somua_gene/7",
-      "name": null
+      "name": "白色"
     },
     {
       "id": 8,
       "url": "https://api.seerapi.com/v1/somua_gene/8",
-      "name": null
+      "name": "蓝色"
     },
     {
       "id": 9,
       "url": "https://api.seerapi.com/v1/somua_gene/9",
-      "name": null
+      "name": "绿色"
     },
     {
       "id": 10,
       "url": "https://api.seerapi.com/v1/somua_gene/10",
-      "name": null
+      "name": "黄色"
     },
     {
       "id": 11,
       "url": "https://api.seerapi.com/v1/somua_gene/11",
-      "name": null
+      "name": "紫色"
     },
     {
       "id": 12,
       "url": "https://api.seerapi.com/v1/somua_gene/12",
-      "name": null
+      "name": "红色"
     },
     {
       "id": 13,
       "url": "https://api.seerapi.com/v1/somua_gene/13",
-      "name": null
+      "name": "宝宝"
     },
     {
       "id": 14,
       "url": "https://api.seerapi.com/v1/somua_gene/14",
-      "name": null
+      "name": "突变"
     },
     {
       "id": 15,
       "url": "https://api.seerapi.com/v1/somua_gene/15",
-      "name": null
+      "name": "原始"
     }
   ],
-  "hash": "87222b7a"
+  "hash": "cf8224ec"
 }

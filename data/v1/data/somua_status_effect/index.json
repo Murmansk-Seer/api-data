@@ -8,123 +8,123 @@
     {
       "id": 7001,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7001",
-      "name": null
+      "name": "中毒"
     },
     {
       "id": 7002,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7002",
-      "name": null
+      "name": "感染"
     },
     {
       "id": 7003,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7003",
-      "name": null
+      "name": "冻伤"
     },
     {
       "id": 7004,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7004",
-      "name": null
+      "name": "冰封"
     },
     {
       "id": 7005,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7005",
-      "name": null
+      "name": "燃烧"
     },
     {
       "id": 7006,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7006",
-      "name": null
+      "name": "伤口"
     },
     {
       "id": 7007,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7007",
-      "name": null
+      "name": "流血"
     },
     {
       "id": 7008,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7008",
-      "name": null
+      "name": "致命诅咒"
     },
     {
       "id": 7009,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7009",
-      "name": null
+      "name": "坚固祝福"
     },
     {
       "id": 7010,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7010",
-      "name": null
+      "name": "虚弱诅咒"
     },
     {
       "id": 7011,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7011",
-      "name": null
+      "name": "狂暴祝福"
     },
     {
       "id": 7012,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7012",
-      "name": null
+      "name": "寄生"
     },
     {
       "id": 7013,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7013",
-      "name": null
+      "name": "护盾"
     },
     {
       "id": 7014,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7014",
-      "name": null
+      "name": "睡眠"
     },
     {
       "id": 7015,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7015",
-      "name": null
+      "name": "蓄力"
     },
     {
       "id": 7016,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7016",
-      "name": null
+      "name": "致命一击"
     },
     {
       "id": 7017,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7017",
-      "name": null
+      "name": "轻盈"
     },
     {
       "id": 7018,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7018",
-      "name": null
+      "name": "忍耐"
     },
     {
       "id": 7019,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7019",
-      "name": null
+      "name": "抑制"
     },
     {
       "id": 7020,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7020",
-      "name": null
+      "name": "迅捷祝福"
     },
     {
       "id": 7021,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7021",
-      "name": null
+      "name": "迟钝诅咒"
     },
     {
       "id": 7022,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7022",
-      "name": null
+      "name": "韧性"
     },
     {
       "id": 7023,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7023",
-      "name": null
+      "name": "再生"
     },
     {
       "id": 7024,
       "url": "https://api.seerapi.com/v1/somua_status_effect/7024",
-      "name": null
+      "name": "屏障"
     }
   ],
-  "hash": "e8d67c32"
+  "hash": "c0081738"
 }
