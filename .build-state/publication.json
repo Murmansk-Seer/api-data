@@ -1,7 +1,11 @@
 {
-  "config": "03040cc63e63b40dae2e14f0b987546810881517",
+  "config": "d0a0fea9be8ee12a03169e0a5f10bd80b79b55e4",
   "patch": "6faee7c650436eb2106414d211abf1d244986999",
-  "sha256": "abde673569c40c4f68f687334ca2828be59dde3d5c34b46bd4f1c2133371d806",
-  "source_commit": "09b64139b4d59ef8065dbe1b0acd65f4953c1996",
-  "fingerprint": "3e8932f2dfe4fcf3fc984686f3f45b5ddcb3301608d06ddf5da4e4ca06079de6"
+  "sha256": "700c59912d4013709dc6d46e52f52ab0556ca405881e9e6eb2cd918225c54984",
+  "source_commit": "1c0e79929efe25b80e5988ceb0c3f5429acc0203",
+  "fingerprint": "a8b6b606cea601b6fb84b99eae9350205328425dc501aa8a50cfc1936a7f4a2f",
+  "generation_id": "e93ba9cfc2588f31a17525322861a668a53fd8c2f9d8c1efbb9df1d64ed20eef",
+  "source_history_index_revision": "1c0e79929efe25b80e5988ceb0c3f5429acc0203",
+  "tooling_revision": "4a6395907ddd755b580b18d62bcc0bd113b49493",
+  "official_config_version": "20261106181039"
 }
