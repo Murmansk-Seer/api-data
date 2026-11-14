@@ -1,14 +1,14 @@
 {
   "id": 11005,
-  "desc": "每间隔[6.5*(1/ATR)]<sprite name=SPD>秒，在原地引导3.5秒，随后召唤一道浪涛对命中的敌人造成[1761%*ATK]<sprite name=ATK>点伤害。",
+  "desc": "每间隔[5.5*(1/ATR)]<sprite name=SPD>秒，在原地引导3.5秒，随后召唤一道浪涛对命中的敌人造成[1761%*ATK]<sprite name=ATK>点伤害。",
   "name": "真·浪打千击",
   "rarity": 0,
   "type": 1,
   "value1": 17610,
-  "value2": 6500,
+  "value2": 5500,
   "value3": 3500,
   "value4": 5005,
   "value5": 0,
   "value6": 0,
-  "hash": "70ccd488"
+  "hash": "b20eb155"
 }

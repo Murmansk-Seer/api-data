@@ -17,6 +17,11 @@
           "title": "Attack Value",
           "type": "integer"
         },
+        "body_ratio": {
+          "description": "Client SomuaBasicAttritube.bodyRatio; raw int32",
+          "title": "Body Ratio",
+          "type": "integer"
+        },
         "critical_chance": {
           "description": "Client SomuaBasicAttritube.criticalChance; raw int32",
           "title": "Critical Chance",
@@ -52,6 +57,7 @@
         "id",
         "attack_ratio",
         "attack_value",
+        "body_ratio",
         "critical_chance",
         "critical_damage_ratio",
         "defense_ratio",

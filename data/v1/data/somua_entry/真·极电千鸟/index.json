@@ -2,11 +2,11 @@
   "data": {
     "11010": {
       "id": 11010,
-      "desc": "会以[0.8*(1/ATR)]<sprite name=SPD>秒的间隔不断向敌人发射小闪电，每个小闪电会造成自身[62%*ATK]<sprite name=ATK>点伤害。",
+      "desc": "会以[0.8*(1/ATR)]<sprite name=SPD>秒的间隔不断向敌人发射小闪电，每个小闪电会造成自身[64%*ATK]<sprite name=ATK>点伤害。",
       "name": "真·极电千鸟",
       "rarity": 0,
       "type": 1,
-      "value1": 620,
+      "value1": 640,
       "value2": 5010,
       "value3": 800,
       "value4": 1,
@@ -14,5 +14,5 @@
       "value6": 0
     }
   },
-  "hash": "e1359a3a"
+  "hash": "73c1ea6f"
 }

@@ -1,14 +1,14 @@
 {
   "id": 30118,
-  "desc": "进入战斗时，自身体型小幅变大。",
+  "desc": "进入战斗时，自身体型小幅变大，最大生命值<sprite name=HLP>+15%。",
   "name": "大胃袋I",
   "rarity": 1,
   "type": 3,
   "value1": 1100,
-  "value2": 0,
+  "value2": 1100,
   "value3": 0,
   "value4": 0,
   "value5": 0,
   "value6": 0,
-  "hash": "3b3c2261"
+  "hash": "a8c75f94"
 }

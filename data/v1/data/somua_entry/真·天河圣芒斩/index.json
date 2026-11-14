@@ -2,17 +2,17 @@
   "data": {
     "11007": {
       "id": 11007,
-      "desc": "每间隔[3.6*(1/ATR)]<sprite name=SPD>秒，会向敌人发射1道巨大光刃，命中后造成[212%*ATK]<sprite name=ATK>点伤害。",
+      "desc": "每间隔[3.3*(1/ATR)]<sprite name=SPD>秒，会向敌人发射1道巨大光刃，命中后造成[212%*ATK]<sprite name=ATK>点伤害。",
       "name": "真·天河圣芒斩",
       "rarity": 0,
       "type": 1,
       "value1": 2120,
       "value2": 5007,
-      "value3": 3600,
+      "value3": 3300,
       "value4": 1,
       "value5": 1,
       "value6": 0
     }
   },
-  "hash": "320b0b65"
+  "hash": "ad6ec9d9"
 }

@@ -2,17 +2,17 @@
   "data": {
     "11015": {
       "id": 11015,
-      "desc": "每间隔[3.8*(1/ATR)]<sprite name=SPD>秒会向敌人方向连续发射3发冰棱，每个冰棱会造成自身[156%*ATK]<sprite name=ATK>点伤害。",
+      "desc": "每间隔[3.8*(1/ATR)]<sprite name=SPD>秒会向敌人方向连续发射5发冰棱，每个冰棱会造成自身[134%*ATK]<sprite name=ATK>点伤害。",
       "name": "真·玄冰箭",
       "rarity": 0,
       "type": 1,
-      "value1": 1560,
+      "value1": 1340,
       "value2": 5015,
       "value3": 3800,
-      "value4": 3,
+      "value4": 5,
       "value5": 1,
       "value6": 0
     }
   },
-  "hash": "52b08fbf"
+  "hash": "79c86dc1"
 }

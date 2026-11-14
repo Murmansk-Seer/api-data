@@ -43273,6 +43273,11 @@
                 "title": "Attack Value",
                 "description": "Client SomuaBasicAttritube.attackValue; raw int32"
               },
+              "body_ratio": {
+                "type": "integer",
+                "title": "Body Ratio",
+                "description": "Client SomuaBasicAttritube.bodyRatio; raw int32"
+              },
               "critical_chance": {
                 "type": "integer",
                 "title": "Critical Chance",
@@ -43309,6 +43314,7 @@
               "id",
               "attack_ratio",
               "attack_value",
+              "body_ratio",
               "critical_chance",
               "critical_damage_ratio",
               "defense_ratio",
@@ -44273,6 +44279,16 @@
                 "title": "Id",
                 "description": "资源ID"
               },
+              "addon_pool": {
+                "type": "string",
+                "title": "Addon Pool",
+                "description": "Client SomuaModelConfig.addonPool; raw string"
+              },
+              "addon_pool_sp": {
+                "type": "string",
+                "title": "Addon Pool Sp",
+                "description": "Client SomuaModelConfig.addonPoolSP; raw string"
+              },
               "attack_mode": {
                 "type": "integer",
                 "title": "Attack Mode",
@@ -44338,30 +44354,27 @@
                 "title": "Name",
                 "description": "Client SomuaModelConfig.name; raw string"
               },
+              "nature_pool": {
+                "type": "string",
+                "title": "Nature Pool",
+                "description": "Client SomuaModelConfig.naturePool; raw string"
+              },
               "pet_id": {
                 "type": "integer",
                 "title": "Pet Id",
                 "description": "Client SomuaModelConfig.petID; raw int32"
               },
-              "prefix": {
-                "type": "string",
-                "title": "Prefix",
-                "description": "Client SomuaModelConfig.prefix; raw string"
-              },
               "season": {
                 "type": "string",
                 "title": "Season",
                 "description": "Client SomuaModelConfig.season; raw string"
-              },
-              "suffix": {
-                "type": "string",
-                "title": "Suffix",
-                "description": "Client SomuaModelConfig.suffix; raw string"
               }
             },
             "type": "object",
             "required": [
               "id",
+              "addon_pool",
+              "addon_pool_sp",
               "attack_mode",
               "attack_mode_sp",
               "describe",
@@ -44375,10 +44388,9 @@
               "is_tail",
               "is_topwear",
               "name",
+              "nature_pool",
               "pet_id",
-              "prefix",
-              "season",
-              "suffix"
+              "season"
             ],
             "title": "SomuaModel"
           }

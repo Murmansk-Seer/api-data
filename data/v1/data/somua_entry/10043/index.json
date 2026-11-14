@@ -1,14 +1,14 @@
 {
   "id": 10043,
-  "desc": "每间隔[3.6*(1/ATR)]<sprite name=SPD>秒会发射1颗带有追踪性能的冰怪弹，命中后造成[156%*ATK]<sprite name=ATK>点伤害。",
+  "desc": "每间隔[14.4*(1/ATR)]<sprite name=SPD>秒会发射1颗带有追踪性能的冰怪弹，命中后造成[804%*ATK]<sprite name=ATK>点伤害。",
   "name": "零度扼杀",
   "rarity": 0,
   "type": 1,
-  "value1": 1560,
+  "value1": 8040,
   "value2": 5043,
-  "value3": 3600,
+  "value3": 14400,
   "value4": 1,
   "value5": 1,
   "value6": 0,
-  "hash": "b57ba9a3"
+  "hash": "71fd352"
 }

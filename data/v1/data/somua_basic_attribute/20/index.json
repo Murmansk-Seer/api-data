@@ -1,12 +1,13 @@
 {
   "id": 20,
   "attack_ratio": 206,
-  "attack_value": 81,
-  "critical_chance": 430,
+  "attack_value": 101,
+  "body_ratio": 1150,
+  "critical_chance": 200,
   "critical_damage_ratio": 586,
   "defense_ratio": 65,
-  "health_value": 1130,
+  "health_value": 1045,
   "knock_ratio": 153,
   "speed_value": 279,
-  "hash": "3f3f2ba3"
+  "hash": "cc60450c"
 }

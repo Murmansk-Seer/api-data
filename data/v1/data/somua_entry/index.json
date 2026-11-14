@@ -1,5 +1,5 @@
 {
-  "count": 370,
+  "count": 373,
   "next": null,
   "previous": null,
   "first": null,
@@ -1854,7 +1854,22 @@
       "id": 30036,
       "url": "https://api.seerapi.com/v1/somua_entry/30036",
       "name": "小个子III"
+    },
+    {
+      "id": 30037,
+      "url": "https://api.seerapi.com/v1/somua_entry/30037",
+      "name": "迎难而上I"
+    },
+    {
+      "id": 30038,
+      "url": "https://api.seerapi.com/v1/somua_entry/30038",
+      "name": "迎难而上II"
+    },
+    {
+      "id": 30039,
+      "url": "https://api.seerapi.com/v1/somua_entry/30039",
+      "name": "迎难而上III"
     }
   ],
-  "hash": "fb2f4f55"
+  "hash": "bce1fbfd"
 }

@@ -7,6 +7,16 @@
           "title": "Id",
           "type": "integer"
         },
+        "addon_pool": {
+          "description": "Client SomuaModelConfig.addonPool; raw string",
+          "title": "Addon Pool",
+          "type": "string"
+        },
+        "addon_pool_sp": {
+          "description": "Client SomuaModelConfig.addonPoolSP; raw string",
+          "title": "Addon Pool Sp",
+          "type": "string"
+        },
         "attack_mode": {
           "description": "Client SomuaModelConfig.attackMode; raw int32",
           "title": "Attack Mode",
@@ -72,29 +82,26 @@
           "title": "Name",
           "type": "string"
         },
+        "nature_pool": {
+          "description": "Client SomuaModelConfig.naturePool; raw string",
+          "title": "Nature Pool",
+          "type": "string"
+        },
         "pet_id": {
           "description": "Client SomuaModelConfig.petID; raw int32",
           "title": "Pet Id",
           "type": "integer"
         },
-        "prefix": {
-          "description": "Client SomuaModelConfig.prefix; raw string",
-          "title": "Prefix",
-          "type": "string"
-        },
         "season": {
           "description": "Client SomuaModelConfig.season; raw string",
           "title": "Season",
-          "type": "string"
-        },
-        "suffix": {
-          "description": "Client SomuaModelConfig.suffix; raw string",
-          "title": "Suffix",
           "type": "string"
         }
       },
       "required": [
         "id",
+        "addon_pool",
+        "addon_pool_sp",
         "attack_mode",
         "attack_mode_sp",
         "describe",
@@ -108,10 +115,9 @@
         "is_tail",
         "is_topwear",
         "name",
+        "nature_pool",
         "pet_id",
-        "prefix",
-        "season",
-        "suffix"
+        "season"
       ],
       "title": "SomuaModel",
       "type": "object",

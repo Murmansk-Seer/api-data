@@ -1,14 +1,14 @@
 {
   "id": 11058,
-  "desc": "每间隔[2*(1/ATR)]<sprite name=SPD>秒，生成1个脆弱的石台，对碰撞到的敌人造成[75%*ATK]<sprite name=ATK>点伤害。（石台被视为墙体拥有35生命值，持续10秒，最多同时拥有5座）",
+  "desc": "每间隔[2*(1/ATR)]<sprite name=SPD>秒，生成1个脆弱的石台，对碰撞到的敌人造成[69%*ATK]<sprite name=ATK>点伤害。（石台被视为墙体拥有35生命值，持续10秒，最多同时拥有5座）",
   "name": "真·光火神王之座",
   "rarity": 0,
   "type": 1,
-  "value1": 750,
+  "value1": 690,
   "value2": 2000,
   "value3": 5058,
   "value4": 5,
   "value5": 0,
   "value6": 0,
-  "hash": "2bb096c0"
+  "hash": "4bcfd3ed"
 }
