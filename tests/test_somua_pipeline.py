@@ -27,5 +27,5 @@ class SomuaPipelineTests(unittest.TestCase):
         self.assertRegex(text, r'SEERAPI_TOOLING_REVISION: [0-9a-f]{40}')
         self.assertIn('@${SEERAPI_TOOLING_REVISION}#subdirectory=packages/seerapi-models', text)
         self.assertIn('@${SEERAPI_TOOLING_REVISION}#subdirectory=packages/solaris', text)
-        self.assertLess(text.index('cat source/unity/.parser-revision'), text.index('solaris analyze data'))
-        self.assertIn('cat source/unity/.somua-version', text)
+        self.assertLess(text.index('scripts/verify_unity_snapshot.py'), text.index('solaris analyze data'))
+        self.assertIn('--parser "$SEERAPI_TOOLING_REVISION"', text)

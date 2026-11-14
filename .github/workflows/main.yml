@@ -46,7 +46,7 @@ jobs:
             SOLARIS_DATA_SOURCE: https://github.com/Murmansk-Seer/config-sources.git
             SOLARIS_PATCH_SOURCE: https://github.com/Murmansk-Seer/patch-sources.git
             BASE_OUTPUT_DIR: data
-            SEERAPI_TOOLING_REVISION: 4a6395907ddd755b580b18d62bcc0bd113b49493
+            SEERAPI_TOOLING_REVISION: bddb5c98a0e8aee615ad39eec36d2c436434a5db
             HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
 
         steps:
@@ -121,10 +121,7 @@ jobs:
                   git clone ${{ env.SOLARIS_PATCH_SOURCE }} patch-sources
                   git -C source checkout --detach ${{ steps.source_check.outputs.config_head }}
                   git -C patch-sources checkout --detach ${{ steps.source_check.outputs.patch_head }}
-                  test "$(cat source/unity/.parser-revision)" = "$SEERAPI_TOOLING_REVISION"
-                  test "$(cat source/unity/.somua-version)" = "$(cat source/unity/.version)"
-                  official_version="$(cat source/unity/.version)"
-                  [[ "$official_version" =~ ^[0-9]{14}$ ]]
+                  official_version="$(python scripts/verify_unity_snapshot.py source/unity --parser "$SEERAPI_TOOLING_REVISION")"
                   printf 'SOLARIS_DATA_VERSION=%s\n' "$official_version" >> "$GITHUB_ENV"
                   printf 'SOLARIS_PATCH_VERSION=%s\n' '${{ steps.source_check.outputs.patch_head }}' >> "$GITHUB_ENV"
                   mkdir -p source/patch
