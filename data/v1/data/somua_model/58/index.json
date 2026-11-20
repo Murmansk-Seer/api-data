@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 0,
+  "main_att": "<sprite name=HLP>生命",
   "name": "格劳瑞",
   "nature_pool": "20029,20030,20031,20032",
   "pet_id": 4004,
   "season": "1",
-  "hash": "13deb01d"
+  "hash": "5c2637bd"
 }

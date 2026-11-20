@@ -13645,6 +13645,163 @@
         "deprecated": false
       }
     },
+    "v1/somua_filter/{id}": {
+      "get": {
+        "tags": [
+          "Somua"
+        ],
+        "summary": "获取somua_filter资源",
+        "description": "Official SomuaFilterConfig.json configuration. All fields are losslessly preserved; raw numeric values have no inferred units or scaling.",
+        "operationId": "get_somua_filter_by_id",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/somua_filter"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/somua_filter"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "v1/somua_filter/{name}": {
+      "get": {
+        "tags": [
+          "Somua"
+        ],
+        "summary": "通过名称获取somua_filter资源",
+        "description": "Official SomuaFilterConfig.json configuration. All fields are losslessly preserved; raw numeric values have no inferred units or scaling.",
+        "operationId": "get_somua_filter_by_name",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/name"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/somua_filter_NamedData"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/somua_filter_NamedData"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "v1/somua_filter/": {
+      "get": {
+        "tags": [
+          "Somua"
+        ],
+        "summary": "获取somua_filter资源列表",
+        "description": "Official SomuaFilterConfig.json configuration. All fields are losslessly preserved; raw numeric values have no inferred units or scaling.",
+        "operationId": "get_somua_filter_list",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/offset"
+          },
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/expand"
+          },
+          {
+            "$ref": "#/components/parameters/name_query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/Etag"
+              },
+              "Link": {
+                "$ref": "#/components/headers/Link"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/somua_filter_List"
+                    },
+                    {
+                      "$ref": "#/components/schemas/somua_filter_ListExpanded"
+                    }
+                  ],
+                  "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
+                }
+              },
+              "application/schema-instance+json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/somua_filter_List"
+                    },
+                    {
+                      "$ref": "#/components/schemas/somua_filter_ListExpanded"
+                    }
+                  ],
+                  "description": "实际返回格式由 expand 查询参数决定，见 expand 参数说明。"
+                }
+              }
+            }
+          },
+          "304": {
+            "$ref": "#/components/responses/304_NotModified"
+          }
+        },
+        "deprecated": false
+      }
+    },
     "v1/somua_gene/{id}": {
       "get": {
         "tags": [
@@ -43759,6 +43916,162 @@
         "description": "expand=true 时返回完整资源对象列表",
         "x-model-name": "somua_entry"
       },
+      "somua_filter": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/hash_partial"
+          },
+          {
+            "properties": {
+              "id": {
+                "type": "integer",
+                "title": "Id",
+                "description": "资源ID"
+              },
+              "category": {
+                "type": "integer",
+                "title": "Category",
+                "description": "Client SomuaFilterConfig.category; raw int32"
+              },
+              "entrys": {
+                "type": "string",
+                "title": "Entrys",
+                "description": "Client SomuaFilterConfig.entrys; raw string"
+              },
+              "icon": {
+                "type": "string",
+                "title": "Icon",
+                "description": "Client SomuaFilterConfig.icon; raw string"
+              },
+              "mutual": {
+                "type": "string",
+                "title": "Mutual",
+                "description": "Client SomuaFilterConfig.mutual; raw string"
+              },
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": "Client SomuaFilterConfig.name; raw string"
+              }
+            },
+            "type": "object",
+            "required": [
+              "id",
+              "category",
+              "entrys",
+              "icon",
+              "mutual",
+              "name"
+            ],
+            "title": "SomuaFilter"
+          }
+        ],
+        "title": "somua_filter资源",
+        "examples": []
+      },
+      "somua_filter_NamedData": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/hash_partial"
+          },
+          {
+            "properties": {
+              "data": {
+                "patternProperties": {
+                  "^[0-9]+$": {
+                    "$ref": "#/components/schemas/somua_filter"
+                  }
+                },
+                "additionalProperties": false,
+                "type": "object"
+              }
+            },
+            "type": "object",
+            "required": [
+              "data"
+            ]
+          }
+        ],
+        "title": "名称映射somua_filter资源",
+        "examples": []
+      },
+      "somua_filter_List": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/common_api_resource_list",
+            "x-model-name": "somua_filter"
+          }
+        ],
+        "title": "somua_filter资源列表",
+        "examples": []
+      },
+      "somua_filter_ListExpanded": {
+        "properties": {
+          "count": {
+            "type": "integer",
+            "description": "资源数量"
+          },
+          "next": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "下一页URL"
+          },
+          "previous": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "上一页URL"
+          },
+          "first": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "第一页URL"
+          },
+          "last": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "最后一页URL"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/somua_filter"
+            },
+            "type": "array",
+            "description": "资源列表"
+          }
+        },
+        "type": "object",
+        "required": [
+          "count",
+          "results"
+        ],
+        "title": "somua_filter资源列表（expand=true）",
+        "description": "expand=true 时返回完整资源对象列表",
+        "x-model-name": "somua_filter"
+      },
       "somua_gene": {
         "allOf": [
           {
@@ -44349,6 +44662,11 @@
                 "title": "Is Topwear",
                 "description": "Client SomuaModelConfig.isTopwear; raw int32"
               },
+              "main_att": {
+                "type": "string",
+                "title": "Main Att",
+                "description": "Client SomuaModelConfig.mainATT; raw string"
+              },
               "name": {
                 "type": "string",
                 "title": "Name",
@@ -44387,6 +44705,7 @@
               "is_surrounding",
               "is_tail",
               "is_topwear",
+              "main_att",
               "name",
               "nature_pool",
               "pet_id",
@@ -44884,6 +45203,11 @@
                 "title": "Fx On Get",
                 "description": "Client SomuaStatusEffectConfig.fxOnGet; raw string"
               },
+              "fx_on_load": {
+                "type": "string",
+                "title": "Fx On Load",
+                "description": "Client SomuaStatusEffectConfig.fxOnLoad; raw string"
+              },
               "fx_on_trig": {
                 "type": "string",
                 "title": "Fx On Trig",
@@ -44929,6 +45253,7 @@
             "required": [
               "id",
               "fx_on_get",
+              "fx_on_load",
               "fx_on_trig",
               "icon",
               "max_stack",
@@ -48062,6 +48387,10 @@
                 "type": "string",
                 "title": "somua_entry Path"
               },
+              "somua_filter": {
+                "type": "string",
+                "title": "somua_filter Path"
+              },
               "somua_gene": {
                 "type": "string",
                 "title": "somua_gene Path"
@@ -48252,6 +48581,7 @@
               "somua_basic_attribute",
               "somua_dispatch",
               "somua_entry",
+              "somua_filter",
               "somua_gene",
               "somua_house",
               "somua_keeper",

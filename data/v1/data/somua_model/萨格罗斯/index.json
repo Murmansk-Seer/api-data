@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 0,
       "is_topwear": 0,
+      "main_att": "<sprite name=DEF>防御",
       "name": "萨格罗斯",
       "nature_pool": "20017,20018,20019,20020",
       "pet_id": 3328,
       "season": ""
     }
   },
-  "hash": "8af7795b"
+  "hash": "21a83380"
 }

@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 1,
       "is_topwear": 0,
+      "main_att": "<sprite name=DEF>防御",
       "name": "阿克希亚",
       "nature_pool": "20021,20022,20023,20024",
       "pet_id": 50,
       "season": ""
     }
   },
-  "hash": "7b73612b"
+  "hash": "516fa76d"
 }

@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 1,
+  "main_att": "<sprite name=CRT>暴击",
   "name": "梅赫维特",
   "nature_pool": "20037,20038,20039,20040",
   "pet_id": 4853,
   "season": "1",
-  "hash": "a7377d74"
+  "hash": "326ba453"
 }

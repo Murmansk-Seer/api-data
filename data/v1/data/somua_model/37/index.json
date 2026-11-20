@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 1,
   "is_topwear": 1,
+  "main_att": "<sprite name=SPD>速度",
   "name": "茉蕊儿",
   "nature_pool": "20009,20010,20011,20012",
   "pet_id": 3613,
   "season": "",
-  "hash": "c65da36f"
+  "hash": "aa487697"
 }

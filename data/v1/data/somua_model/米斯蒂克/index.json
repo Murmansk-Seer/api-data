@@ -16,11 +16,12 @@
       "is_surrounding": 1,
       "is_tail": 1,
       "is_topwear": 0,
+      "main_att": "<sprite name=DEF>防御",
       "name": "米斯蒂克",
       "nature_pool": "20021,20022,20023,20024",
       "pet_id": 4676,
       "season": ""
     }
   },
-  "hash": "41dadd6a"
+  "hash": "c2ea610c"
 }

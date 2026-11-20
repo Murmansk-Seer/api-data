@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 0,
       "is_topwear": 0,
+      "main_att": "<sprite name=SPD>速度",
       "name": "布鲁",
       "nature_pool": "20009,20010,20011,20012",
       "pet_id": 108,
       "season": ""
     }
   },
-  "hash": "7bfb250b"
+  "hash": "5c10d60d"
 }

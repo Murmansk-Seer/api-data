@@ -1,6 +1,7 @@
 {
   "id": 7020,
   "fx_on_get": "",
+  "fx_on_load": "",
   "fx_on_trig": "",
   "icon": 0,
   "max_stack": 6,
@@ -9,5 +10,5 @@
   "status_name": "迅捷祝福",
   "type": 1,
   "value_rule": "",
-  "hash": "648edffe"
+  "hash": "5778d40d"
 }

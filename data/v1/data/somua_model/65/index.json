@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 0,
+  "main_att": "<sprite name=SPD>速度",
   "name": "圣甲·盖亚",
   "nature_pool": "20009,20010,20011,20012",
   "pet_id": 3056,
   "season": "1",
-  "hash": "7a3c0c51"
+  "hash": "70ed295"
 }

@@ -366,6 +366,10 @@
           "title": "somua_entry Path",
           "type": "string"
         },
+        "somua_filter": {
+          "title": "somua_filter Path",
+          "type": "string"
+        },
         "somua_gene": {
           "title": "somua_gene Path",
           "type": "string"
@@ -555,6 +559,7 @@
         "somua_basic_attribute",
         "somua_dispatch",
         "somua_entry",
+        "somua_filter",
         "somua_gene",
         "somua_house",
         "somua_keeper",

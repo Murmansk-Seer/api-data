@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 1,
+  "main_att": "<sprite name=SPD>速度",
   "name": "列奥尼达",
   "nature_pool": "20013,20014,20015,20016",
   "pet_id": 4125,
   "season": "1",
-  "hash": "9f84a9a3"
+  "hash": "944455fe"
 }

@@ -1,6 +1,7 @@
 {
   "id": 7016,
   "fx_on_get": "",
+  "fx_on_load": "",
   "fx_on_trig": "",
   "icon": 0,
   "max_stack": 1,
@@ -9,5 +10,5 @@
   "status_name": "致命一击",
   "type": 1,
   "value_rule": "",
-  "hash": "89d9e3cc"
+  "hash": "22b5571c"
 }

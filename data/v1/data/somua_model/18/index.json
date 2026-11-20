@@ -14,9 +14,10 @@
   "is_surrounding": 0,
   "is_tail": 0,
   "is_topwear": 1,
+  "main_att": "<sprite name=HLP>生命",
   "name": "瀚宇星皇",
   "nature_pool": "20029,20030,20031,20032",
   "pet_id": 3291,
   "season": "",
-  "hash": "2fde21f3"
+  "hash": "c5094f18"
 }

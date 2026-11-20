@@ -77,6 +77,11 @@
           "title": "Is Topwear",
           "type": "integer"
         },
+        "main_att": {
+          "description": "Client SomuaModelConfig.mainATT; raw string",
+          "title": "Main Att",
+          "type": "string"
+        },
         "name": {
           "description": "Client SomuaModelConfig.name; raw string",
           "title": "Name",
@@ -114,6 +119,7 @@
         "is_surrounding",
         "is_tail",
         "is_topwear",
+        "main_att",
         "name",
         "nature_pool",
         "pet_id",

@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 1,
+  "main_att": "<sprite name=HLP>生命",
   "name": "弑序神罗",
   "nature_pool": "20029,20030,20031,20032",
   "pet_id": 4169,
   "season": "",
-  "hash": "d0d32468"
+  "hash": "92d419b6"
 }

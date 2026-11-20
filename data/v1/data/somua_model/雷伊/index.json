@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 0,
       "is_topwear": 1,
+      "main_att": "<sprite name=SPD>速度",
       "name": "雷伊",
       "nature_pool": "20009,20010,20011,20012",
       "pet_id": 70,
       "season": ""
     }
   },
-  "hash": "4e9f7140"
+  "hash": "6a417711"
 }

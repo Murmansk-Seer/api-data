@@ -1,0 +1,240 @@
+{
+  "count": 46,
+  "next": null,
+  "previous": null,
+  "first": null,
+  "last": null,
+  "results": [
+    {
+      "id": 1,
+      "url": "https://api.seerapi.com/v1/somua_filter/1",
+      "name": "攻击++"
+    },
+    {
+      "id": 2,
+      "url": "https://api.seerapi.com/v1/somua_filter/2",
+      "name": "生命++"
+    },
+    {
+      "id": 3,
+      "url": "https://api.seerapi.com/v1/somua_filter/3",
+      "name": "防御++"
+    },
+    {
+      "id": 4,
+      "url": "https://api.seerapi.com/v1/somua_filter/4",
+      "name": "暴击++"
+    },
+    {
+      "id": 5,
+      "url": "https://api.seerapi.com/v1/somua_filter/5",
+      "name": "速度++"
+    },
+    {
+      "id": 6,
+      "url": "https://api.seerapi.com/v1/somua_filter/6",
+      "name": "攻击+"
+    },
+    {
+      "id": 7,
+      "url": "https://api.seerapi.com/v1/somua_filter/7",
+      "name": "生命+"
+    },
+    {
+      "id": 8,
+      "url": "https://api.seerapi.com/v1/somua_filter/8",
+      "name": "防御+"
+    },
+    {
+      "id": 9,
+      "url": "https://api.seerapi.com/v1/somua_filter/9",
+      "name": "暴击+"
+    },
+    {
+      "id": 10,
+      "url": "https://api.seerapi.com/v1/somua_filter/10",
+      "name": "速度+"
+    },
+    {
+      "id": 500,
+      "url": "https://api.seerapi.com/v1/somua_filter/500",
+      "name": "魂印"
+    },
+    {
+      "id": 501,
+      "url": "https://api.seerapi.com/v1/somua_filter/501",
+      "name": "真·魂印"
+    },
+    {
+      "id": 502,
+      "url": "https://api.seerapi.com/v1/somua_filter/502",
+      "name": "收藏"
+    },
+    {
+      "id": 100,
+      "url": "https://api.seerapi.com/v1/somua_filter/100",
+      "name": "远程"
+    },
+    {
+      "id": 101,
+      "url": "https://api.seerapi.com/v1/somua_filter/101",
+      "name": "近战"
+    },
+    {
+      "id": 102,
+      "url": "https://api.seerapi.com/v1/somua_filter/102",
+      "name": "光环"
+    },
+    {
+      "id": 103,
+      "url": "https://api.seerapi.com/v1/somua_filter/103",
+      "name": "技能"
+    },
+    {
+      "id": 104,
+      "url": "https://api.seerapi.com/v1/somua_filter/104",
+      "name": "陷阱"
+    },
+    {
+      "id": 105,
+      "url": "https://api.seerapi.com/v1/somua_filter/105",
+      "name": "召唤"
+    },
+    {
+      "id": 106,
+      "url": "https://api.seerapi.com/v1/somua_filter/106",
+      "name": "碰撞"
+    },
+    {
+      "id": 200,
+      "url": "https://api.seerapi.com/v1/somua_filter/200",
+      "name": "移动"
+    },
+    {
+      "id": 201,
+      "url": "https://api.seerapi.com/v1/somua_filter/201",
+      "name": "中毒"
+    },
+    {
+      "id": 202,
+      "url": "https://api.seerapi.com/v1/somua_filter/202",
+      "name": "感染"
+    },
+    {
+      "id": 203,
+      "url": "https://api.seerapi.com/v1/somua_filter/203",
+      "name": "冻伤"
+    },
+    {
+      "id": 204,
+      "url": "https://api.seerapi.com/v1/somua_filter/204",
+      "name": "燃烧"
+    },
+    {
+      "id": 205,
+      "url": "https://api.seerapi.com/v1/somua_filter/205",
+      "name": "伤口"
+    },
+    {
+      "id": 206,
+      "url": "https://api.seerapi.com/v1/somua_filter/206",
+      "name": "流血"
+    },
+    {
+      "id": 207,
+      "url": "https://api.seerapi.com/v1/somua_filter/207",
+      "name": "反制"
+    },
+    {
+      "id": 208,
+      "url": "https://api.seerapi.com/v1/somua_filter/208",
+      "name": "寄生"
+    },
+    {
+      "id": 209,
+      "url": "https://api.seerapi.com/v1/somua_filter/209",
+      "name": "蓄力"
+    },
+    {
+      "id": 210,
+      "url": "https://api.seerapi.com/v1/somua_filter/210",
+      "name": "屏障"
+    },
+    {
+      "id": 211,
+      "url": "https://api.seerapi.com/v1/somua_filter/211",
+      "name": "护盾"
+    },
+    {
+      "id": 212,
+      "url": "https://api.seerapi.com/v1/somua_filter/212",
+      "name": "闪避"
+    },
+    {
+      "id": 213,
+      "url": "https://api.seerapi.com/v1/somua_filter/213",
+      "name": "反伤"
+    },
+    {
+      "id": 214,
+      "url": "https://api.seerapi.com/v1/somua_filter/214",
+      "name": "抑制"
+    },
+    {
+      "id": 215,
+      "url": "https://api.seerapi.com/v1/somua_filter/215",
+      "name": "击退"
+    },
+    {
+      "id": 216,
+      "url": "https://api.seerapi.com/v1/somua_filter/216",
+      "name": "打断"
+    },
+    {
+      "id": 217,
+      "url": "https://api.seerapi.com/v1/somua_filter/217",
+      "name": "减防"
+    },
+    {
+      "id": 218,
+      "url": "https://api.seerapi.com/v1/somua_filter/218",
+      "name": "减伤"
+    },
+    {
+      "id": 219,
+      "url": "https://api.seerapi.com/v1/somua_filter/219",
+      "name": "减速"
+    },
+    {
+      "id": 220,
+      "url": "https://api.seerapi.com/v1/somua_filter/220",
+      "name": "回复"
+    },
+    {
+      "id": 221,
+      "url": "https://api.seerapi.com/v1/somua_filter/221",
+      "name": "增益"
+    },
+    {
+      "id": 222,
+      "url": "https://api.seerapi.com/v1/somua_filter/222",
+      "name": "增伤"
+    },
+    {
+      "id": 223,
+      "url": "https://api.seerapi.com/v1/somua_filter/223",
+      "name": "增速"
+    },
+    {
+      "id": 224,
+      "url": "https://api.seerapi.com/v1/somua_filter/224",
+      "name": "增暴"
+    },
+    {
+      "id": 225,
+      "url": "https://api.seerapi.com/v1/somua_filter/225",
+      "name": "体型"
+    }
+  ],
+  "hash": "17f62ea7"
+}

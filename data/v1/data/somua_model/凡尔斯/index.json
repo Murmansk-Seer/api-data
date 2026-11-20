@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 0,
       "is_topwear": 1,
+      "main_att": "<sprite name=ATK>攻击",
       "name": "凡尔斯",
       "nature_pool": "20001,20002,20003,20004",
       "pet_id": 3697,
       "season": ""
     }
   },
-  "hash": "67ae8f53"
+  "hash": "cc109793"
 }

@@ -59,6 +59,7 @@
   "somua_basic_attribute": "https://api.seerapi.com/v1/somua_basic_attribute",
   "somua_dispatch": "https://api.seerapi.com/v1/somua_dispatch",
   "somua_entry": "https://api.seerapi.com/v1/somua_entry",
+  "somua_filter": "https://api.seerapi.com/v1/somua_filter",
   "somua_gene": "https://api.seerapi.com/v1/somua_gene",
   "somua_house": "https://api.seerapi.com/v1/somua_house",
   "somua_keeper": "https://api.seerapi.com/v1/somua_keeper",
@@ -114,5 +115,5 @@
   "pet_gender": "https://api.seerapi.com/v1/pet_gender",
   "pet_vipbuff": "https://api.seerapi.com/v1/pet_vipbuff",
   "pet_mount_type": "https://api.seerapi.com/v1/pet_mount_type",
-  "hash": "7ed24989"
+  "hash": "91f1152"
 }

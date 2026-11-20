@@ -3,6 +3,7 @@
     "7023": {
       "id": 7023,
       "fx_on_get": "",
+      "fx_on_load": "",
       "fx_on_trig": "",
       "icon": 0,
       "max_stack": 1,
@@ -13,5 +14,5 @@
       "value_rule": ""
     }
   },
-  "hash": "9a791e88"
+  "hash": "f7a0407f"
 }

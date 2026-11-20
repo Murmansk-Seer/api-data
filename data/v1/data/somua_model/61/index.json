@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 1,
+  "main_att": "<sprite name=SPD>速度",
   "name": "马尔修斯",
   "nature_pool": "20013,20014,20015,20016",
   "pet_id": 3393,
   "season": "1",
-  "hash": "bb54dc21"
+  "hash": "17e4cebf"
 }

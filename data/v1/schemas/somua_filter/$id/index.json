@@ -1,0 +1,53 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "id": {
+          "description": "资源ID",
+          "title": "Id",
+          "type": "integer"
+        },
+        "category": {
+          "description": "Client SomuaFilterConfig.category; raw int32",
+          "title": "Category",
+          "type": "integer"
+        },
+        "entrys": {
+          "description": "Client SomuaFilterConfig.entrys; raw string",
+          "title": "Entrys",
+          "type": "string"
+        },
+        "icon": {
+          "description": "Client SomuaFilterConfig.icon; raw string",
+          "title": "Icon",
+          "type": "string"
+        },
+        "mutual": {
+          "description": "Client SomuaFilterConfig.mutual; raw string",
+          "title": "Mutual",
+          "type": "string"
+        },
+        "name": {
+          "description": "Client SomuaFilterConfig.name; raw string",
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "entrys",
+        "icon",
+        "mutual",
+        "name"
+      ],
+      "title": "SomuaFilter",
+      "type": "object",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "$ref": "https://api.seerapi.com/v1/schemas/analyzer_custom/hash_partial",
+      "$schema": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
+}

@@ -14,9 +14,10 @@
   "is_surrounding": 0,
   "is_tail": 1,
   "is_topwear": 0,
+  "main_att": "<sprite name=SPD>速度",
   "name": "西塔伦",
   "nature_pool": "20009,20010,20011,20012",
   "pet_id": 4636,
   "season": "",
-  "hash": "6bebf253"
+  "hash": "9fa042d2"
 }

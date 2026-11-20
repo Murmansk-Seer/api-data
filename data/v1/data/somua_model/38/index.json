@@ -14,9 +14,10 @@
   "is_surrounding": 0,
   "is_tail": 1,
   "is_topwear": 1,
+  "main_att": "<sprite name=ATK>攻击",
   "name": "沧岚",
   "nature_pool": "20005,20006,20007,20008",
   "pet_id": 3740,
   "season": "",
-  "hash": "ad44e28f"
+  "hash": "610b3dc"
 }

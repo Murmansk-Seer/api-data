@@ -16,11 +16,12 @@
       "is_surrounding": 1,
       "is_tail": 0,
       "is_topwear": 0,
+      "main_att": "<sprite name=CRT>暴击",
       "name": "奥菲利娅",
       "nature_pool": "20037,20038,20039,20040",
       "pet_id": 4706,
       "season": ""
     }
   },
-  "hash": "66f7b4ac"
+  "hash": "a6859289"
 }

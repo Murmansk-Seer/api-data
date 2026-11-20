@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 1,
+  "main_att": "<sprite name=ATK>攻击",
   "name": "圣光灵神sp",
   "nature_pool": "20001,20002,20003,20004",
   "pet_id": 93311,
   "season": "1",
-  "hash": "68c76ced"
+  "hash": "e8cd53d6"
 }

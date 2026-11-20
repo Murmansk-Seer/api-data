@@ -16,11 +16,12 @@
       "is_surrounding": 1,
       "is_tail": 0,
       "is_topwear": 1,
+      "main_att": "<sprite name=HLP>生命",
       "name": "天蛇太祖",
       "nature_pool": "20029,20030,20031,20032",
       "pet_id": 3667,
       "season": ""
     }
   },
-  "hash": "304b0eed"
+  "hash": "d407da1d"
 }

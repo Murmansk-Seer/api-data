@@ -1,6 +1,7 @@
 {
   "id": 7017,
   "fx_on_get": "",
+  "fx_on_load": "",
   "fx_on_trig": "",
   "icon": 0,
   "max_stack": 100,
@@ -9,5 +10,5 @@
   "status_name": "轻盈",
   "type": 1,
   "value_rule": "",
-  "hash": "7ab70d7c"
+  "hash": "486c8ad4"
 }

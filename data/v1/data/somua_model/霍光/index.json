@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 1,
       "is_topwear": 1,
+      "main_att": "<sprite name=ATK>攻击",
       "name": "霍光",
       "nature_pool": "20001,20002,20003,20004",
       "pet_id": 4515,
       "season": ""
     }
   },
-  "hash": "7779ab4a"
+  "hash": "4a6c68d2"
 }

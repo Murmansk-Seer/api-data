@@ -14,9 +14,10 @@
   "is_surrounding": 0,
   "is_tail": 0,
   "is_topwear": 1,
+  "main_att": "<sprite name=CRT>暴击",
   "name": "魔灵王",
   "nature_pool": "20037,20038,20039,20040",
   "pet_id": 3541,
   "season": "",
-  "hash": "cbcba071"
+  "hash": "9b488c91"
 }

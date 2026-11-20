@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 0,
+  "main_att": "<sprite name=CRT>暴击",
   "name": "谱尼",
   "nature_pool": "20037,20038,20039,20040",
   "pet_id": 5000,
   "season": "",
-  "hash": "18455bf8"
+  "hash": "9a9266f7"
 }

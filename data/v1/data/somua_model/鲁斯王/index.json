@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 1,
       "is_topwear": 1,
+      "main_att": "<sprite name=ATK>攻击",
       "name": "鲁斯王",
       "nature_pool": "20005,20006,20007,20008",
       "pet_id": 4648,
       "season": ""
     }
   },
-  "hash": "a3cd8010"
+  "hash": "ca566183"
 }

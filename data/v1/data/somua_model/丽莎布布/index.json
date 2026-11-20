@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 1,
       "is_topwear": 0,
+      "main_att": "<sprite name=DEF>防御",
       "name": "丽莎布布",
       "nature_pool": "20017,20018,20019,20020",
       "pet_id": 4647,
       "season": ""
     }
   },
-  "hash": "b09f1ad3"
+  "hash": "6295b16"
 }

@@ -16,11 +16,12 @@
       "is_surrounding": 1,
       "is_tail": 0,
       "is_topwear": 0,
+      "main_att": "<sprite name=DEF>防御",
       "name": "莫妮卡",
       "nature_pool": "20017,20018,20019,20020",
       "pet_id": 3711,
       "season": ""
     }
   },
-  "hash": "c9f91ab"
+  "hash": "c969ff83"
 }

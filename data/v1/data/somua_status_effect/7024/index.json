@@ -1,6 +1,7 @@
 {
   "id": 7024,
   "fx_on_get": "",
+  "fx_on_load": "",
   "fx_on_trig": "",
   "icon": 0,
   "max_stack": 1,
@@ -9,5 +10,5 @@
   "status_name": "屏障",
   "type": 1,
   "value_rule": "",
-  "hash": "4617e0d"
+  "hash": "346a2b58"
 }

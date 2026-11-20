@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 1,
       "is_topwear": 0,
+      "main_att": "<sprite name=SPD>速度",
       "name": "蒂朵",
       "nature_pool": "20013,20014,20015,20016",
       "pet_id": 4377,
       "season": ""
     }
   },
-  "hash": "1f027cbd"
+  "hash": "eb1cdacd"
 }

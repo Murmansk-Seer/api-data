@@ -14,9 +14,10 @@
   "is_surrounding": 0,
   "is_tail": 1,
   "is_topwear": 0,
+  "main_att": "<sprite name=DEF>防御",
   "name": "空元行者",
   "nature_pool": "20021,20022,20023,20024",
   "pet_id": 4586,
   "season": "",
-  "hash": "ce6d19d6"
+  "hash": "e58aa371"
 }

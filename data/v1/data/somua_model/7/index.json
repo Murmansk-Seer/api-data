@@ -14,9 +14,10 @@
   "is_surrounding": 0,
   "is_tail": 0,
   "is_topwear": 0,
+  "main_att": "<sprite name=DEF>防御",
   "name": "英卡洛斯",
   "nature_pool": "20021,20022,20023,20024",
   "pet_id": 3577,
   "season": "",
-  "hash": "6cb62c03"
+  "hash": "6ad014a4"
 }

@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 1,
   "is_topwear": 0,
+  "main_att": "<sprite name=CRT>暴击",
   "name": "霍德尔",
   "nature_pool": "20033,20034,20035,20036",
   "pet_id": 3200,
   "season": "",
-  "hash": "5135c1da"
+  "hash": "4cdd758d"
 }

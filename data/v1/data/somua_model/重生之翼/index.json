@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 0,
       "is_topwear": 1,
+      "main_att": "<sprite name=CRT>暴击",
       "name": "重生之翼",
       "nature_pool": "20037,20038,20039,20040",
       "pet_id": 2987,
       "season": ""
     }
   },
-  "hash": "a0e93e31"
+  "hash": "fa32edd6"
 }

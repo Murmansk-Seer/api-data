@@ -14,9 +14,10 @@
   "is_surrounding": 0,
   "is_tail": 0,
   "is_topwear": 0,
+  "main_att": "<sprite name=HLP>生命",
   "name": "魔焰猩猩",
   "nature_pool": "20025,20026,20027,20028",
   "pet_id": 4649,
   "season": "",
-  "hash": "906d3fc2"
+  "hash": "9bb001ec"
 }

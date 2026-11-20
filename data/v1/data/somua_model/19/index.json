@@ -14,9 +14,10 @@
   "is_surrounding": 1,
   "is_tail": 0,
   "is_topwear": 1,
+  "main_att": "<sprite name=ATK>攻击",
   "name": "天启帝君",
   "nature_pool": "20005,20006,20007,20008",
   "pet_id": 3550,
   "season": "",
-  "hash": "895c1dd8"
+  "hash": "76421d7b"
 }

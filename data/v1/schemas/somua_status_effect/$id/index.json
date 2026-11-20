@@ -12,6 +12,11 @@
           "title": "Fx On Get",
           "type": "string"
         },
+        "fx_on_load": {
+          "description": "Client SomuaStatusEffectConfig.fxOnLoad; raw string",
+          "title": "Fx On Load",
+          "type": "string"
+        },
         "fx_on_trig": {
           "description": "Client SomuaStatusEffectConfig.fxOnTrig; raw string",
           "title": "Fx On Trig",
@@ -56,6 +61,7 @@
       "required": [
         "id",
         "fx_on_get",
+        "fx_on_load",
         "fx_on_trig",
         "icon",
         "max_stack",

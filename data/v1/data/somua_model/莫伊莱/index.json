@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 0,
       "is_topwear": 1,
+      "main_att": "<sprite name=ATK>攻击",
       "name": "莫伊莱",
       "nature_pool": "20005,20006,20007,20008",
       "pet_id": 4275,
       "season": ""
     }
   },
-  "hash": "a9ceb97b"
+  "hash": "62cb3202"
 }

@@ -16,11 +16,12 @@
       "is_surrounding": 0,
       "is_tail": 1,
       "is_topwear": 0,
+      "main_att": "<sprite name=DEF>防御",
       "name": "格林",
       "nature_pool": "20017,20018,20019,20020",
       "pet_id": 62,
       "season": ""
     }
   },
-  "hash": "1392ed60"
+  "hash": "a2f926b8"
 }

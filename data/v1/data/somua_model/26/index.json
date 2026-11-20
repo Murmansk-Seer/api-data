@@ -14,9 +14,10 @@
   "is_surrounding": 0,
   "is_tail": 1,
   "is_topwear": 1,
+  "main_att": "<sprite name=DEF>防御",
   "name": "咤克斯",
   "nature_pool": "20021,20022,20023,20024",
   "pet_id": 4762,
   "season": "",
-  "hash": "6aec7141"
+  "hash": "4178ef90"
 }

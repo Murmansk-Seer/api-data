@@ -16,11 +16,12 @@
       "is_surrounding": 1,
       "is_tail": 1,
       "is_topwear": 0,
+      "main_att": "<sprite name=ATK>攻击",
       "name": "艾欧丽娅",
       "nature_pool": "20005,20006,20007,20008",
       "pet_id": 3437,
       "season": ""
     }
   },
-  "hash": "5f4ef55c"
+  "hash": "49e82c4d"
 }
