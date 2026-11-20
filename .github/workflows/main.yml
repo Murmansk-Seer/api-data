@@ -46,7 +46,7 @@ jobs:
             SOLARIS_DATA_SOURCE: https://github.com/Murmansk-Seer/config-sources.git
             SOLARIS_PATCH_SOURCE: https://github.com/Murmansk-Seer/patch-sources.git
             BASE_OUTPUT_DIR: data
-            SEERAPI_TOOLING_REVISION: bddb5c98a0e8aee615ad39eec36d2c436434a5db
+            SEERAPI_TOOLING_REVISION: 90d7707ae38d2c1e27927d587e6375604d4c8bbc
             HAS_BLOB_CONFIG: ${{ secrets.BLOB_TOKEN != '' && secrets.BLOB_PROJECT_ID != '' && secrets.BLOB_STORE_NAME != '' }}
 
         steps:
@@ -178,8 +178,8 @@ jobs:
                   git add data
                   timestamp=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S CST')
                   git diff --staged --quiet || git commit -m "data(api): export verified official configuration $SOLARIS_DATA_VERSION" \
-                    -m "EN reason/scope: Export the complete official configuration $SOLARIS_DATA_VERSION using tooling $SEERAPI_TOOLING_REVISION. Verification: source coverage, SQLite integrity and all27Somua/dango tables passed before this commit; publication and notification remain separate later steps." \
-                    -m "中文原因／范围：使用工具链 $SEERAPI_TOOLING_REVISION 导出完整官方配置 $SOLARIS_DATA_VERSION。验证：本提交前来源覆盖、SQLite完整性及全部27张苏摩表已通过；发布和通知仍由后续步骤单独记录。"
+                    -m "EN reason/scope: Export the complete official configuration $SOLARIS_DATA_VERSION using tooling $SEERAPI_TOOLING_REVISION. Verification: source coverage, SQLite integrity and all Somua/dango tables passed before this commit; publication and notification remain separate later steps." \
+                    -m "中文原因／范围：使用工具链 $SEERAPI_TOOLING_REVISION 导出完整官方配置 $SOLARIS_DATA_VERSION。验证：本提交前来源覆盖、SQLite完整性及全部苏摩表已通过；发布和通知仍由后续步骤单独记录。"
                   python scripts/push_build.py --base "$BUILD_BASE" --branch "$BUILD_BRANCH"
                   echo "DATA_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
                   echo "timestamp=$timestamp" >> $GITHUB_OUTPUT

@@ -6,8 +6,9 @@ from scripts.verify_source_contract import SOMUA_OUTPUT_SCOPES, prepare_referenc
 
 class OwnedOutputTests(unittest.TestCase):
     def test_disabled_tables_remove_stale_details_and_names_without_touching_other_resources(self):
-        self.assertEqual(len(SOMUA_OUTPUT_SCOPES), 27)
-        self.assertEqual(len(set(SOMUA_OUTPUT_SCOPES)), 27)
+        self.assertEqual(len(SOMUA_OUTPUT_SCOPES), 28)
+        self.assertEqual(len(set(SOMUA_OUTPUT_SCOPES)), 28)
+        self.assertIn('somua_filter', SOMUA_OUTPUT_SCOPES)
         with TemporaryDirectory() as directory:
             root = Path(directory)
             for kind in ('data', 'sharded_data'):

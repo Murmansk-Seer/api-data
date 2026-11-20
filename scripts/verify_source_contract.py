@@ -13,7 +13,7 @@ import xml.etree.ElementTree as ET
 
 
 # These complete scopes belong exclusively to the standard Somua producer.
-SOMUA_OUTPUT_SCOPES = ('somua_model', 'somua_gene', 'somua_basic_attribute', 'somua_entry', 'somua_status_effect', 'somua_weapon', 'somua_achievement', 'somua_dispatch', 'somua_house', 'somua_keeper', 'somua_ranking', 'somua_shop', 'somua_task', 'somua_tutorial', 'dango', 'dango_action', 'dango_gene', 'dango_gold', 'dango_guide', 'dango_house', 'dango_level', 'dango_shop', 'dango_slot', 'dango_story', 'dango_task', 'dango_chess', 'dango_chess_stage')
+SOMUA_OUTPUT_SCOPES = ('somua_model', 'somua_gene', 'somua_basic_attribute', 'somua_entry', 'somua_filter', 'somua_status_effect', 'somua_weapon', 'somua_achievement', 'somua_dispatch', 'somua_house', 'somua_keeper', 'somua_ranking', 'somua_shop', 'somua_task', 'somua_tutorial', 'dango', 'dango_action', 'dango_gene', 'dango_gold', 'dango_guide', 'dango_house', 'dango_level', 'dango_shop', 'dango_slot', 'dango_story', 'dango_task', 'dango_chess', 'dango_chess_stage')
 
 def validate_source_references(source):
     root = Path(source) / 'unity'
