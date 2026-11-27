@@ -3,8 +3,8 @@
     "7006": {
       "id": 7006,
       "fx_on_get": "",
-      "fx_on_load": "",
-      "fx_on_trig": "",
+      "fx_on_load": "fx_wound",
+      "fx_on_trig": "fx_woundTrig",
       "icon": 0,
       "max_stack": 1,
       "stack_rule": "refresh",
@@ -14,5 +14,5 @@
       "value_rule": "1"
     }
   },
-  "hash": "9b483d4a"
+  "hash": "600153a7"
 }

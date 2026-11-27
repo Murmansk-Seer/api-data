@@ -1,8 +1,8 @@
 {
   "id": 7006,
   "fx_on_get": "",
-  "fx_on_load": "",
-  "fx_on_trig": "",
+  "fx_on_load": "fx_wound",
+  "fx_on_trig": "fx_woundTrig",
   "icon": 0,
   "max_stack": 1,
   "stack_rule": "refresh",
@@ -10,5 +10,5 @@
   "status_name": "伤口",
   "type": 2,
   "value_rule": "1",
-  "hash": "b1417d95"
+  "hash": "59a7e602"
 }

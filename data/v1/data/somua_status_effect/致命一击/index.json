@@ -3,7 +3,7 @@
     "7016": {
       "id": 7016,
       "fx_on_get": "",
-      "fx_on_load": "",
+      "fx_on_load": "fx_blast",
       "fx_on_trig": "",
       "icon": 0,
       "max_stack": 1,
@@ -14,5 +14,5 @@
       "value_rule": ""
     }
   },
-  "hash": "e17a8601"
+  "hash": "4d796b61"
 }

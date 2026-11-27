@@ -3,8 +3,8 @@
     "7005": {
       "id": 7005,
       "fx_on_get": "",
-      "fx_on_load": "",
-      "fx_on_trig": "",
+      "fx_on_load": "fx_flame",
+      "fx_on_trig": "fx_flameTrig",
       "icon": 0,
       "max_stack": 1,
       "stack_rule": "refresh",
@@ -14,5 +14,5 @@
       "value_rule": "1"
     }
   },
-  "hash": "1a537077"
+  "hash": "27f7bbf9"
 }

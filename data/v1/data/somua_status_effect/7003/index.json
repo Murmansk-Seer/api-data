@@ -1,7 +1,7 @@
 {
   "id": 7003,
   "fx_on_get": "",
-  "fx_on_load": "",
+  "fx_on_load": "fx_frost",
   "fx_on_trig": "",
   "icon": 0,
   "max_stack": 5,
@@ -10,5 +10,5 @@
   "status_name": "冻伤",
   "type": 2,
   "value_rule": "",
-  "hash": "556e0065"
+  "hash": "ae51218f"
 }
