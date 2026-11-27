@@ -1,11 +1,11 @@
 {
-  "config": "d12f47627456ffd0d6520817a08d5116a75cc8c7",
+  "config": "0a5a2cefa63f97eb49e8b62f393833402aabb30c",
   "patch": "6faee7c650436eb2106414d211abf1d244986999",
-  "sha256": "8fbd998bdfe2041d3b7d096b7a6c1f1c3065d126565cf4fcff1d404cb9cd1d31",
-  "source_commit": "0af602db2b1b8ddedc44823756219871a63af787",
-  "fingerprint": "794710e11a5b67c3aeeb4abd5879161cc1d2d37bb590ae743add14f1cfe6c390",
-  "generation_id": "fcd88bc998b4bd31a0eec58774dd3778a6e16d31bd3e12806651bb02d28373ee",
-  "source_history_index_revision": "0af602db2b1b8ddedc44823756219871a63af787",
+  "sha256": "7a06379be86cca892f151eae17aa219ef2fcdaad8a36b6dbfb770f6a2c84aedc",
+  "source_commit": "dc5c94a97ff8f0a09ed1fb97b81fc0f660dc2bc1",
+  "fingerprint": "72dceb20a3b45e42c9102cd6c0a7400c6dcdbc1442753e6295c7296d64ba927f",
+  "generation_id": "e37d71e671b8a35f357c4b7956c1f8fecd84ac9fd9a2b7bd89f72991e038f414",
+  "source_history_index_revision": "dc5c94a97ff8f0a09ed1fb97b81fc0f660dc2bc1",
   "tooling_revision": "dbc772415a8262cb50a05ae508012e47f1a93fa6",
-  "official_config_version": "20261120172855"
+  "official_config_version": "20261127104733"
 }
